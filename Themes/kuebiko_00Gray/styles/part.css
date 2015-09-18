@@ -1,0 +1,125 @@
+
+
+
+/** PART ==================================================================*/
+/** TITLE HEADER ---------------------*/
+title_header .self,
+title_footer .self
+{
+  background-color: #FFF;
+}
+
+/** HEADER ---------------------------*/
+header .self {
+  border-style: none; border-width: 1pt; border-color: #666;
+ background-color: #FFF;
+}
+
+
+
+/** BODY -----------------------------*/
+body     .self,
+body_alt .self
+{
+ 
+  border-style: none; border-width: 1pt; border-color: #CCC;
+  background-image: none;
+  
+  -fm-use-body-current-row-style: true;
+}
+body .self {
+  background-color: #F6F6F6;
+}
+
+body.body_form .self {/*form view*/
+  background-color: #F6F6F6;
+  -fm-use-body-current-row-style: false;
+}
+
+
+
+/** for list view ====================*/
+
+header.head_divider .self {
+  border-style: none; border-width: 1pt; border-color: #666;
+  border-bottom-style: solid;
+}
+
+body.body_divider .self,
+body_alt.body_divider .self
+{
+  border-style: none; border-width: 1pt; border-color: #DADADA;
+  border-bottom-style: solid;
+  background-color: #FCFCFC;
+}
+body_alt .self {
+  background-color: #F6F6F6;
+  -fm-use-body-alternate-row-style: true;
+  /*-fm-table-background-color: rgba(180,206,0,1);*/
+}
+body:checked .self {
+  background-color: #E0ECFA;/*rgba(224,236,250,1)*/
+}
+
+/** FOOTER ---------------------------*/
+footer .self {
+  border-style: none; border-width: 1pt; border-color: #CCC;
+  border-top-style: solid;
+  background-color: #F6F6F6;
+}
+/*
+footer.foot_divider .self {}
+*/
+
+/** LEADING SUB SUMMARY --------------*/
+leading_sub_summary_1 .self {
+  border-style: none; border-top-width: 1pt; border-color: #676767;/*******/
+  border-top-style: solid;
+  background-color: #9A9A9A;
+}
+
+leading_sub_summary_2 .self {
+  border-style: none; border-width: 1pt; border-color: #CCC;
+  border-top-style: solid;
+  background-color: #FCFCFC;
+}
+
+leading_sub_summary .self {
+  border-style: none; border-width: 1pt; border-color: #CCC;
+  border-top-style: solid;
+  background-color: #FCFCFC;
+}
+
+
+
+/** TRAILING SUB SUMMARY -------------*/
+trailing_sub_summary .self {
+  border-style: none; border-width: 1pt; border-color: #CCC;
+  background-color: #FCFCFC;
+}
+
+trailing_sub_summary_2 .self {
+  border-style: none; border-width: 1pt; border-color: #CCC;
+  border-bottom-style: solid;
+  background-color: #FCFCFC;
+}
+
+trailing_sub_summary_1 .self {
+  border-style: none; border-width: 1pt; border-color: #CCC;
+  border-bottom-style: solid;
+  background-color: #FCFCFC;
+}
+
+
+
+/** LEADING GRAND SUMMARY ------------*/
+leading_grand_summary .self {
+  background-color: rgba(167,178,184,1);
+}
+
+/** TRAILING GRAND SUMMARY -----------*/
+trailing_grand_summary .self {
+  background-color: rgba(167,178,184,1);
+}
+
+

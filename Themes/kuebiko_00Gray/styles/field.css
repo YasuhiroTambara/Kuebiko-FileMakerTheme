@@ -1,0 +1,601 @@
+
+
+
+/** FIELD ==================================================================*/
+/**  ----------------------------------------------------------*/
+field:placeholder .self,
+
+edit_box:placeholder .self,
+text_area:placeholder .self,
+drop_down:placeholder .self,
+pop_up:placeholder .self,
+calendar:placeholder .self,
+container:placeholder .self
+{color: #999;}
+
+
+
+field .repeat_border {border-bottom-style: solid; border-bottom-width: 1pt;}
+field .self {
+  border-style: solid; border-width: 1pt; border-radius: 1pt; border-color: #CCC;
+  background-color: #FFF;
+  font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
+  font-size: 12pt; color: #333;
+  line-height: 0.7line;
+  text-align: left;
+}
+edit_box:normal .self,
+text_area:normal .self,
+drop_down:normal .self,
+pop_up:normal .self
+{font-family: -fm-font-family(メイリオ, shiftjis);}
+
+
+
+field .inner_border {
+  border-radius: 0pt;
+}
+
+field .text {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0pt;
+  top: 0pt;
+  bottom: 0pt;
+  right: 0pt;
+  margin-top: 2pt;
+  margin-right: 4.8pt;
+  margin-bottom: -4.8pt;
+  margin-left: 4.8pt;
+}
+
+field:hover .self {
+  
+}
+
+field:focus .self {
+  border-color: #6699C6;
+  background-color: #EFF6FF;
+  box-shadow: 0pt 0pt 2pt 1pt #72A8FB;
+}
+
+field .baseline {
+  border-bottom-width: 1pt;
+}
+
+field:droptarget .inner_border {
+  box-shadow: 0pt 0pt 2pt 1pt #72A8FB inset;
+}
+
+
+
+/** FIELD(VIEW) ----------------------------------------------------------*/
+edit_box.fie_View_10_14:normal .self,
+edit_box.fie_View_10_19:normal .self,
+edit_box.fie_View_11_14:normal .self,
+edit_box.fie_View_11_19:normal .self,
+edit_box.fie_View_12_19:normal .self,
+edit_box.fie_View_12_24:normal .self,
+edit_box.fie_View_13_24:normal .self,
+edit_box.fie_View_14_24:normal .self,
+edit_box.fie_View_14_29:normal .self,
+edit_box.fie_View_16_24:normal .self,
+edit_box.fie_View_16_29:normal .self
+{
+  background-color: #FFF;
+  border-style: solid;
+  border-width: 1pt;
+}
+
+
+
+/** FIELD(MINI) ----------------------------------------------------------*/
+edit_box.fie_Mini_10_14:normal .self,
+edit_box.fie_Mini_10_19:normal .self,
+edit_box.fie_Mini_11_14:normal .self,
+edit_box.fie_Mini_11_19:normal .self,
+edit_box.fie_Mini_12_19:normal .self,
+edit_box.fie_Mini_12_24:normal .self,
+edit_box.fie_Mini_13_24:normal .self,
+edit_box.fie_Mini_14_24:normal .self,
+edit_box.fie_Mini_14_29:normal .self,
+edit_box.fie_Mini_16_24:normal .self,
+edit_box.fie_Mini_16_29:normal .self
+{
+  background-color: rgba(0,0,0,0);
+  border-style: none;
+  border-width: 0pt;
+  border-radius: 0pt;
+}
+
+
+
+/** FIELD(EDIT) ----------------------------------------------------------*/
+edit_box.fie_Edit_10_14:normal .self,
+edit_box.fie_Edit_10_19:normal .self,
+edit_box.fie_Edit_11_14:normal .self,
+edit_box.fie_Edit_11_19:normal .self,
+edit_box.fie_Edit_12_19:normal .self,
+edit_box.fie_Edit_12_24:normal .self,
+edit_box.fie_Edit_13_24:normal .self,
+edit_box.fie_Edit_14_24:normal .self,
+edit_box.fie_Edit_14_29:normal .self,
+edit_box.fie_Edit_16_24:normal .self,
+edit_box.fie_Edit_16_29:normal .self,
+calendar:normal  .self,
+drop_down:normal .self,
+pop_up:normal    .self
+{
+  border-style: solid; border-width: 1pt;
+  background-color: #FFF;
+}
+
+pop_up:normal .self
+{
+  background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#FFF), to(#F3F3F3));
+}
+
+text_area:normal .text,
+calendar:normal  .text,
+drop_down:normal .text,
+pop_up:normal    .text
+{
+  right: 17pt;
+}
+
+
+
+/** BOX SHADOW */
+edit_box.fie_Edit_10_14:normal .inner_border,
+edit_box.fie_Edit_10_19:normal .inner_border,
+edit_box.fie_Edit_11_14:normal .inner_border,
+edit_box.fie_Edit_11_19:normal .inner_border,
+edit_box.fie_Edit_12_19:normal .inner_border,
+edit_box.fie_Edit_12_24:normal .inner_border,
+edit_box.fie_Edit_13_24:normal .inner_border,
+edit_box.fie_Edit_14_24:normal .inner_border,
+edit_box.fie_Edit_14_29:normal .inner_border,
+edit_box.fie_Edit_16_24:normal .inner_border,
+edit_box.fie_Edit_16_29:normal .inner_border,
+calendar:normal  .inner_border,
+drop_down:normal .inner_border,
+pop_up:normal    .inner_border
+{
+  box-shadow: inset 0pt 0pt 2pt 0pt rgba(85,85,85,0.18);
+}
+
+edit_box.fie_Edit_10_14:hover .inner_border,
+edit_box.fie_Edit_10_19:hover .inner_border,
+edit_box.fie_Edit_11_14:hover .inner_border,
+edit_box.fie_Edit_11_19:hover .inner_border,
+edit_box.fie_Edit_12_19:hover .inner_border,
+edit_box.fie_Edit_12_24:hover .inner_border,
+edit_box.fie_Edit_13_24:hover .inner_border,
+edit_box.fie_Edit_14_24:hover .inner_border,
+edit_box.fie_Edit_14_29:hover .inner_border,
+edit_box.fie_Edit_16_24:hover .inner_border,
+edit_box.fie_Edit_16_29:hover .inner_border,
+calendar:hover  .inner_border,
+drop_down:hover .inner_border,
+pop_up:hover    .inner_border
+{
+  box-shadow: inset 0.2pt 0.2pt 2pt 0pt rgba(85,85,85,0.36);
+}
+
+edit_box.fie_Edit_10_14:focus .self,
+edit_box.fie_Edit_10_19:focus .self,
+edit_box.fie_Edit_11_14:focus .self,
+edit_box.fie_Edit_11_19:focus .self,
+edit_box.fie_Edit_12_19:focus .self,
+edit_box.fie_Edit_12_24:focus .self,
+edit_box.fie_Edit_13_24:focus .self,
+edit_box.fie_Edit_14_24:focus .self,
+edit_box.fie_Edit_14_29:focus .self,
+edit_box.fie_Edit_16_24:focus .self,
+edit_box.fie_Edit_16_29:focus .self,
+calendar:focus  .self,
+drop_down:focus .self,
+pop_up:focus    .self
+{
+  border-color: #6699C6;
+  background-color: #EFF6FF;
+  box-shadow: 0pt 0pt 2pt 1pt #72A8FB;
+}
+
+
+
+
+
+
+/** FIELD(ALL) ----------------------------------------------------------*/
+/** FONT SIZE */
+ edit_box.fie_View_10_14 .self,
+ edit_box.fie_Mini_10_14 .self,
+ edit_box.fie_Edit_10_14 .self,
+ calendar.fie_Edit_10_14 .self,
+drop_down.fie_Edit_10_14 .self,
+   pop_up.fie_Edit_10_14 .self,
+
+ edit_box.fie_View_10_19 .self,
+ edit_box.fie_Mini_10_19 .self,
+ edit_box.fie_Edit_10_19 .self,
+ calendar.fie_Edit_10_19 .self,
+drop_down.fie_Edit_10_19 .self,
+   pop_up.fie_Edit_10_19 .self
+{font-size: 10pt;}
+
+ edit_box.fie_View_11_14 .self,
+ edit_box.fie_Mini_11_14 .self,
+ edit_box.fie_Edit_11_14 .self,
+ calendar.fie_Edit_11_14 .self,
+drop_down.fie_Edit_11_14 .self,
+   pop_up.fie_Edit_11_14 .self,
+
+ edit_box.fie_View_11_19 .self,
+ edit_box.fie_Mini_11_19 .self,
+ edit_box.fie_Edit_11_19 .self,
+ calendar.fie_Edit_11_19 .self,
+drop_down.fie_Edit_11_19 .self,
+   pop_up.fie_Edit_11_19 .self
+{font-size: 11pt;}
+
+ edit_box.fie_View_12_19 .self,
+ edit_box.fie_Mini_12_19 .self,
+ edit_box.fie_Edit_12_19 .self,
+ calendar.fie_Edit_12_19 .self,
+drop_down.fie_Edit_12_19 .self,
+   pop_up.fie_Edit_12_19 .self,
+
+ edit_box.fie_View_12_24 .self,
+ edit_box.fie_Mini_12_24 .self,
+ edit_box.fie_Edit_12_24 .self,
+ calendar.fie_Edit_12_24 .self,
+drop_down.fie_Edit_12_24 .self,
+   pop_up.fie_Edit_12_24 .self
+{font-size: 12pt;}
+
+ edit_box.fie_View_13_24 .self,
+ edit_box.fie_Mini_13_24 .self,
+ edit_box.fie_Edit_13_24 .self,
+ calendar.fie_Edit_13_24 .self,
+drop_down.fie_Edit_13_24 .self,
+   pop_up.fie_Edit_13_24 .self
+{font-size: 13pt;}
+
+ edit_box.fie_View_14_24 .self,
+ edit_box.fie_Mini_14_24 .self,
+ edit_box.fie_Edit_14_24 .self,
+ calendar.fie_Edit_14_24 .self,
+drop_down.fie_Edit_14_24 .self,
+   pop_up.fie_Edit_14_24 .self,
+
+ edit_box.fie_View_14_29 .self,
+ edit_box.fie_Mini_14_29 .self,
+ edit_box.fie_Edit_14_29 .self,
+ calendar.fie_Edit_14_29 .self,
+drop_down.fie_Edit_14_29 .self,
+   pop_up.fie_Edit_14_29 .self
+{font-size: 14pt;}
+
+ edit_box.fie_View_16_24 .self,
+ edit_box.fie_Mini_16_24 .self,
+ edit_box.fie_Edit_16_24 .self,
+ calendar.fie_Edit_16_24 .self,
+drop_down.fie_Edit_16_24 .self,
+   pop_up.fie_Edit_16_24 .self,
+
+ edit_box.fie_View_16_29 .self,
+ edit_box.fie_Mini_16_29 .self,
+ edit_box.fie_Edit_16_29 .self,
+ calendar.fie_Edit_16_29 .self,
+drop_down.fie_Edit_16_29 .self,
+   pop_up.fie_Edit_16_29 .self
+{font-size: 16pt;}
+
+
+
+/** MARGIN */
+ edit_box.fie_View_10_14 .text,
+ edit_box.fie_Mini_10_14 .text,
+ edit_box.fie_Edit_10_14 .text,
+ calendar.fie_Edit_10_14 .text,
+drop_down.fie_Edit_10_14 .text,
+   pop_up.fie_Edit_10_14 .text
+{
+  margin-top: -1.2pt;
+  margin-right: 4.8pt;
+  margin-bottom: -7.2pt;
+  margin-left: 4.8pt;
+}
+
+ edit_box.fie_View_10_19 .text,
+ edit_box.fie_Mini_10_19 .text,
+ edit_box.fie_Edit_10_19 .text,
+ calendar.fie_Edit_10_19 .text,
+drop_down.fie_Edit_10_19 .text,
+   pop_up.fie_Edit_10_19 .text
+{
+  margin-top: 1pt;
+  margin-right: 4.8pt;
+  margin-bottom: -3.6pt;
+  margin-left: 4.8pt;
+}
+
+ edit_box.fie_View_11_14 .text,
+ edit_box.fie_Mini_11_14 .text,
+ edit_box.fie_Edit_11_14 .text,
+ calendar.fie_Edit_11_14 .text,
+drop_down.fie_Edit_11_14 .text,
+   pop_up.fie_Edit_11_14 .text
+{
+  margin-top: -1.8pt;
+  margin-right: 4.8pt;
+  margin-bottom: -7.8pt;
+  margin-left: 4.8pt;
+}
+
+ edit_box.fie_View_11_19 .text,
+ edit_box.fie_Mini_11_19 .text,
+ edit_box.fie_Edit_11_19 .text,
+ calendar.fie_Edit_11_19 .text,
+drop_down.fie_Edit_11_19 .text,
+   pop_up.fie_Edit_11_19 .text
+{
+  margin-top: 0pt;
+  margin-right: 4.8pt;
+  margin-bottom: -4.8pt;
+  margin-left: 4.8pt;
+}
+
+ edit_box.fie_View_12_19 .text,
+ edit_box.fie_Mini_12_19 .text,
+ edit_box.fie_Edit_12_19 .text,
+ calendar.fie_Edit_12_19 .text,
+drop_down.fie_Edit_12_19 .text,
+   pop_up.fie_Edit_12_19 .text
+{
+  margin-top: -0.3pt;
+  margin-right: 4.8pt;
+  margin-bottom: -5.4pt;
+  margin-left: 4.8pt;
+}
+
+ edit_box.fie_View_12_24 .text,
+ edit_box.fie_Mini_12_24 .text,
+ edit_box.fie_Edit_12_24 .text,
+ calendar.fie_Edit_12_24 .text,
+drop_down.fie_Edit_12_24 .text,
+   pop_up.fie_Edit_12_24 .text
+{
+  margin-top: 2pt;
+  margin-right: 4.8pt;
+  margin-bottom: -4.8pt;
+  margin-left: 4.8pt;
+}
+
+ edit_box.fie_View_13_24 .text,
+ edit_box.fie_Mini_13_24 .text,
+ edit_box.fie_Edit_13_24 .text,
+ calendar.fie_Edit_13_24 .text,
+drop_down.fie_Edit_13_24 .text,
+   pop_up.fie_Edit_13_24 .text,
+
+ edit_box.fie_View_14_24 .text,
+ edit_box.fie_Mini_14_24 .text,
+ edit_box.fie_Edit_14_24 .text,
+ calendar.fie_Edit_14_24 .text,
+drop_down.fie_Edit_14_24 .text,
+   pop_up.fie_Edit_14_24 .text
+{
+  margin-top: 1pt;
+  margin-right: 4.8pt;
+  margin-bottom: -4.8pt;
+  margin-left: 4.8pt;
+}
+
+ edit_box.fie_View_14_29 .text,
+ edit_box.fie_Mini_14_29 .text,
+ edit_box.fie_Edit_14_29 .text,
+ calendar.fie_Edit_14_29 .text,
+drop_down.fie_Edit_14_29 .text,
+   pop_up.fie_Edit_14_29 .text
+{
+  margin-top: 3pt;
+  margin-right: 4.8pt;
+  margin-bottom: -4.8pt;
+  margin-left: 4.8pt;
+}
+
+ edit_box.fie_View_16_24 .text,
+ edit_box.fie_Mini_16_24 .text,
+ edit_box.fie_Edit_16_24 .text,
+ calendar.fie_Edit_16_24 .text,
+drop_down.fie_Edit_16_24 .text,
+   pop_up.fie_Edit_16_24 .text
+{
+  margin-top: -0.4pt;
+  margin-right: 4.8pt;
+  margin-bottom: -5pt;
+  margin-left: 4.8pt;
+}
+
+ edit_box.fie_View_16_29 .text,
+ edit_box.fie_Mini_16_29 .text,
+ edit_box.fie_Edit_16_29 .text,
+ calendar.fie_Edit_16_29 .text,
+drop_down.fie_Edit_16_29 .text,
+   pop_up.fie_Edit_16_29 .text
+{
+  margin-top: 1.6pt;
+  margin-right: 4.8pt;
+  margin-bottom: -6pt;
+  margin-left: 4.8pt;
+}
+
+
+
+
+
+
+/*field:normal .icon,*/
+calendar:normal .icon,
+drop_down:normal .icon
+ {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0pt;
+  bottom: 0pt;
+  right: 0pt;
+  width: 17pt;
+  padding-top: -1pt;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F3F3F3));
+  border-top-right-radius: 0pt;/*2pt*/
+  border-bottom-right-radius: 0pt;/*2pt*/
+  border-left-width: 1pt;
+  border-left-color: #CCC;
+  border-left-style: solid;
+}
+
+
+
+/*field:hover .icon,*/
+calendar:hover .icon,
+drop_down:hover .icon
+{
+  -fm-icon-color: #333;
+}
+
+/*field:focus .icon,*/
+calendar:focus .icon,
+drop_down:focus .icon
+{
+  border-left-color: #CCC;
+}
+
+/*field:pressed .icon,*/
+calendar:pressed .icon,
+drop_down:pressed .icon
+{
+  border-left-color: #6699C6;
+  background-image: none; background-color: #AAA;
+  box-shadow: 0pt 0pt 3pt rgba(0,0,0,0.2) inset;
+  -fm-icon-color: #FFF;
+  /*
+  border-left-color: #6699C6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#EBEBEB));
+  box-shadow: 0pt 0pt 3pt rgba(0,0,0,0.2) inset;
+  -fm-icon-color: #333;
+  */
+}
+
+
+
+calendar:normal .icon {
+  -fm-icon: calendar;
+  -fm-icon-color: #666;
+}
+drop_down:normal .icon {
+  -fm-icon: down-arrow;
+  -fm-icon-color: #666;
+}
+pop_up:normal .icon {
+  padding-top: -1pt;
+  position: absolute;
+  top: 0pt;
+  bottom: 0pt;
+  right: 0pt;
+  width: 17pt;
+  -fm-icon: down-arrow;
+  -fm-icon-color: #666;
+}
+
+
+
+/*----------------------------------------------------------*/
+text_area:normal .scrollbar_track {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0pt;
+  bottom: 0pt;
+  right: 0pt;
+  width: 17pt;
+}
+
+
+
+
+
+
+/** CHECKBOX|RADIO ----------------------------------------------------------*/
+checkbox_set:normal .self,
+radio_set:normal .self,
+checkbox_set:hover .self,
+radio_set:hover .self,
+checkbox_set:pressed .self,
+radio_set:pressed .self,
+checkbox_set:focus .self,
+radio_set:focus .self
+{
+  border-style: none; border-width: 0pt; border-radius: 1pt; border-color: #555;
+  background-image: none; background-color: rgba(0,0,0,0);
+  box-shadow: none;
+  -fm-box-shadow-persist: 0pt 0pt 2pt 1pt #72A8FB;
+  text-align: left;
+  line-height: 0.9line;
+}
+
+checkbox_set:normal .icon,
+radio_set:normal .icon
+{
+  box-sizing: border-box;/* !!! */
+  position: absolute;
+  width: 15pt;
+  height: 15pt;
+  top: 0pt;
+  right: 0pt
+  bottom: 0pt;
+  left: 0pt;
+  
+  margin: 4pt 0pt 0pt 3pt;
+  border-style: solid; border-width: 2pt; border-color: #555;
+  padding: 3pt;
+  
+  background-image: none; background-color: #FFF;
+  box-shadow: 1pt 1pt 2pt 0pt #D6D6D6;
+}
+checkbox_set:normal .icon{
+  border-radius: 2pt;
+  padding: 0pt;
+  padding-top: -2pt;/* ! shift check mark */
+  -fm-icon: checkmark;
+}
+radio_set:normal .icon {
+  border-radius: 50%;
+  padding: 2pt;
+  -fm-icon: radio;
+}
+
+checkbox_set:checked .icon {
+  border-color: #777;
+  background-image: none; background-color: #777;/**/
+  -fm-icon-color: #FFF;
+}
+radio_set:checked .icon {
+  border-color: #777;
+  background-image: none; background-color: #FFF;
+  -fm-icon-color: #777;/**/
+}
+
+checkbox_set:normal .text,
+radio_set:normal .text
+{
+  margin: 3pt 0pt -4.8pt 25pt;
+}
+
+checkbox_set:focus .icon,
+radio_set:focus .icon
+{
+  box-shadow: 0pt 0pt 2pt 1pt #72A8FB;
+}
+
+
