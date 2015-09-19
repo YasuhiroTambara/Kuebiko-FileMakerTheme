@@ -37,13 +37,5 @@ FileMaker Path 例) C:\Program Files\FileMaker\FileMaker Pro 14 Advanced\Themes
 FileMaker Pro を再起動してください。
 
 
-## Contribution
-
-## Licence
-
-[MIT](https://github.com/YasuhiroTambara/tool/master/LICENCE)
-
-
-
 ## Author
 [Yasuhiro Tambara](https://github.com/YasuhiroTambara)
