@@ -570,8 +570,8 @@ button_bar_segment.mat_h25:hover .self, button_bar_segment.mat_h25_gsF:hover .se
 button_bar_segment.mat_h30:hover .self, button_bar_segment.mat_h30_gsF:hover .self,
 button_bar_segment.mat_h35:hover .self, button_bar_segment.mat_h35_gsF:hover .self
 {
-  background-image: none;background-color: rgba(77,77,77,0.18);
-  border-color: rgba(77,77,77,0.18);
+  background-image: none; background-color: rgba(77,77,77,0.1);
+  border-color: rgba(77,77,77,0.1);
 }
 tab_panel.mat_h25:active .tab,
 tab_panel.mat_h30:active .tab,
@@ -717,7 +717,7 @@ tab_panel.ear_h35 .panel,tab_panel.ear_h35_lite .panel
 
 /** SLIDE CONTROL -----------------------*/
 dot_control:normal .self {
-  box-sizing: content-box;/* ! */
+  box-sizing: border-box;/* ! */
   /*border-image-source: none;*/
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   background-image: none; background-color: rgba(0,0,0,0);
@@ -748,7 +748,7 @@ dot_control:normal .contents {
   left: 0pt;
   
   border-style: solid; border-width: 1pt; border-radius: 0pt; border-color: #CCC;
-  background-image: none; background-color: rgba(255,255,255,0.18);
+  background-image: none; background-color: rgba(255,255,255,0.42);/*#FCFCFC*/
   box-shadow: none;
 }
 
@@ -781,54 +781,79 @@ dot_control:normal .dot {
   border-radius: 50%;
 }
 dot_control:active .dot {
-  background-image: none; background-color: #555;/* theme_colors */
+  background-image: none; background-color: #333;/* theme_colors */
   border-style: none; border-width: 0pt; border-color: rgba(0,0,0,0);
   border-radius: 50%;
 }
 
 
 
-/*default_slide_control*/
-dot_control.def_h20 .contents, dot_control.min_h20 .contents,
-dot_control.mat_h20 .contents, dot_control.mat_h20_gsF .contents
+/** (slide_control) .def .ear .min */
+dot_control.def_h20 .contents, dot_control.min_h20 .contents
 {bottom: 20pt;}
-dot_control.def_h25 .contents, dot_control.min_h25 .contents,
-dot_control.mat_h25 .contents, dot_control.mat_h25_gsF .contents
+dot_control.def_h25 .contents, dot_control.min_h25 .contents
 {bottom: 25pt;}
-dot_control.def_h30 .contents, dot_control.min_h30 .contents,
-dot_control.mat_h30 .contents, dot_control.mat_h30_gsF .contents
+dot_control.def_h30 .contents, dot_control.min_h30 .contents
 {bottom: 30pt;}
-dot_control.def_h35 .contents, dot_control.min_h35 .contents,
-dot_control.mat_h35 .contents, dot_control.mat_h35_gsF .contents
+dot_control.def_h35 .contents, dot_control.min_h35 .contents
 {bottom: 35pt;}
+dot_control.ear_h20 .contents, dot_control.ear_h20_gsF .contents,
+dot_control.ear_h25 .contents, dot_control.ear_h25_gsF .contents,
+dot_control.ear_h30 .contents, dot_control.ear_h30_gsF .contents,
+dot_control.ear_h35 .contents, dot_control.ear_h35_gsF .contents
+{bottom: 0pt;}
 
 dot_control.def_h20 .dot_container, dot_control.min_h20 .dot_container,
-dot_control.mat_h20 .dot_container, dot_control.mat_h20_gsF .dot_container
+dot_control.ear_h20 .dot_container, dot_control.ear_h20_gsF .dot_container
 {height: 20pt;}
 dot_control.def_h25 .dot_container, dot_control.min_h25 .dot_container,
-dot_control.mat_h25 .dot_container, dot_control.mat_h25_gsF .dot_container
+dot_control.ear_h25 .dot_container, dot_control.ear_h25_gsF .dot_container
 {height: 25pt;}
 dot_control.def_h30 .dot_container, dot_control.min_h30 .dot_container,
-dot_control.mat_h30 .dot_container, dot_control.mat_h30_gsF .dot_container
+dot_control.ear_h30 .dot_container, dot_control.ear_h30_gsF .dot_container
 {height: 30pt;}
 dot_control.def_h35 .dot_container, dot_control.min_h35 .dot_container,
-dot_control.mat_h35 .dot_container, dot_control.mat_h35_gsF .dot_container
+dot_control.ear_h35 .dot_container, dot_control.ear_h35_gsF .dot_container
 {height: 35pt;}
 
 dot_control.def_h20 .dot, dot_control.min_h20 .dot,
-dot_control.mat_h20 .dot, dot_control.mat_h20_gsF .dot
+dot_control.ear_h20 .dot, dot_control.ear_h20_gsF .dot
 {width:  9pt;height:  9pt; margin-right:  9pt;}
 dot_control.def_h25 .dot, dot_control.min_h25 .dot,
-dot_control.mat_h25 .dot, dot_control.mat_h25_gsF .dot
-{width:  9pt;height:  9pt; margin-right:  9pt;}
-dot_control.def_h30 .dot, dot_control.min_h30 .dot,
-dot_control.mat_h30 .dot, dot_control.mat_h30_gsF .dot
+dot_control.ear_h25 .dot, dot_control.ear_h25_gsF .dot
 {width: 12pt;height: 12pt; margin-right: 12pt;}
+dot_control.def_h30 .dot, dot_control.min_h30 .dot,
+dot_control.ear_h30 .dot, dot_control.ear_h30_gsF .dot
+{width: 14pt;height: 14pt; margin-right: 14pt;}
 dot_control.def_h35 .dot, dot_control.min_h35 .dot,
-dot_control.mat_h35 .dot, dot_control.mat_h35_gsF .dot
+dot_control.ear_h35 .dot, dot_control.ear_h35_gsF .dot
 {width: 18pt;height: 18pt; margin-right: 18pt;}
-
-
+dot_control.ear_h20 .dot,
+dot_control.ear_h25 .dot,
+dot_control.ear_h30 .dot,
+dot_control.ear_h35 .dot
+{
+  border-style: solid; border-width: 2pt; border-color: #333;
+  background-image: none; background-color: rgba(255,255,255,0.42);
+}
+dot_control.ear_h20_gsF .dot,
+dot_control.ear_h25_gsF .dot,
+dot_control.ear_h30_gsF .dot,
+dot_control.ear_h35_gsF .dot
+{
+  border-style: solid; border-width: 2pt; border-color: #FFF;
+  background-image: none; background-color: rgba(255,255,255,0.42);
+}
+dot_control.ear_h20:active .dot,
+dot_control.ear_h25:active .dot,
+dot_control.ear_h30:active .dot,
+dot_control.ear_h35:active .dot
+{background-color: #333;}
+dot_control.ear_h20_gsF:active .dot,
+dot_control.ear_h25_gsF:active .dot,
+dot_control.ear_h30_gsF:active .dot,
+dot_control.ear_h35_gsF:active .dot
+{background-color: #FFF;}
 
 dot_control.min_h20 .self,
 dot_control.min_h25 .self,
@@ -840,14 +865,14 @@ dot_control.min_h25:normal .contents,
 dot_control.min_h30:normal .contents,
 dot_control.min_h35:normal .contents
 {
-  background-image: none; background-color: transparent;
   border-color: rgba(0,0,0,0);/*border-image-source: none;*/
+  background-image: none; background-color: transparent;
 }
 
 
 
 /**  ---------------------------------*/
-/** (btn)mat_hXX */
+/** (btn)mat_hNN */
 button_bar_segment.mat_h25 .self, button_bar_segment.mat_h25_gsF .self,
 button_bar_segment.mat_h30 .self, button_bar_segment.mat_h30_gsF .self,
 button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self

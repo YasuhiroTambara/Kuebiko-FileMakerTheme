@@ -1,6 +1,3 @@
-
-
-
 /** FIGURE ==================================================================*/
 /** LINE -----------------------------*/
 line .self {
@@ -12,7 +9,7 @@ rectangle .self,
 rounded .self,
 oval .self
 {
-  border-style: none;border-width: 1pt;border-color: #CCC;
+  border-style: none; border-width: 1pt; border-color: #CCC;
   background-color: #F6F6F6;
 }
 /** REGION(ROUNDED) --------------------------*/
@@ -22,14 +19,11 @@ rounded .inner_border {border-radius: 11pt;}
 
 
 /** REGION > SEPARATOR ------------------------*/
-/** listheadback */
-rectangle.fill_lstHeadBack .self
-{
-  border-width: 0 0 1pt 0;
-  border-style: none none solid none;
-  border-color: #999;
-  background-color: rgba(0,0,0,0);
-  background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#CCC), to(#9A9A9A));
+/** back of list header */
+rectangle.backCap .self {
+  border-style: none; border-width: 0pt; border-color: #999;
+  border-bottom-style: solid; border-bottom-width: 1pt; border-color: #777;
+  background-color: rgba(0,0,0,0); background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#CCC), to(#9A9A9A));
 }
 
 
@@ -248,7 +242,7 @@ text_box .self {
   font-size: 12pt;
   color: #333;
   text-align: left;
-  line-height: 0.7line;
+  line-height: 0.8line;
 }
 
 text_box .text {
@@ -514,7 +508,7 @@ text_box.txt_18_gsF  .self, text_box.txt_18c_gsF  .self, text_box.txt_18r_gsF  .
   border-color: rgba(0,0,0,0);
   background-image: none;
   */
-  line-height: 0.7line;
+  line-height: 0.8line;
   -fm-text-vertical-align: center;
 }
 
@@ -673,7 +667,7 @@ popover .self {
   font-style: normal;
   color: #333;
   font-size: 12pt;
-  line-height: 0.7line;
+  line-height: 0.8line;
   text-align: center;
 }
 
@@ -804,7 +798,7 @@ button:normal .self {
   
   font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
   font-size: 12pt;
-  line-height: 0.7line;
+  line-height: 0.8line;
 }
 button_bar_segment .self {
   background-image: none; background-color: #EEE;
@@ -863,7 +857,7 @@ button:pressed .self {
 
 button:focus .self {
   border-color: #333;
-  box-shadow: 0pt 0pt 2pt 1pt rgba(0,112,207,1);
+  box-shadow: 0pt 0pt 2pt 1pt #0070CF;/*rgba(0,112,207,1)*/
 }
 
 
@@ -889,48 +883,37 @@ button_bar_segment:pressed .inner_border
 
 
 
-/** btn_row */
-button.btn_row:normal .self {
+/** (btn)row */
+button.row .self {
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   background-image: none; background-color: rgba(0,0,0,0);
   box-shadow: none;
-  /*-fm-box-shadow-persist: ;*/
-  line-height: 0.7line;
+  /*-fm-box-shadow-persist: none;*/
+  line-height: 0.8line;
 }
-button.btn_row:normal .inner_border {
-  /*
+button.row .inner_border,
+button.row:hover .inner_border,
+button.row:focus .inner_border
+{
   border-radius: 0pt;
-  padding: 2pt 0.5em 0.25em 0.5em;
-  */
   box-shadow: none;
 }
 
-button.btn_row:hover .self
+button.row:hover .self,
+button.row:focus .self
 {
-  background-image: none; background-color: rgba(230,237,242,1);/******/
-  box-shadow: none;
-  /*-fm-box-shadow-persist: 1pt 1pt 2pt 0pt rgba(20%,20%,20%,0.24);*/
-}
-button.btn_row:hover .inner_border,
-button.btn_row:focus .inner_border
-{
+  background-image: none; background-color: rgba(230,237,242,1);/******* theme color */
   box-shadow: none;
 }
 
-button.btn_row:pressed .self
-{
-  background-image: none; background-color: rgba(230,230,230,1);
-  box-shadow: none;
+button.row:pressed .self {
+  background-image: none; background-color: rgba(230,230,230,0.7);
 }
-button.btn_row:pressed .inner_border
-{
-  box-shadow: inset 0pt 0pt 3pt 0pt rgba(204,204,204,1);
+button.row:pressed .inner_border {
+  box-shadow: inset 0pt 0pt 2pt 0pt rgba(51,51,51,0.12);
 }
 
-button.btn_row:focus .self
-{}
-
-button.btn_row:normal .text {
+button.row .text {
   text-align: center;
   -fm-text-vertical-align: center;
 }
@@ -940,8 +923,8 @@ button.btn_row:normal .text {
 
 
 
-/** btn_listhead */
-text_box.head:normal .self {
+/** (textbtn)list header */
+text_box.cap:normal .self {
   border-width: 1pt;
   border-top-style: solid;
   /*
@@ -949,20 +932,20 @@ text_box.head:normal .self {
   background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(rgba(63.9216%,84.7059%,47.451%,1)), to(rgba(52.1569%,80.3922%,30.1961%,1)));
   */
   color: #FFF;
-  line-height: 0.7line;
+  line-height: 0.8line;
   -fm-text-vertical-align: center;
 }
-text_box.head:normal .inner_border {
+text_box.cap:normal .inner_border {
   margin-top: 0pt;
   margin-bottom: 0pt;
 }
 /*
-text_box.head:pressed .inner_border {
+text_box.cap:pressed .inner_border {
   box-shadow: inset 0pt 0pt 6pt 0pt rgba(36.8627%,62.3529%,17.6471%,0.6);
 }
 */
 
-text_box.head:normal .text {
+text_box.cap:normal .text {
   position: absolute;
   top: 0pt;
   right: 0pt;

@@ -253,22 +253,22 @@ button_bar_segment.min_ex8:normal .icon {
 body:checked .self {
   background-color: #d6dfe2;
 }
-button.btn_row:hover .self {
+button.row:hover .self {
   background-color: #e1e9ec;
 }
-text_box.head:normal .self {
+text_box.cap:normal .self {
   border-color: #d6dfe2;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#97afb6), to(#7e9aa5));
 }
-text_box.head:hover .self {
+text_box.cap:hover .self {
   border-color: #97afb6;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7e9aa5), to(#69858f));
 }
-text_box.head:pressed .self {
+text_box.cap:pressed .self {
   border-color: #557079;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#69858f), to(#7e9aa5));
 }
-text_box.head:pressed .inner_border {
+text_box.cap:pressed .inner_border {
   box-shadow: inset 0pt 0pt 3pt 1pt #557079;
 }
 /** CHECK, RADIO ------------------------*/
@@ -289,7 +289,15 @@ radio_set:checked .icon {
   border-color: #7e9aa5;
 }
 /** DOTCONTROL ------------------------*/
-dot_control:active .dot {
+/*dot_control:active .dot*/
+dot_control.def_h20:active .dot,
+dot_control.min_h20:active .dot,
+dot_control.def_h25:active .dot,
+dot_control.min_h25:active .dot,
+dot_control.def_h30:active .dot,
+dot_control.min_h30:active .dot,
+dot_control.def_h35:active .dot,
+dot_control.min_h35:active .dot {
   background-color: #7e9aa5;
 }
 /** TABCONTROL -----------------------*/

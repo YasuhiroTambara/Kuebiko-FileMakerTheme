@@ -589,7 +589,7 @@ radio_set:checked .icon {
 checkbox_set:normal .text,
 radio_set:normal .text
 {
-  margin: 3pt 0pt -4.8pt 25pt;
+  margin: 3pt 0pt -4.8pt 23pt;
 }
 
 checkbox_set:focus .icon,

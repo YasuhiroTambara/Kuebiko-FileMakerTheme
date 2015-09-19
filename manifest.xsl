@@ -115,8 +115,8 @@
         
         <!--button-->
         <btn_listhead>btn_listhead</btn_listhead>
-        <head>head</head>
-        <btn_row>btn_row</btn_row>
+        <cap>cap</cap>
+        <row>row</row>
         
         <btn_check>btn_check</btn_check>
         <btn_radio>btn_radio</btn_radio>
@@ -211,7 +211,7 @@
         <fill_grad_norm>fill_grad_norm</fill_grad_norm>
         <fill_grad_warm>fill_grad_warm</fill_grad_warm>
         
-        <fill_lstHeadBack>fill_lstHeadBack</fill_lstHeadBack>
+        <backCap>backCap</backCap>
         
         <fill_shadow_depth1_up>fill_shadow_depth1_up</fill_shadow_depth1_up>
         <fill_shadow_depth1_right>fill_shadow_depth1_right</fill_shadow_depth1_right>
@@ -485,6 +485,11 @@
         <ear_h25_lite>ear_h25_lite</ear_h25_lite>
         <ear_h30_lite>ear_h30_lite</ear_h30_lite>
         <ear_h35_lite>ear_h35_lite</ear_h35_lite>
+        
+        <ear_h20_gsF>ear_h20_gsF</ear_h20_gsF>
+        <ear_h25_gsF>ear_h25_gsF</ear_h25_gsF>
+        <ear_h30_gsF>ear_h30_gsF</ear_h30_gsF>
+        <ear_h35_gsF>ear_h35_gsF</ear_h35_gsF>
         
         <mat_h20>mat_h20</mat_h20>
         <mat_h25>mat_h25</mat_h25>
