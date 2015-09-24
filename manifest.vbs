@@ -42,9 +42,9 @@ stylesheet.Load "manifest.xsl"
 
 
 For Each Str In Arr
-Xstr = "<?xml version='1.0' encoding='UTF-8'?><name>" & Str & "</name>"
 
-Source.async = False
+Xstr = "<?xml version='1.0' encoding='UTF-8'?><name>" & Str & "</name>"
+'Source.async = False
 Source.loadXML Xstr
 
 result.async = False

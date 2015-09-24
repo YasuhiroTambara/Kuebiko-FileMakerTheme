@@ -201,449 +201,38 @@ line.stroke_gsD .self, rectangle.stroke_gsD .self{border-color: #DDD;}
 line.stroke_gsE .self, rectangle.stroke_gsE .self{border-color: #EEE;}
 line.stroke_gsF .self, rectangle.stroke_gsF .self{border-color: #FFF;}
 
-rectangle.stroke2pt0001_r12pt_gsF .self, rounded.stroke2pt0001_r12pt_gsF .self
+rectangle.stroke0001_rad_gs3 .self, rounded.stroke0001_rad_gs3 .self
+{border-color: #333;}
+rectangle.stroke0001_rad_gsF .self, rounded.stroke0001_rad_gsF .self
 {border-color: #FFF;}
 
 
 
-/**  ---------------------------------*/
+/** (rect)bracket ---------------------------------*/
 rectangle.bracket_ex4 .self {
-  border-width: 2pt;
-  border-style: none;
+  border-style: none; border-width: 2pt; border-radius: 12pt; border-color: #333;
   border-right-style: solid;
   border-left-style: solid;
-  border-radius: 12pt;
-  border-color: #333;
-  background-color: none;
+  background-image: none; background-color: rgba(0,0,0,0);
 }
 
-/**  ---------------------------------*/
-rectangle.stroke2pt0001_r12pt_ex2 .self, rounded.stroke2pt0001_r12pt_ex2 .self,
-rectangle.stroke2pt0001_r12pt_ex4 .self, rounded.stroke2pt0001_r12pt_ex4 .self,
-rectangle.stroke2pt0001_r12pt_ex7 .self, rounded.stroke2pt0001_r12pt_ex7 .self,
-rectangle.stroke2pt0001_r12pt_gsF .self, rounded.stroke2pt0001_r12pt_gsF .self
+/** (rect)stroke0001_rad ---------------------------------*/
+rectangle.stroke0001_rad_ex2 .self, rounded.stroke0001_rad_ex2 .self,
+rectangle.stroke0001_rad_ex4 .self, rounded.stroke0001_rad_ex4 .self,
+rectangle.stroke0001_rad_ex8 .self, rounded.stroke0001_rad_ex8 .self,
+rectangle.stroke0001_rad_gs3 .self, rounded.stroke0001_rad_gs3 .self,
+rectangle.stroke0001_rad_gsF .self, rounded.stroke0001_rad_gsF .self
 {
   border-style: solid;
   border-width: 0 0 0 2pt;
   border-radius: 12pt;
-  background-image: none;background-color: rgba(0,0,0,0);
+  background-image: none; background-color: rgba(0,0,0,0);
 }
 
 
 
 
 
-
-/** TEXT ==================================================================*/
-/**  ---------------------------------*/
-text_box .self {
-  font-family: -fm-font-family(メイリオ, shiftjis);
-  font-style: normal;
-  font-size: 12pt;
-  color: #333;
-  text-align: left;
-  line-height: 0.8line;
-}
-
-text_box .text {
-  box-sizing: border-box;
-  height: 100%;
-}
-
-
-
-text_box.txt_09      .self, text_box.txt_09c      .self, text_box.txt_09r      .self,
-text_box.txt_09_norm .self, text_box.txt_09c_norm .self, text_box.txt_09r_norm .self,
-text_box.txt_09_ex2  .self, text_box.txt_09c_ex2  .self, text_box.txt_09r_ex2  .self,
-text_box.txt_09_ex4  .self, text_box.txt_09c_ex4  .self, text_box.txt_09r_ex4  .self,
-text_box.txt_09_ex7  .self, text_box.txt_09c_ex7  .self, text_box.txt_09r_ex7  .self,
-text_box.txt_09_gsF  .self, text_box.txt_09c_gsF  .self, text_box.txt_09r_gsF  .self
-{font-size: 9pt;}
-
-text_box.txt_10      .self, text_box.txt_10c      .self, text_box.txt_10r      .self,
-text_box.txt_10_norm .self, text_box.txt_10c_norm .self, text_box.txt_10r_norm .self,
-text_box.txt_10_ex2  .self, text_box.txt_10c_ex2  .self, text_box.txt_10r_ex2  .self,
-text_box.txt_10_ex4  .self, text_box.txt_10c_ex4  .self, text_box.txt_10r_ex4  .self,
-text_box.txt_10_ex7  .self, text_box.txt_10c_ex7  .self, text_box.txt_10r_ex7  .self,
-text_box.txt_10_gsF  .self, text_box.txt_10c_gsF  .self, text_box.txt_10r_gsF  .self
-{font-size: 10pt;}
-
-text_box.txt_11      .self, text_box.txt_11c      .self, text_box.txt_11r      .self,
-text_box.txt_11_norm .self, text_box.txt_11c_norm .self, text_box.txt_11r_norm .self,
-text_box.txt_11_ex2  .self, text_box.txt_11c_ex2  .self, text_box.txt_11r_ex2  .self,
-text_box.txt_11_ex4  .self, text_box.txt_11c_ex4  .self, text_box.txt_11r_ex4  .self,
-text_box.txt_11_ex7  .self, text_box.txt_11c_ex7  .self, text_box.txt_11r_ex7  .self,
-text_box.txt_11_gsF  .self, text_box.txt_11c_gsF  .self, text_box.txt_11r_gsF  .self
-{font-size: 11pt;}
-
-text_box.txt_12      .self, text_box.txt_12c      .self, text_box.txt_12r      .self,
-text_box.txt_12_norm .self, text_box.txt_12c_norm .self, text_box.txt_12r_norm .self,
-text_box.txt_12_ex2  .self, text_box.txt_12c_ex2  .self, text_box.txt_12r_ex2  .self,
-text_box.txt_12_ex4  .self, text_box.txt_12c_ex4  .self, text_box.txt_12r_ex4  .self,
-text_box.txt_12_ex7  .self, text_box.txt_12c_ex7  .self, text_box.txt_12r_ex7  .self,
-text_box.txt_12_gsF  .self, text_box.txt_12c_gsF  .self, text_box.txt_12r_gsF  .self
-{font-size: 12pt;}
-
-text_box.txt_13      .self, text_box.txt_13c      .self, text_box.txt_13r      .self,
-text_box.txt_13_norm .self, text_box.txt_13c_norm .self, text_box.txt_13r_norm .self,
-text_box.txt_13_ex2  .self, text_box.txt_13c_ex2  .self, text_box.txt_13r_ex2  .self,
-text_box.txt_13_ex4  .self, text_box.txt_13c_ex4  .self, text_box.txt_13r_ex4  .self,
-text_box.txt_13_ex7  .self, text_box.txt_13c_ex7  .self, text_box.txt_13r_ex7  .self,
-text_box.txt_13_gsF  .self, text_box.txt_13c_gsF  .self, text_box.txt_13r_gsF  .self
-{font-size: 13pt;}
-
-text_box.txt_14      .self, text_box.txt_14c      .self, text_box.txt_14r      .self,
-text_box.txt_14_norm .self, text_box.txt_14c_norm .self, text_box.txt_14r_norm .self,
-text_box.txt_14_ex2  .self, text_box.txt_14c_ex2  .self, text_box.txt_14r_ex2  .self,
-text_box.txt_14_ex4  .self, text_box.txt_14c_ex4  .self, text_box.txt_14r_ex4  .self,
-text_box.txt_14_ex7  .self, text_box.txt_14c_ex7  .self, text_box.txt_14r_ex7  .self,
-text_box.txt_14_gsF  .self, text_box.txt_14c_gsF  .self, text_box.txt_14r_gsF  .self
-{font-size: 14pt;}
-
-text_box.txt_15      .self, text_box.txt_15c      .self, text_box.txt_15r      .self,
-text_box.txt_15_norm .self, text_box.txt_15c_norm .self, text_box.txt_15r_norm .self,
-text_box.txt_15_ex2  .self, text_box.txt_15c_ex2  .self, text_box.txt_15r_ex2  .self,
-text_box.txt_15_ex4  .self, text_box.txt_15c_ex4  .self, text_box.txt_15r_ex4  .self,
-text_box.txt_15_ex7  .self, text_box.txt_15c_ex7  .self, text_box.txt_15r_ex7  .self,
-text_box.txt_15_gsF  .self, text_box.txt_15c_gsF  .self, text_box.txt_15r_gsF  .self
-{font-size: 15pt;}
-
-text_box.txt_16      .self, text_box.txt_16c      .self, text_box.txt_16r      .self,
-text_box.txt_16_norm .self, text_box.txt_16c_norm .self, text_box.txt_16r_norm .self,
-text_box.txt_16_ex2  .self, text_box.txt_16c_ex2  .self, text_box.txt_16r_ex2  .self,
-text_box.txt_16_ex4  .self, text_box.txt_16c_ex4  .self, text_box.txt_16r_ex4  .self,
-text_box.txt_16_ex7  .self, text_box.txt_16c_ex7  .self, text_box.txt_16r_ex7  .self,
-text_box.txt_16_gsF  .self, text_box.txt_16c_gsF  .self, text_box.txt_16r_gsF  .self
-{font-size: 16pt;}
-
-text_box.txt_17      .self, text_box.txt_17c      .self, text_box.txt_17r      .self,
-text_box.txt_17_norm .self, text_box.txt_17c_norm .self, text_box.txt_17r_norm .self,
-text_box.txt_17_ex2  .self, text_box.txt_17c_ex2  .self, text_box.txt_17r_ex2  .self,
-text_box.txt_17_ex4  .self, text_box.txt_17c_ex4  .self, text_box.txt_17r_ex4  .self,
-text_box.txt_17_ex7  .self, text_box.txt_17c_ex7  .self, text_box.txt_17r_ex7  .self,
-text_box.txt_17_gsF  .self, text_box.txt_17c_gsF  .self, text_box.txt_17r_gsF  .self
-{font-size: 17pt;}
-
-text_box.txt_18      .self, text_box.txt_18c      .self, text_box.txt_18r      .self,
-text_box.txt_18_norm .self, text_box.txt_18c_norm .self, text_box.txt_18r_norm .self,
-text_box.txt_18_ex2  .self, text_box.txt_18c_ex2  .self, text_box.txt_18r_ex2  .self,
-text_box.txt_18_ex4  .self, text_box.txt_18c_ex4  .self, text_box.txt_18r_ex4  .self,
-text_box.txt_18_ex7  .self, text_box.txt_18c_ex7  .self, text_box.txt_18r_ex7  .self,
-text_box.txt_18_gsF  .self, text_box.txt_18c_gsF  .self, text_box.txt_18r_gsF  .self
-{font-size: 18pt;}
-
-
-
-text_box.txt_09 .inner_border, text_box.txt_09c .inner_border, text_box.txt_09r .inner_border
-{
-  margin: -1.8pt 0pt -9pt 0pt;
-  padding: 0pt 0pt 4.5pt 0pt;
-}
-
-text_box.txt_10 .inner_border, text_box.txt_10c .inner_border, text_box.txt_10r .inner_border
-{
-  margin: -2pt 0pt -10pt 0pt;
-  padding: 0pt 0pt 5pt 0pt;
-}
-
-text_box.txt_11 .inner_border, text_box.txt_11c .inner_border, text_box.txt_11r .inner_border
-{
-  margin: -2pt 0pt -11pt 0pt;
-  padding: 0pt 0pt 5.5pt 0pt;
-}
-
-text_box.txt_12 .inner_border, text_box.txt_12c .inner_border, text_box.txt_12r .inner_border
-{
-  margin: -2.4pt 0pt -12pt 0pt;
-  padding: 0pt 0pt 6pt 0pt;
-}
-
-text_box.txt_13 .inner_border, text_box.txt_13c .inner_border, text_box.txt_13r .inner_border
-{
-  margin: -3pt 0pt -13pt 0pt;
-  padding: 0pt 0pt 6.5pt 0pt;
-}
-
-text_box.txt_14 .inner_border, text_box.txt_14c .inner_border, text_box.txt_14r .inner_border
-{
-  margin: -3.3pt 0pt -14pt 0pt;
-  padding: 0pt 0pt 7pt 0pt;
-}
-
-text_box.txt_15 .inner_border, text_box.txt_15c .inner_border, text_box.txt_15r .inner_border
-{
-  margin: -3.3pt 0pt -15pt 0pt;
-  padding: 0pt 0pt 7.5pt 0pt;
-}
-
-text_box.txt_16 .inner_border, text_box.txt_16c .inner_border, text_box.txt_16r .inner_border
-{
-  margin: -3.4pt 0pt -16pt 0pt;
-  padding: 0pt 0pt 8pt 0pt;
-}
-
-text_box.txt_17 .inner_border, text_box.txt_17c .inner_border, text_box.txt_17r .inner_border
-{
-  margin: -3.5pt 0pt -17pt 0pt;
-  padding: 0pt 0pt 8.5pt 0pt;
-}
-
-text_box.txt_18 .inner_border, text_box.txt_18c .inner_border, text_box.txt_18r .inner_border
-{
-  margin: -4.2pt 0pt -18pt 0pt;
-  padding: 0pt 0pt 9pt 0pt;
-}
-/*
-text_box.txt_18 .text, text_box.txt_18r .text
-{
-  margin: 0pt;
-  padding: -12pt 4.8pt -24pt 4.8pt;
-}
-*/
-
-text_box.txt_09c .self, text_box.txt_09c_norm .self, text_box.txt_09c_ex2 .self, text_box.txt_09c_ex4 .self, text_box.txt_09c_ex7 .self, text_box.txt_09c_gsF .self,
-text_box.txt_10c .self, text_box.txt_10c_norm .self, text_box.txt_10c_ex2 .self, text_box.txt_10c_ex4 .self, text_box.txt_10c_ex7 .self, text_box.txt_10c_gsF .self,
-text_box.txt_11c .self, text_box.txt_11c_norm .self, text_box.txt_11c_ex2 .self, text_box.txt_11c_ex4 .self, text_box.txt_11c_ex7 .self, text_box.txt_11c_gsF .self,
-text_box.txt_12c .self, text_box.txt_12c_norm .self, text_box.txt_12c_ex2 .self, text_box.txt_12c_ex4 .self, text_box.txt_12c_ex7 .self, text_box.txt_12c_gsF .self,
-text_box.txt_13c .self, text_box.txt_13c_norm .self, text_box.txt_13c_ex2 .self, text_box.txt_13c_ex4 .self, text_box.txt_13c_ex7 .self, text_box.txt_13c_gsF .self,
-text_box.txt_14c .self, text_box.txt_14c_norm .self, text_box.txt_14c_ex2 .self, text_box.txt_14c_ex4 .self, text_box.txt_14c_ex7 .self, text_box.txt_14c_gsF .self,
-text_box.txt_15c .self, text_box.txt_15c_norm .self, text_box.txt_15c_ex2 .self, text_box.txt_15c_ex4 .self, text_box.txt_15c_ex7 .self, text_box.txt_15c_gsF .self,
-text_box.txt_16c .self, text_box.txt_16c_norm .self, text_box.txt_16c_ex2 .self, text_box.txt_16c_ex4 .self, text_box.txt_16c_ex7 .self, text_box.txt_16c_gsF .self,
-text_box.txt_17c .self, text_box.txt_17c_norm .self, text_box.txt_17c_ex2 .self, text_box.txt_17c_ex4 .self, text_box.txt_17c_ex7 .self, text_box.txt_17c_gsF .self,
-text_box.txt_18c .self, text_box.txt_18c_norm .self, text_box.txt_18c_ex2 .self, text_box.txt_18c_ex4 .self, text_box.txt_18c_ex7 .self, text_box.txt_18c_gsF .self
-{text-align: center;}
-
-text_box.txt_09r .self, text_box.txt_09r_norm .self, text_box.txt_09r_ex2 .self, text_box.txt_09r_ex4 .self, text_box.txt_09r_ex7 .self, text_box.txt_09r_gsF .self,
-text_box.txt_10r .self, text_box.txt_10r_norm .self, text_box.txt_10r_ex2 .self, text_box.txt_10r_ex4 .self, text_box.txt_10r_ex7 .self, text_box.txt_10r_gsF .self,
-text_box.txt_11r .self, text_box.txt_11r_norm .self, text_box.txt_11r_ex2 .self, text_box.txt_11r_ex4 .self, text_box.txt_11r_ex7 .self, text_box.txt_11r_gsF .self,
-text_box.txt_12r .self, text_box.txt_12r_norm .self, text_box.txt_12r_ex2 .self, text_box.txt_12r_ex4 .self, text_box.txt_12r_ex7 .self, text_box.txt_12r_gsF .self,
-text_box.txt_13r .self, text_box.txt_13r_norm .self, text_box.txt_13r_ex2 .self, text_box.txt_13r_ex4 .self, text_box.txt_13r_ex7 .self, text_box.txt_13r_gsF .self,
-text_box.txt_14r .self, text_box.txt_14r_norm .self, text_box.txt_14r_ex2 .self, text_box.txt_14r_ex4 .self, text_box.txt_14r_ex7 .self, text_box.txt_14r_gsF .self,
-text_box.txt_15r .self, text_box.txt_15r_norm .self, text_box.txt_15r_ex2 .self, text_box.txt_15r_ex4 .self, text_box.txt_15r_ex7 .self, text_box.txt_15r_gsF .self,
-text_box.txt_16r .self, text_box.txt_16r_norm .self, text_box.txt_16r_ex2 .self, text_box.txt_16r_ex4 .self, text_box.txt_16r_ex7 .self, text_box.txt_16r_gsF .self,
-text_box.txt_17r .self, text_box.txt_17r_norm .self, text_box.txt_17r_ex2 .self, text_box.txt_17r_ex4 .self, text_box.txt_17r_ex7 .self, text_box.txt_17r_gsF .self,
-text_box.txt_18r .self, text_box.txt_18r_norm .self, text_box.txt_18r_ex2 .self, text_box.txt_18r_ex4 .self, text_box.txt_18r_ex7 .self, text_box.txt_18r_gsF .self
-{text-align: right;}
-
-
-
-
-
-
-text_box.txt_09_gsF .self, text_box.txt_09c_gsF .self, text_box.txt_09r_gsF .self,
-text_box.txt_10_gsF .self, text_box.txt_10c_gsF .self, text_box.txt_10r_gsF .self,
-text_box.txt_11_gsF .self, text_box.txt_11c_gsF .self, text_box.txt_11r_gsF .self,
-text_box.txt_12_gsF .self, text_box.txt_12c_gsF .self, text_box.txt_12r_gsF .self,
-text_box.txt_13_gsF .self, text_box.txt_13c_gsF .self, text_box.txt_13r_gsF .self,
-text_box.txt_14_gsF .self, text_box.txt_14c_gsF .self, text_box.txt_14r_gsF .self,
-text_box.txt_15_gsF .self, text_box.txt_15c_gsF .self, text_box.txt_15r_gsF .self,
-text_box.txt_16_gsF .self, text_box.txt_16c_gsF .self, text_box.txt_16r_gsF .self,
-text_box.txt_17_gsF .self, text_box.txt_17c_gsF .self, text_box.txt_17r_gsF .self,
-text_box.txt_18_gsF .self, text_box.txt_18c_gsF .self, text_box.txt_18r_gsF .self
-{color: #FFF;}
-
-
-text_box.txt_09_norm .self, text_box.txt_09c_norm .self, text_box.txt_09r_norm .self,
-text_box.txt_09_ex2  .self, text_box.txt_09c_ex2  .self, text_box.txt_09r_ex2  .self,
-text_box.txt_09_ex4  .self, text_box.txt_09c_ex4  .self, text_box.txt_09r_ex4  .self,
-text_box.txt_09_ex7  .self, text_box.txt_09c_ex7  .self, text_box.txt_09r_ex7  .self,
-text_box.txt_09_gsF  .self, text_box.txt_09c_gsF  .self, text_box.txt_09r_gsF  .self,
-
-text_box.txt_10_norm .self, text_box.txt_10c_norm .self, text_box.txt_10r_norm .self,
-text_box.txt_10_ex2  .self, text_box.txt_10c_ex2  .self, text_box.txt_10r_ex2  .self,
-text_box.txt_10_ex4  .self, text_box.txt_10c_ex4  .self, text_box.txt_10r_ex4  .self,
-text_box.txt_10_ex7  .self, text_box.txt_10c_ex7  .self, text_box.txt_10r_ex7  .self,
-text_box.txt_10_gsF  .self, text_box.txt_10c_gsF  .self, text_box.txt_10r_gsF  .self,
-
-text_box.txt_11_norm .self, text_box.txt_11c_norm .self, text_box.txt_11r_norm .self,
-text_box.txt_11_ex2  .self, text_box.txt_11c_ex2  .self, text_box.txt_11r_ex2  .self,
-text_box.txt_11_ex4  .self, text_box.txt_11c_ex4  .self, text_box.txt_11r_ex4  .self,
-text_box.txt_11_ex7  .self, text_box.txt_11c_ex7  .self, text_box.txt_11r_ex7  .self,
-text_box.txt_11_gsF  .self, text_box.txt_11c_gsF  .self, text_box.txt_11r_gsF  .self,
-
-text_box.txt_12_norm .self, text_box.txt_12c_norm .self, text_box.txt_12r_norm .self,
-text_box.txt_12_ex2  .self, text_box.txt_12c_ex2  .self, text_box.txt_12r_ex2  .self,
-text_box.txt_12_ex4  .self, text_box.txt_12c_ex4  .self, text_box.txt_12r_ex4  .self,
-text_box.txt_12_ex7  .self, text_box.txt_12c_ex7  .self, text_box.txt_12r_ex7  .self,
-text_box.txt_12_gsF  .self, text_box.txt_12c_gsF  .self, text_box.txt_12r_gsF  .self,
-
-text_box.txt_13_norm .self, text_box.txt_13c_norm .self, text_box.txt_13r_norm .self,
-text_box.txt_13_ex2  .self, text_box.txt_13c_ex2  .self, text_box.txt_13r_ex2  .self,
-text_box.txt_13_ex4  .self, text_box.txt_13c_ex4  .self, text_box.txt_13r_ex4  .self,
-text_box.txt_13_ex7  .self, text_box.txt_13c_ex7  .self, text_box.txt_13r_ex7  .self,
-text_box.txt_13_gsF  .self, text_box.txt_13c_gsF  .self, text_box.txt_13r_gsF  .self,
-
-text_box.txt_14_norm .self, text_box.txt_14c_norm .self, text_box.txt_14r_norm .self,
-text_box.txt_14_ex2  .self, text_box.txt_14c_ex2  .self, text_box.txt_14r_ex2  .self,
-text_box.txt_14_ex4  .self, text_box.txt_14c_ex4  .self, text_box.txt_14r_ex4  .self,
-text_box.txt_14_ex7  .self, text_box.txt_14c_ex7  .self, text_box.txt_14r_ex7  .self,
-text_box.txt_14_gsF  .self, text_box.txt_14c_gsF  .self, text_box.txt_14r_gsF  .self,
-
-text_box.txt_15_norm .self, text_box.txt_15c_norm .self, text_box.txt_15r_norm .self,
-text_box.txt_15_ex2  .self, text_box.txt_15c_ex2  .self, text_box.txt_15r_ex2  .self,
-text_box.txt_15_ex4  .self, text_box.txt_15c_ex4  .self, text_box.txt_15r_ex4  .self,
-text_box.txt_15_ex7  .self, text_box.txt_15c_ex7  .self, text_box.txt_15r_ex7  .self,
-text_box.txt_15_gsF  .self, text_box.txt_15c_gsF  .self, text_box.txt_15r_gsF  .self,
-
-text_box.txt_16_norm .self, text_box.txt_16c_norm .self, text_box.txt_16r_norm .self,
-text_box.txt_16_ex2  .self, text_box.txt_16c_ex2  .self, text_box.txt_16r_ex2  .self,
-text_box.txt_16_ex4  .self, text_box.txt_16c_ex4  .self, text_box.txt_16r_ex4  .self,
-text_box.txt_16_ex7  .self, text_box.txt_16c_ex7  .self, text_box.txt_16r_ex7  .self,
-text_box.txt_16_gsF  .self, text_box.txt_16c_gsF  .self, text_box.txt_16r_gsF  .self,
-
-text_box.txt_17_norm .self, text_box.txt_17c_norm .self, text_box.txt_17r_norm .self,
-text_box.txt_17_ex2  .self, text_box.txt_17c_ex2  .self, text_box.txt_17r_ex2  .self,
-text_box.txt_17_ex4  .self, text_box.txt_17c_ex4  .self, text_box.txt_17r_ex4  .self,
-text_box.txt_17_ex7  .self, text_box.txt_17c_ex7  .self, text_box.txt_17r_ex7  .self,
-text_box.txt_17_gsF  .self, text_box.txt_17c_gsF  .self, text_box.txt_17r_gsF  .self,
-
-text_box.txt_18_norm .self, text_box.txt_18c_norm .self, text_box.txt_18r_norm .self,
-text_box.txt_18_ex2  .self, text_box.txt_18c_ex2  .self, text_box.txt_18r_ex2  .self,
-text_box.txt_18_ex4  .self, text_box.txt_18c_ex4  .self, text_box.txt_18r_ex4  .self,
-text_box.txt_18_ex7  .self, text_box.txt_18c_ex7  .self, text_box.txt_18r_ex7  .self,
-text_box.txt_18_gsF  .self, text_box.txt_18c_gsF  .self, text_box.txt_18r_gsF  .self
-{
-  border-style: solid; border-width: 1pt;
-  /*
-  border-color: rgba(0,0,0,0);
-  background-image: none;
-  */
-  line-height: 0.8line;
-  -fm-text-vertical-align: center;
-}
-
-text_box.txt_09_norm .inner_border, text_box.txt_09c_norm .inner_border, text_box.txt_09r_norm .inner_border,
-text_box.txt_09_ex2  .inner_border, text_box.txt_09c_ex2  .inner_border, text_box.txt_09r_ex2  .inner_border,
-text_box.txt_09_ex4  .inner_border, text_box.txt_09c_ex4  .inner_border, text_box.txt_09r_ex4  .inner_border,
-text_box.txt_09_ex7  .inner_border, text_box.txt_09c_ex7  .inner_border, text_box.txt_09r_ex7  .inner_border,
-text_box.txt_09_gsF  .inner_border, text_box.txt_09c_gsF  .inner_border, text_box.txt_09r_gsF  .inner_border,
-
-text_box.txt_10_norm .inner_border, text_box.txt_10c_norm .inner_border, text_box.txt_10r_norm .inner_border,
-text_box.txt_10_ex2  .inner_border, text_box.txt_10c_ex2  .inner_border, text_box.txt_10r_ex2  .inner_border,
-text_box.txt_10_ex4  .inner_border, text_box.txt_10c_ex4  .inner_border, text_box.txt_10r_ex4  .inner_border,
-text_box.txt_10_ex7  .inner_border, text_box.txt_10c_ex7  .inner_border, text_box.txt_10r_ex7  .inner_border,
-text_box.txt_10_gsF  .inner_border, text_box.txt_10c_gsF  .inner_border, text_box.txt_10r_gsF  .inner_border,
-
-text_box.txt_11_norm .inner_border, text_box.txt_11c_norm .inner_border, text_box.txt_11r_norm .inner_border,
-text_box.txt_11_ex2  .inner_border, text_box.txt_11c_ex2  .inner_border, text_box.txt_11r_ex2  .inner_border,
-text_box.txt_11_ex4  .inner_border, text_box.txt_11c_ex4  .inner_border, text_box.txt_11r_ex4  .inner_border,
-text_box.txt_11_ex7  .inner_border, text_box.txt_11c_ex7  .inner_border, text_box.txt_11r_ex7  .inner_border,
-text_box.txt_11_gsF  .inner_border, text_box.txt_11c_gsF  .inner_border, text_box.txt_11r_gsF  .inner_border,
-
-text_box.txt_12_norm .inner_border, text_box.txt_12c_norm .inner_border, text_box.txt_12r_norm .inner_border,
-text_box.txt_12_ex2  .inner_border, text_box.txt_12c_ex2  .inner_border, text_box.txt_12r_ex2  .inner_border,
-text_box.txt_12_ex4  .inner_border, text_box.txt_12c_ex4  .inner_border, text_box.txt_12r_ex4  .inner_border,
-text_box.txt_12_ex7  .inner_border, text_box.txt_12c_ex7  .inner_border, text_box.txt_12r_ex7  .inner_border,
-text_box.txt_12_gsF  .inner_border, text_box.txt_12c_gsF  .inner_border, text_box.txt_12r_gsF  .inner_border,
-
-text_box.txt_13_norm .inner_border, text_box.txt_13c_norm .inner_border, text_box.txt_13r_norm .inner_border,
-text_box.txt_13_ex2  .inner_border, text_box.txt_13c_ex2  .inner_border, text_box.txt_13r_ex2  .inner_border,
-text_box.txt_13_ex4  .inner_border, text_box.txt_13c_ex4  .inner_border, text_box.txt_13r_ex4  .inner_border,
-text_box.txt_13_ex7  .inner_border, text_box.txt_13c_ex7  .inner_border, text_box.txt_13r_ex7  .inner_border,
-text_box.txt_13_gsF  .inner_border, text_box.txt_13c_gsF  .inner_border, text_box.txt_13r_gsF  .inner_border,
-
-text_box.txt_14_norm .inner_border, text_box.txt_14c_norm .inner_border, text_box.txt_14r_norm .inner_border,
-text_box.txt_14_ex2  .inner_border, text_box.txt_14c_ex2  .inner_border, text_box.txt_14r_ex2  .inner_border,
-text_box.txt_14_ex4  .inner_border, text_box.txt_14c_ex4  .inner_border, text_box.txt_14r_ex4  .inner_border,
-text_box.txt_14_ex7  .inner_border, text_box.txt_14c_ex7  .inner_border, text_box.txt_14r_ex7  .inner_border,
-text_box.txt_14_gsF  .inner_border, text_box.txt_14c_gsF  .inner_border, text_box.txt_14r_gsF  .inner_border,
-
-text_box.txt_15_norm .inner_border, text_box.txt_15c_norm .inner_border, text_box.txt_15r_norm .inner_border,
-text_box.txt_15_ex2  .inner_border, text_box.txt_15c_ex2  .inner_border, text_box.txt_15r_ex2  .inner_border,
-text_box.txt_15_ex4  .inner_border, text_box.txt_15c_ex4  .inner_border, text_box.txt_15r_ex4  .inner_border,
-text_box.txt_15_ex7  .inner_border, text_box.txt_15c_ex7  .inner_border, text_box.txt_15r_ex7  .inner_border,
-text_box.txt_15_gsF  .inner_border, text_box.txt_15c_gsF  .inner_border, text_box.txt_15r_gsF  .inner_border,
-
-text_box.txt_16_norm .inner_border, text_box.txt_16c_norm .inner_border, text_box.txt_16r_norm .inner_border,
-text_box.txt_16_ex2  .inner_border, text_box.txt_16c_ex2  .inner_border, text_box.txt_16r_ex2  .inner_border,
-text_box.txt_16_ex4  .inner_border, text_box.txt_16c_ex4  .inner_border, text_box.txt_16r_ex4  .inner_border,
-text_box.txt_16_ex7  .inner_border, text_box.txt_16c_ex7  .inner_border, text_box.txt_16r_ex7  .inner_border,
-text_box.txt_16_gsF  .inner_border, text_box.txt_16c_gsF  .inner_border, text_box.txt_16r_gsF  .inner_border,
-
-text_box.txt_17_norm .inner_border, text_box.txt_17c_norm .inner_border, text_box.txt_17r_norm .inner_border,
-text_box.txt_17_ex2  .inner_border, text_box.txt_17c_ex2  .inner_border, text_box.txt_17r_ex2  .inner_border,
-text_box.txt_17_ex4  .inner_border, text_box.txt_17c_ex4  .inner_border, text_box.txt_17r_ex4  .inner_border,
-text_box.txt_17_ex7  .inner_border, text_box.txt_17c_ex7  .inner_border, text_box.txt_17r_ex7  .inner_border,
-text_box.txt_17_gsF  .inner_border, text_box.txt_17c_gsF  .inner_border, text_box.txt_17r_gsF  .inner_border,
-
-text_box.txt_18_norm .inner_border, text_box.txt_18c_norm .inner_border, text_box.txt_18r_norm .inner_border,
-text_box.txt_18_ex2  .inner_border, text_box.txt_18c_ex2  .inner_border, text_box.txt_18r_ex2  .inner_border,
-text_box.txt_18_ex4  .inner_border, text_box.txt_18c_ex4  .inner_border, text_box.txt_18r_ex4  .inner_border,
-text_box.txt_18_ex7  .inner_border, text_box.txt_18c_ex7  .inner_border, text_box.txt_18r_ex7  .inner_border,
-text_box.txt_18_gsF  .inner_border, text_box.txt_18c_gsF  .inner_border, text_box.txt_18r_gsF  .inner_border
-{
-  margin: 0pt;
-  padding: 0pt;
-}
-
-text_box.txt_09_norm .text, text_box.txt_09c_norm .text, text_box.txt_09r_norm .text,
-text_box.txt_09_ex2  .text, text_box.txt_09c_ex2  .text, text_box.txt_09r_ex2  .text,
-text_box.txt_09_ex4  .text, text_box.txt_09c_ex4  .text, text_box.txt_09r_ex4  .text,
-text_box.txt_09_ex7  .text, text_box.txt_09c_ex7  .text, text_box.txt_09r_ex7  .text,
-text_box.txt_09_gsF  .text, text_box.txt_09c_gsF  .text, text_box.txt_09r_gsF  .text,
-
-text_box.txt_10_norm .text, text_box.txt_10c_norm .text, text_box.txt_10r_norm .text,
-text_box.txt_10_ex2  .text, text_box.txt_10c_ex2  .text, text_box.txt_10r_ex2  .text,
-text_box.txt_10_ex4  .text, text_box.txt_10c_ex4  .text, text_box.txt_10r_ex4  .text,
-text_box.txt_10_ex7  .text, text_box.txt_10c_ex7  .text, text_box.txt_10r_ex7  .text,
-text_box.txt_10_gsF  .text, text_box.txt_10c_gsF  .text, text_box.txt_10r_gsF  .text,
-
-text_box.txt_11_norm .text, text_box.txt_11c_norm .text, text_box.txt_11r_norm .text,
-text_box.txt_11_ex2  .text, text_box.txt_11c_ex2  .text, text_box.txt_11r_ex2  .text,
-text_box.txt_11_ex4  .text, text_box.txt_11c_ex4  .text, text_box.txt_11r_ex4  .text,
-text_box.txt_11_ex7  .text, text_box.txt_11c_ex7  .text, text_box.txt_11r_ex7  .text,
-text_box.txt_11_gsF  .text, text_box.txt_11c_gsF  .text, text_box.txt_11r_gsF  .text,
-
-text_box.txt_12_norm .text, text_box.txt_12c_norm .text, text_box.txt_12r_norm .text,
-text_box.txt_12_ex2  .text, text_box.txt_12c_ex2  .text, text_box.txt_12r_ex2  .text,
-text_box.txt_12_ex4  .text, text_box.txt_12c_ex4  .text, text_box.txt_12r_ex4  .text,
-text_box.txt_12_ex7  .text, text_box.txt_12c_ex7  .text, text_box.txt_12r_ex7  .text,
-text_box.txt_12_gsF  .text, text_box.txt_12c_gsF  .text, text_box.txt_12r_gsF  .text,
-
-text_box.txt_13_norm .text, text_box.txt_13c_norm .text, text_box.txt_13r_norm .text,
-text_box.txt_13_ex2  .text, text_box.txt_13c_ex2  .text, text_box.txt_13r_ex2  .text,
-text_box.txt_13_ex4  .text, text_box.txt_13c_ex4  .text, text_box.txt_13r_ex4  .text,
-text_box.txt_13_ex7  .text, text_box.txt_13c_ex7  .text, text_box.txt_13r_ex7  .text,
-text_box.txt_13_gsF  .text, text_box.txt_13c_gsF  .text, text_box.txt_13r_gsF  .text,
-
-text_box.txt_14_norm .text, text_box.txt_14c_norm .text, text_box.txt_14r_norm .text,
-text_box.txt_14_ex2  .text, text_box.txt_14c_ex2  .text, text_box.txt_14r_ex2  .text,
-text_box.txt_14_ex4  .text, text_box.txt_14c_ex4  .text, text_box.txt_14r_ex4  .text,
-text_box.txt_14_ex7  .text, text_box.txt_14c_ex7  .text, text_box.txt_14r_ex7  .text,
-text_box.txt_14_gsF  .text, text_box.txt_14c_gsF  .text, text_box.txt_14r_gsF  .text,
-
-text_box.txt_15_norm .text, text_box.txt_15c_norm .text, text_box.txt_15r_norm .text,
-text_box.txt_15_ex2  .text, text_box.txt_15c_ex2  .text, text_box.txt_15r_ex2  .text,
-text_box.txt_15_ex4  .text, text_box.txt_15c_ex4  .text, text_box.txt_15r_ex4  .text,
-text_box.txt_15_ex7  .text, text_box.txt_15c_ex7  .text, text_box.txt_15r_ex7  .text,
-text_box.txt_15_gsF  .text, text_box.txt_15c_gsF  .text, text_box.txt_15r_gsF  .text,
-
-text_box.txt_16_norm .text, text_box.txt_16c_norm .text, text_box.txt_16r_norm .text,
-text_box.txt_16_ex2  .text, text_box.txt_16c_ex2  .text, text_box.txt_16r_ex2  .text,
-text_box.txt_16_ex4  .text, text_box.txt_16c_ex4  .text, text_box.txt_16r_ex4  .text,
-text_box.txt_16_ex7  .text, text_box.txt_16c_ex7  .text, text_box.txt_16r_ex7  .text,
-text_box.txt_16_gsF  .text, text_box.txt_16c_gsF  .text, text_box.txt_16r_gsF  .text,
-
-text_box.txt_17_norm .text, text_box.txt_17c_norm .text, text_box.txt_17r_norm .text,
-text_box.txt_17_ex2  .text, text_box.txt_17c_ex2  .text, text_box.txt_17r_ex2  .text,
-text_box.txt_17_ex4  .text, text_box.txt_17c_ex4  .text, text_box.txt_17r_ex4  .text,
-text_box.txt_17_ex7  .text, text_box.txt_17c_ex7  .text, text_box.txt_17r_ex7  .text,
-text_box.txt_17_gsF  .text, text_box.txt_17c_gsF  .text, text_box.txt_17r_gsF  .text,
-
-text_box.txt_18_norm .text, text_box.txt_18c_norm .text, text_box.txt_18r_norm .text,
-text_box.txt_18_ex2  .text, text_box.txt_18c_ex2  .text, text_box.txt_18r_ex2  .text,
-text_box.txt_18_ex4  .text, text_box.txt_18c_ex4  .text, text_box.txt_18r_ex4  .text,
-text_box.txt_18_ex7  .text, text_box.txt_18c_ex7  .text, text_box.txt_18r_ex7  .text,
-text_box.txt_18_gsF  .text, text_box.txt_18c_gsF  .text, text_box.txt_18r_gsF  .text
-{
-  margin: -42% 4.8pt -50% 4.8pt;/* ! */
-  height: auto;/* ! */
-  top: 0pt;/* 0.1em */
-  right: 0pt;
-  bottom: 0pt;
-  left: 0pt;
-  position: absolute;
-}
 
 
 
@@ -789,16 +378,16 @@ button_bar_segment:normal .self
   text-align: center;
   -fm-text-vertical-align: center;
   color: #333;
+  
+  font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
+  font-size: 12pt;
+  line-height: 0.8line;
 }
 button:normal .self {
   border-style: solid; border-width: 1pt; border-color: #999;
   border-radius: 3pt;
   background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(#F3F3F3), to(#DCDCDC));
   /*box-shadow: inset 0pt 0pt 1pt 0pt rgba(255,255,255,0.4);*/
-  
-  font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
-  font-size: 12pt;
-  line-height: 0.8line;
 }
 button_bar_segment .self {
   background-image: none; background-color: #EEE;
@@ -816,7 +405,8 @@ button_bar_segment .text
 button .icon,
 button_bar_segment .icon
 {
-  -fm-icon-color: #999;
+  -fm-icon-padding: 0pt 5pt 0pt 5pt;
+  -fm-icon-color: #666;
 }
 
 
@@ -923,29 +513,21 @@ button.row .text {
 
 
 
+/** (btn)list header */
 /** (textbtn)list header */
-text_box.cap:normal .self {
+button.cap .self,
+text_box.cap .self {
+  border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   border-width: 1pt;
   border-top-style: solid;
-  /*
-  border-color: rgba(84.7059%,91.3726%,79.2157%,1);
-  background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(rgba(63.9216%,84.7059%,47.451%,1)), to(rgba(52.1569%,80.3922%,30.1961%,1)));
-  */
+  
   color: #FFF;
   line-height: 0.8line;
+  text-align: left;
   -fm-text-vertical-align: center;
 }
-text_box.cap:normal .inner_border {
-  margin-top: 0pt;
-  margin-bottom: 0pt;
-}
-/*
-text_box.cap:pressed .inner_border {
-  box-shadow: inset 0pt 0pt 6pt 0pt rgba(36.8627%,62.3529%,17.6471%,0.6);
-}
-*/
-
-text_box.cap:normal .text {
+button.cap .text,
+text_box.cap .text {
   position: absolute;
   top: 0pt;
   right: 0pt;
@@ -954,6 +536,36 @@ text_box.cap:normal .text {
   height: auto;/* ! */
   margin: -0.6pt 4.8pt -4.8pt 4.8pt;
 }
+button.cap .inner_border,
+text_box.cap .inner_border {
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+}
+
+button.cap:normal .self,
+text_box.cap:normal .self {/* theme color */
+  border-color: #d6dfe2;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#97afb6), to(#7e9aa5));
+}
+button.cap:hover .self,
+text_box.cap:hover .self {/* theme color */
+  border-color: #97afb6;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7e9aa5), to(#69858f));
+}
+button.cap:pressed .self,
+text_box.cap:pressed .self {/* theme color */
+  border-color: #557079;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#69858f), to(#7e9aa5));
+}
+
+/* theme color */
+button.cap:pressed .inner_border,
+text_box.cap:pressed .inner_border {
+  box-shadow: inset 0pt 0pt 3pt 1pt @ex2;
+}
+
+
+
 
 
 
@@ -987,12 +599,12 @@ button.btn_radio:pressed .self
 button.btn_check:hover .self,
 button.btn_radio:hover .self
 {
-  *box-shadow: 0pt 0pt 1pt 0pt rgba(100%,100%,100%,0.6);
+  *box-shadow: 0pt 0pt 1pt 0pt rgba(100%,100%,100%,0.6);/******/
 }
 button.btn_check:pressed .self,
 button.btn_radio:pressed .self
 {
-  *box-shadow: 0pt 0pt 1pt 0pt rgba(100%,100%,100%,0.6);
+  *box-shadow: 0pt 0pt 1pt 0pt rgba(100%,100%,100%,0.6);/******/
 }
 
 
@@ -1021,15 +633,15 @@ button.btn_radio:pressed .inner_border
 
 
 
-/** back_check, back_radio */
-rectangle.back_check .self,
-rectangle.back_radio .self
+/** (rect)backCheck, (rect)backRadio */
+rectangle.backCheck .self,
+rectangle.backRadio .self
 {
   border-style: solid; border-width: 2pt; border-color: #555;
   background-image: none; background-color: #FFF;
 }
-rectangle.back_check .self {border-radius: 2pt;}
-rectangle.back_radio .self {border-radius: 50%;}
+rectangle.backCheck .self {border-radius: 2pt;}
+rectangle.backRadio .self {border-radius: 50%;}
 
 
 
@@ -1420,8 +1032,7 @@ button_bar_segment.fill_ex1 .icon, button_bar_segment.circle_ex1 .icon,
 button_bar_segment.fill_ex2 .icon, button_bar_segment.circle_ex2 .icon
 {
   box-sizing: border-box;/* ! */
-  padding: 0pt 3pt;
-  /*-fm-icon-padding: 0pt 3pt;*/
+  /*-fm-icon-padding: 5pt;padding: 5pt;*/
   -fm-icon-color: #DDD;
 }
 button.fill_ex3 .icon, button.circle_ex3 .icon,
@@ -1571,8 +1182,8 @@ text_box.min_gs6:hover .self, button.min_gs6:hover .self, button_bar_segment.min
 text_box.min_gs9:hover .self, button.min_gs9:hover .self, button_bar_segment.min_gs9:hover .self,
 text_box.min_gsF:hover .self, button.min_gsF:hover .self, button_bar_segment.min_gsF:hover .self
 {
-  border-style: solid; border-width: 1pt; border-color: rgba(76%,76%,76%,0.36);
-  /*background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(92%,92%,92%,0.36)), to(rgba(86%,86%,86%,0.36)));*/
+  border-style: solid; border-width: 1pt; border-color: rgba(76%,76%,76%,0.3);
+  /*background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(92%,92%,92%,0.3)), to(rgba(86%,86%,86%,0.3)));*/
   background-color: rgba(175,175,175,0.18);/*#EEE;*/
   color: #333;
 }
@@ -1621,37 +1232,41 @@ text_box.min_gsF:pressed .inner_border, button.min_gsF:pressed .inner_border, bu
 
 
 
-/** btn_selectknob */
-button_bar.btn_selectknob:normal .self
-{
+/** (btn)selectknob */
+button_bar.selectknob .self {
   border-style: none; border-width: 0pt; border-radius: 0pt;  border-color: rgba(0,0,0,0);
 }
-
-button_bar.btn_selectknob .button_bar_divider
-{
+button_bar.selectknob .button_bar_divider {
   border-style: none; border-width: 0pt; border-color: rgba(0,0,0,0);
 }
 
-button_bar_segment.btn_selectknob:normal .self
-{
-  padding-left: 25pt;/* space for select icon */
+button_bar_segment.selectknob .self {
   border-style: solid; border-width: 1pt; border-radius: 3pt; border-color: rgba(0,0,0,0);
   background-image: none; background-color: rgba(0,0,0,0);
   text-align: left;
   -fm-text-vertical-align: center;/**/
   color: #333;
-}
-button_bar_segment.btn_selectknob:hover .self {
-  background-color: rgba(124,124,124,0.18);
   box-shadow: none;
 }
-button_bar_segment.btn_selectknob:pressed .self {
-  background-color: rgba(124,124,124,0.3);
+button_bar_segment.selectknob .inner_border,
+button_bar_segment.selectknob:hover .inner_border,
+button_bar_segment.selectknob:focus .inner_border
+/*button_bar_segment.selectknob:pressed .inner_border*/
+{
+  padding-left: 25pt;/* left space for select icon */
+  box-shadow: none;
+}
+
+button_bar_segment.selectknob:hover .self {
+  background-image: none; background-color: rgba(124,124,124,0.18);
+  box-shadow: none;
+}
+button_bar_segment.selectknob:pressed .self {
+  background-image: none; background-color: rgba(124,124,124,0.3);
   box-shadow: none;
 }
 /*
-button_bar_segment.btn_selectknob:normal .text
-{
+button_bar_segment.selectknob .text {
   box-sizing: content-box;
   margin-top: 2pt;
   padding-top: -2pt;

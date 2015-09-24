@@ -1,6 +1,3 @@
-
-
-
 /** CONTROL ==================================================================*/
 
 /** PORTAL ROW -----------------------*/
@@ -92,7 +89,7 @@ container .self {
   font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
   color: #666;
   font-size: 12pt;
-  line-height: 0.7line;
+  line-height: 0.8line;
   text-align: left;
 }
 
@@ -217,7 +214,7 @@ chart:normal .self {
   background-color: #FFF;
   font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
   font-size: 12pt; color: #666;
-  line-height: 0.7line;
+  line-height: 0.8line;
   text-align: left;
 }
 chart .inner_border {
@@ -262,7 +259,7 @@ web_viewer .self {
   background-color: #FFF;
   font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
   font-size: 12pt; color: #666;
-  line-height: 0.7line;
+  line-height: 0.8line;
   text-align: left;
 }
 web_viewer .inner_border {
@@ -404,7 +401,7 @@ tab_control:normal .self {
   font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
   color: #FFF;
   font-size: 12pt;
-  line-height: 0.7line;
+  line-height: 0.8line;
   text-align: left;
 
   -fm-tab-spacing: 0;
@@ -481,7 +478,6 @@ tab_control.mat_h35 .self,tab_control.mat_h35_gsF .self
 {
   /*background-image: none;background-color: rgba(0,0,0,0);*/
   font-style: normal;
-  line-height: 0.7line;
   text-align: left;
   
   -fm-tab-spacing: 0;
@@ -610,7 +606,6 @@ tab_control.ear_h35 .self,tab_control.ear_h35_lite .self
   font-style: normal;
   font-size: 12pt;
   -fm-tab-spacing: -1;
-  line-height: 0.7line;
   text-align: left;
 }
 tab_control.ear_h25:normal .self,tab_control.ear_h25_lite:normal .self,

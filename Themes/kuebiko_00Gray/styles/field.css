@@ -1,6 +1,3 @@
-
-
-
 /** FIELD ==================================================================*/
 /**  ----------------------------------------------------------*/
 field:placeholder .self,
@@ -21,7 +18,7 @@ field .self {
   background-color: #FFF;
   font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
   font-size: 12pt; color: #333;
-  line-height: 0.7line;
+  line-height: 0.8line;
   text-align: left;
 }
 edit_box:normal .self,
@@ -480,12 +477,6 @@ drop_down:pressed .icon
   background-image: none; background-color: #AAA;
   box-shadow: 0pt 0pt 3pt rgba(0,0,0,0.2) inset;
   -fm-icon-color: #FFF;
-  /*
-  border-left-color: #6699C6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#EBEBEB));
-  box-shadow: 0pt 0pt 3pt rgba(0,0,0,0.2) inset;
-  -fm-icon-color: #333;
-  */
 }
 
 
