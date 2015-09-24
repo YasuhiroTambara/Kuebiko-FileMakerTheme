@@ -11,7 +11,7 @@ Kuebiko - FileMaker Theme
 
 ビルドインテーマのフォントをメイリオにした時に発生する、インスペクタでは直しようがないスタイルの崩れを解消できます。
 
-![alt内容](images/compareSelects.png)
+![alt内容](images/compare.png)
 
 また、キーカラーバリエーション（24色）を含むので、テーマの適応後でもカラーを一括で変更できます。
 
