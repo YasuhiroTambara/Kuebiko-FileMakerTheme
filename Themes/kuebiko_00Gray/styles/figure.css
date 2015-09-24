@@ -1,0 +1,1352 @@
+/** FIGURE ==================================================================*/
+/** LINE -----------------------------*/
+line .self {
+  border-style: solid;border-width: 1pt;border-color: #CCC;
+}
+
+/** REGION ---------------------*/
+rectangle .self,
+rounded .self,
+oval .self
+{
+  border-style: none; border-width: 1pt; border-color: #CCC;
+  background-color: #F6F6F6;
+}
+/** REGION(ROUNDED) --------------------------*/
+rounded .self {border-radius: 12pt;}
+rounded .inner_border {border-radius: 11pt;}
+
+
+
+/** REGION > SEPARATOR ------------------------*/
+/** back of list header */
+rectangle.backCap .self {
+  border-style: none; border-width: 0pt; border-color: #999;
+  border-bottom-style: solid; border-bottom-width: 1pt; border-color: #777;
+  background-color: rgba(0,0,0,0); background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#CCC), to(#9A9A9A));
+}
+
+
+
+/** fill_grad */
+rectangle.fill_grad_norm .self,
+rectangle.fill_grad_warm .self,
+rectangle.fill_grad_cool .self,
+
+rectangle.fill_shadow_depth1_up .self,
+rectangle.fill_shadow_depth1_right .self,
+rectangle.fill_shadow_depth1_down .self,
+rectangle.fill_shadow_depth1_left .self,
+
+rectangle.fill_shadow_depth2_up .self,
+rectangle.fill_shadow_depth2_right .self,
+rectangle.fill_shadow_depth2_down .self,
+rectangle.fill_shadow_depth2_left .self,
+
+rectangle.fill_shadow_depth3_up .self,
+rectangle.fill_shadow_depth3_right .self,
+rectangle.fill_shadow_depth3_down .self,
+rectangle.fill_shadow_depth3_left .self
+{
+  background-color: rgba(0,0,0,0);
+  border-style: none; border-width: 0;
+}
+rectangle.fill_grad_norm .self {background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#E9E9E9), to(#E0E0E0));}
+rectangle.fill_grad_warm .self {background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#EEEEEC), to(#E3E3DC));}
+rectangle.fill_grad_cool .self {background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#E6ECEF), to(#D8DFE0));}
+
+
+
+rectangle.fill_shadow_depth1_up    .self {background-image: -webkit-gradient(linear,0% 0%,0% 100%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.21)), color-stop(1, rgba(20%,20%,20%,0.54)));}
+rectangle.fill_shadow_depth1_right .self {background-image: -webkit-gradient(linear,100% 0%,0% 0%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.21)), color-stop(1, rgba(20%,20%,20%,0.54)));}
+rectangle.fill_shadow_depth1_down  .self {background-image: -webkit-gradient(linear,0% 100%,0% 0%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.21)), color-stop(1, rgba(20%,20%,20%,0.54)));}
+rectangle.fill_shadow_depth1_left  .self {background-image: -webkit-gradient(linear,0% 0%,100% 0%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.21)), color-stop(1, rgba(20%,20%,20%,0.54)));}
+
+rectangle.fill_shadow_depth2_up    .self {background-image: -webkit-gradient(linear,0% 0%,0% 100%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.12)), color-stop(1, rgba(20%,20%,20%,0.3)));}
+rectangle.fill_shadow_depth2_right .self {background-image: -webkit-gradient(linear,100% 0%,0% 0%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.12)), color-stop(1, rgba(20%,20%,20%,0.3)));}
+rectangle.fill_shadow_depth2_down  .self {background-image: -webkit-gradient(linear,0% 100%,0% 0%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.12)), color-stop(1, rgba(20%,20%,20%,0.3)));}
+rectangle.fill_shadow_depth2_left  .self {background-image: -webkit-gradient(linear,0% 0%,100% 0%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.12)), color-stop(1, rgba(20%,20%,20%,0.3)));}
+
+rectangle.fill_shadow_depth3_up    .self {background-image: -webkit-gradient(linear,0% 0%,0% 100%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.07)), color-stop(1, rgba(20%,20%,20%,0.18)));}
+rectangle.fill_shadow_depth3_right .self {background-image: -webkit-gradient(linear,100% 0%,0% 0%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.07)), color-stop(1, rgba(20%,20%,20%,0.18)));}
+rectangle.fill_shadow_depth3_down  .self {background-image: -webkit-gradient(linear,0% 100%,0% 0%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.07)), color-stop(1, rgba(20%,20%,20%,0.18)));}
+rectangle.fill_shadow_depth3_left  .self {background-image: -webkit-gradient(linear,0% 0%,100% 0%, color-stop(0.24, rgba(20%,20%,20%,0)), color-stop(0.76, rgba(20%,20%,20%,0.07)), color-stop(1, rgba(20%,20%,20%,0.18)));}
+/*-webkit-gradient(linear,0% 100%,0% 0%, from(rgba(204,204,204,0)), to(rgba(51,51,51,0.21)));}*/
+
+
+
+/** fill_alpha */
+rectangle.fill_a18 .self,
+rectangle.fill_a30 .self,
+rectangle.fill_a42 .self
+{
+  border-style: none;border-width: 0;
+}
+rectangle.fill_a18 .self {background-color: rgba(77,77,77,0.18);}
+rectangle.fill_a30 .self {background-color: rgba(77,77,77,0.3);}
+rectangle.fill_a42 .self {background-color: rgba(77,77,77,0.42);}
+
+
+
+/** REGION > FILL THEME COLORED --------------------------*/
+/** FILL */
+rectangle.fill_ex1 .self, oval.fill_ex1 .self,
+rectangle.fill_ex2 .self, oval.fill_ex2 .self,
+rectangle.fill_ex3 .self, oval.fill_ex3 .self,
+rectangle.fill_ex4 .self, oval.fill_ex4 .self,
+rectangle.fill_ex5 .self, oval.fill_ex5 .self,
+rectangle.fill_ex6 .self, oval.fill_ex6 .self,
+rectangle.fill_ex7 .self, oval.fill_ex7 .self,
+rectangle.fill_ex8 .self, oval.fill_ex8 .self,
+rectangle.fill_ex9 .self, oval.fill_ex9 .self,
+rectangle.fill_gs9 .self, oval.fill_gs9 .self,
+rectangle.fill_gsA .self, oval.fill_gsA .self,
+rectangle.fill_gsB .self, oval.fill_gsB .self,
+rectangle.fill_gsC .self, oval.fill_gsC .self,
+rectangle.fill_gsD .self, oval.fill_gsD .self,
+rectangle.fill_gsE .self, oval.fill_gsE .self,
+rectangle.fill_gsF .self, oval.fill_gsF .self
+{
+  /*border-image-source: none;*/
+  border-style: none;
+  background-image: none;
+}
+
+button.fill_gs9 .self,
+button.circle_gs9 .self,
+button_bar_segment.fill_gs9 .self,
+button_bar_segment.circle_gs9 .self,
+popover.fill_gs9 .self,
+rectangle.fill_gs9 .self,
+oval.fill_gs9 .self
+{background-color: #999;}
+button.fill_gsA .self,
+button.circle_gsA .self,
+button_bar_segment.fill_gsA .self,
+button_bar_segment.circle_gsA .self,
+popover.fill_gsA .self,
+rectangle.fill_gsA .self,
+oval.fill_gsA .self
+{background-color: #AAA;}
+button.fill_gsB .self,
+button.circle_gsB .self,
+button_bar_segment.fill_gsB .self,
+button_bar_segment.circle_gsB .self,
+popover.fill_gsB .self,
+rectangle.fill_gsB .self,
+oval.fill_gsB .self
+{background-color: #BBB;}
+button.fill_gsC .self,
+button.circle_gsC .self,
+button_bar_segment.fill_gsC .self,
+button_bar_segment.circle_gsC .self,
+popover.fill_gsC .self,
+rectangle.fill_gsC .self,
+oval.fill_gsC .self
+{background-color: #CCC;}
+button.fill_gsD .self,
+button.circle_gsD .self,
+button_bar_segment.fill_gsD .self,
+button_bar_segment.circle_gsD .self,
+popover.fill_gsD .self,
+rectangle.fill_gsD .self,
+oval.fill_gsD .self
+{background-color: #DDD;}
+button.fill_gsE .self,
+button.circle_gsE .self,
+button_bar_segment.fill_gsE .self,
+button_bar_segment.circle_gsE .self,
+popover.fill_gsE .self,
+rectangle.fill_gsE .self,
+oval.fill_gsE .self
+{background-color: #EEE;}
+button.fill_gsF .self,
+button.circle_gsF .self,
+button_bar_segment.fill_gsF .self,
+button_bar_segment.circle_gsF .self,
+popover.fill_gsF .self,
+rectangle.fill_gsF .self,
+oval.fill_gsF .self
+{background-color: #FFF;}
+
+
+
+/** REGION > STROKE THEME COLORED */
+line.stroke_ex1 .self, rectangle.stroke_ex1 .self,
+line.stroke_ex2 .self, rectangle.stroke_ex2 .self,
+line.stroke_ex3 .self, rectangle.stroke_ex3 .self,
+line.stroke_ex4 .self, rectangle.stroke_ex4 .self,
+line.stroke_ex5 .self, rectangle.stroke_ex5 .self,
+line.stroke_ex6 .self, rectangle.stroke_ex6 .self,
+line.stroke_ex7 .self, rectangle.stroke_ex7 .self,
+line.stroke_ex8 .self, rectangle.stroke_ex8 .self,
+line.stroke_ex9 .self, rectangle.stroke_ex9 .self,
+line.stroke_gs9 .self, rectangle.stroke_gs9 .self,
+line.stroke_gsA .self, rectangle.stroke_gsA .self,
+line.stroke_gsB .self, rectangle.stroke_gsB .self,
+line.stroke_gsC .self, rectangle.stroke_gsC .self,
+line.stroke_gsD .self, rectangle.stroke_gsD .self,
+line.stroke_gsE .self, rectangle.stroke_gsE .self,
+line.stroke_gsF .self, rectangle.stroke_gsF .self
+{
+  border-width: 2pt;
+  border-style: solid;
+  background-image: none;background-color: rgba(0,0,0,0);
+}
+line.stroke_gs9 .self, rectangle.stroke_gs9 .self{border-color: #999;}
+line.stroke_gsA .self, rectangle.stroke_gsA .self{border-color: #AAA;}
+line.stroke_gsB .self, rectangle.stroke_gsB .self{border-color: #BBB;}
+line.stroke_gsC .self, rectangle.stroke_gsC .self{border-color: #CCC;}
+line.stroke_gsD .self, rectangle.stroke_gsD .self{border-color: #DDD;}
+line.stroke_gsE .self, rectangle.stroke_gsE .self{border-color: #EEE;}
+line.stroke_gsF .self, rectangle.stroke_gsF .self{border-color: #FFF;}
+
+rectangle.stroke0001_rad_gs3 .self, rounded.stroke0001_rad_gs3 .self
+{border-color: #333;}
+rectangle.stroke0001_rad_gsF .self, rounded.stroke0001_rad_gsF .self
+{border-color: #FFF;}
+
+
+
+/** (rect)bracket ---------------------------------*/
+rectangle.bracket_ex4 .self {
+  border-style: none; border-width: 2pt; border-radius: 12pt; border-color: #333;
+  border-right-style: solid;
+  border-left-style: solid;
+  background-image: none; background-color: rgba(0,0,0,0);
+}
+
+/** (rect)stroke0001_rad ---------------------------------*/
+rectangle.stroke0001_rad_ex2 .self, rounded.stroke0001_rad_ex2 .self,
+rectangle.stroke0001_rad_ex4 .self, rounded.stroke0001_rad_ex4 .self,
+rectangle.stroke0001_rad_ex8 .self, rounded.stroke0001_rad_ex8 .self,
+rectangle.stroke0001_rad_gs3 .self, rounded.stroke0001_rad_gs3 .self,
+rectangle.stroke0001_rad_gsF .self, rounded.stroke0001_rad_gsF .self
+{
+  border-style: solid;
+  border-width: 0 0 0 2pt;
+  border-radius: 12pt;
+  background-image: none; background-color: rgba(0,0,0,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+/** POPOVER --------------------------*/
+popover .self {
+  position: absolute;
+  top: 0pt;
+  right: 0pt;
+  bottom: 0pt;
+  left: 0pt;
+  
+  border-style: solid; border-width: 1pt; border-radius: 3pt; border-color: #CCC;
+  /*background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#FFF), to(rgba(243, 243, 243, 1)));*/
+  background-image: none; background-color: #EEE;
+  box-shadow: 1pt 1pt 3pt rgba(0,0,0,0.18);
+  
+  font-family: -fm-font-family(メイリオ, shiftjis);
+  font-style: normal;
+  color: #333;
+  font-size: 12pt;
+  line-height: 0.8line;
+  text-align: center;
+}
+
+popover .text {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0.5em;
+  right: 0pt;
+  bottom: 0pt;
+  left: 0pt;
+  /*
+  top: 0.42em;
+  height: 1.42em;
+  left: 0pt;
+  right: 0pt;
+  */
+  height: 17pt;/* ! */
+  margin-top: -0.5em;
+  background-color: rgba(0,0,0,0.07);/* ! */
+}
+
+popover .contents {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0pt;
+  bottom: 0pt;
+  left: 0pt;
+  right: 0pt;
+  /*
+  border-radius: 0pt 3pt 3pt 0pt;
+  */
+  background-image: none; background-color: rgba(0,0,0,0);
+}
+
+
+
+popover.fill_ex1 .self,
+popover.fill_ex2 .self,
+popover.fill_ex3 .self,
+popover.fill_ex4 .self,
+popover.fill_ex5 .self,
+popover.fill_ex6 .self,
+popover.fill_ex7 .self,
+popover.fill_ex8 .self,
+popover.fill_ex9 .self,
+popover.fill_acc .self,
+popover.fill_gs9 .self,
+popover.fill_gsA .self,
+popover.fill_gsB .self,
+popover.fill_gsC .self,
+popover.fill_gsD .self,
+popover.fill_gsE .self,
+popover.fill_gsF .self
+{
+  /*
+  background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(rgba(52, 160, 244, 1)), to(rgba(18, 104, 166, 1)));
+  border-image-source: none; border-color: rgba(18, 104, 166, 1);
+  */
+  background-image: none; /*background-color: theme_colors #EEE;*/
+  border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
+  color: #FFF;
+}
+
+popover.fill_ex1 .contents,
+popover.fill_ex2 .contents,
+popover.fill_ex3 .contents,
+popover.fill_ex4 .contents,
+popover.fill_ex5 .contents,
+popover.fill_ex6 .contents,
+popover.fill_ex7 .contents,
+popover.fill_ex8 .contents,
+popover.fill_ex9 .contents,
+popover.fill_gs9 .contents,
+popover.fill_gsA .contents,
+popover.fill_gsB .contents,
+popover.fill_gsC .contents,
+popover.fill_gsD .contents,
+popover.fill_gsE .contents,
+popover.fill_gsF .contents
+{
+  background-image: none; background-color: rgba(0,0,0,0);
+  border-style: none; border-width: 0pt; border-color: rgba(0,0,0,0);
+  border-radius: 0pt 1pt 1pt 0pt;
+}
+
+
+
+popover.pov_transparent .self
+{
+  background-image: none; background-color: rgba(0,0,0,0);
+  border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
+  box-shadow: none;
+  /*color: #FFF;*/
+}
+
+popover.pov_transparent .contents
+{
+  background-image: none; background-color: rgba(0,0,0,0);
+  border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
+}
+
+
+
+
+
+
+/** BUTTON BAR ------------------------------------------------------*/
+button_bar .self {
+  border-style: solid; border-width: 1pt; border-radius: 3pt; border-color: #AAA;/*#A8B3BA;*/
+}
+button_bar .button_bar_divider {
+  border-style: solid; border-width: 1pt; border-color: #AAA;/*#A8B3BA;*/
+}
+
+/** BUTTON ----------------------------------------------------------*/
+button:normal .self,
+button_bar_segment:normal .self
+{
+  text-align: center;
+  -fm-text-vertical-align: center;
+  color: #333;
+  
+  font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
+  font-size: 12pt;
+  line-height: 0.8line;
+}
+button:normal .self {
+  border-style: solid; border-width: 1pt; border-color: #999;
+  border-radius: 3pt;
+  background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(#F3F3F3), to(#DCDCDC));
+  /*box-shadow: inset 0pt 0pt 1pt 0pt rgba(255,255,255,0.4);*/
+}
+button_bar_segment .self {
+  background-image: none; background-color: #EEE;
+  border-style: solid; border-width: 0pt; border-color: rgba(0,0,0,0);
+}
+
+button .text,
+button_bar_segment .text
+{
+  box-sizing: border-box;
+  margin-top: 2pt;
+  padding-top: -2pt;
+}
+
+button .icon,
+button_bar_segment .icon
+{
+  -fm-icon-padding: 0pt 5pt 0pt 5pt;
+  -fm-icon-color: #666;
+}
+
+
+
+button:hover .self,
+button_bar_segment:hover .self
+{
+  background-color: #F0F0F0;
+  background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(#F6F6F6), to(#EEE));
+  color: #333;
+}
+button:hover .self {
+  box-shadow: 1pt 1pt 2pt 0pt rgba(20%,20%,20%,0.24);
+}
+button_bar_segment:hover .self {
+  box-shadow: none;
+}
+button:hover .icon,
+button_bar_segment:hover .icon
+{
+  -fm-icon-color: #333;
+}
+
+
+
+button:pressed .self,
+button_bar_segment:pressed .self
+{
+  background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(#E6E6E6), to(#EEE));
+  box-shadow: none;
+}
+button:pressed .self {
+  border-top-color: #666;
+  border-right-color: #777;
+  border-bottom-color: #999;
+  border-left-color: #666;
+}
+
+button:focus .self {
+  border-color: #333;
+  box-shadow: 0pt 0pt 2pt 1pt #0070CF;/*rgba(0,112,207,1)*/
+}
+
+
+
+button .inner_border
+{
+  border-radius: 2pt;
+  box-shadow: inset 0.2pt 0.1pt 2pt 0pt rgba(255,255,255,0.4);
+}
+button:hover .inner_border,
+button_bar_segment:hover .inner_border
+{
+  box-shadow: inset 0pt 0pt 2pt 0pt rgba(255,255,255,0.8);
+}
+button:pressed .inner_border,
+button_bar_segment:pressed .inner_border
+{
+  box-shadow: inset 0.2pt 0.1pt 2pt 0pt rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+/** (btn)row */
+button.row .self {
+  border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
+  background-image: none; background-color: rgba(0,0,0,0);
+  box-shadow: none;
+  /*-fm-box-shadow-persist: none;*/
+  line-height: 0.8line;
+}
+button.row .inner_border,
+button.row:hover .inner_border,
+button.row:focus .inner_border
+{
+  border-radius: 0pt;
+  box-shadow: none;
+}
+
+button.row:hover .self,
+button.row:focus .self
+{
+  background-image: none; background-color: rgba(230,237,242,1);/******* theme color */
+  box-shadow: none;
+}
+
+button.row:pressed .self {
+  background-image: none; background-color: rgba(230,230,230,0.7);
+}
+button.row:pressed .inner_border {
+  box-shadow: inset 0pt 0pt 2pt 0pt rgba(51,51,51,0.12);
+}
+
+button.row .text {
+  text-align: center;
+  -fm-text-vertical-align: center;
+}
+
+
+
+
+
+
+/** (btn)list header */
+/** (textbtn)list header */
+button.cap .self,
+text_box.cap .self {
+  border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
+  border-width: 1pt;
+  border-top-style: solid;
+  
+  color: #FFF;
+  line-height: 0.8line;
+  text-align: left;
+  -fm-text-vertical-align: center;
+}
+button.cap .text,
+text_box.cap .text {
+  position: absolute;
+  top: 0pt;
+  right: 0pt;
+  bottom: 0pt;
+  left: 0pt;
+  height: auto;/* ! */
+  margin: -0.6pt 4.8pt -4.8pt 4.8pt;
+}
+button.cap .inner_border,
+text_box.cap .inner_border {
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+}
+
+button.cap:normal .self,
+text_box.cap:normal .self {/* theme color */
+  border-color: #d6dfe2;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#97afb6), to(#7e9aa5));
+}
+button.cap:hover .self,
+text_box.cap:hover .self {/* theme color */
+  border-color: #97afb6;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7e9aa5), to(#69858f));
+}
+button.cap:pressed .self,
+text_box.cap:pressed .self {/* theme color */
+  border-color: #557079;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#69858f), to(#7e9aa5));
+}
+
+/* theme color */
+button.cap:pressed .inner_border,
+text_box.cap:pressed .inner_border {
+  box-shadow: inset 0pt 0pt 3pt 1pt @ex2;
+}
+
+
+
+
+
+
+/** btn_check, btn_radio */
+button.btn_check .self,
+button.btn_radio .self
+{
+  *background-color: #FBFBFB;
+}
+button.btn_check .self {border-radius: 2pt;}
+button.btn_radio .self {border-radius: 50%;}
+button.btn_check .inner_border {border-radius: 2pt;}
+button.btn_radio .inner_border {border-radius: 50%;}
+
+button.btn_check:normal .self,
+button.btn_radio:normal .self,
+button.btn_check:hover .self,
+button.btn_radio:hover .self,
+button.btn_check:pressed .self,
+button.btn_radio:pressed .self
+{
+  border-style: none; border-width: 0pt; border-color: #555;
+  background-image: none; background-color: #666;
+  box-shadow: none;
+  
+  text-align: center;
+  font-size: 1pt;
+  -fm-text-vertical-align: center;
+}
+
+button.btn_check:hover .self,
+button.btn_radio:hover .self
+{
+  *box-shadow: 0pt 0pt 1pt 0pt rgba(100%,100%,100%,0.6);/******/
+}
+button.btn_check:pressed .self,
+button.btn_radio:pressed .self
+{
+  *box-shadow: 0pt 0pt 1pt 0pt rgba(100%,100%,100%,0.6);/******/
+}
+
+
+
+button.btn_check:normal .inner_border,
+button.btn_radio:normal .inner_border
+{
+  margin: 0pt;
+  padding: 0pt;
+  background-image: none; background-color: none;
+  box-shadow: none;
+}
+
+button.btn_check:hover .inner_border,
+button.btn_radio:hover .inner_border
+{
+  background-image: none; background-color: rgba(82%,82%,82%,0.3);
+  box-shadow: none;
+}
+button.btn_check:pressed .inner_border,
+button.btn_radio:pressed .inner_border
+{
+  background-image: none; background-color: rgba(64%,64%,64%,0.7);
+  box-shadow: none;
+}
+
+
+
+/** (rect)backCheck, (rect)backRadio */
+rectangle.backCheck .self,
+rectangle.backRadio .self
+{
+  border-style: solid; border-width: 2pt; border-color: #555;
+  background-image: none; background-color: #FFF;
+}
+rectangle.backCheck .self {border-radius: 2pt;}
+rectangle.backRadio .self {border-radius: 50%;}
+
+
+
+/** (btn)fill_exN, (btn)circle_exN */
+/** (btn)min_exN */
+/** (btn)mat_hNN */
+button_bar.fill_ex1 .self, button_bar.circle_ex1 .self,
+button_bar.fill_ex2 .self, button_bar.circle_ex2 .self,
+button_bar.fill_ex3 .self, button_bar.circle_ex3 .self,
+button_bar.fill_ex4 .self, button_bar.circle_ex4 .self,
+button_bar.fill_ex5 .self, button_bar.circle_ex5 .self,
+button_bar.fill_ex6 .self, button_bar.circle_ex6 .self,
+button_bar.fill_ex7 .self, button_bar.circle_ex7 .self,
+button_bar.fill_ex8 .self, button_bar.circle_ex8 .self,
+button_bar.fill_gs9 .self, button_bar.circle_gs9 .self,
+button_bar.fill_gsA .self, button_bar.circle_gsA .self,
+button_bar.fill_gsB .self, button_bar.circle_gsB .self,
+button_bar.fill_gsC .self, button_bar.circle_gsC .self,
+button_bar.fill_gsD .self, button_bar.circle_gsD .self,
+button_bar.fill_gsE .self, button_bar.circle_gsE .self,
+button_bar.fill_gsF .self, button_bar.circle_gsF .self,
+button_bar.min_ex2 .self, button_bar.mir .self,
+button_bar.min_ex4 .self,
+button_bar.min_ex8 .self,
+button_bar.min_gs3 .self,
+button_bar.min_gs6 .self,
+button_bar.min_gs9 .self,
+button_bar.min_gsF .self,
+button_bar.mat_h25 .self, button_bar.mat_h25_gsF .self,
+button_bar.mat_h30 .self, button_bar.mat_h30_gsF .self,
+button_bar.mat_h35 .self, button_bar.mat_h35_gsF .self
+{
+  border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
+}
+
+button_bar.fill_ex1 .button_bar_divider, button_bar.circle_ex1 .button_bar_divider,
+button_bar.fill_ex2 .button_bar_divider, button_bar.circle_ex2 .button_bar_divider,
+button_bar.fill_ex3 .button_bar_divider, button_bar.circle_ex3 .button_bar_divider,
+button_bar.fill_ex4 .button_bar_divider, button_bar.circle_ex4 .button_bar_divider,
+button_bar.fill_ex5 .button_bar_divider, button_bar.circle_ex5 .button_bar_divider,
+button_bar.fill_ex6 .button_bar_divider, button_bar.circle_ex6 .button_bar_divider,
+button_bar.fill_ex7 .button_bar_divider, button_bar.circle_ex7 .button_bar_divider,
+button_bar.fill_ex8 .button_bar_divider, button_bar.circle_ex8 .button_bar_divider,
+button_bar.fill_ex9 .button_bar_divider, button_bar.circle_ex9 .button_bar_divider,
+button_bar.fill_gs9 .button_bar_divider, button_bar.circle_gs9 .button_bar_divider,
+button_bar.fill_gsA .button_bar_divider, button_bar.circle_gsA .button_bar_divider,
+button_bar.fill_gsB .button_bar_divider, button_bar.circle_gsB .button_bar_divider,
+button_bar.fill_gsC .button_bar_divider, button_bar.circle_gsC .button_bar_divider,
+button_bar.fill_gsD .button_bar_divider, button_bar.circle_gsD .button_bar_divider,
+button_bar.fill_gsE .button_bar_divider, button_bar.circle_gsE .button_bar_divider,
+button_bar.fill_gsF .button_bar_divider, button_bar.circle_gsF .button_bar_divider,
+button_bar.min_ex2 .button_bar_divider, button_bar.mir .button_bar_divider,
+button_bar.min_ex4 .button_bar_divider,
+button_bar.min_ex8 .button_bar_divider,
+button_bar.min_gs3 .button_bar_divider,
+button_bar.min_gs6 .button_bar_divider,
+button_bar.min_gs9 .button_bar_divider,
+button_bar.min_gsF .button_bar_divider,
+button_bar.mat_h25 .button_bar_divider, button_bar.mat_h25_gsF .button_bar_divider,
+button_bar.mat_h30 .button_bar_divider, button_bar.mat_h30_gsF .button_bar_divider,
+button_bar.mat_h35 .button_bar_divider, button_bar.mat_h35_gsF .button_bar_divider
+{
+  border-style: none; border-width: 0pt; border-color: rgba(0,0,0,0);
+}
+
+
+
+button.fill_ex1 .self,
+button.fill_ex2 .self,
+button.fill_ex3 .self,
+button.fill_ex4 .self,
+button.fill_ex5 .self,
+button.fill_ex6 .self,
+button.fill_ex7 .self,
+button.fill_ex8 .self,
+button.fill_ex9 .self,
+button.fill_gs9 .self,
+button.fill_gsA .self,
+button.fill_gsB .self,
+button.fill_gsC .self,
+button.fill_gsD .self,
+button.fill_gsE .self,
+button.fill_gsF .self,
+
+button_bar_segment.fill_ex1 .self,
+button_bar_segment.fill_ex2 .self,
+button_bar_segment.fill_ex3 .self,
+button_bar_segment.fill_ex4 .self,
+button_bar_segment.fill_ex5 .self,
+button_bar_segment.fill_ex6 .self,
+button_bar_segment.fill_ex7 .self,
+button_bar_segment.fill_ex8 .self,
+button_bar_segment.fill_ex9 .self,
+button_bar_segment.fill_acc .self,
+button_bar_segment.fill_gs9 .self,
+button_bar_segment.fill_gsA .self,
+button_bar_segment.fill_gsB .self,
+button_bar_segment.fill_gsC .self,
+button_bar_segment.fill_gsD .self,
+button_bar_segment.fill_gsE .self,
+button_bar_segment.fill_gsF .self
+{
+  border-style: none; border-radius: 3pt;/*border-image-source: none;*/
+  background-image: none;
+  box-shadow: none;
+}
+button.circle_ex1 .self,
+button.circle_ex2 .self,
+button.circle_ex3 .self,
+button.circle_ex4 .self,
+button.circle_ex5 .self,
+button.circle_ex6 .self,
+button.circle_ex7 .self,
+button.circle_ex8 .self,
+button.circle_ex9 .self,
+button.circle_acc .self,
+button.circle_gs9 .self,
+button.circle_gsA .self,
+button.circle_gsB .self,
+button.circle_gsC .self,
+button.circle_gsD .self,
+button.circle_gsE .self,
+button.circle_gsF .self,
+
+button_bar_segment.circle_ex1 .self,
+button_bar_segment.circle_ex2 .self,
+button_bar_segment.circle_ex3 .self,
+button_bar_segment.circle_ex4 .self,
+button_bar_segment.circle_ex5 .self,
+button_bar_segment.circle_ex6 .self,
+button_bar_segment.circle_ex7 .self,
+button_bar_segment.circle_ex8 .self,
+button_bar_segment.circle_ex9 .self,
+button_bar_segment.circle_acc .self,
+button_bar_segment.circle_gs9 .self,
+button_bar_segment.circle_gsA .self,
+button_bar_segment.circle_gsB .self,
+button_bar_segment.circle_gsC .self,
+button_bar_segment.circle_gsD .self,
+button_bar_segment.circle_gsE .self,
+button_bar_segment.circle_gsF .self
+{
+  border-style: none; border-radius: 50%;
+  background-image: none;
+  box-shadow: 0pt 1pt 2pt 0pt rgba(0,0,0,0.42);
+}
+button_bar_segment.fill_ex1 .self,
+button_bar_segment.fill_ex2 .self,
+button_bar_segment.fill_ex3 .self,
+button_bar_segment.fill_ex4 .self,
+button_bar_segment.fill_ex5 .self,
+button_bar_segment.fill_ex6 .self,
+button_bar_segment.fill_ex7 .self,
+button_bar_segment.fill_ex8 .self,
+button_bar_segment.fill_ex9 .self,
+button_bar_segment.fill_acc .self,
+button_bar_segment.fill_gs9 .self,
+button_bar_segment.fill_gsA .self,
+button_bar_segment.fill_gsB .self,
+button_bar_segment.fill_gsC .self,
+button_bar_segment.fill_gsD .self,
+button_bar_segment.fill_gsE .self,
+button_bar_segment.fill_gsF .self
+{
+  border-style: solid; border-width: 1pt; border-color: rgba(0,0,0,0);
+  text-align: center;
+  -fm-text-vertical-align: center;
+}
+
+button_bar_segment.circle_ex1 .self,
+button_bar_segment.circle_ex2 .self,
+button_bar_segment.circle_ex3 .self,
+button_bar_segment.circle_ex4 .self,
+button_bar_segment.circle_ex5 .self,
+button_bar_segment.circle_ex6 .self,
+button_bar_segment.circle_ex7 .self,
+button_bar_segment.circle_ex8 .self,
+button_bar_segment.circle_ex9 .self,
+button_bar_segment.circle_acc .self,
+button_bar_segment.circle_gs9 .self,
+button_bar_segment.circle_gsA .self,
+button_bar_segment.circle_gsB .self,
+button_bar_segment.circle_gsC .self,
+button_bar_segment.circle_gsD .self,
+button_bar_segment.circle_gsE .self,
+button_bar_segment.circle_gsF .self
+{
+  border-style: solid; border-width: 4pt; border-color: rgba(0,0,0,0);
+  text-align: center;
+  -fm-text-vertical-align: center;
+}
+
+button.fill_ex1 .self, button.circle_ex1 .self,
+button.fill_ex2 .self, button.circle_ex2 .self,
+button_bar_segment.fill_ex1 .self, button_bar_segment.circle_ex1 .self,
+button_bar_segment.fill_ex2 .self, button_bar_segment.circle_ex2 .self
+{color: #FCFCFC;}
+
+button.fill_ex3 .self, button.circle_ex3 .self,
+button.fill_ex4 .self, button.circle_ex4 .self,
+button.fill_ex5 .self, button.circle_ex5 .self,
+button.fill_ex6 .self, button.circle_ex6 .self,
+button.fill_acc .self, button.circle_acc .self,
+button.fill_gs9 .self, button.circle_gs9 .self,
+button.fill_gsA .self, button.circle_gsA .self,
+button.fill_gsB .self, button.circle_gsB .self,
+button.fill_gsC .self, button.circle_gsC .self,
+button_bar_segment.fill_ex3 .self, button_bar_segment.circle_ex3 .self,
+button_bar_segment.fill_ex4 .self, button_bar_segment.circle_ex4 .self,
+button_bar_segment.fill_ex5 .self, button_bar_segment.circle_ex5 .self,
+button_bar_segment.fill_ex6 .self, button_bar_segment.circle_ex6 .self,
+button_bar_segment.fill_acc .self, button_bar_segment.circle_acc .self,
+button_bar_segment.fill_gs9 .self, button_bar_segment.circle_gs9 .self,
+button_bar_segment.fill_gsA .self, button_bar_segment.circle_gsA .self,
+button_bar_segment.fill_gsB .self, button_bar_segment.circle_gsB .self,
+button_bar_segment.fill_gsC .self, button_bar_segment.circle_gsC .self
+{color: #FFF;}
+
+button.fill_ex7 .self, button.circle_ex7 .self,
+button.fill_ex8 .self, button.circle_ex8 .self,
+button.fill_ex9 .self, button.circle_ex9 .self,
+button.fill_gsD .self, button.circle_gsD .self,
+button.fill_gsE .self, button.circle_gsE .self,
+button.fill_gsF .self, button.circle_gsF .self,
+button_bar_segment.fill_ex7 .self, button_bar_segment.circle_ex7 .self,
+button_bar_segment.fill_ex8 .self, button_bar_segment.circle_ex8 .self,
+button_bar_segment.fill_ex9 .self, button_bar_segment.circle_ex9 .self,
+button_bar_segment.fill_gsD .self, button_bar_segment.circle_gsD .self,
+button_bar_segment.fill_gsE .self, button_bar_segment.circle_gsE .self,
+button_bar_segment.fill_gsF .self, button_bar_segment.circle_gsF .self
+{color: #666;}
+
+
+button.fill_ex1:hover .self, button.circle_ex1:hover .self,
+button.fill_ex2:hover .self, button.circle_ex2:hover .self,
+button.fill_ex3:hover .self, button.circle_ex3:hover .self,
+button.fill_ex4:hover .self, button.circle_ex4:hover .self,
+button.fill_ex5:hover .self, button.circle_ex5:hover .self,
+button.fill_ex6:hover .self, button.circle_ex6:hover .self,
+button.fill_ex7:hover .self, button.circle_ex7:hover .self,
+button.fill_ex8:hover .self, button.circle_ex8:hover .self,
+button.fill_ex9:hover .self, button.circle_ex9:hover .self,
+button.fill_acc:hover .self, button.circle_acc:hover .self,
+button.fill_gs9:hover .self, button.circle_gs9:hover .self,
+button.fill_gsA:hover .self, button.circle_gsA:hover .self,
+button.fill_gsB:hover .self, button.circle_gsB:hover .self,
+button.fill_gsC:hover .self, button.circle_gsC:hover .self,
+button.fill_gsD:hover .self, button.circle_gsD:hover .self,
+button.fill_gsE:hover .self, button.circle_gsE:hover .self,
+button.fill_gsF:hover .self, button.circle_gsF:hover .self,
+button_bar_segment.fill_ex1:hover .self, button_bar_segment.circle_ex1:hover .self,
+button_bar_segment.fill_ex2:hover .self, button_bar_segment.circle_ex2:hover .self,
+button_bar_segment.fill_ex3:hover .self, button_bar_segment.circle_ex3:hover .self,
+button_bar_segment.fill_ex4:hover .self, button_bar_segment.circle_ex4:hover .self,
+button_bar_segment.fill_ex5:hover .self, button_bar_segment.circle_ex5:hover .self,
+button_bar_segment.fill_ex6:hover .self, button_bar_segment.circle_ex6:hover .self,
+button_bar_segment.fill_ex7:hover .self, button_bar_segment.circle_ex7:hover .self,
+button_bar_segment.fill_ex8:hover .self, button_bar_segment.circle_ex8:hover .self,
+button_bar_segment.fill_ex9:hover .self, button_bar_segment.circle_ex9:hover .self,
+button_bar_segment.fill_acc:hover .self, button_bar_segment.circle_acc:hover .self,
+button_bar_segment.fill_gs9:hover .self, button_bar_segment.circle_gs9:hover .self,
+button_bar_segment.fill_gsA:hover .self, button_bar_segment.circle_gsA:hover .self,
+button_bar_segment.fill_gsB:hover .self, button_bar_segment.circle_gsB:hover .self,
+button_bar_segment.fill_gsC:hover .self, button_bar_segment.circle_gsC:hover .self,
+button_bar_segment.fill_gsD:hover .self, button_bar_segment.circle_gsD:hover .self,
+button_bar_segment.fill_gsE:hover .self, button_bar_segment.circle_gsE:hover .self,
+button_bar_segment.fill_gsF:hover .self, button_bar_segment.circle_gsF:hover .self
+{
+  background-image: none; background-color: #CCC;
+  box-shadow: 0pt 1pt 5pt 0pt rgba(0,0,0,0.42);
+}
+button.fill_ex1:pressed .self, button.circle_ex1:pressed .self,
+button.fill_ex2:pressed .self, button.circle_ex2:pressed .self,
+button.fill_ex3:pressed .self, button.circle_ex3:pressed .self,
+button.fill_ex4:pressed .self, button.circle_ex4:pressed .self,
+button.fill_ex5:pressed .self, button.circle_ex5:pressed .self,
+button.fill_ex6:pressed .self, button.circle_ex6:pressed .self,
+button.fill_ex7:pressed .self, button.circle_ex7:pressed .self,
+button.fill_ex8:pressed .self, button.circle_ex8:pressed .self,
+button.fill_ex9:pressed .self, button.circle_ex9:pressed .self,
+button.fill_acc:pressed .self, button.circle_acc:pressed .self,
+button.fill_gs9:pressed .self, button.circle_gs9:pressed .self,
+button.fill_gsA:pressed .self, button.circle_gsA:pressed .self,
+button.fill_gsB:pressed .self, button.circle_gsB:pressed .self,
+button.fill_gsC:pressed .self, button.circle_gsC:pressed .self,
+button.fill_gsD:pressed .self, button.circle_gsD:pressed .self,
+button.fill_gsE:pressed .self, button.circle_gsE:pressed .self,
+button.fill_gsF:pressed .self, button.circle_gsF:pressed .self,
+button_bar_segment.fill_ex1:pressed .self, button_bar_segment.circle_ex1:pressed .self,
+button_bar_segment.fill_ex2:pressed .self, button_bar_segment.circle_ex2:pressed .self,
+button_bar_segment.fill_ex3:pressed .self, button_bar_segment.circle_ex3:pressed .self,
+button_bar_segment.fill_ex4:pressed .self, button_bar_segment.circle_ex4:pressed .self,
+button_bar_segment.fill_ex5:pressed .self, button_bar_segment.circle_ex5:pressed .self,
+button_bar_segment.fill_ex6:pressed .self, button_bar_segment.circle_ex6:pressed .self,
+button_bar_segment.fill_ex7:pressed .self, button_bar_segment.circle_ex7:pressed .self,
+button_bar_segment.fill_ex8:pressed .self, button_bar_segment.circle_ex8:pressed .self,
+button_bar_segment.fill_ex9:pressed .self, button_bar_segment.circle_ex9:pressed .self,
+button_bar_segment.fill_acc:pressed .self, button_bar_segment.circle_acc:pressed .self,
+button_bar_segment.fill_gs9:pressed .self, button_bar_segment.circle_gs9:pressed .self,
+button_bar_segment.fill_gsA:pressed .self, button_bar_segment.circle_gsA:pressed .self,
+button_bar_segment.fill_gsB:pressed .self, button_bar_segment.circle_gsB:pressed .self,
+button_bar_segment.fill_gsC:pressed .self, button_bar_segment.circle_gsC:pressed .self,
+button_bar_segment.fill_gsD:pressed .self, button_bar_segment.circle_gsD:pressed .self,
+button_bar_segment.fill_gsE:pressed .self, button_bar_segment.circle_gsE:pressed .self,
+button_bar_segment.fill_gsF:pressed .self, button_bar_segment.circle_gsF:pressed .self
+{
+  background-image: none; background-color: #C0C0C0;
+  box-shadow: none;
+}
+
+button.fill_ex1 .inner_border, button.fill_ex1:hover .inner_border,
+button.circle_ex1 .inner_border, button.circle_ex1:hover .inner_border,
+button.fill_ex2 .inner_border, button.fill_ex2:hover .inner_border,
+button.circle_ex2 .inner_border, button.circle_ex2:hover .inner_border,
+button.fill_ex3 .inner_border, button.fill_ex3:hover .inner_border,
+button.circle_ex3 .inner_border, button.circle_ex3:hover .inner_border,
+button.fill_ex4 .inner_border, button.fill_ex4:hover .inner_border,
+button.circle_ex4 .inner_border, button.circle_ex4:hover .inner_border,
+button.fill_ex5 .inner_border, button.fill_ex5:hover .inner_border,
+button.circle_ex5 .inner_border, button.circle_ex5:hover .inner_border,
+button.fill_ex6 .inner_border, button.fill_ex6:hover .inner_border,
+button.circle_ex6 .inner_border, button.circle_ex6:hover .inner_border,
+button.fill_ex7 .inner_border, button.fill_ex7:hover .inner_border,
+button.circle_ex7 .inner_border, button.circle_ex7:hover .inner_border,
+button.fill_ex8 .inner_border, button.fill_ex8:hover .inner_border,
+button.circle_ex8 .inner_border, button.circle_ex8:hover .inner_border,
+button.fill_ex9 .inner_border, button.fill_ex9:hover .inner_border,
+button.circle_ex9 .inner_border, button.circle_ex9:hover .inner_border,
+button.fill_acc .inner_border, button.fill_acc:hover .inner_border,
+button.circle_acc .inner_border, button.circle_acc:hover .inner_border,
+button.fill_gs9 .inner_border, button.fill_gs9:hover .inner_border,
+button.circle_gs9 .inner_border, button.circle_gs9:hover .inner_border,
+button.fill_gsA .inner_border, button.fill_gsA:hover .inner_border,
+button.circle_gsA .inner_border, button.circle_gsA:hover .inner_border,
+button.fill_gsB .inner_border, button.fill_gsB:hover .inner_border,
+button.circle_gsB .inner_border, button.circle_gsB:hover .inner_border,
+button.fill_gsC .inner_border, button.fill_gsC:hover .inner_border,
+button.circle_gsC .inner_border, button.circle_gsC:hover .inner_border,
+button.fill_gsD .inner_border, button.fill_gsD:hover .inner_border,
+button.circle_gsD .inner_border, button.circle_gsD:hover .inner_border,
+button.fill_gsE .inner_border, button.fill_gsE:hover .inner_border,
+button.circle_gsE .inner_border, button.circle_gsE:hover .inner_border,
+button.fill_gsF .inner_border, button.fill_gsF:hover .inner_border,
+button.circle_gsF .inner_border, button.circle_gsF:hover .inner_border,
+button_bar_segment.fill_ex1 .inner_border, button_bar_segment.fill_ex1:hover .inner_border,
+button_bar_segment.circle_ex1 .inner_border, button_bar_segment.circle_ex1:hover .inner_border,
+button_bar_segment.fill_ex2 .inner_border, button_bar_segment.fill_ex2:hover .inner_border,
+button_bar_segment.circle_ex2 .inner_border, button_bar_segment.circle_ex2:hover .inner_border,
+button_bar_segment.fill_ex3 .inner_border, button_bar_segment.fill_ex3:hover .inner_border,
+button_bar_segment.circle_ex3 .inner_border, button_bar_segment.circle_ex3:hover .inner_border,
+button_bar_segment.fill_ex4 .inner_border, button_bar_segment.fill_ex4:hover .inner_border,
+button_bar_segment.circle_ex4 .inner_border, button_bar_segment.circle_ex4:hover .inner_border,
+button_bar_segment.fill_ex5 .inner_border, button_bar_segment.fill_ex5:hover .inner_border,
+button_bar_segment.circle_ex5 .inner_border, button_bar_segment.circle_ex5:hover .inner_border,
+button_bar_segment.fill_ex6 .inner_border, button_bar_segment.fill_ex6:hover .inner_border,
+button_bar_segment.circle_ex6 .inner_border, button_bar_segment.circle_ex6:hover .inner_border,
+button_bar_segment.fill_ex7 .inner_border, button_bar_segment.fill_ex7:hover .inner_border,
+button_bar_segment.circle_ex7 .inner_border, button_bar_segment.circle_ex7:hover .inner_border,
+button_bar_segment.fill_ex8 .inner_border, button_bar_segment.fill_ex8:hover .inner_border,
+button_bar_segment.circle_ex8 .inner_border, button_bar_segment.circle_ex8:hover .inner_border,
+button_bar_segment.fill_ex9 .inner_border, button_bar_segment.fill_ex9:hover .inner_border,
+button_bar_segment.circle_ex9 .inner_border, button_bar_segment.circle_ex9:hover .inner_border,
+button_bar_segment.fill_acc .inner_border, button_bar_segment.fill_acc:hover .inner_border,
+button_bar_segment.circle_acc .inner_border, button_bar_segment.circle_acc:hover .inner_border,
+button_bar_segment.fill_gs9 .inner_border, button_bar_segment.fill_gs9:hover .inner_border,
+button_bar_segment.circle_gs9 .inner_border, button_bar_segment.circle_gs9:hover .inner_border,
+button_bar_segment.fill_gsA .inner_border, button_bar_segment.fill_gsA:hover .inner_border,
+button_bar_segment.circle_gsA .inner_border, button_bar_segment.circle_gsA:hover .inner_border,
+button_bar_segment.fill_gsB .inner_border, button_bar_segment.fill_gsB:hover .inner_border,
+button_bar_segment.circle_gsB .inner_border, button_bar_segment.circle_gsB:hover .inner_border,
+button_bar_segment.fill_gsC .inner_border, button_bar_segment.fill_gsC:hover .inner_border,
+button_bar_segment.circle_gsC .inner_border, button_bar_segment.circle_gsC:hover .inner_border,
+button_bar_segment.fill_gsD .inner_border, button_bar_segment.fill_gsD:hover .inner_border,
+button_bar_segment.circle_gsD .inner_border, button_bar_segment.circle_gsD:hover .inner_border,
+button_bar_segment.fill_gsE .inner_border, button_bar_segment.fill_gsE:hover .inner_border,
+button_bar_segment.circle_gsE .inner_border, button_bar_segment.circle_gsE:hover .inner_border,
+button_bar_segment.fill_gsF .inner_border, button_bar_segment.fill_gsF:hover .inner_border,
+button_bar_segment.circle_gsF .inner_border, button_bar_segment.circle_gsF:hover .inner_border
+{
+  box-shadow: none;
+  -fm-box-shadow-persist: none;
+}
+
+
+
+button.fill_ex1 .icon, button.circle_ex1 .icon,
+button.fill_ex2 .icon, button.circle_ex2 .icon,
+button_bar_segment.fill_ex1 .icon, button_bar_segment.circle_ex1 .icon,
+button_bar_segment.fill_ex2 .icon, button_bar_segment.circle_ex2 .icon
+{
+  box-sizing: border-box;/* ! */
+  /*-fm-icon-padding: 5pt;padding: 5pt;*/
+  -fm-icon-color: #DDD;
+}
+button.fill_ex3 .icon, button.circle_ex3 .icon,
+button.fill_ex4 .icon, button.circle_ex4 .icon,
+button.fill_ex5 .icon, button.circle_ex5 .icon,
+button.fill_ex6 .icon, button.circle_ex6 .icon,
+button.fill_acc .icon, button.circle_acc .icon,
+button.fill_gs9 .icon, button.circle_gs9 .icon,
+button.fill_gsA .icon, button.circle_gsA .icon,
+button.fill_gsB .icon, button.circle_gsB .icon,
+button.fill_gsC .icon, button.circle_gsC .icon,
+button_bar_segment.fill_ex3 .icon, button_bar_segment.circle_ex3 .icon,
+button_bar_segment.fill_ex4 .icon, button_bar_segment.circle_ex4 .icon,
+button_bar_segment.fill_ex5 .icon, button_bar_segment.circle_ex5 .icon,
+button_bar_segment.fill_ex6 .icon, button_bar_segment.circle_ex6 .icon,
+button_bar_segment.fill_acc .icon, button_bar_segment.circle_acc .icon,
+button_bar_segment.fill_gs9 .icon, button_bar_segment.circle_gs9 .icon,
+button_bar_segment.fill_gsA .icon, button_bar_segment.circle_gsA .icon,
+button_bar_segment.fill_gsB .icon, button_bar_segment.circle_gsB .icon,
+button_bar_segment.fill_gsC .icon, button_bar_segment.circle_gsC .icon
+{
+  box-sizing: border-box;/* ! */
+  padding: 0pt 3pt;
+  /*-fm-icon-padding: 0pt 3pt;*/
+  -fm-icon-color: #FFF;
+}
+
+button.fill_ex7 .icon, button.circle_ex7 .icon,
+button.fill_ex8 .icon, button.circle_ex8 .icon,
+button.fill_ex9 .icon, button.circle_ex9 .icon,
+button.fill_gsD .icon, button.circle_gsD .icon,
+button.fill_gsE .icon, button.circle_gsE .icon,
+button.fill_gsF .icon, button.circle_gsF .icon,
+button_bar_segment.fill_ex7 .icon, button_bar_segment.circle_ex7 .icon,
+button_bar_segment.fill_ex8 .icon, button_bar_segment.circle_ex8 .icon,
+button_bar_segment.fill_ex9 .icon, button_bar_segment.circle_ex9 .icon,
+button_bar_segment.fill_gsD .icon, button_bar_segment.circle_gsD .icon,
+button_bar_segment.fill_gsE .icon, button_bar_segment.circle_gsE .icon,
+button_bar_segment.fill_gsF .icon, button_bar_segment.circle_gsF .icon
+{
+  box-sizing: border-box;/* ! */
+  padding: 0pt 3pt;
+  /*-fm-icon-padding: 0pt 3pt;*/
+  -fm-icon-color: #666;
+}
+
+
+
+/** (btn)min_exN */
+/** (btn)mat_hNN */
+button.min_ex2 .self,
+button.min_ex4 .self,
+button.min_ex8 .self,
+button.min_gs3 .self,
+button.min_gs6 .self,
+button.min_gs9 .self,
+button.min_gsF .self
+{
+  border-radius: 0pt;
+  box-shadow: none;
+}
+button.min_ex2 .inner_border,
+button.min_ex4 .inner_border,
+button.min_ex8 .inner_border,
+button.min_gs3 .inner_border,
+button.min_gs6 .inner_border,
+button.min_gs9 .inner_border,
+button.min_gsF .inner_border
+{
+  border-radius: 0pt;
+  box-shadow: none;
+}
+
+text_box.min_ex2 .self,
+text_box.min_ex4 .self,
+text_box.min_ex8 .self,
+text_box.min_gs3 .self,
+text_box.min_gs6 .self,
+text_box.min_gs9 .self,
+text_box.min_gsF .self,
+button.min_ex2 .self, button_bar_segment.min_ex2 .self, button_bar_segment.min_ex2 .self,
+button.min_ex4 .self, button_bar_segment.min_ex4 .self,
+button.min_ex8 .self, button_bar_segment.min_ex8 .self,
+button.min_gs3 .self, button_bar_segment.min_gs3 .self,
+button.min_gs6 .self, button_bar_segment.min_gs6 .self,
+button.min_gs9 .self, button_bar_segment.min_gs9 .self,
+button.min_gsF .self, button_bar_segment.min_gsF .self,
+button_bar_segment.mat_h25 .self, button_bar_segment.mat_h25_gsF .self,
+button_bar_segment.mat_h30 .self, button_bar_segment.mat_h30_gsF .self,
+button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
+{
+  border-style: solid; border-width: 1pt; border-color: rgba(0,0,0,0);
+  background-image: none; background-color: rgba(0,0,0,0);
+  text-align: center;
+  -fm-text-vertical-align: center;
+}
+
+button.min_ex2 .icon, button_bar_segment.min_ex2 .icon,
+button.min_ex4 .icon, button_bar_segment.min_ex4 .icon,
+button.min_ex8 .icon, button_bar_segment.min_ex8 .icon,
+button.min_gs3 .icon, button_bar_segment.min_gs3 .icon,
+button.min_gs6 .icon, button_bar_segment.min_gs6 .icon,
+button.min_gs9 .icon, button_bar_segment.min_gs9 .icon,
+button.min_gsF .icon, button_bar_segment.min_gsF .icon
+{
+  box-sizing: border-box;/* ! */
+  padding: 0pt 3pt;
+  /*-fm-icon-padding: 0pt 3pt;*/
+}
+
+
+
+text_box.min_gs3 .self, button.min_gs3 .self, button_bar_segment.min_gs3 .self
+{color: #333;}
+text_box.min_gs6 .self, button.min_gs6 .self, button_bar_segment.min_gs6 .self
+{color: #666;}
+text_box.min_gs9 .self, button.min_gs9 .self, button_bar_segment.min_gs9 .self
+{color: #999;}
+text_box.min_gsF .self, button.min_gsF .self, button_bar_segment.min_gsF .self
+{color: #FFF;}
+/*
+button.min_ex2 .self, button_bar_segment.min_ex2 .self,
+button.min_ex4 .self, button_bar_segment.min_ex4 .self,
+button.min_ex8 .self, button_bar_segment.min_ex8 .self,
+button.min_gs3 .self, button_bar_segment.min_gs3 .self,
+button.min_gs6 .self, button_bar_segment.min_gs6 .self,
+button.min_gs9 .self, button_bar_segment.min_gs9 .self,
+button.min_gsF .self, button_bar_segment.min_gsF .self
+{color: #FFF;}
+*/
+
+button.min_gs3 .icon, button_bar_segment.min_gs3 .icon
+{-fm-icon-color: #333;}
+button.min_gs6 .icon, button_bar_segment.min_gs6 .icon
+{-fm-icon-color: #666;}
+button.min_gs9 .icon, button_bar_segment.min_gs9 .icon
+{-fm-icon-color: #999;}
+button.min_gsF .icon, button_bar_segment.min_gsF .icon
+{-fm-icon-color: #FFF;}
+
+
+
+text_box.min_ex2:hover .self, button.min_ex2:hover .self, button_bar_segment.min_ex2:hover .self,
+text_box.min_ex4:hover .self, button.min_ex4:hover .self, button_bar_segment.min_ex4:hover .self,
+text_box.min_ex8:hover .self, button.min_ex8:hover .self, button_bar_segment.min_ex8:hover .self,
+text_box.min_gs3:hover .self, button.min_gs3:hover .self, button_bar_segment.min_gs3:hover .self,
+text_box.min_gs6:hover .self, button.min_gs6:hover .self, button_bar_segment.min_gs6:hover .self,
+text_box.min_gs9:hover .self, button.min_gs9:hover .self, button_bar_segment.min_gs9:hover .self,
+text_box.min_gsF:hover .self, button.min_gsF:hover .self, button_bar_segment.min_gsF:hover .self
+{
+  border-style: solid; border-width: 1pt; border-color: rgba(76%,76%,76%,0.3);
+  /*background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(92%,92%,92%,0.3)), to(rgba(86%,86%,86%,0.3)));*/
+  background-color: rgba(175,175,175,0.18);/*#EEE;*/
+  color: #333;
+}
+/*
+:hover .inner_border{}
+*/
+/*
+button.min_ex2:pressed .icon, button_bar_segment.min_ex2:hover .icon,
+button.min_ex4:pressed .icon, button_bar_segment.min_ex4:hover .icon,
+button.min_ex8:pressed .icon, button_bar_segment.min_ex8:hover .icon,
+button.min_gs3:pressed .icon, button_bar_segment.min_gs3:hover .icon,
+button.min_gs6:pressed .icon, button_bar_segment.min_gs6:hover .icon,
+button.min_gs9:pressed .icon, button_bar_segment.min_gs9:hover .icon,
+button.min_gsF:pressed .icon, button_bar_segment.min_gsF:hover .icon
+{-fm-icon-color: #333;}
+*/
+
+text_box.min_ex2:pressed .self, button.min_ex2:pressed .self, button_bar_segment.min_ex2:pressed .self,
+text_box.min_ex4:pressed .self, button.min_ex4:pressed .self, button_bar_segment.min_ex4:pressed .self,
+text_box.min_ex8:pressed .self, button.min_ex8:pressed .self, button_bar_segment.min_ex8:pressed .self,
+text_box.min_gs3:pressed .self, button.min_gs3:pressed .self, button_bar_segment.min_gs3:pressed .self,
+text_box.min_gs6:pressed .self, button.min_gs6:pressed .self, button_bar_segment.min_gs6:pressed .self,
+text_box.min_gs9:pressed .self, button.min_gs9:pressed .self, button_bar_segment.min_gs9:pressed .self,
+text_box.min_gsF:pressed .self, button.min_gsF:pressed .self, button_bar_segment.min_gsF:pressed .self
+{
+  border-top-color: rgba(48%,48%,48%,1);
+  border-right-color: rgba(54%,54%,54%,1);
+  border-bottom-color: rgba(66%,66%,66%,1);
+  border-left-color: rgba(48%,48%,48%,1);
+  /*background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(rgba(72%,72%,72%,0.66)), to(rgba(86%,86%,86%,0.66)));*/
+  background-color: rgba(124,124,124,0.18);
+}
+text_box.min_ex2:pressed .inner_border, button.min_ex2:pressed .inner_border, button_bar_segment.min_ex2:pressed .inner_border,
+text_box.min_ex4:pressed .inner_border, button.min_ex4:pressed .inner_border, button_bar_segment.min_ex4:pressed .inner_border,
+text_box.min_ex8:pressed .inner_border, button.min_ex8:pressed .inner_border, button_bar_segment.min_ex8:pressed .inner_border,
+text_box.min_gs3:pressed .inner_border, button.min_gs3:pressed .inner_border, button_bar_segment.min_gs3:pressed .inner_border,
+text_box.min_gs6:pressed .inner_border, button.min_gs6:pressed .inner_border, button_bar_segment.min_gs6:pressed .inner_border,
+text_box.min_gs9:pressed .inner_border, button.min_gs9:pressed .inner_border, button_bar_segment.min_gs9:pressed .inner_border,
+text_box.min_gsF:pressed .inner_border, button.min_gsF:pressed .inner_border, button_bar_segment.min_gsF:pressed .inner_border
+{
+  box-shadow: inset 0pt 0pt 2pt 0pt rgba(20%,20%,20%,0.4);
+}
+
+
+
+button_bar_segment.mir .self
+{
+  border-style: solid; border-width: 3pt; border-radius: 7pt; border-color: rgba(0,0,0,0);
+  background-image: none; background-color: rgba(0,0,0,0);
+  text-align: center;
+  -fm-text-vertical-align: center;
+}
+button_bar_segment.mir:hover .self
+{
+  background-image: none; background-color: rgba(248,248,248,0.72);
+}
+
+button_bar_segment.mir:pressed .self
+{
+  background-image: none; background-color: rgba(212,212,212,0.48);
+}
+/**/
+/*background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(rgba(72%,72%,72%,0.66)), to(rgba(86%,86%,86%,0.66)));*/
+
+button_bar_segment.mir .inner_border
+{
+  border-style: solid; border-width: 1pt; border-radius: 4pt; border-color: rgba(0,0,0,0);
+  background-image: none; background-color: rgba(0,0,0,0);
+  box-shadow: none;
+}
+button_bar_segment.mir:hover .inner_border
+{
+  border-radius: 3pt;
+  /*
+  border-top-color: #FCFCFC;
+  border-right-color: #EEE;
+  border-bottom-color: #EEE;
+  border-left-color: #F6F6F6;
+  */
+  border-top-color: #DDD;
+  border-right-color: #CCC;
+  border-bottom-color: #C3C3C3;
+  border-left-color: #DDD;
+  box-shadow: inset 0pt 0pt 1pt 0pt #FFF;
+}
+button_bar_segment.mir:pressed .inner_border
+{
+  border-radius: 3pt;
+  border-top-color: rgba(48%,48%,48%,1);
+  border-right-color: rgba(54%,54%,54%,1);
+  border-bottom-color: rgba(66%,66%,66%,1);
+  border-left-color: rgba(48%,48%,48%,1);
+  box-shadow: inset 0pt 0pt 2pt 0pt rgba(20%,20%,20%,0.4);
+}
+
+
+
+button_bar_segment.mat_h25:pressed .self, button_bar_segment.mat_h25_gsF:pressed .self,
+button_bar_segment.mat_h30:pressed .self, button_bar_segment.mat_h30_gsF:pressed .self,
+button_bar_segment.mat_h35:pressed .self, button_bar_segment.mat_h35_gsF:pressed .self
+{
+  border-color: rgba(0,0,0,0);
+  background-image: none; background-color: rgba(212,212,212,0.48);
+}
+button_bar_segment.mat_h25 .inner_border, button_bar_segment.mat_h25_gsF .inner_border,
+button_bar_segment.mat_h30 .inner_border, button_bar_segment.mat_h30_gsF .inner_border,
+button_bar_segment.mat_h35 .inner_border, button_bar_segment.mat_h35_gsF .inner_border,
+button_bar_segment.mat_h25:hover .inner_border, button_bar_segment.mat_h25_gsF:hover .inner_border,
+button_bar_segment.mat_h30:hover .inner_border, button_bar_segment.mat_h30_gsF:hover .inner_border,
+button_bar_segment.mat_h35:hover .inner_border, button_bar_segment.mat_h35_gsF:hover .inner_border,
+button_bar_segment.mat_h25:pressed .inner_border, button_bar_segment.mat_h25_gsF:pressed .inner_border,
+button_bar_segment.mat_h30:pressed .inner_border, button_bar_segment.mat_h30_gsF:pressed .inner_border,
+button_bar_segment.mat_h35:pressed .inner_border, button_bar_segment.mat_h35_gsF:pressed .inner_border
+{
+  box-shadow: none;
+}
+
+
+
+
+
+
+/** (btn)selectknob */
+button_bar.selectknob .self {
+  border-style: none; border-width: 0pt; border-radius: 0pt;  border-color: rgba(0,0,0,0);
+}
+button_bar.selectknob .button_bar_divider {
+  border-style: none; border-width: 0pt; border-color: rgba(0,0,0,0);
+}
+
+button_bar_segment.selectknob .self {
+  border-style: solid; border-width: 1pt; border-radius: 3pt; border-color: rgba(0,0,0,0);
+  background-image: none; background-color: rgba(0,0,0,0);
+  text-align: left;
+  -fm-text-vertical-align: center;/**/
+  color: #333;
+  box-shadow: none;
+}
+button_bar_segment.selectknob .inner_border,
+button_bar_segment.selectknob:hover .inner_border,
+button_bar_segment.selectknob:focus .inner_border
+/*button_bar_segment.selectknob:pressed .inner_border*/
+{
+  padding-left: 25pt;/* left space for select icon */
+  box-shadow: none;
+}
+
+button_bar_segment.selectknob:hover .self {
+  background-image: none; background-color: rgba(124,124,124,0.18);
+  box-shadow: none;
+}
+button_bar_segment.selectknob:pressed .self {
+  background-image: none; background-color: rgba(124,124,124,0.3);
+  box-shadow: none;
+}
+/*
+button_bar_segment.selectknob .text {
+  box-sizing: content-box;
+  margin-top: 2pt;
+  padding-top: -2pt;
+}
+*/
+
+
