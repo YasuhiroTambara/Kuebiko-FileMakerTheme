@@ -16,7 +16,8 @@ text_box .text {
 
 
 
-text_box.txt_09 .self, text_box.txt_09c .self, text_box.txt_09r .self,
+text_box.left_upp_gs3_p09 .self, text_box.right_upp_gs3_p09 .self, text_box.center_upp_gs3_p09 .self,
+text_box.left_upp_gsF_p09 .self, text_box.right_upp_gsF_p09 .self, text_box.center_upp_gsF_p09 .self,
 text_box.left_ex2_p09 .self, text_box.right_ex2_p09 .self, text_box.center_ex2_p09 .self,
 text_box.left_ex4_p09 .self, text_box.right_ex4_p09 .self, text_box.center_ex4_p09 .self,
 text_box.left_ex8_p09 .self, text_box.right_ex8_p09 .self, text_box.center_ex8_p09 .self,
@@ -24,7 +25,8 @@ text_box.left_gs3_p09 .self, text_box.right_gs3_p09 .self, text_box.center_gs3_p
 text_box.left_gsF_p09 .self, text_box.right_gsF_p09 .self, text_box.center_gsF_p09 .self
 {font-size: 9pt;}
 
-text_box.txt_10 .self, text_box.txt_10c .self, text_box.txt_10r .self,
+text_box.left_upp_gs3_p10 .self, text_box.right_upp_gs3_p10 .self, text_box.center_upp_gs3_p10 .self,
+text_box.left_upp_gsF_p10 .self, text_box.right_upp_gsF_p10 .self, text_box.center_upp_gsF_p10 .self,
 text_box.left_ex2_p10 .self, text_box.right_ex2_p10 .self, text_box.center_ex2_p10 .self,
 text_box.left_ex4_p10 .self, text_box.right_ex4_p10 .self, text_box.center_ex4_p10 .self,
 text_box.left_ex8_p10 .self, text_box.right_ex8_p10 .self, text_box.center_ex8_p10 .self,
@@ -32,7 +34,8 @@ text_box.left_gs3_p10 .self, text_box.right_gs3_p10 .self, text_box.center_gs3_p
 text_box.left_gsF_p10 .self, text_box.right_gsF_p10 .self, text_box.center_gsF_p10 .self
 {font-size: 10pt;}
 
-text_box.txt_11 .self, text_box.txt_11c .self, text_box.txt_11r .self,
+text_box.left_upp_gs3_p11 .self, text_box.right_upp_gs3_p11 .self, text_box.center_upp_gs3_p11 .self,
+text_box.left_upp_gsF_p11 .self, text_box.right_upp_gsF_p11 .self, text_box.center_upp_gsF_p11 .self,
 text_box.left_ex2_p11 .self, text_box.right_ex2_p11 .self, text_box.center_ex2_p11 .self,
 text_box.left_ex4_p11 .self, text_box.right_ex4_p11 .self, text_box.center_ex4_p11 .self,
 text_box.left_ex8_p11 .self, text_box.right_ex8_p11 .self, text_box.center_ex8_p11 .self,
@@ -40,7 +43,8 @@ text_box.left_gs3_p11 .self, text_box.right_gs3_p11 .self, text_box.center_gs3_p
 text_box.left_gsF_p11 .self, text_box.right_gsF_p11 .self, text_box.center_gsF_p11 .self
 {font-size: 11pt;}
 
-text_box.txt_12 .self, text_box.txt_12c .self, text_box.txt_12r .self,
+text_box.left_upp_gs3_p12 .self, text_box.right_upp_gs3_p12 .self, text_box.center_upp_gs3_p12 .self,
+text_box.left_upp_gsF_p12 .self, text_box.right_upp_gsF_p12 .self, text_box.center_upp_gsF_p12 .self,
 text_box.left_ex2_p12 .self, text_box.right_ex2_p12 .self, text_box.center_ex2_p12 .self,
 text_box.left_ex4_p12 .self, text_box.right_ex4_p12 .self, text_box.center_ex4_p12 .self,
 text_box.left_ex8_p12 .self, text_box.right_ex8_p12 .self, text_box.center_ex8_p12 .self,
@@ -48,7 +52,8 @@ text_box.left_gs3_p12 .self, text_box.right_gs3_p12 .self, text_box.center_gs3_p
 text_box.left_gsF_p12 .self, text_box.right_gsF_p12 .self, text_box.center_gsF_p12 .self
 {font-size: 12pt;}
 
-text_box.txt_13 .self, text_box.txt_13c .self, text_box.txt_13r .self,
+text_box.left_upp_gs3_p13 .self, text_box.right_upp_gs3_p13 .self, text_box.center_upp_gs3_p13 .self,
+text_box.left_upp_gsF_p13 .self, text_box.right_upp_gsF_p13 .self, text_box.center_upp_gsF_p13 .self,
 text_box.left_ex2_p13 .self, text_box.right_ex2_p13 .self, text_box.center_ex2_p13 .self,
 text_box.left_ex4_p13 .self, text_box.right_ex4_p13 .self, text_box.center_ex4_p13 .self,
 text_box.left_ex8_p13 .self, text_box.right_ex8_p13 .self, text_box.center_ex8_p13 .self,
@@ -56,7 +61,8 @@ text_box.left_gs3_p13 .self, text_box.right_gs3_p13 .self, text_box.center_gs3_p
 text_box.left_gsF_p13 .self, text_box.right_gsF_p13 .self, text_box.center_gsF_p13 .self
 {font-size: 13pt;}
 
-text_box.txt_14 .self, text_box.txt_14c .self, text_box.txt_14r .self,
+text_box.left_upp_gs3_p14 .self, text_box.right_upp_gs3_p14 .self, text_box.center_upp_gs3_p14 .self,
+text_box.left_upp_gsF_p14 .self, text_box.right_upp_gsF_p14 .self, text_box.center_upp_gsF_p14 .self,
 text_box.left_ex2_p14 .self, text_box.right_ex2_p14 .self, text_box.center_ex2_p14 .self,
 text_box.left_ex4_p14 .self, text_box.right_ex4_p14 .self, text_box.center_ex4_p14 .self,
 text_box.left_ex8_p14 .self, text_box.right_ex8_p14 .self, text_box.center_ex8_p14 .self,
@@ -64,7 +70,8 @@ text_box.left_gs3_p14 .self, text_box.right_gs3_p14 .self, text_box.center_gs3_p
 text_box.left_gsF_p14 .self, text_box.right_gsF_p14 .self, text_box.center_gsF_p14 .self
 {font-size: 14pt;}
 
-text_box.txt_15 .self, text_box.txt_15c .self, text_box.txt_15r .self,
+text_box.left_upp_gs3_p15 .self, text_box.right_upp_gs3_p15 .self, text_box.center_upp_gs3_p15 .self,
+text_box.left_upp_gsF_p15 .self, text_box.right_upp_gsF_p15 .self, text_box.center_upp_gsF_p15 .self,
 text_box.left_ex2_p15 .self, text_box.right_ex2_p15 .self, text_box.center_ex2_p15 .self,
 text_box.left_ex4_p15 .self, text_box.right_ex4_p15 .self, text_box.center_ex4_p15 .self,
 text_box.left_ex8_p15 .self, text_box.right_ex8_p15 .self, text_box.center_ex8_p15 .self,
@@ -72,7 +79,8 @@ text_box.left_gs3_p15 .self, text_box.right_gs3_p15 .self, text_box.center_gs3_p
 text_box.left_gsF_p15 .self, text_box.right_gsF_p15 .self, text_box.center_gsF_p15 .self
 {font-size: 15pt;}
 
-text_box.txt_16 .self, text_box.txt_16c .self, text_box.txt_16r .self,
+text_box.left_upp_gs3_p16 .self, text_box.right_upp_gs3_p16 .self, text_box.center_upp_gs3_p16 .self,
+text_box.left_upp_gsF_p16 .self, text_box.right_upp_gsF_p16 .self, text_box.center_upp_gsF_p16 .self,
 text_box.left_ex2_p16 .self, text_box.right_ex2_p16 .self, text_box.center_ex2_p16 .self,
 text_box.left_ex4_p16 .self, text_box.right_ex4_p16 .self, text_box.center_ex4_p16 .self,
 text_box.left_ex8_p16 .self, text_box.right_ex8_p16 .self, text_box.center_ex8_p16 .self,
@@ -80,7 +88,8 @@ text_box.left_gs3_p16 .self, text_box.right_gs3_p16 .self, text_box.center_gs3_p
 text_box.left_gsF_p16 .self, text_box.right_gsF_p16 .self, text_box.center_gsF_p16 .self
 {font-size: 16pt;}
 
-text_box.txt_17 .self, text_box.txt_17c .self, text_box.txt_17r .self,
+text_box.left_upp_gs3_p17 .self, text_box.right_upp_gs3_p17 .self, text_box.center_upp_gs3_p17 .self,
+text_box.left_upp_gsF_p17 .self, text_box.right_upp_gsF_p17 .self, text_box.center_upp_gsF_p17 .self,
 text_box.left_ex2_p17 .self, text_box.right_ex2_p17 .self, text_box.center_ex2_p17 .self,
 text_box.left_ex4_p17 .self, text_box.right_ex4_p17 .self, text_box.center_ex4_p17 .self,
 text_box.left_ex8_p17 .self, text_box.right_ex8_p17 .self, text_box.center_ex8_p17 .self,
@@ -88,7 +97,8 @@ text_box.left_gs3_p17 .self, text_box.right_gs3_p17 .self, text_box.center_gs3_p
 text_box.left_gsF_p17 .self, text_box.right_gsF_p17 .self, text_box.center_gsF_p17 .self
 {font-size: 17pt;}
 
-text_box.txt_18 .self, text_box.txt_18c .self, text_box.txt_18r .self,
+text_box.left_upp_gs3_p18 .self, text_box.right_upp_gs3_p18 .self, text_box.center_upp_gs3_p18 .self,
+text_box.left_upp_gsF_p18 .self, text_box.right_upp_gsF_p18 .self, text_box.center_upp_gsF_p18 .self,
 text_box.left_ex2_p18 .self, text_box.right_ex2_p18 .self, text_box.center_ex2_p18 .self,
 text_box.left_ex4_p18 .self, text_box.right_ex4_p18 .self, text_box.center_ex4_p18 .self,
 text_box.left_ex8_p18 .self, text_box.right_ex8_p18 .self, text_box.center_ex8_p18 .self,
@@ -117,16 +127,16 @@ text_box.center_ex2_p17 .self, text_box.center_ex4_p17 .self, text_box.center_ex
 text_box.center_gs3_p17 .self, text_box.center_gsF_p17 .self,
 text_box.center_ex2_p18 .self, text_box.center_ex4_p18 .self, text_box.center_ex8_p18 .self,
 text_box.center_gs3_p18 .self, text_box.center_gsF_p18 .self,
-text_box.txt_09c .self,
-text_box.txt_10c .self,
-text_box.txt_11c .self,
-text_box.txt_12c .self,
-text_box.txt_13c .self,
-text_box.txt_14c .self,
-text_box.txt_15c .self,
-text_box.txt_16c .self,
-text_box.txt_17c .self,
-text_box.txt_18c .self
+text_box.center_upp_gs3_p09 .self, text_box.center_upp_gsF_p09 .self,
+text_box.center_upp_gs3_p10 .self, text_box.center_upp_gsF_p10 .self,
+text_box.center_upp_gs3_p11 .self, text_box.center_upp_gsF_p11 .self,
+text_box.center_upp_gs3_p12 .self, text_box.center_upp_gsF_p12 .self,
+text_box.center_upp_gs3_p13 .self, text_box.center_upp_gsF_p13 .self,
+text_box.center_upp_gs3_p14 .self, text_box.center_upp_gsF_p14 .self,
+text_box.center_upp_gs3_p15 .self, text_box.center_upp_gsF_p15 .self,
+text_box.center_upp_gs3_p16 .self, text_box.center_upp_gsF_p16 .self,
+text_box.center_upp_gs3_p17 .self, text_box.center_upp_gsF_p17 .self,
+text_box.center_upp_gs3_p18 .self, text_box.center_upp_gsF_p18 .self
 {text-align: center;}
 
 text_box.right_ex2_p09 .self, text_box.right_ex4_p09 .self, text_box.right_ex8_p09 .self,
@@ -149,76 +159,104 @@ text_box.right_ex2_p17 .self, text_box.right_ex4_p17 .self, text_box.right_ex8_p
 text_box.right_gs3_p17 .self, text_box.right_gsF_p17 .self,
 text_box.right_ex2_p18 .self, text_box.right_ex4_p18 .self, text_box.right_ex8_p18 .self,
 text_box.right_gs3_p18 .self, text_box.right_gsF_p18 .self,
-text_box.txt_09r .self,
-text_box.txt_10r .self,
-text_box.txt_11r .self,
-text_box.txt_12r .self,
-text_box.txt_13r .self,
-text_box.txt_14r .self,
-text_box.txt_15r .self,
-text_box.txt_16r .self,
-text_box.txt_17r .self,
-text_box.txt_18r .self
+text_box.right_upp_gs3_p09 .self, text_box.right_upp_gsF_p09 .self,
+text_box.right_upp_gs3_p10 .self, text_box.right_upp_gsF_p10 .self,
+text_box.right_upp_gs3_p11 .self, text_box.right_upp_gsF_p11 .self,
+text_box.right_upp_gs3_p12 .self, text_box.right_upp_gsF_p12 .self,
+text_box.right_upp_gs3_p13 .self, text_box.right_upp_gsF_p13 .self,
+text_box.right_upp_gs3_p14 .self, text_box.right_upp_gsF_p14 .self,
+text_box.right_upp_gs3_p15 .self, text_box.right_upp_gsF_p15 .self,
+text_box.right_upp_gs3_p16 .self, text_box.right_upp_gsF_p16 .self,
+text_box.right_upp_gs3_p17 .self, text_box.right_upp_gsF_p17 .self,
+text_box.right_upp_gs3_p18 .self, text_box.right_upp_gsF_p18 .self
 {text-align: right;}
 
 
 
-text_box.txt_09 .inner_border, text_box.txt_09c .inner_border, text_box.txt_09r .inner_border {
-  margin: -1.8pt 0pt -9pt 0pt;
-  padding: 0pt 0pt 4.5pt 0pt;
-}
-
-text_box.txt_10 .inner_border, text_box.txt_10c .inner_border, text_box.txt_10r .inner_border {
-  margin: -2pt 0pt -10pt 0pt;
-  padding: 0pt 0pt 5pt 0pt;
-}
-
-text_box.txt_11 .inner_border, text_box.txt_11c .inner_border, text_box.txt_11r .inner_border {
-  margin: -2pt 0pt -11pt 0pt;
-  padding: 0pt 0pt 5.5pt 0pt;
-}
-
-text_box.txt_12 .inner_border, text_box.txt_12c .inner_border, text_box.txt_12r .inner_border {
-  margin: -2.4pt 0pt -12pt 0pt;
-  padding: 0pt 0pt 6pt 0pt;
-}
-
-text_box.txt_13 .inner_border, text_box.txt_13c .inner_border, text_box.txt_13r .inner_border {
-  margin: -3pt 0pt -13pt 0pt;
-  padding: 0pt 0pt 6.5pt 0pt;
-}
-
-text_box.txt_14 .inner_border, text_box.txt_14c .inner_border, text_box.txt_14r .inner_border {
-  margin: -3.3pt 0pt -14pt 0pt;
-  padding: 0pt 0pt 7pt 0pt;
-}
-
-text_box.txt_15 .inner_border, text_box.txt_15c .inner_border, text_box.txt_15r .inner_border {
-  margin: -3.3pt 0pt -15pt 0pt;
-  padding: 0pt 0pt 7.5pt 0pt;
-}
-
-text_box.txt_16 .inner_border, text_box.txt_16c .inner_border, text_box.txt_16r .inner_border {
-  margin: -3.4pt 0pt -16pt 0pt;
-  padding: 0pt 0pt 8pt 0pt;
-}
-
-text_box.txt_17 .inner_border, text_box.txt_17c .inner_border, text_box.txt_17r .inner_border {
-  margin: -3.5pt 0pt -17pt 0pt;
-  padding: 0pt 0pt 8.5pt 0pt;
-}
-
-text_box.txt_18 .inner_border, text_box.txt_18c .inner_border, text_box.txt_18r .inner_border {
-  margin: -4.2pt 0pt -18pt 0pt;
-  padding: 0pt 0pt 9pt 0pt;
-}
-/*
-text_box.txt_18 .text, text_box.txt_18r .text
+text_box.left_upp_gs3_p09 .self, text_box.right_upp_gs3_p09 .self, text_box.center_upp_gs3_p09 .self,
+text_box.left_upp_gs3_p10 .self, text_box.right_upp_gs3_p10 .self, text_box.center_upp_gs3_p10 .self,
+text_box.left_upp_gs3_p11 .self, text_box.right_upp_gs3_p11 .self, text_box.center_upp_gs3_p11 .self,
+text_box.left_upp_gs3_p12 .self, text_box.right_upp_gs3_p12 .self, text_box.center_upp_gs3_p12 .self,
+text_box.left_upp_gs3_p13 .self, text_box.right_upp_gs3_p13 .self, text_box.center_upp_gs3_p13 .self,
+text_box.left_upp_gs3_p14 .self, text_box.right_upp_gs3_p14 .self, text_box.center_upp_gs3_p14 .self,
+text_box.left_upp_gs3_p15 .self, text_box.right_upp_gs3_p15 .self, text_box.center_upp_gs3_p15 .self,
+text_box.left_upp_gs3_p16 .self, text_box.right_upp_gs3_p16 .self, text_box.center_upp_gs3_p16 .self,
+text_box.left_upp_gs3_p17 .self, text_box.right_upp_gs3_p17 .self, text_box.center_upp_gs3_p17 .self,
+text_box.left_upp_gs3_p18 .self, text_box.right_upp_gs3_p18 .self, text_box.center_upp_gs3_p18 .self,
+text_box.left_upp_gsF_p09 .self, text_box.right_upp_gsF_p09 .self, text_box.center_upp_gsF_p09 .self,
+text_box.left_upp_gsF_p10 .self, text_box.right_upp_gsF_p10 .self, text_box.center_upp_gsF_p10 .self,
+text_box.left_upp_gsF_p11 .self, text_box.right_upp_gsF_p11 .self, text_box.center_upp_gsF_p11 .self,
+text_box.left_upp_gsF_p12 .self, text_box.right_upp_gsF_p12 .self, text_box.center_upp_gsF_p12 .self,
+text_box.left_upp_gsF_p13 .self, text_box.right_upp_gsF_p13 .self, text_box.center_upp_gsF_p13 .self,
+text_box.left_upp_gsF_p14 .self, text_box.right_upp_gsF_p14 .self, text_box.center_upp_gsF_p14 .self,
+text_box.left_upp_gsF_p15 .self, text_box.right_upp_gsF_p15 .self, text_box.center_upp_gsF_p15 .self,
+text_box.left_upp_gsF_p16 .self, text_box.right_upp_gsF_p16 .self, text_box.center_upp_gsF_p16 .self,
+text_box.left_upp_gsF_p17 .self, text_box.right_upp_gsF_p17 .self, text_box.center_upp_gsF_p17 .self,
+text_box.left_upp_gsF_p18 .self, text_box.right_upp_gsF_p18 .self, text_box.center_upp_gsF_p18 .self
 {
-  margin: 0pt;
-  padding: -12pt 4.8pt -24pt 4.8pt;
+  border-style: solid; border-width: 1pt;
+  /* background-image: none; border-color: rgba(0,0,0,0); */
+  line-height: 0.8line;
+  -fm-text-vertical-align: top;
 }
-*/
+
+text_box.left_upp_gs3_p09 .inner_border, text_box.right_upp_gs3_p09 .inner_border, text_box.center_upp_gs3_p09 .inner_border,
+text_box.left_upp_gs3_p10 .inner_border, text_box.right_upp_gs3_p10 .inner_border, text_box.center_upp_gs3_p10 .inner_border,
+text_box.left_upp_gs3_p11 .inner_border, text_box.right_upp_gs3_p11 .inner_border, text_box.center_upp_gs3_p11 .inner_border,
+text_box.left_upp_gs3_p12 .inner_border, text_box.right_upp_gs3_p12 .inner_border, text_box.center_upp_gs3_p12 .inner_border,
+text_box.left_upp_gs3_p13 .inner_border, text_box.right_upp_gs3_p13 .inner_border, text_box.center_upp_gs3_p13 .inner_border,
+text_box.left_upp_gs3_p14 .inner_border, text_box.right_upp_gs3_p14 .inner_border, text_box.center_upp_gs3_p14 .inner_border,
+text_box.left_upp_gs3_p15 .inner_border, text_box.right_upp_gs3_p15 .inner_border, text_box.center_upp_gs3_p15 .inner_border,
+text_box.left_upp_gs3_p16 .inner_border, text_box.right_upp_gs3_p16 .inner_border, text_box.center_upp_gs3_p16 .inner_border,
+text_box.left_upp_gs3_p17 .inner_border, text_box.right_upp_gs3_p17 .inner_border, text_box.center_upp_gs3_p17 .inner_border,
+text_box.left_upp_gs3_p18 .inner_border, text_box.right_upp_gs3_p18 .inner_border, text_box.center_upp_gs3_p18 .inner_border,
+text_box.left_upp_gsF_p09 .inner_border, text_box.right_upp_gsF_p09 .inner_border, text_box.center_upp_gsF_p09 .inner_border,
+text_box.left_upp_gsF_p10 .inner_border, text_box.right_upp_gsF_p10 .inner_border, text_box.center_upp_gsF_p10 .inner_border,
+text_box.left_upp_gsF_p11 .inner_border, text_box.right_upp_gsF_p11 .inner_border, text_box.center_upp_gsF_p11 .inner_border,
+text_box.left_upp_gsF_p12 .inner_border, text_box.right_upp_gsF_p12 .inner_border, text_box.center_upp_gsF_p12 .inner_border,
+text_box.left_upp_gsF_p13 .inner_border, text_box.right_upp_gsF_p13 .inner_border, text_box.center_upp_gsF_p13 .inner_border,
+text_box.left_upp_gsF_p14 .inner_border, text_box.right_upp_gsF_p14 .inner_border, text_box.center_upp_gsF_p14 .inner_border,
+text_box.left_upp_gsF_p15 .inner_border, text_box.right_upp_gsF_p15 .inner_border, text_box.center_upp_gsF_p15 .inner_border,
+text_box.left_upp_gsF_p16 .inner_border, text_box.right_upp_gsF_p16 .inner_border, text_box.center_upp_gsF_p16 .inner_border,
+text_box.left_upp_gsF_p17 .inner_border, text_box.right_upp_gsF_p17 .inner_border, text_box.center_upp_gsF_p17 .inner_border,
+text_box.left_upp_gsF_p18 .inner_border, text_box.right_upp_gsF_p18 .inner_border, text_box.center_upp_gsF_p18 .inner_border
+{
+  margin-top: -0.1em; margin-bottom: -0.4em;
+  padding: 0pt 0.16em;
+}
+
+text_box.left_upp_gs3_p09 .text, text_box.right_upp_gs3_p09 .text, text_box.center_upp_gs3_p09 .text,
+text_box.left_upp_gs3_p10 .text, text_box.right_upp_gs3_p10 .text, text_box.center_upp_gs3_p10 .text,
+text_box.left_upp_gs3_p11 .text, text_box.right_upp_gs3_p11 .text, text_box.center_upp_gs3_p11 .text,
+text_box.left_upp_gs3_p12 .text, text_box.right_upp_gs3_p12 .text, text_box.center_upp_gs3_p12 .text,
+text_box.left_upp_gs3_p13 .text, text_box.right_upp_gs3_p13 .text, text_box.center_upp_gs3_p13 .text,
+text_box.left_upp_gs3_p14 .text, text_box.right_upp_gs3_p14 .text, text_box.center_upp_gs3_p14 .text,
+text_box.left_upp_gs3_p15 .text, text_box.right_upp_gs3_p15 .text, text_box.center_upp_gs3_p15 .text,
+text_box.left_upp_gs3_p16 .text, text_box.right_upp_gs3_p16 .text, text_box.center_upp_gs3_p16 .text,
+text_box.left_upp_gs3_p17 .text, text_box.right_upp_gs3_p17 .text, text_box.center_upp_gs3_p17 .text,
+text_box.left_upp_gs3_p18 .text, text_box.right_upp_gs3_p18 .text, text_box.center_upp_gs3_p18 .text,
+text_box.left_upp_gsF_p09 .text, text_box.right_upp_gsF_p09 .text, text_box.center_upp_gsF_p09 .text,
+text_box.left_upp_gsF_p10 .text, text_box.right_upp_gsF_p10 .text, text_box.center_upp_gsF_p10 .text,
+text_box.left_upp_gsF_p11 .text, text_box.right_upp_gsF_p11 .text, text_box.center_upp_gsF_p11 .text,
+text_box.left_upp_gsF_p12 .text, text_box.right_upp_gsF_p12 .text, text_box.center_upp_gsF_p12 .text,
+text_box.left_upp_gsF_p13 .text, text_box.right_upp_gsF_p13 .text, text_box.center_upp_gsF_p13 .text,
+text_box.left_upp_gsF_p14 .text, text_box.right_upp_gsF_p14 .text, text_box.center_upp_gsF_p14 .text,
+text_box.left_upp_gsF_p15 .text, text_box.right_upp_gsF_p15 .text, text_box.center_upp_gsF_p15 .text,
+text_box.left_upp_gsF_p16 .text, text_box.right_upp_gsF_p16 .text, text_box.center_upp_gsF_p16 .text,
+text_box.left_upp_gsF_p17 .text, text_box.right_upp_gsF_p17 .text, text_box.center_upp_gsF_p17 .text,
+text_box.left_upp_gsF_p18 .text, text_box.right_upp_gsF_p18 .text, text_box.center_upp_gsF_p18 .text
+{
+  /*
+  position: absolute;
+  height: auto;
+  top: 0.1em
+  right: 0pt;
+  bottom: 0pt;
+  left: 0pt;
+  */
+  margin: 0pt;
+  padding: 0pt;/*padding: -12pt 4.8pt -24pt 4.8pt;*/
+}
 
 
 
@@ -231,7 +269,17 @@ text_box.left_gsF_p14 .self, text_box.right_gsF_p14 .self, text_box.center_gsF_p
 text_box.left_gsF_p15 .self, text_box.right_gsF_p15 .self, text_box.center_gsF_p15 .self,
 text_box.left_gsF_p16 .self, text_box.right_gsF_p16 .self, text_box.center_gsF_p16 .self,
 text_box.left_gsF_p17 .self, text_box.right_gsF_p17 .self, text_box.center_gsF_p17 .self,
-text_box.left_gsF_p18 .self, text_box.right_gsF_p18 .self, text_box.center_gsF_p18 .self
+text_box.left_gsF_p18 .self, text_box.right_gsF_p18 .self, text_box.center_gsF_p18 .self,
+text_box.left_upp_gsF_p09 .self, text_box.right_upp_gsF_p09 .self, text_box.center_upp_gsF_p09 .self,
+text_box.left_upp_gsF_p10 .self, text_box.right_upp_gsF_p10 .self, text_box.center_upp_gsF_p10 .self,
+text_box.left_upp_gsF_p11 .self, text_box.right_upp_gsF_p11 .self, text_box.center_upp_gsF_p11 .self,
+text_box.left_upp_gsF_p12 .self, text_box.right_upp_gsF_p12 .self, text_box.center_upp_gsF_p12 .self,
+text_box.left_upp_gsF_p13 .self, text_box.right_upp_gsF_p13 .self, text_box.center_upp_gsF_p13 .self,
+text_box.left_upp_gsF_p14 .self, text_box.right_upp_gsF_p14 .self, text_box.center_upp_gsF_p14 .self,
+text_box.left_upp_gsF_p15 .self, text_box.right_upp_gsF_p15 .self, text_box.center_upp_gsF_p15 .self,
+text_box.left_upp_gsF_p16 .self, text_box.right_upp_gsF_p16 .self, text_box.center_upp_gsF_p16 .self,
+text_box.left_upp_gsF_p17 .self, text_box.right_upp_gsF_p17 .self, text_box.center_upp_gsF_p17 .self,
+text_box.left_upp_gsF_p18 .self, text_box.right_upp_gsF_p18 .self, text_box.center_upp_gsF_p18 .self
 {color: #FFF;}
 
 
@@ -297,9 +345,7 @@ text_box.left_gs3_p18 .self, text_box.right_gs3_p18 .self, text_box.center_gs3_p
 text_box.left_gsF_p18 .self, text_box.right_gsF_p18 .self, text_box.center_gsF_p18 .self
 {
   border-style: solid; border-width: 1pt;
-  /*
-  background-image: none; border-color: rgba(0,0,0,0);
-  */
+  /* background-image: none; border-color: rgba(0,0,0,0); */
   line-height: 0.8line;
   -fm-text-vertical-align: center;
 }
@@ -364,8 +410,9 @@ text_box.left_ex8_p18 .inner_border, text_box.right_ex8_p18 .inner_border, text_
 text_box.left_gs3_p18 .inner_border, text_box.right_gs3_p18 .inner_border, text_box.center_gs3_p18 .inner_border,
 text_box.left_gsF_p18 .inner_border, text_box.right_gsF_p18 .inner_border, text_box.center_gsF_p18 .inner_border
 {
-  margin: 0pt;
-  padding: 0pt;
+  margin-top: -38%; margin-bottom: -50%;
+  /*padding-right: 4.8pt; padding-left: 4.8pt;*/
+  padding: 0pt 0.16em;
 }
 
 text_box.left_ex2_p09 .text, text_box.right_ex2_p09 .text, text_box.center_ex2_p09 .text,
@@ -428,11 +475,14 @@ text_box.left_ex8_p18 .text, text_box.right_ex8_p18 .text, text_box.center_ex8_p
 text_box.left_gs3_p18 .text, text_box.right_gs3_p18 .text, text_box.center_gs3_p18 .text,
 text_box.left_gsF_p18 .text, text_box.right_gsF_p18 .text, text_box.center_gsF_p18 .text
 {
-  margin: -42% 4.8pt -50% 4.8pt;/* ! */
-  height: auto;/* ! */
-  top: 0pt;/* 0.1em */
+  /*
+  position: absolute;
+  height: auto;
+  top: 0.1em;
   right: 0pt;
   bottom: 0pt;
   left: 0pt;
-  position: absolute;
+  */
+  margin: 0pt;
+  padding: 0pt;
 }

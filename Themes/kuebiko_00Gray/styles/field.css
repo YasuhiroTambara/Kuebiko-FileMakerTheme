@@ -77,11 +77,21 @@ edit_box.fie_View_13_24:normal .self,
 edit_box.fie_View_14_24:normal .self,
 edit_box.fie_View_14_29:normal .self,
 edit_box.fie_View_16_24:normal .self,
-edit_box.fie_View_16_29:normal .self
+edit_box.fie_View_16_29:normal .self,
+edit_box.vew_p10h14:normal .self,
+edit_box.vew_p10h19:normal .self,
+edit_box.vew_p11h14:normal .self,
+edit_box.vew_p11h19:normal .self,
+edit_box.vew_p12h19:normal .self,
+edit_box.vew_p12h24:normal .self,
+edit_box.vew_p13h24:normal .self,
+edit_box.vew_p14h24:normal .self,
+edit_box.vew_p14h29:normal .self,
+edit_box.vew_p16h24:normal .self,
+edit_box.vew_p16h29:normal .self
 {
+  border-style: solid; border-width: 1pt;
   background-color: #FFF;
-  border-style: solid;
-  border-width: 1pt;
 }
 
 
@@ -97,12 +107,21 @@ edit_box.fie_Mini_13_24:normal .self,
 edit_box.fie_Mini_14_24:normal .self,
 edit_box.fie_Mini_14_29:normal .self,
 edit_box.fie_Mini_16_24:normal .self,
-edit_box.fie_Mini_16_29:normal .self
+edit_box.fie_Mini_16_29:normal .self,
+edit_box.min_p10h14:normal .self,
+edit_box.min_p10h19:normal .self,
+edit_box.min_p11h14:normal .self,
+edit_box.min_p11h19:normal .self,
+edit_box.min_p12h19:normal .self,
+edit_box.min_p12h24:normal .self,
+edit_box.min_p13h24:normal .self,
+edit_box.min_p14h24:normal .self,
+edit_box.min_p14h29:normal .self,
+edit_box.min_p16h24:normal .self,
+edit_box.min_p16h29:normal .self
 {
+  border-style: none; border-width: 0pt; border-radius: 0pt;
   background-color: rgba(0,0,0,0);
-  border-style: none;
-  border-width: 0pt;
-  border-radius: 0pt;
 }
 
 
@@ -119,6 +138,17 @@ edit_box.fie_Edit_14_24:normal .self,
 edit_box.fie_Edit_14_29:normal .self,
 edit_box.fie_Edit_16_24:normal .self,
 edit_box.fie_Edit_16_29:normal .self,
+edit_box.edt_p10h14:normal .self,
+edit_box.edt_p10h19:normal .self,
+edit_box.edt_p11h14:normal .self,
+edit_box.edt_p11h19:normal .self,
+edit_box.edt_p12h19:normal .self,
+edit_box.edt_p12h24:normal .self,
+edit_box.edt_p13h24:normal .self,
+edit_box.edt_p14h24:normal .self,
+edit_box.edt_p14h29:normal .self,
+edit_box.edt_p16h24:normal .self,
+edit_box.edt_p16h29:normal .self,
 calendar:normal  .self,
 drop_down:normal .self,
 pop_up:normal    .self
@@ -154,6 +184,17 @@ edit_box.fie_Edit_14_24:normal .inner_border,
 edit_box.fie_Edit_14_29:normal .inner_border,
 edit_box.fie_Edit_16_24:normal .inner_border,
 edit_box.fie_Edit_16_29:normal .inner_border,
+edit_box.edt_p10h14:normal .inner_border,
+edit_box.edt_p10h19:normal .inner_border,
+edit_box.edt_p11h14:normal .inner_border,
+edit_box.edt_p11h19:normal .inner_border,
+edit_box.edt_p12h19:normal .inner_border,
+edit_box.edt_p12h24:normal .inner_border,
+edit_box.edt_p13h24:normal .inner_border,
+edit_box.edt_p14h24:normal .inner_border,
+edit_box.edt_p14h29:normal .inner_border,
+edit_box.edt_p16h24:normal .inner_border,
+edit_box.edt_p16h29:normal .inner_border,
 calendar:normal  .inner_border,
 drop_down:normal .inner_border,
 pop_up:normal    .inner_border
@@ -172,6 +213,17 @@ edit_box.fie_Edit_14_24:hover .inner_border,
 edit_box.fie_Edit_14_29:hover .inner_border,
 edit_box.fie_Edit_16_24:hover .inner_border,
 edit_box.fie_Edit_16_29:hover .inner_border,
+edit_box.edt_p10h14:hover .inner_border,
+edit_box.edt_p10h19:hover .inner_border,
+edit_box.edt_p11h14:hover .inner_border,
+edit_box.edt_p11h19:hover .inner_border,
+edit_box.edt_p12h19:hover .inner_border,
+edit_box.edt_p12h24:hover .inner_border,
+edit_box.edt_p13h24:hover .inner_border,
+edit_box.edt_p14h24:hover .inner_border,
+edit_box.edt_p14h29:hover .inner_border,
+edit_box.edt_p16h24:hover .inner_border,
+edit_box.edt_p16h29:hover .inner_border,
 calendar:hover  .inner_border,
 drop_down:hover .inner_border,
 pop_up:hover    .inner_border
@@ -190,6 +242,18 @@ edit_box.fie_Edit_14_24:focus .self,
 edit_box.fie_Edit_14_29:focus .self,
 edit_box.fie_Edit_16_24:focus .self,
 edit_box.fie_Edit_16_29:focus .self,
+edit_box.edt_p10h14:focus .self,
+edit_box.edt_p10h19:focus .self,
+edit_box.edt_p11h14:focus .self,
+edit_box.edt_p11h19:focus .self,
+edit_box.edt_p12h19:focus .self,
+edit_box.edt_p12h24:focus .self,
+edit_box.edt_p13h24:focus .self,
+edit_box.edt_p14h24:focus .self,
+edit_box.edt_p14h29:focus .self,
+edit_box.edt_p16h24:focus .self,
+edit_box.edt_p16h29:focus .self,
+edit_box:focus  .self,
 calendar:focus  .self,
 drop_down:focus .self,
 pop_up:focus    .self
@@ -206,6 +270,20 @@ pop_up:focus    .self
 
 /** FIELD(ALL) ----------------------------------------------------------*/
 /** FONT SIZE */
+ edit_box.vew_p10h14 .self,
+ edit_box.min_p10h14 .self,
+ edit_box.edt_p10h14 .self,
+ calendar.edt_p10h14 .self,
+drop_down.edt_p10h14 .self,
+   pop_up.edt_p10h14 .self,
+
+ edit_box.vew_p10h19 .self,
+ edit_box.min_p10h19 .self,
+ edit_box.edt_p10h19 .self,
+ calendar.edt_p10h19 .self,
+drop_down.edt_p10h19 .self,
+   pop_up.edt_p10h19 .self,
+
  edit_box.fie_View_10_14 .self,
  edit_box.fie_Mini_10_14 .self,
  edit_box.fie_Edit_10_14 .self,
@@ -218,46 +296,102 @@ drop_down.fie_Edit_10_14 .self,
  edit_box.fie_Edit_10_19 .self,
  calendar.fie_Edit_10_19 .self,
 drop_down.fie_Edit_10_19 .self,
-   pop_up.fie_Edit_10_19 .self
+   pop_up.fie_Edit_10_19 .self,
+
+ edit_box.vew_p10h14 .self,  edit_box.vew_p10h19 .self,
+ edit_box.min_p10h14 .self,  edit_box.min_p10h19 .self,
+ edit_box.edt_p10h14 .self,  edit_box.edt_p10h19 .self,
+ calendar.edt_p10h14 .self,  calendar.edt_p10h19 .self,
+drop_down.edt_p10h14 .self, drop_down.edt_p10h19 .self,
+   pop_up.edt_p10h14 .self,    pop_up.edt_p10h19 .self
 {font-size: 10pt;}
 
- edit_box.fie_View_11_14 .self,
- edit_box.fie_Mini_11_14 .self,
- edit_box.fie_Edit_11_14 .self,
- calendar.fie_Edit_11_14 .self,
-drop_down.fie_Edit_11_14 .self,
-   pop_up.fie_Edit_11_14 .self,
+ edit_box.vew_p11h14 .self,
+ edit_box.min_p11h14 .self,
+ edit_box.edt_p11h14 .self,
+ calendar.edt_p11h14 .self,
+drop_down.edt_p11h14 .self,
+   pop_up.edt_p11h14 .self,
 
- edit_box.fie_View_11_19 .self,
- edit_box.fie_Mini_11_19 .self,
- edit_box.fie_Edit_11_19 .self,
- calendar.fie_Edit_11_19 .self,
-drop_down.fie_Edit_11_19 .self,
-   pop_up.fie_Edit_11_19 .self
+ edit_box.vew_p11h19 .self,
+ edit_box.min_p11h19 .self,
+ edit_box.edt_p11h19 .self,
+ calendar.edt_p11h19 .self,
+drop_down.edt_p11h19 .self,
+   pop_up.edt_p11h19 .self,
+
+ edit_box.fie_View_11_14 .self,  edit_box.fie_View_11_19 .self,
+ edit_box.fie_Mini_11_14 .self,  edit_box.fie_Mini_11_19 .self,
+ edit_box.fie_Edit_11_14 .self,  edit_box.fie_Edit_11_19 .self,
+ calendar.fie_Edit_11_14 .self,  calendar.fie_Edit_11_19 .self,
+drop_down.fie_Edit_11_14 .self, drop_down.fie_Edit_11_19 .self,
+   pop_up.fie_Edit_11_14 .self,    pop_up.fie_Edit_11_19 .self,
+
+ edit_box.vew_p11h14 .self,  edit_box.vew_p11h19 .self,
+ edit_box.min_p11h14 .self,  edit_box.min_p11h19 .self,
+ edit_box.edt_p11h14 .self,  edit_box.edt_p11h19 .self,
+ calendar.edt_p11h14 .self,  calendar.edt_p11h19 .self,
+drop_down.edt_p11h14 .self, drop_down.edt_p11h19 .self,
+   pop_up.edt_p11h14 .self,    pop_up.edt_p11h19 .self
 {font-size: 11pt;}
 
- edit_box.fie_View_12_19 .self,
- edit_box.fie_Mini_12_19 .self,
- edit_box.fie_Edit_12_19 .self,
- calendar.fie_Edit_12_19 .self,
-drop_down.fie_Edit_12_19 .self,
-   pop_up.fie_Edit_12_19 .self,
+ edit_box.vew_p12h19 .self,
+ edit_box.min_p12h19 .self,
+ edit_box.edt_p12h19 .self,
+ calendar.edt_p12h19 .self,
+drop_down.edt_p12h19 .self,
+   pop_up.edt_p12h19 .self,
 
- edit_box.fie_View_12_24 .self,
- edit_box.fie_Mini_12_24 .self,
- edit_box.fie_Edit_12_24 .self,
- calendar.fie_Edit_12_24 .self,
-drop_down.fie_Edit_12_24 .self,
-   pop_up.fie_Edit_12_24 .self
+ edit_box.vew_p12h24 .self,
+ edit_box.min_p12h24 .self,
+ edit_box.edt_p12h24 .self,
+ calendar.edt_p12h24 .self,
+drop_down.edt_p12h24 .self,
+   pop_up.edt_p12h24 .self,
+
+ edit_box.fie_View_12_19 .self,  edit_box.fie_View_12_24 .self,
+ edit_box.fie_Mini_12_19 .self,  edit_box.fie_Mini_12_24 .self,
+ edit_box.fie_Edit_12_19 .self,  edit_box.fie_Edit_12_24 .self,
+ calendar.fie_Edit_12_19 .self,  calendar.fie_Edit_12_24 .self,
+drop_down.fie_Edit_12_19 .self, drop_down.fie_Edit_12_24 .self,
+   pop_up.fie_Edit_12_19 .self,    pop_up.fie_Edit_12_24 .self,
+
+ edit_box.vew_p12h19 .self,  edit_box.vew_p12h24 .self,
+ edit_box.min_p12h19 .self,  edit_box.min_p12h24 .self,
+ edit_box.edt_p12h19 .self,  edit_box.edt_p12h24 .self,
+ calendar.edt_p12h19 .self,  calendar.edt_p12h24 .self,
+drop_down.edt_p12h19 .self, drop_down.edt_p12h24 .self,
+   pop_up.edt_p12h19 .self,    pop_up.edt_p12h24 .self
 {font-size: 12pt;}
+
+ edit_box.vew_p13h24 .self,
+ edit_box.min_p13h24 .self,
+ edit_box.edt_p13h24 .self,
+ calendar.edt_p13h24 .self,
+drop_down.edt_p13h24 .self,
+   pop_up.edt_p13h24 .self,
 
  edit_box.fie_View_13_24 .self,
  edit_box.fie_Mini_13_24 .self,
  edit_box.fie_Edit_13_24 .self,
  calendar.fie_Edit_13_24 .self,
 drop_down.fie_Edit_13_24 .self,
-   pop_up.fie_Edit_13_24 .self
+   pop_up.fie_Edit_13_24 .self,
+
+ edit_box.vew_p13h24 .self,
+ edit_box.min_p13h24 .self,
+ edit_box.edt_p13h24 .self,
+ calendar.edt_p13h24 .self,
+drop_down.edt_p13h24 .self,
+   pop_up.edt_p13h24 .self
 {font-size: 13pt;}
+
+ edit_box.vew_p14h24 .self,  edit_box.vew_p14h29 .self,
+ edit_box.min_p14h24 .self,  edit_box.min_p14h29 .self,
+ edit_box.edt_p14h24 .self,  edit_box.edt_p14h29 .self,
+ calendar.edt_p14h24 .self,  calendar.edt_p14h29 .self,
+drop_down.edt_p14h24 .self, drop_down.edt_p14h29 .self,
+   pop_up.edt_p14h24 .self,    pop_up.edt_p14h29 .self,
 
  edit_box.fie_View_14_24 .self,
  edit_box.fie_Mini_14_24 .self,
@@ -271,8 +405,22 @@ drop_down.fie_Edit_14_24 .self,
  edit_box.fie_Edit_14_29 .self,
  calendar.fie_Edit_14_29 .self,
 drop_down.fie_Edit_14_29 .self,
-   pop_up.fie_Edit_14_29 .self
+   pop_up.fie_Edit_14_29 .self,
+
+ edit_box.vew_p14h24 .self,  edit_box.vew_p14h29 .self,
+ edit_box.min_p14h24 .self,  edit_box.min_p14h29 .self,
+ edit_box.edt_p14h24 .self,  edit_box.edt_p14h29 .self,
+ calendar.edt_p14h24 .self,  calendar.edt_p14h29 .self,
+drop_down.edt_p14h24 .self, drop_down.edt_p14h29 .self,
+   pop_up.edt_p14h24 .self,    pop_up.edt_p14h29 .self
 {font-size: 14pt;}
+
+ edit_box.vew_p16h24 .self,  edit_box.vew_p16h29 .self,
+ edit_box.min_p16h24 .self,  edit_box.min_p16h29 .self,
+ edit_box.edt_p16h24 .self,  edit_box.edt_p16h29 .self,
+ calendar.edt_p16h24 .self,  calendar.edt_p16h29 .self,
+drop_down.edt_p16h24 .self, drop_down.edt_p16h29 .self,
+   pop_up.edt_p16h24 .self,    pop_up.edt_p16h29 .self,
 
  edit_box.fie_View_16_24 .self,
  edit_box.fie_Mini_16_24 .self,
@@ -286,7 +434,14 @@ drop_down.fie_Edit_16_24 .self,
  edit_box.fie_Edit_16_29 .self,
  calendar.fie_Edit_16_29 .self,
 drop_down.fie_Edit_16_29 .self,
-   pop_up.fie_Edit_16_29 .self
+   pop_up.fie_Edit_16_29 .self,
+
+ edit_box.vew_p16h24 .self,  edit_box.vew_p16h29 .self,
+ edit_box.min_p16h24 .self,  edit_box.min_p16h29 .self,
+ edit_box.edt_p16h24 .self,  edit_box.edt_p16h29 .self,
+ calendar.edt_p16h24 .self,  calendar.edt_p16h29 .self,
+drop_down.edt_p16h24 .self, drop_down.edt_p16h29 .self,
+   pop_up.edt_p16h24 .self,    pop_up.edt_p16h29 .self
 {font-size: 16pt;}
 
 
@@ -297,7 +452,14 @@ drop_down.fie_Edit_16_29 .self,
  edit_box.fie_Edit_10_14 .text,
  calendar.fie_Edit_10_14 .text,
 drop_down.fie_Edit_10_14 .text,
-   pop_up.fie_Edit_10_14 .text
+   pop_up.fie_Edit_10_14 .text,
+
+ edit_box.vew_p10h14 .text,
+ edit_box.min_p10h14 .text,
+ edit_box.edt_p10h14 .text,
+ calendar.edt_p10h14 .text,
+drop_down.edt_p10h14 .text,
+   pop_up.edt_p10h14 .text
 {
   margin-top: -1.2pt;
   margin-right: 4.8pt;
@@ -310,7 +472,14 @@ drop_down.fie_Edit_10_14 .text,
  edit_box.fie_Edit_10_19 .text,
  calendar.fie_Edit_10_19 .text,
 drop_down.fie_Edit_10_19 .text,
-   pop_up.fie_Edit_10_19 .text
+   pop_up.fie_Edit_10_19 .text,
+
+ edit_box.vew_p10h19 .text,
+ edit_box.min_p10h19 .text,
+ edit_box.edt_p10h19 .text,
+ calendar.edt_p10h19 .text,
+drop_down.edt_p10h19 .text,
+   pop_up.edt_p10h19 .text
 {
   margin-top: 1pt;
   margin-right: 4.8pt;
@@ -323,7 +492,14 @@ drop_down.fie_Edit_10_19 .text,
  edit_box.fie_Edit_11_14 .text,
  calendar.fie_Edit_11_14 .text,
 drop_down.fie_Edit_11_14 .text,
-   pop_up.fie_Edit_11_14 .text
+   pop_up.fie_Edit_11_14 .text,
+
+ edit_box.vew_p11h14 .text,
+ edit_box.min_p11h14 .text,
+ edit_box.edt_p11h14 .text,
+ calendar.edt_p11h14 .text,
+drop_down.edt_p11h14 .text,
+   pop_up.edt_p11h14 .text
 {
   margin-top: -1.8pt;
   margin-right: 4.8pt;
@@ -336,7 +512,14 @@ drop_down.fie_Edit_11_14 .text,
  edit_box.fie_Edit_11_19 .text,
  calendar.fie_Edit_11_19 .text,
 drop_down.fie_Edit_11_19 .text,
-   pop_up.fie_Edit_11_19 .text
+   pop_up.fie_Edit_11_19 .text,
+
+ edit_box.vew_p11h19 .text,
+ edit_box.min_p11h19 .text,
+ edit_box.edt_p11h19 .text,
+ calendar.edt_p11h19 .text,
+drop_down.edt_p11h19 .text,
+   pop_up.edt_p11h19 .text
 {
   margin-top: 0pt;
   margin-right: 4.8pt;
@@ -356,6 +539,17 @@ drop_down.fie_Edit_12_19 .text,
   margin-bottom: -5.4pt;
   margin-left: 4.8pt;
 }
+ edit_box.vew_p12h19 .text,
+ edit_box.min_p12h19 .text,
+ edit_box.edt_p12h19 .text,
+ calendar.edt_p12h19 .text,
+drop_down.edt_p12h19 .text,
+   pop_up.edt_p12h19 .text
+{
+  margin-top: -0.3pt; padding-bottom: -5.4pt;
+  padding-right: 4.2pt; padding-left: 4.2pt;
+}
+
 
  edit_box.fie_View_12_24 .text,
  edit_box.fie_Mini_12_24 .text,
@@ -368,6 +562,16 @@ drop_down.fie_Edit_12_24 .text,
   margin-right: 4.8pt;
   margin-bottom: -4.8pt;
   margin-left: 4.8pt;
+}
+ edit_box.vew_p12h24 .text,
+ edit_box.min_p12h24 .text,
+ edit_box.edt_p12h24 .text,
+ calendar.edt_p12h24 .text,
+drop_down.edt_p12h24 .text,
+   pop_up.edt_p12h24 .text
+{
+  margin-top: 2pt; padding-bottom: -4.8pt;
+  padding-right: 4.2pt; padding-left: 4.2pt;
 }
 
  edit_box.fie_View_13_24 .text,
@@ -382,7 +586,14 @@ drop_down.fie_Edit_13_24 .text,
  edit_box.fie_Edit_14_24 .text,
  calendar.fie_Edit_14_24 .text,
 drop_down.fie_Edit_14_24 .text,
-   pop_up.fie_Edit_14_24 .text
+   pop_up.fie_Edit_14_24 .text,
+
+ edit_box.vew_p13h24 .text,  edit_box.vew_p14h24 .text,
+ edit_box.min_p13h24 .text,  edit_box.min_p14h24 .text,
+ edit_box.edt_p13h24 .text,  edit_box.edt_p14h24 .text,
+ calendar.edt_p13h24 .text,  calendar.edt_p14h24 .text,
+drop_down.edt_p13h24 .text, drop_down.edt_p14h24 .text,
+   pop_up.edt_p13h24 .text,    pop_up.edt_p14h24 .text
 {
   margin-top: 1pt;
   margin-right: 4.8pt;
@@ -395,7 +606,14 @@ drop_down.fie_Edit_14_24 .text,
  edit_box.fie_Edit_14_29 .text,
  calendar.fie_Edit_14_29 .text,
 drop_down.fie_Edit_14_29 .text,
-   pop_up.fie_Edit_14_29 .text
+   pop_up.fie_Edit_14_29 .text,
+
+ edit_box.vew_p14h29 .text,
+ edit_box.min_p14h29 .text,
+ edit_box.edt_p14h29 .text,
+ calendar.edt_p14h29 .text,
+drop_down.edt_p14h29 .text,
+   pop_up.edt_p14h29 .text
 {
   margin-top: 3pt;
   margin-right: 4.8pt;
@@ -408,7 +626,14 @@ drop_down.fie_Edit_14_29 .text,
  edit_box.fie_Edit_16_24 .text,
  calendar.fie_Edit_16_24 .text,
 drop_down.fie_Edit_16_24 .text,
-   pop_up.fie_Edit_16_24 .text
+   pop_up.fie_Edit_16_24 .text,
+
+ edit_box.vew_p16h24 .text,
+ edit_box.min_p16h24 .text,
+ edit_box.edt_p16h24 .text,
+ calendar.edt_p16h24 .text,
+drop_down.edt_p16h24 .text,
+   pop_up.edt_p16h24 .text
 {
   margin-top: -0.4pt;
   margin-right: 4.8pt;
@@ -421,7 +646,14 @@ drop_down.fie_Edit_16_24 .text,
  edit_box.fie_Edit_16_29 .text,
  calendar.fie_Edit_16_29 .text,
 drop_down.fie_Edit_16_29 .text,
-   pop_up.fie_Edit_16_29 .text
+   pop_up.fie_Edit_16_29 .text,
+
+ edit_box.vew_p16h29 .text,
+ edit_box.min_p16h29 .text,
+ edit_box.edt_p16h29 .text,
+ calendar.edt_p16h29 .text,
+drop_down.edt_p16h29 .text,
+   pop_up.edt_p16h29 .text
 {
   margin-top: 1.6pt;
   margin-right: 4.8pt;
