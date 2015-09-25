@@ -518,15 +518,25 @@ button.row .text {
 button.cap .self,
 text_box.cap .self {
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
-  border-width: 1pt;
-  border-top-style: solid;
+  border-top-style: solid; border-top-width: 1pt;
   
   color: #FFF;
   line-height: 0.8line;
   text-align: left;
   -fm-text-vertical-align: center;
 }
-button.cap .text,
+button.cap .inner_border {
+  position: absolute;
+  top: 0pt;
+  right: 0pt;
+  bottom: 0pt;
+  left: 0pt;
+  height: auto;/* ! */
+  -fm-text-vertical-align: center;
+  margin: 0pt;
+  padding: -7pt 5pt -7pt 5pt;
+  box-shadow: none;
+}
 text_box.cap .text {
   position: absolute;
   top: 0pt;
@@ -536,32 +546,38 @@ text_box.cap .text {
   height: auto;/* ! */
   margin: -0.6pt 4.8pt -4.8pt 4.8pt;
 }
-button.cap .inner_border,
-text_box.cap .inner_border {
-  margin-top: 0pt;
-  margin-bottom: 0pt;
-}
 
 button.cap:normal .self,
-text_box.cap:normal .self {/* theme color */
+text_box.cap:normal .self {
   border-color: #d6dfe2;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#97afb6), to(#7e9aa5));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#97afb6), to(#7e9aa5));/* theme color */
 }
 button.cap:hover .self,
-text_box.cap:hover .self {/* theme color */
+text_box.cap:hover .self {
   border-color: #97afb6;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7e9aa5), to(#69858f));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7e9aa5), to(#69858f));/* theme color */
+  color: #FFF;
+  box-shadow: none;
 }
 button.cap:pressed .self,
-text_box.cap:pressed .self {/* theme color */
+text_box.cap:pressed .self {
   border-color: #557079;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#69858f), to(#7e9aa5));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#69858f), to(#7e9aa5));/* theme color */
+  color: #FFF;
+}
+
+text_box.cap .inner_border {
+  margin: 0pt;
+  box-shadow: none;
+}
+button.cap:hover .inner_border{
+  box-shadow: none;
 }
 
 /* theme color */
 button.cap:pressed .inner_border,
 text_box.cap:pressed .inner_border {
-  box-shadow: inset 0pt 0pt 3pt 1pt @ex2;
+  /*box-shadow: inset 0pt 0pt 3pt 1pt @ex2;*/
 }
 
 
@@ -663,13 +679,20 @@ button_bar.fill_gsC .self, button_bar.circle_gsC .self,
 button_bar.fill_gsD .self, button_bar.circle_gsD .self,
 button_bar.fill_gsE .self, button_bar.circle_gsE .self,
 button_bar.fill_gsF .self, button_bar.circle_gsF .self,
-button_bar.min_ex2 .self, button_bar.mir .self,
+button_bar.min_ex2 .self,
 button_bar.min_ex4 .self,
 button_bar.min_ex8 .self,
 button_bar.min_gs3 .self,
 button_bar.min_gs6 .self,
 button_bar.min_gs9 .self,
 button_bar.min_gsF .self,
+button_bar.mro_ex2 .self,
+button_bar.mro_ex4 .self,
+button_bar.mro_ex8 .self,
+button_bar.mro_gs3 .self,
+button_bar.mro_gs6 .self,
+button_bar.mro_gs9 .self,
+button_bar.mro_gsF .self,
 button_bar.mat_h25 .self, button_bar.mat_h25_gsF .self,
 button_bar.mat_h30 .self, button_bar.mat_h30_gsF .self,
 button_bar.mat_h35 .self, button_bar.mat_h35_gsF .self
@@ -693,13 +716,20 @@ button_bar.fill_gsC .button_bar_divider, button_bar.circle_gsC .button_bar_divid
 button_bar.fill_gsD .button_bar_divider, button_bar.circle_gsD .button_bar_divider,
 button_bar.fill_gsE .button_bar_divider, button_bar.circle_gsE .button_bar_divider,
 button_bar.fill_gsF .button_bar_divider, button_bar.circle_gsF .button_bar_divider,
-button_bar.min_ex2 .button_bar_divider, button_bar.mir .button_bar_divider,
+button_bar.min_ex2 .button_bar_divider,
 button_bar.min_ex4 .button_bar_divider,
 button_bar.min_ex8 .button_bar_divider,
 button_bar.min_gs3 .button_bar_divider,
 button_bar.min_gs6 .button_bar_divider,
 button_bar.min_gs9 .button_bar_divider,
 button_bar.min_gsF .button_bar_divider,
+button_bar.mro_ex2 .button_bar_divider,
+button_bar.mro_ex4 .button_bar_divider,
+button_bar.mro_ex8 .button_bar_divider,
+button_bar.mro_gs3 .button_bar_divider,
+button_bar.mro_gs6 .button_bar_divider,
+button_bar.mro_gs9 .button_bar_divider,
+button_bar.mro_gsF .button_bar_divider,
 button_bar.mat_h25 .button_bar_divider, button_bar.mat_h25_gsF .button_bar_divider,
 button_bar.mat_h30 .button_bar_divider, button_bar.mat_h30_gsF .button_bar_divider,
 button_bar.mat_h35 .button_bar_divider, button_bar.mat_h35_gsF .button_bar_divider
@@ -1192,16 +1222,22 @@ text_box.min_gsF:hover .self, button.min_gsF:hover .self, button_bar_segment.min
 /*
 :hover .inner_border{}
 */
-/*
-button.min_ex2:pressed .icon, button_bar_segment.min_ex2:hover .icon,
-button.min_ex4:pressed .icon, button_bar_segment.min_ex4:hover .icon,
-button.min_ex8:pressed .icon, button_bar_segment.min_ex8:hover .icon,
-button.min_gs3:pressed .icon, button_bar_segment.min_gs3:hover .icon,
-button.min_gs6:pressed .icon, button_bar_segment.min_gs6:hover .icon,
-button.min_gs9:pressed .icon, button_bar_segment.min_gs9:hover .icon,
-button.min_gsF:pressed .icon, button_bar_segment.min_gsF:hover .icon
+button.min_ex2:hover .icon, button_bar_segment.min_ex2:hover .icon,
+button.min_ex4:hover .icon, button_bar_segment.min_ex4:hover .icon,
+button.min_ex8:hover .icon, button_bar_segment.min_ex8:hover .icon,
+button.min_gs3:hover .icon, button_bar_segment.min_gs3:hover .icon,
+button.min_gs6:hover .icon, button_bar_segment.min_gs6:hover .icon,
+button.min_gs9:hover .icon, button_bar_segment.min_gs9:hover .icon,
+button.min_gsF:hover .icon, button_bar_segment.min_gsF:hover .icon,
+button.min_ex2:pressed .icon, button_bar_segment.min_ex2:pressed .icon,
+button.min_ex4:pressed .icon, button_bar_segment.min_ex4:pressed .icon,
+button.min_ex8:pressed .icon, button_bar_segment.min_ex8:pressed .icon,
+button.min_gs3:pressed .icon, button_bar_segment.min_gs3:pressed .icon,
+button.min_gs6:pressed .icon, button_bar_segment.min_gs6:pressed .icon,
+button.min_gs9:pressed .icon, button_bar_segment.min_gs9:pressed .icon,
+button.min_gsF:pressed .icon, button_bar_segment.min_gsF:pressed .icon
 {-fm-icon-color: #333;}
-*/
+
 
 text_box.min_ex2:pressed .self, button.min_ex2:pressed .self, button_bar_segment.min_ex2:pressed .self,
 text_box.min_ex4:pressed .self, button.min_ex4:pressed .self, button_bar_segment.min_ex4:pressed .self,
@@ -1217,6 +1253,7 @@ text_box.min_gsF:pressed .self, button.min_gsF:pressed .self, button_bar_segment
   border-left-color: rgba(48%,48%,48%,1);
   /*background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(rgba(72%,72%,72%,0.66)), to(rgba(86%,86%,86%,0.66)));*/
   background-color: rgba(124,124,124,0.18);
+  color: #333;
 }
 text_box.min_ex2:pressed .inner_border, button.min_ex2:pressed .inner_border, button_bar_segment.min_ex2:pressed .inner_border,
 text_box.min_ex4:pressed .inner_border, button.min_ex4:pressed .inner_border, button_bar_segment.min_ex4:pressed .inner_border,
@@ -1231,32 +1268,79 @@ text_box.min_gsF:pressed .inner_border, button.min_gsF:pressed .inner_border, bu
 
 
 
-button_bar_segment.mir .self
+button.mro_ex2 .self, button_bar_segment.mro_ex2 .self,
+button.mro_ex4 .self, button_bar_segment.mro_ex4 .self,
+button.mro_ex8 .self, button_bar_segment.mro_ex8 .self,
+button.mro_gs3 .self, button_bar_segment.mro_gs3 .self,
+button.mro_gs6 .self, button_bar_segment.mro_gs6 .self,
+button.mro_gs9 .self, button_bar_segment.mro_gs9 .self,
+button.mro_gsF .self, button_bar_segment.mro_gsF .self
 {
   border-style: solid; border-width: 3pt; border-radius: 7pt; border-color: rgba(0,0,0,0);
   background-image: none; background-color: rgba(0,0,0,0);
   text-align: center;
   -fm-text-vertical-align: center;
 }
-button_bar_segment.mir:hover .self
+button.mro_ex2:hover .self, button_bar_segment.mro_ex2:hover .self,
+button.mro_ex4:hover .self, button_bar_segment.mro_ex4:hover .self,
+button.mro_ex8:hover .self, button_bar_segment.mro_ex8:hover .self,
+button.mro_gs3:hover .self, button_bar_segment.mro_gs3:hover .self,
+button.mro_gs6:hover .self, button_bar_segment.mro_gs6:hover .self,
+button.mro_gs9:hover .self, button_bar_segment.mro_gs9:hover .self,
+button.mro_gsF:hover .self, button_bar_segment.mro_gsF:hover .self
 {
   background-image: none; background-color: rgba(248,248,248,0.72);
+  color: #333;
 }
+button.mro_ex2:hover .icon, button_bar_segment.mro_ex2:hover .icon,
+button.mro_ex4:hover .icon, button_bar_segment.mro_ex4:hover .icon,
+button.mro_ex8:hover .icon, button_bar_segment.mro_ex8:hover .icon,
+button.mro_gs3:hover .icon, button_bar_segment.mro_gs3:hover .icon,
+button.mro_gs6:hover .icon, button_bar_segment.mro_gs6:hover .icon,
+button.mro_gs9:hover .icon, button_bar_segment.mro_gs9:hover .icon,
+button.mro_gsF:hover .icon, button_bar_segment.mro_gsF:hover .icon,
+button.mro_ex2:pressed .icon, button_bar_segment.mro_ex2:pressed .icon,
+button.mro_ex4:pressed .icon, button_bar_segment.mro_ex4:pressed .icon,
+button.mro_ex8:pressed .icon, button_bar_segment.mro_ex8:pressed .icon,
+button.mro_gs3:pressed .icon, button_bar_segment.mro_gs3:pressed .icon,
+button.mro_gs6:pressed .icon, button_bar_segment.mro_gs6:pressed .icon,
+button.mro_gs9:pressed .icon, button_bar_segment.mro_gs9:pressed .icon,
+button.mro_gsF:pressed .icon, button_bar_segment.mro_gsF:pressed .icon
+{-fm-icon-color: #333;}
 
-button_bar_segment.mir:pressed .self
+button.mro_ex2:pressed .self, button_bar_segment.mro_ex2:pressed .self,
+button.mro_ex4:pressed .self, button_bar_segment.mro_ex4:pressed .self,
+button.mro_ex8:pressed .self, button_bar_segment.mro_ex8:pressed .self,
+button.mro_gs3:pressed .self, button_bar_segment.mro_gs3:pressed .self,
+button.mro_gs6:pressed .self, button_bar_segment.mro_gs6:pressed .self,
+button.mro_gs9:pressed .self, button_bar_segment.mro_gs9:pressed .self,
+button.mro_gsF:pressed .self, button_bar_segment.mro_gsF:pressed .self
 {
   background-image: none; background-color: rgba(212,212,212,0.48);
+  color: #333;
 }
 /**/
 /*background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(rgba(72%,72%,72%,0.66)), to(rgba(86%,86%,86%,0.66)));*/
 
-button_bar_segment.mir .inner_border
+button.mro_ex2 .inner_border, button_bar_segment.mro_ex2 .inner_border,
+button.mro_ex4 .inner_border, button_bar_segment.mro_ex4 .inner_border,
+button.mro_ex8 .inner_border, button_bar_segment.mro_ex8 .inner_border,
+button.mro_gs3 .inner_border, button_bar_segment.mro_gs3 .inner_border,
+button.mro_gs6 .inner_border, button_bar_segment.mro_gs6 .inner_border,
+button.mro_gs9 .inner_border, button_bar_segment.mro_gs9 .inner_border,
+button.mro_gsF .inner_border, button_bar_segment.mro_gsF .inner_border
 {
   border-style: solid; border-width: 1pt; border-radius: 4pt; border-color: rgba(0,0,0,0);
   background-image: none; background-color: rgba(0,0,0,0);
   box-shadow: none;
 }
-button_bar_segment.mir:hover .inner_border
+button.mro_ex2:hover .inner_border, button_bar_segment.mro_ex2:hover .inner_border,
+button.mro_ex4:hover .inner_border, button_bar_segment.mro_ex4:hover .inner_border,
+button.mro_ex8:hover .inner_border, button_bar_segment.mro_ex8:hover .inner_border,
+button.mro_gs3:hover .inner_border, button_bar_segment.mro_gs3:hover .inner_border,
+button.mro_gs6:hover .inner_border, button_bar_segment.mro_gs6:hover .inner_border,
+button.mro_gs9:hover .inner_border, button_bar_segment.mro_gs9:hover .inner_border,
+button.mro_gsF:hover .inner_border, button_bar_segment.mro_gsF:hover .inner_border
 {
   border-radius: 3pt;
   /*
@@ -1271,7 +1355,13 @@ button_bar_segment.mir:hover .inner_border
   border-left-color: #DDD;
   box-shadow: inset 0pt 0pt 1pt 0pt #FFF;
 }
-button_bar_segment.mir:pressed .inner_border
+button.mro_ex2:pressed .inner_border, button_bar_segment.mro_ex2:pressed .inner_border,
+button.mro_ex4:pressed .inner_border, button_bar_segment.mro_ex4:pressed .inner_border,
+button.mro_ex8:pressed .inner_border, button_bar_segment.mro_ex8:pressed .inner_border,
+button.mro_gs3:pressed .inner_border, button_bar_segment.mro_gs3:pressed .inner_border,
+button.mro_gs6:pressed .inner_border, button_bar_segment.mro_gs6:pressed .inner_border,
+button.mro_gs9:pressed .inner_border, button_bar_segment.mro_gs9:pressed .inner_border,
+button.mro_gsF:pressed .inner_border, button_bar_segment.mro_gsF:pressed .inner_border
 {
   border-radius: 3pt;
   border-top-color: rgba(48%,48%,48%,1);

@@ -169,10 +169,12 @@ text_box.left_ex2_p18 .self,
 text_box.right_ex2_p18 .self,
 text_box.center_ex2_p18 .self,
 text_box.min_ex2 .self,
-button_bar_segment.min_ex2:normal .self {
+button_bar_segment.min_ex2:normal .self,
+button_bar_segment.mro_ex2:normal .self {
   color: #1c8839;
 }
-button_bar_segment.min_ex2:normal .icon {
+button_bar_segment.min_ex2:normal .icon,
+button_bar_segment.mro_ex2:normal .icon {
   -fm-icon-color: #1c8839;
 }
 text_box.left_ex4_p09 .self,
@@ -206,10 +208,12 @@ text_box.left_ex4_p18 .self,
 text_box.right_ex4_p18 .self,
 text_box.center_ex4_p18 .self,
 text_box.min_ex4 .self,
-button_bar_segment.min_ex4:normal .self {
+button_bar_segment.min_ex4:normal .self,
+button_bar_segment.mro_ex4:normal .self {
   color: #3cbd60;
 }
-button_bar_segment.min_ex4:normal .icon {
+button_bar_segment.min_ex4:normal .icon,
+button_bar_segment.mro_ex4:normal .icon {
   -fm-icon-color: #3cbd60;
 }
 text_box.left_ex8_p09 .self,
@@ -243,10 +247,12 @@ text_box.left_ex8_p18 .self,
 text_box.right_ex8_p18 .self,
 text_box.center_ex8_p18 .self,
 text_box.min_ex8 .self,
-button_bar_segment.min_ex8:normal .self {
+button_bar_segment.min_ex8:normal .self,
+button_bar_segment.mro_ex8:normal .self {
   color: #bfeecc;
 }
-button_bar_segment.min_ex8:normal .icon {
+button_bar_segment.min_ex8:normal .icon,
+button_bar_segment.mro_ex8:normal .icon {
   -fm-icon-color: #bfeecc;
 }
 /** BLOCK ------------------------*/
@@ -256,18 +262,22 @@ body:checked .self {
 button.row:hover .self {
   background-color: #e4f8ea;
 }
+button.cap:normal .self,
 text_box.cap:normal .self {
   border-color: #bfeecc;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#57d078), to(#3cbd60));
 }
+button.cap:hover .self,
 text_box.cap:hover .self {
   border-color: #57d078;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3cbd60), to(#2da24d));
 }
+button.cap:pressed .self,
 text_box.cap:pressed .self {
   border-color: #1c8839;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2da24d), to(#3cbd60));
 }
+button.cap:pressed .inner_border,
 text_box.cap:pressed .inner_border {
   box-shadow: inset 0pt 0pt 3pt 1pt #1c8839;
 }

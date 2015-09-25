@@ -194,9 +194,11 @@ text_box.left_ex2_p16 .self, text_box.right_ex2_p16 .self, text_box.center_ex2_p
 text_box.left_ex2_p17 .self, text_box.right_ex2_p17 .self, text_box.center_ex2_p17 .self,
 text_box.left_ex2_p18 .self, text_box.right_ex2_p18 .self, text_box.center_ex2_p18 .self,
 text_box.min_ex2 .self,
-button_bar_segment.min_ex2:normal .self
+button_bar_segment.min_ex2:normal .self,
+button_bar_segment.mro_ex2:normal .self
 {color: @ex2;}
-button_bar_segment.min_ex2:normal .icon
+button_bar_segment.min_ex2:normal .icon,
+button_bar_segment.mro_ex2:normal .icon
 {-fm-icon-color: @ex2;}
 
 text_box.left_ex4_p09 .self, text_box.right_ex4_p09 .self, text_box.center_ex4_p09 .self,
@@ -210,9 +212,11 @@ text_box.left_ex4_p16 .self, text_box.right_ex4_p16 .self, text_box.center_ex4_p
 text_box.left_ex4_p17 .self, text_box.right_ex4_p17 .self, text_box.center_ex4_p17 .self,
 text_box.left_ex4_p18 .self, text_box.right_ex4_p18 .self, text_box.center_ex4_p18 .self,
 text_box.min_ex4 .self,
-button_bar_segment.min_ex4:normal .self
+button_bar_segment.min_ex4:normal .self,
+button_bar_segment.mro_ex4:normal .self
 {color: @ex4;}
-button_bar_segment.min_ex4:normal .icon
+button_bar_segment.min_ex4:normal .icon,
+button_bar_segment.mro_ex4:normal .icon
 {-fm-icon-color: @ex4;}
 
 text_box.left_ex8_p09 .self, text_box.right_ex8_p09 .self, text_box.center_ex8_p09 .self,
@@ -226,9 +230,11 @@ text_box.left_ex8_p16 .self, text_box.right_ex8_p16 .self, text_box.center_ex8_p
 text_box.left_ex8_p17 .self, text_box.right_ex8_p17 .self, text_box.center_ex8_p17 .self,
 text_box.left_ex8_p18 .self, text_box.right_ex8_p18 .self, text_box.center_ex8_p18 .self,
 text_box.min_ex8 .self,
-button_bar_segment.min_ex8:normal .self
+button_bar_segment.min_ex8:normal .self,
+button_bar_segment.mro_ex8:normal .self
 {color: @ex8;}
-button_bar_segment.min_ex8:normal .icon
+button_bar_segment.min_ex8:normal .icon,
+button_bar_segment.mro_ex8:normal .icon
 {-fm-icon-color: @ex8;}
 
 
@@ -239,21 +245,25 @@ button.row:hover .self{background-color: @ex9;}
 
 
 
+button.cap:normal .self,
 text_box.cap:normal .self
 {
   border-color: @ex8;
   background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(@ex5), to(@ex4));
 }
+button.cap:hover .self,
 text_box.cap:hover .self
 {
   border-color: @ex5;
   background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(@ex4), to(@ex3));
 }
+button.cap:pressed .self,
 text_box.cap:pressed .self
 {
   border-color: @ex2;
   background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(@ex3), to(@ex4));
 }
+button.cap:pressed .inner_border,
 text_box.cap:pressed .inner_border
 {
   box-shadow: inset 0pt 0pt 3pt 1pt @ex2;
