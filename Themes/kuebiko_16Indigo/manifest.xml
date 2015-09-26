@@ -68,17 +68,6 @@
 			<edt_p14h29>edt_p14h29</edt_p14h29>
 			<edt_p16h24>edt_p16h24</edt_p16h24>
 			<edt_p16h29>edt_p16h29</edt_p16h29>
-			<fie_Edit_10_14>edt_p10h14XXX</fie_Edit_10_14>
-			<fie_Edit_10_19>edt_p10h19XXX</fie_Edit_10_19>
-			<fie_Edit_11_14>edt_p11h14XXX</fie_Edit_11_14>
-			<fie_Edit_11_19>edt_p11h19XXX</fie_Edit_11_19>
-			<fie_Edit_12_19>edt_p12h19XXX</fie_Edit_12_19>
-			<fie_Edit_12_24>edt_p12h24XXX</fie_Edit_12_24>
-			<fie_Edit_13_24>edt_p13h24XXX</fie_Edit_13_24>
-			<fie_Edit_14_24>edt_p14h24XXX</fie_Edit_14_24>
-			<fie_Edit_14_29>edt_p14h29XXX</fie_Edit_14_29>
-			<fie_Edit_16_24>edt_p16h24XXX</fie_Edit_16_24>
-			<fie_Edit_16_29>edt_p16h29XXX</fie_Edit_16_29>
 			<vew_p10h14>vew_p10h14</vew_p10h14>
 			<vew_p10h19>vew_p10h19</vew_p10h19>
 			<vew_p11h14>vew_p11h14</vew_p11h14>
@@ -90,17 +79,6 @@
 			<vew_p14h29>vew_p14h29</vew_p14h29>
 			<vew_p16h24>vew_p16h24</vew_p16h24>
 			<vew_p16h29>vew_p16h29</vew_p16h29>
-			<fie_View_10_14>vew_p10h14XXX</fie_View_10_14>
-			<fie_View_10_19>vew_p10h19XXX</fie_View_10_19>
-			<fie_View_11_14>vew_p11h14XXX</fie_View_11_14>
-			<fie_View_11_19>vew_p11h19XXX</fie_View_11_19>
-			<fie_View_12_19>vew_p12h19XXX</fie_View_12_19>
-			<fie_View_12_24>vew_p12h24XXX</fie_View_12_24>
-			<fie_View_13_24>vew_p13h24XXX</fie_View_13_24>
-			<fie_View_14_24>vew_p14h24XXX</fie_View_14_24>
-			<fie_View_14_29>vew_p14h29XXX</fie_View_14_29>
-			<fie_View_16_24>vew_p16h24XXX</fie_View_16_24>
-			<fie_View_16_29>vew_p16h29XXX</fie_View_16_29>
 			<min_p10h14>min_p10h14</min_p10h14>
 			<min_p10h19>min_p10h19</min_p10h19>
 			<min_p11h14>min_p11h14</min_p11h14>
@@ -112,17 +90,6 @@
 			<min_p14h29>min_p14h29</min_p14h29>
 			<min_p16h24>min_p16h24</min_p16h24>
 			<min_p16h29>min_p16h29</min_p16h29>
-			<fie_Mini_10_14>min_p10h14XXX</fie_Mini_10_14>
-			<fie_Mini_10_19>min_p10h19XXX</fie_Mini_10_19>
-			<fie_Mini_11_14>min_p11h14XXX</fie_Mini_11_14>
-			<fie_Mini_11_19>min_p11h19XXX</fie_Mini_11_19>
-			<fie_Mini_12_19>min_p12h19XXX</fie_Mini_12_19>
-			<fie_Mini_12_24>min_p12h24XXX</fie_Mini_12_24>
-			<fie_Mini_13_24>min_p13h24XXX</fie_Mini_13_24>
-			<fie_Mini_14_24>min_p14h24XXX</fie_Mini_14_24>
-			<fie_Mini_14_29>min_p14h29XXX</fie_Mini_14_29>
-			<fie_Mini_16_24>min_p16h24XXX</fie_Mini_16_24>
-			<fie_Mini_16_29>min_p16h29XXX</fie_Mini_16_29>
 			<cap>cap</cap>
 			<row>row</row>
 			<btn_check>btn_check</btn_check>
@@ -148,7 +115,6 @@
 			<mro_gsA>mro_gsA</mro_gsA>
 			<mro_gsC>mro_gsC</mro_gsC>
 			<mro_gsF>mro_gsF</mro_gsF>
-			<port_liner>lin_NU</port_liner>
 			<def>def</def>
 			<min>min</min>
 			<ear>ear</ear>

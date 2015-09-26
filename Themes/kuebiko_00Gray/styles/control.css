@@ -771,7 +771,6 @@ dot_control:normal .dot {
   width: 9pt;height: 9pt;
   margin-left: 0.33em;
   background-image: none; background-color: rgba(163,163,163,0.42)/*#AAA; rgba(202,206,209,1)*/
-  /*border-image-source: none;*/
   border-style: none; border-width: 0pt; border-color: rgba(0,0,0,0);
   border-radius: 50%;
 }
@@ -881,14 +880,33 @@ button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self
-{
-  border-color: #333;
-}
+{border-color: #333;}
 button_bar_segment.mat_h25_gsF:active .self,
 button_bar_segment.mat_h30_gsF:active .self,
 button_bar_segment.mat_h35_gsF:active .self
+{border-color: #FFF;}
+
+button_bar_segment.mat_h25:pressed .self, button_bar_segment.mat_h25_gsF:pressed .self,
+button_bar_segment.mat_h30:pressed .self, button_bar_segment.mat_h30_gsF:pressed .self,
+button_bar_segment.mat_h35:pressed .self, button_bar_segment.mat_h35_gsF:pressed .self
 {
-  border-color: #FFF;
+  border-color: rgba(212,212,212,0.48);
+  background-image: none; background-color: rgba(212,212,212,0.48);
+}
+
+
+
+button_bar_segment.mat_h25 .inner_border, button_bar_segment.mat_h25_gsF .inner_border,
+button_bar_segment.mat_h30 .inner_border, button_bar_segment.mat_h30_gsF .inner_border,
+button_bar_segment.mat_h35 .inner_border, button_bar_segment.mat_h35_gsF .inner_border,
+button_bar_segment.mat_h25:hover .inner_border, button_bar_segment.mat_h25_gsF:hover .inner_border,
+button_bar_segment.mat_h30:hover .inner_border, button_bar_segment.mat_h30_gsF:hover .inner_border,
+button_bar_segment.mat_h35:hover .inner_border, button_bar_segment.mat_h35_gsF:hover .inner_border,
+button_bar_segment.mat_h25:pressed .inner_border, button_bar_segment.mat_h25_gsF:pressed .inner_border,
+button_bar_segment.mat_h30:pressed .inner_border, button_bar_segment.mat_h30_gsF:pressed .inner_border,
+button_bar_segment.mat_h35:pressed .inner_border, button_bar_segment.mat_h35_gsF:pressed .inner_border
+{
+  box-shadow: none;
 }
 
 
