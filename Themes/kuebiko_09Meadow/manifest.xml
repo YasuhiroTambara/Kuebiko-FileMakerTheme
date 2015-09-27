@@ -42,10 +42,54 @@
 			<colorScheme>Plum Tree</colorScheme>
 		</charting>
 		<namedstyles>
+			<fill_ex1>fill_ex1</fill_ex1>
+			<fill_ex2>fill_ex2</fill_ex2>
+			<fill_ex3>fill_ex3</fill_ex3>
+			<fill_ex4>fill_ex4</fill_ex4>
+			<fill_ex5>fill_ex5</fill_ex5>
+			<fill_ex6>fill_ex6</fill_ex6>
+			<fill_ex7>fill_ex7</fill_ex7>
+			<fill_ex8>fill_ex8</fill_ex8>
+			<fill_ex9>fill_ex9</fill_ex9>
+			<fill_acc>fill_acc</fill_acc>
+			<fill_ex4Gray>fill_ex4Gray</fill_ex4Gray>
+			<fill_ex4Marsala>fill_ex4Marsala</fill_ex4Marsala>
+			<fill_ex4Brown>fill_ex4Brown</fill_ex4Brown>
+			<fill_ex4Orange>fill_ex4Orange</fill_ex4Orange>
+			<fill_ex4Amber>fill_ex4Amber</fill_ex4Amber>
+			<fill_ex4Yellow>fill_ex4Yellow</fill_ex4Yellow>
+			<fill_ex4Lime>fill_ex4Lime</fill_ex4Lime>
+			<fill_ex4Bamboo>fill_ex4Bamboo</fill_ex4Bamboo>
+			<fill_ex407>fill_ex407</fill_ex407>
+			<fill_ex4Green>fill_ex4Green</fill_ex4Green>
+			<fill_ex4Meadow>fill_ex4Meadow</fill_ex4Meadow>
+			<fill_ex410>fill_ex410</fill_ex410>
+			<fill_ex4Teal>fill_ex4Teal</fill_ex4Teal>
+			<fill_ex4Cyan>fill_ex4Cyan</fill_ex4Cyan>
+			<fill_ex4Slate>fill_ex4Slate</fill_ex4Slate>
+			<fill_ex4Azure>fill_ex4Azure</fill_ex4Azure>
+			<fill_ex4Blue>fill_ex4Blue</fill_ex4Blue>
+			<fill_ex4Indigo>fill_ex4Indigo</fill_ex4Indigo>
+			<fill_ex4Violet>fill_ex4Violet</fill_ex4Violet>
+			<fill_ex4Mouve>fill_ex4Mouve</fill_ex4Mouve>
+			<fill_ex4Purple>fill_ex4Purple</fill_ex4Purple>
+			<fill_ex4Magenta>fill_ex4Magenta</fill_ex4Magenta>
+			<fill_ex4Orchid>fill_ex4Orchid</fill_ex4Orchid>
+			<fill_ex4Ruby>fill_ex4Ruby</fill_ex4Ruby>
+			<fill_ex4Pink>fill_ex4Pink</fill_ex4Pink>
+			<fill_ex4Tomato>fill_ex4Tomato</fill_ex4Tomato>
+			<fill_gs0>fill_gs0</fill_gs0>
 			<fill_gs3>fill_gs3</fill_gs3>
 			<fill_gs6>fill_gs6</fill_gs6>
+			<fill_gs9>fill_gs9</fill_gs9>
+			<fill_gsA>fill_gsA</fill_gsA>
+			<fill_gsB>fill_gsB</fill_gsB>
+			<fill_gsC>fill_gsC</fill_gsC>
+			<fill_gsD>fill_gsD</fill_gsD>
+			<fill_gsE>fill_gsE</fill_gsE>
 			<fill_gsF6>fill_gsF6</fill_gsF6>
 			<fill_gsFC>fill_gsFC</fill_gsFC>
+			<fill_gsF>fill_gsF</fill_gsF>
 			<list_gs3>list_gs3</list_gs3>
 			<list_gs6>list_gs6</list_gs6>
 			<list_gs9>list_gs9</list_gs9>
@@ -156,6 +200,8 @@
 			<stroke_ex7>stroke_ex7</stroke_ex7>
 			<stroke_ex8>stroke_ex8</stroke_ex8>
 			<stroke_ex9>stroke_ex9</stroke_ex9>
+			<stroke_gs3>stroke_gs3</stroke_gs3>
+			<stroke_gs6>stroke_gs6</stroke_gs6>
 			<stroke_gs9>stroke_gs9</stroke_gs9>
 			<stroke_gsA>stroke_gsA</stroke_gsA>
 			<stroke_gsB>stroke_gsB</stroke_gsB>
@@ -163,23 +209,6 @@
 			<stroke_gsD>stroke_gsD</stroke_gsD>
 			<stroke_gsE>stroke_gsE</stroke_gsE>
 			<stroke_gsF>stroke_gsF</stroke_gsF>
-			<fill_ex1>fill_ex1</fill_ex1>
-			<fill_ex2>fill_ex2</fill_ex2>
-			<fill_ex3>fill_ex3</fill_ex3>
-			<fill_ex4>fill_ex4</fill_ex4>
-			<fill_ex5>fill_ex5</fill_ex5>
-			<fill_ex6>fill_ex6</fill_ex6>
-			<fill_ex7>fill_ex7</fill_ex7>
-			<fill_ex8>fill_ex8</fill_ex8>
-			<fill_ex9>fill_ex9</fill_ex9>
-			<fill_acc>fill_acc</fill_acc>
-			<fill_gs9>fill_gs9</fill_gs9>
-			<fill_gsA>fill_gsA</fill_gsA>
-			<fill_gsB>fill_gsB</fill_gsB>
-			<fill_gsC>fill_gsC</fill_gsC>
-			<fill_gsD>fill_gsD</fill_gsD>
-			<fill_gsE>fill_gsE</fill_gsE>
-			<fill_gsF>fill_gsF</fill_gsF>
 			<edit_gsC>edit_gsC</edit_gsC>
 			<edit_gsD>edit_gsD</edit_gsD>
 			<edit_gsE>edit_gsE</edit_gsE>
@@ -198,6 +227,34 @@
 			<circle_ex8>circle_ex8</circle_ex8>
 			<circle_ex9>circle_ex9</circle_ex9>
 			<circle_acc>circle_acc</circle_acc>
+			<circle_ex4Gray>circle_ex4Gray</circle_ex4Gray>
+			<circle_ex4Marsala>circle_ex4Marsala</circle_ex4Marsala>
+			<circle_ex4Brown>circle_ex4Brown</circle_ex4Brown>
+			<circle_ex4Orange>circle_ex4Orange</circle_ex4Orange>
+			<circle_ex4Amber>circle_ex4Amber</circle_ex4Amber>
+			<circle_ex4Yellow>circle_ex4Yellow</circle_ex4Yellow>
+			<circle_ex4Lime>circle_ex4Lime</circle_ex4Lime>
+			<circle_ex4Bamboo>circle_ex4Bamboo</circle_ex4Bamboo>
+			<circle_ex407>circle_ex407</circle_ex407>
+			<circle_ex4Green>circle_ex4Green</circle_ex4Green>
+			<circle_ex4Meadow>circle_ex4Meadow</circle_ex4Meadow>
+			<circle_ex410>circle_ex410</circle_ex410>
+			<circle_ex4Teal>circle_ex4Teal</circle_ex4Teal>
+			<circle_ex4Cyan>circle_ex4Cyan</circle_ex4Cyan>
+			<circle_ex4Slate>circle_ex4Slate</circle_ex4Slate>
+			<circle_ex4Azure>circle_ex4Azure</circle_ex4Azure>
+			<circle_ex4Blue>circle_ex4Blue</circle_ex4Blue>
+			<circle_ex4Indigo>circle_ex4Indigo</circle_ex4Indigo>
+			<circle_ex4Violet>circle_ex4Violet</circle_ex4Violet>
+			<circle_ex4Mouve>circle_ex4Mouve</circle_ex4Mouve>
+			<circle_ex4Purple>circle_ex4Purple</circle_ex4Purple>
+			<circle_ex4Magenta>circle_ex4Magenta</circle_ex4Magenta>
+			<circle_ex4Orchid>circle_ex4Orchid</circle_ex4Orchid>
+			<circle_ex4Ruby>circle_ex4Ruby</circle_ex4Ruby>
+			<circle_ex4Pink>circle_ex4Pink</circle_ex4Pink>
+			<circle_ex4Tomato>circle_ex4Tomato</circle_ex4Tomato>
+			<circle_gs3>circle_gs3</circle_gs3>
+			<circle_gs6>circle_gs6</circle_gs6>
 			<circle_gs9>circle_gs9</circle_gs9>
 			<circle_gsA>circle_gsA</circle_gsA>
 			<circle_gsB>circle_gsB</circle_gsB>

@@ -3,7 +3,7 @@
 /** PORTAL ROW -----------------------*/
 portal:normal .row {background-color: #FCFCFC;}
 portal:normal .row_alt {background-color: #F6F6F6;}
-portal:normal .row_active {background-color: rgba(230, 239, 249, 1);}
+portal:normal .row_active {background-color: rgba(230,239,249,1);}
 
 portal.port_liner:normal .row,
 portal.port_liner:normal .row_alt,
@@ -15,7 +15,7 @@ portal.port_liner:normal .row_active
 }
 portal.port_liner:normal .row {background-color: #FCFCFC;}
 portal.port_liner:normal .row_alt {background-color: #F6F6F6;}
-portal.port_liner:normal .row_active {background-color: rgba(230, 239, 249, 1);}
+portal.port_liner:normal .row_active {background-color: rgba(230,239,249,1);}
 
 
 
@@ -411,9 +411,9 @@ tab_control.def_h30:normal .self {font-size: 14pt;}
 tab_control.def_h35:normal .self {font-size: 16pt;}
 tab_control:active .self {color: #333;}
 
-tab_panel:normal .self {
-  /*background-color: #AAA;*/
-  border-style: solid; border-width: 1pt; border-radius: 0pt; border-color: #CCC;
+tab_panel .self {
+  border-style: solid; border-width: 1pt; border-radius: 0pt; border-color: #BBB;
+  /*background-color: #F6F6F6;*/
   /*
   -fm-tab-top-left-radius: 3pt;
   -fm-tab-top-right-radius: 3pt;
@@ -424,8 +424,8 @@ tab_panel:normal .self {
 tab_panel:hover .self {background-color: #333;}
 */
 tab_panel:active .self {
-  background-image: none;background-color: #F6F6F6;
-  border-color: #CCC;
+  background-image: none; background-color: #F6F6F6;
+  border-color: #AAA;
 }
 tab_panel:activefocus .self {
   box-shadow: none;
@@ -442,8 +442,9 @@ tab_panel:normal .tab {
   border-top-right-radius: 2pt;
   */
 }
-tab_panel:hover .tab
-{background-color: rgba(77,77,77,0.18);}/*#F66*/
+tab_panel:hover .tab {
+  background-color: rgba(77,77,77,0.1);
+}/*#F66*/
 tab_panel:focus .tab {
   box-shadow: none;
 }
@@ -453,7 +454,7 @@ tab_panel:active .tab {
 }
 
 tab_panel:normal .tab_inner_border {
-  padding: 0pt 3pt 0pt 3pt;
+  padding: 0pt 3pt;
   box-shadow: none;
 }
 tab_panel.def_h25:normal .tab_inner_border {padding: 0pt 3pt 0pt 3pt;}
@@ -485,45 +486,63 @@ tab_control.mat_h35 .self,tab_control.mat_h35_gsF .self
 tab_control.mat_h25:normal .self,
 tab_control.mat_h30:normal .self,
 tab_control.mat_h35:normal .self,
-button_bar_segment.mat_h25:normal .self,
-button_bar_segment.mat_h30:normal .self,
-button_bar_segment.mat_h35:normal .self
+button_bar_segment.mat_h25 .self,
+button_bar_segment.mat_h30 .self,
+button_bar_segment.mat_h35 .self
 {color: #666;}
+tab_control.mat_h25_gsF:normal .self,
+tab_control.mat_h30_gsF:normal .self,
+tab_control.mat_h35_gsF:normal .self,
+button_bar_segment.mat_h25_gsF .self,
+button_bar_segment.mat_h30_gsF .self,
+button_bar_segment.mat_h35_gsF .self
+{color: #FFF;}
+
+tab_control.mat_h25 .self, tab_control.mat_h25_gsF .self,
+button_bar_segment.mat_h25 .self, button_bar_segment.mat_h25_gsF .self
+{font-size: 12pt;}
+tab_control.mat_h30 .self, tab_control.mat_h30_gsF .self,
+button_bar_segment.mat_h30 .self, button_bar_segment.mat_h30_gsF .self
+{font-size: 14pt;}
+tab_control.mat_h35 .self, tab_control.mat_h35_gsF .self,
+button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
+{font-size: 16pt;}
+
+tab_control.mat_h25:hover .self,
+tab_control.mat_h30:hover .self,
+tab_control.mat_h35:hover .self,
+button_bar_segment.mat_h25:hover .self,
+button_bar_segment.mat_h30:hover .self,
+button_bar_segment.mat_h35:hover .self
+{color: #333;}
+button_bar_segment.mat_h25_gsF:hover .self,
+button_bar_segment.mat_h30_gsF:hover .self,
+button_bar_segment.mat_h35_gsF:hover .self
+{color: #FFF;}
+
 tab_control.mat_h25:active .self,
 tab_control.mat_h30:active .self,
 tab_control.mat_h35:active .self,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self
-{color: #333;}/**/
-tab_control.mat_h25_gsF:normal .self,
-tab_control.mat_h30_gsF:normal .self,
-tab_control.mat_h35_gsF:normal .self,
-button_bar_segment.mat_h25_gsF:normal .self,
-button_bar_segment.mat_h30_gsF:normal .self,
-button_bar_segment.mat_h35_gsF:normal .self
-{color: #FFF;}/******/
+{
+  color: #333;/* theme_colors */
+}
 tab_control.mat_h25_gsF:active .self,
 tab_control.mat_h30_gsF:active .self,
 tab_control.mat_h35_gsF:active .self,
 button_bar_segment.mat_h25_gsF:active .self,
 button_bar_segment.mat_h30_gsF:active .self,
 button_bar_segment.mat_h35_gsF:active .self
-{color: #FFF;}
-tab_control.mat_h25 .self,tab_control.mat_h25_gsF .self,
-button_bar_segment.mat_h25 .self, button_bar_segment.mat_h25_gsF .self,
-{font-size: 12pt;}
-tab_control.mat_h30 .self,tab_control.mat_h30_gsF .self,
-button_bar_segment.mat_h30 .self, button_bar_segment.mat_h30_gsF .self,
-{font-size: 14pt;}
-tab_control.mat_h35 .self,tab_control.mat_h35_gsF .self,
-button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self,
-{font-size: 16pt;}
+{
+  color: #FFF;
+}
 
 /*MAT(Panel>SELF)*/
-tab_panel.mat_h25 .self,tab_panel.mat_h25_gsF .self,
-tab_panel.mat_h30 .self,tab_panel.mat_h30_gsF .self,
-tab_panel.mat_h35 .self,tab_panel.mat_h35_gsF .self,
+tab_panel.mat_h25 .self, tab_panel.mat_h25_gsF .self,
+tab_panel.mat_h30 .self, tab_panel.mat_h30_gsF .self,
+tab_panel.mat_h35 .self, tab_panel.mat_h35_gsF .self,
 tab_panel.mat_h25:active .self,tab_panel.mat_h25_gsF:active .self,
 tab_panel.mat_h30:active .self,tab_panel.mat_h30_gsF:active .self,
 tab_panel.mat_h35:active .self,tab_panel.mat_h35_gsF:active .self
@@ -539,9 +558,9 @@ tab_panel.tab_mat_gsF:active .self {color: #FFF;}
 tab_panel.tab_mat_gsF:activefocus .self {box-shadow: none;}
 */
 
-tab_panel.mat_h25 .inner_border,tab_panel.mat_h25_gsF .inner_border,
-tab_panel.mat_h30 .inner_border,tab_panel.mat_h30_gsF .inner_border,
-tab_panel.mat_h35 .inner_border,tab_panel.mat_h35_gsF .inner_border
+tab_panel.mat_h25 .inner_border, tab_panel.mat_h25_gsF .inner_border,
+tab_panel.mat_h30 .inner_border, tab_panel.mat_h30_gsF .inner_border,
+tab_panel.mat_h35 .inner_border, tab_panel.mat_h35_gsF .inner_border
 {
   border-radius: 0pt;
 }
@@ -557,8 +576,9 @@ tab_panel.mat_h35:active .tab,tab_panel.mat_h35_gsF:active .tab
   background-image: none; background-color: rgba(0,0,0,0);
   border-bottom-style: solid;
   border-bottom-width: 4pt;
-  border-bottom-color: rgba(255,255,255,0.18);/*#EEE;#AAA;*/
+  border-bottom-color: rgba(255,255,255,0);/* 0.1 */
 }
+
 tab_panel.mat_h25:hover .tab, tab_panel.mat_h25_gsF:hover .tab,
 tab_panel.mat_h30:hover .tab, tab_panel.mat_h30_gsF:hover .tab,
 tab_panel.mat_h35:hover .tab, tab_panel.mat_h35_gsF:hover .tab,
@@ -566,40 +586,46 @@ button_bar_segment.mat_h25:hover .self, button_bar_segment.mat_h25_gsF:hover .se
 button_bar_segment.mat_h30:hover .self, button_bar_segment.mat_h30_gsF:hover .self,
 button_bar_segment.mat_h35:hover .self, button_bar_segment.mat_h35_gsF:hover .self
 {
-  background-image: none; background-color: rgba(77,77,77,0.1);
-  border-color: rgba(77,77,77,0.1);
+  background-image: none; background-color: rgba(77,77,77,0);/* 0.1 */
+  border-color: rgba(77,77,77,0);/* 0.1 */
 }
+
 tab_panel.mat_h25:active .tab,
 tab_panel.mat_h30:active .tab,
 tab_panel.mat_h35:active .tab,
-button_bar_segment.mat_h25:active .self, 
+button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self
-{border-bottom-color: #AAA;}/* theme_colors */
+{
+  border-bottom-color: #AAA;/* theme_colors */
+}
 tab_panel.mat_h25_gsF:active .tab,
 tab_panel.mat_h30_gsF:active .tab,
 tab_panel.mat_h35_gsF:active .tab,
 button_bar_segment.mat_h25_gsF:active .self,
 button_bar_segment.mat_h30_gsF:active .self,
 button_bar_segment.mat_h35_gsF:active .self
-{border-bottom-color: #FFF;}
+{
+  border-bottom-color: #FFF;
+}
+
 /*
 tab_panel.tab_mat:focus .tab {box-shadow: none;}
 */
 
-tab_panel.mat_h25 .tab_inner_border,tab_panel.mat_h25_gsF .tab_inner_border
+tab_panel.mat_h25 .tab_inner_border, tab_panel.mat_h25_gsF .tab_inner_border
 {padding: 2pt 3pt 0pt 3pt;}
-tab_panel.mat_h30 .tab_inner_border,tab_panel.mat_h30_gsF .tab_inner_border
+tab_panel.mat_h30 .tab_inner_border, tab_panel.mat_h30_gsF .tab_inner_border
 {padding: 3pt 3pt 0pt 3pt;}
-tab_panel.mat_h35 .tab_inner_border,tab_panel.mat_h35_gsF .tab_inner_border
+tab_panel.mat_h35 .tab_inner_border, tab_panel.mat_h35_gsF .tab_inner_border
 {padding: 4pt 3pt 0pt 3pt;}
 
 
 
 /*EAR(Control>SELF)*/
-tab_control.ear_h25 .self,tab_control.ear_h25_lite .self,
-tab_control.ear_h30 .self,tab_control.ear_h30_lite .self,
-tab_control.ear_h35 .self,tab_control.ear_h35_lite .self
+tab_control.ear_h25 .self, tab_control.ear_h25_lite .self,
+tab_control.ear_h30 .self, tab_control.ear_h30_lite .self,
+tab_control.ear_h35 .self, tab_control.ear_h35_lite .self
 {
   background-image: none;background-color: rgba(0,0,0,0);
   border-style: none;border-width: 0pt;border-color: rgba(0,0,0,0);border-radius: 0pt;
@@ -608,26 +634,26 @@ tab_control.ear_h35 .self,tab_control.ear_h35_lite .self
   -fm-tab-spacing: -1;
   text-align: left;
 }
-tab_control.ear_h25:normal .self,tab_control.ear_h25_lite:normal .self,
-tab_control.ear_h30:normal .self,tab_control.ear_h30_lite:normal .self,
-tab_control.ear_h35:normal .self,tab_control.ear_h35_lite:normal .self,
+tab_control.ear_h25:normal .self, tab_control.ear_h25_lite:normal .self,
+tab_control.ear_h30:normal .self, tab_control.ear_h30_lite:normal .self,
+tab_control.ear_h35:normal .self, tab_control.ear_h35_lite:normal .self
 {color: #666;}/* theme_colors */
-tab_control.ear_h25:hover .self,tab_control.ear_h25_lite:hover .self,
-tab_control.ear_h30:hover .self,tab_control.ear_h30_lite:hover .self,
-tab_control.ear_h35:hover .self,tab_control.ear_h35_lite:hover .self,
+tab_control.ear_h25:hover .self, tab_control.ear_h25_lite:hover .self,
+tab_control.ear_h30:hover .self, tab_control.ear_h30_lite:hover .self,
+tab_control.ear_h35:hover .self, tab_control.ear_h35_lite:hover .self
 {color: #FFF;}
-tab_control.ear_h25:active .self,tab_control.ear_h25_lite:active .self,
-tab_control.ear_h30:active .self,tab_control.ear_h30_lite:active .self,
-tab_control.ear_h35:active .self,tab_control.ear_h35_lite:active .self,
+tab_control.ear_h25:active .self, tab_control.ear_h25_lite:active .self,
+tab_control.ear_h30:active .self, tab_control.ear_h30_lite:active .self,
+tab_control.ear_h35:active .self, tab_control.ear_h35_lite:active .self
 {color: #FFF;}/*:checked*/
-tab_control.ear_h25 .self,tab_control.ear_h25_lite .self {font-size: 12pt;}
-tab_control.ear_h30 .self,tab_control.ear_h30_lite .self {font-size: 14pt;}
-tab_control.ear_h35 .self,tab_control.ear_h35_lite .self {font-size: 16pt;}
+tab_control.ear_h25 .self, tab_control.ear_h25_lite .self {font-size: 12pt;}
+tab_control.ear_h30 .self, tab_control.ear_h30_lite .self {font-size: 14pt;}
+tab_control.ear_h35 .self, tab_control.ear_h35_lite .self {font-size: 16pt;}
 
 /*EAR(Panel>SELF)*/
-tab_panel.ear_h25 .self,tab_panel.ear_h25_lite .self,
-tab_panel.ear_h30 .self,tab_panel.ear_h30_lite .self,
-tab_panel.ear_h35 .self,tab_panel.ear_h35_lite .self
+tab_panel.ear_h25 .self, tab_panel.ear_h25_lite .self,
+tab_panel.ear_h30 .self, tab_panel.ear_h30_lite .self,
+tab_panel.ear_h35 .self, tab_panel.ear_h35_lite .self
 {/*:normal*/
   background-image: none; background-color: rgba(0,0,0,0);
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
@@ -650,9 +676,9 @@ tab_panel.ear_h25 .tab,
 tab_panel.ear_h30 .tab,
 tab_panel.ear_h35 .tab
 {
+  border-color: #AAA;
   border-top-style: solid; border-right-style: solid; border-left-style: solid;
   border-top-width: 1pt;  border-right-width: 1pt;  border-left-width: 1pt;
-  border-color: #AAA;
   box-shadow: none;
 }
 tab_panel.ear_h25_lite .tab,
@@ -670,7 +696,7 @@ tab_panel.ear_h35:normal .tab
 tab_panel.ear_h25:hover .tab,tab_panel.ear_h25_lite:hover .tab,
 tab_panel.ear_h30:hover .tab,tab_panel.ear_h30_lite:hover .tab,
 tab_panel.ear_h35:hover .tab,tab_panel.ear_h35_lite:hover .tab
-{background-color: rgba(77,77,77,0.18);}
+{background-color: rgba(77,77,77,0.1);}
 /*
 tab_panel.tab_ear:focus .tab {}
 tab_panel.tab_ear:active .tab {}
@@ -865,6 +891,9 @@ dot_control.min_h35:normal .contents
 
 
 
+
+
+
 /**  ---------------------------------*/
 /** (btn)mat_hNN */
 button_bar_segment.mat_h25 .self, button_bar_segment.mat_h25_gsF .self,
@@ -874,7 +903,7 @@ button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   border-bottom-style: solid;
   border-bottom-width: 4pt;
-  border-color: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.1);
   background-image: none; background-color: rgba(0,0,0,0);
 }
 button_bar_segment.mat_h25:active .self,

@@ -99,6 +99,8 @@ rectangle.fill_ex6 .self, oval.fill_ex6 .self,
 rectangle.fill_ex7 .self, oval.fill_ex7 .self,
 rectangle.fill_ex8 .self, oval.fill_ex8 .self,
 rectangle.fill_ex9 .self, oval.fill_ex9 .self,
+rectangle.fill_gs3 .self, oval.fill_gs3 .self,
+rectangle.fill_gs6 .self, oval.fill_gs6 .self,
 rectangle.fill_gs9 .self, oval.fill_gs9 .self,
 rectangle.fill_gsA .self, oval.fill_gsA .self,
 rectangle.fill_gsB .self, oval.fill_gsB .self,
@@ -112,6 +114,22 @@ rectangle.fill_gsF .self, oval.fill_gsF .self
   background-image: none;
 }
 
+button.fill_gs3 .self,
+button.circle_gs3 .self,
+button_bar_segment.fill_gs3 .self,
+button_bar_segment.circle_gs3 .self,
+popover.fill_gs3 .self,
+rectangle.fill_gs3 .self,
+oval.fill_gs3 .self
+{background-color: #333;}
+button.fill_gs6 .self,
+button.circle_gs6 .self,
+button_bar_segment.fill_gs6 .self,
+button_bar_segment.circle_gs6 .self,
+popover.fill_gs6 .self,
+rectangle.fill_gs6 .self,
+oval.fill_gs6 .self
+{background-color: #666;}
 button.fill_gs9 .self,
 button.circle_gs9 .self,
 button_bar_segment.fill_gs9 .self,
@@ -247,7 +265,7 @@ popover .self {
   bottom: 0pt;
   left: 0pt;
   
-  border-style: solid; border-width: 1pt; border-radius: 3pt; border-color: #CCC;
+  border-style: solid; border-width: 1pt; border-radius: 5pt; border-color: #CCC;
   /*background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#FFF), to(rgba(243, 243, 243, 1)));*/
   background-image: none; background-color: #EEE;
   box-shadow: 1pt 1pt 3pt rgba(0,0,0,0.18);
@@ -270,12 +288,11 @@ popover .text {
   /*
   top: 0.42em;
   height: 1.42em;
-  left: 0pt;
-  right: 0pt;
   */
-  height: 17pt;/* ! */
+  height: 17pt;/* popover title bar */
   margin-top: -0.5em;
-  background-color: rgba(0,0,0,0.07);/* ! */
+  border-radius: 5pt 5pt 0pt 0pt;
+  background-color: rgba(0,0,0,0.07);/* popover title bar */
 }
 
 popover .contents {
@@ -303,6 +320,8 @@ popover.fill_ex7 .self,
 popover.fill_ex8 .self,
 popover.fill_ex9 .self,
 popover.fill_acc .self,
+popover.fill_gs3 .self,
+popover.fill_gs6 .self,
 popover.fill_gs9 .self,
 popover.fill_gsA .self,
 popover.fill_gsB .self,
@@ -317,8 +336,28 @@ popover.fill_gsF .self
   */
   background-image: none; /*background-color: theme_colors #EEE;*/
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
-  color: #FFF;
 }
+popover.fill_ex1 .self,
+popover.fill_ex2 .self,
+popover.fill_ex3 .self,
+popover.fill_ex4 .self,
+popover.fill_ex5 .self,
+popover.fill_ex6 .self,
+popover.fill_acc .self,
+popover.fill_gs3 .self,
+popover.fill_gs6 .self,
+popover.fill_gs9 .self,
+popover.fill_gsA .self,
+popover.fill_gsB .self,
+popover.fill_gsC .self
+{color: #FFF;}
+popover.fill_ex7 .self,
+popover.fill_ex8 .self,
+popover.fill_ex9 .self,
+popover.fill_gsD .self,
+popover.fill_gsE .self,
+popover.fill_gsF .self
+{color: #333;}
 
 popover.fill_ex1 .contents,
 popover.fill_ex2 .contents,
@@ -329,6 +368,9 @@ popover.fill_ex6 .contents,
 popover.fill_ex7 .contents,
 popover.fill_ex8 .contents,
 popover.fill_ex9 .contents,
+popover.fill_acc .contents,
+popover.fill_gs3 .contents,
+popover.fill_gs6 .contents,
 popover.fill_gs9 .contents,
 popover.fill_gsA .contents,
 popover.fill_gsB .contents,
@@ -342,18 +384,36 @@ popover.fill_gsF .contents
   border-radius: 0pt 1pt 1pt 0pt;
 }
 
+popover.fill_ex1 .text,
+popover.fill_ex2 .text,
+popover.fill_ex3 .text,
+popover.fill_ex4 .text,
+popover.fill_ex5 .text,
+popover.fill_ex6 .text,
+popover.fill_ex7 .text,
+popover.fill_ex8 .text,
+popover.fill_ex9 .text,
+popover.fill_acc .text,
+popover.fill_gs3 .text,
+popover.fill_gs6 .text,
+popover.fill_gs9 .text,
+popover.fill_gsA .text,
+popover.fill_gsB .text,
+popover.fill_gsC .text,
+popover.fill_gsD .text,
+popover.fill_gsE .text,
+popover.fill_gsF .text
+{border-radius: 0pt;}
 
 
-popover.pov_transparent .self
-{
+
+popover.pov_transparent .self {
   background-image: none; background-color: rgba(0,0,0,0);
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   box-shadow: none;
   /*color: #FFF;*/
 }
-
-popover.pov_transparent .contents
-{
+popover.pov_transparent .contents {
   background-image: none; background-color: rgba(0,0,0,0);
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
 }
@@ -422,8 +482,8 @@ button_bar_segment .icon
 button:hover .self,
 button_bar_segment:hover .self
 {
-  background-color: #F0F0F0;
   background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(#F6F6F6), to(#EEE));
+  background-color: #F0F0F0;
   color: #333;
 }
 button:hover .self {
@@ -481,7 +541,7 @@ button_bar_segment:pressed .inner_border
 
 
 
-/** (btn)row */
+/** (btn).row */
 button.row .self {
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   background-image: none; background-color: rgba(0,0,0,0);
@@ -500,7 +560,7 @@ button.row:focus .inner_border
 button.row:hover .self,
 button.row:focus .self
 {
-  background-image: none; background-color: rgba(230,237,242,1);/******* theme color */
+  background-image: none; background-color: rgba(230,237,242,1);/* theme color */
   box-shadow: none;
 }
 
@@ -521,8 +581,8 @@ button.row .text {
 
 
 
-/** (btn)list header */
-/** (textbtn)list header */
+/** (btn).cap -list header */
+/** (textbtn).cap -list header */
 button.cap .self,
 text_box.cap .self {
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
@@ -542,7 +602,7 @@ button.cap .inner_border {
   height: auto;/* ! */
   -fm-text-vertical-align: center;
   margin: 0pt;
-  padding: 0pt 5pt;
+  padding: -1pt 5pt 0pt 5pt;
   box-shadow: none;
 }
 text_box.cap .text {
@@ -578,7 +638,7 @@ text_box.cap .inner_border {
   margin: 0pt;
   box-shadow: none;
 }
-button.cap:hover .inner_border{
+button.cap:hover .inner_border {
   box-shadow: none;
 }
 
@@ -657,7 +717,7 @@ button.btn_radio:pressed .inner_border
 
 
 
-/** (rect)backCheck, (rect)backRadio */
+/** (rect).backCheck, (rect).backRadio */
 rectangle.backCheck .self,
 rectangle.backRadio .self
 {
@@ -669,9 +729,9 @@ rectangle.backRadio .self {border-radius: 50%;}
 
 
 
-/** (btn)fill_exN, (btn)circle_exN */
-/** (btn)min_exN */
-/** (btn)mat_hNN */
+/** (btn).fill_exN, (btn).circle_exN */
+/** (btn).min_exN */
+/** (btn).mat_hNN */
 button_bar.fill_ex1 .self, button_bar.circle_ex1 .self,
 button_bar.fill_ex2 .self, button_bar.circle_ex2 .self,
 button_bar.fill_ex3 .self, button_bar.circle_ex3 .self,
@@ -680,6 +740,9 @@ button_bar.fill_ex5 .self, button_bar.circle_ex5 .self,
 button_bar.fill_ex6 .self, button_bar.circle_ex6 .self,
 button_bar.fill_ex7 .self, button_bar.circle_ex7 .self,
 button_bar.fill_ex8 .self, button_bar.circle_ex8 .self,
+button_bar.fill_ex9 .self, button_bar.circle_ex9 .self,
+button_bar.fill_gs3 .self, button_bar.circle_gs3 .self,
+button_bar.fill_gs6 .self, button_bar.circle_gs6 .self,
 button_bar.fill_gs9 .self, button_bar.circle_gs9 .self,
 button_bar.fill_gsA .self, button_bar.circle_gsA .self,
 button_bar.fill_gsB .self, button_bar.circle_gsB .self,
@@ -717,6 +780,8 @@ button_bar.fill_ex6 .button_bar_divider, button_bar.circle_ex6 .button_bar_divid
 button_bar.fill_ex7 .button_bar_divider, button_bar.circle_ex7 .button_bar_divider,
 button_bar.fill_ex8 .button_bar_divider, button_bar.circle_ex8 .button_bar_divider,
 button_bar.fill_ex9 .button_bar_divider, button_bar.circle_ex9 .button_bar_divider,
+button_bar.fill_gs3 .button_bar_divider, button_bar.circle_gs3 .button_bar_divider,
+button_bar.fill_gs6 .button_bar_divider, button_bar.circle_gs6 .button_bar_divider,
 button_bar.fill_gs9 .button_bar_divider, button_bar.circle_gs9 .button_bar_divider,
 button_bar.fill_gsA .button_bar_divider, button_bar.circle_gsA .button_bar_divider,
 button_bar.fill_gsB .button_bar_divider, button_bar.circle_gsB .button_bar_divider,
@@ -756,6 +821,9 @@ button.fill_ex6 .self,
 button.fill_ex7 .self,
 button.fill_ex8 .self,
 button.fill_ex9 .self,
+button.fill_acc .self,
+button.fill_gs3 .self,
+button.fill_gs6 .self,
 button.fill_gs9 .self,
 button.fill_gsA .self,
 button.fill_gsB .self,
@@ -763,7 +831,6 @@ button.fill_gsC .self,
 button.fill_gsD .self,
 button.fill_gsE .self,
 button.fill_gsF .self,
-
 button_bar_segment.fill_ex1 .self,
 button_bar_segment.fill_ex2 .self,
 button_bar_segment.fill_ex3 .self,
@@ -774,6 +841,8 @@ button_bar_segment.fill_ex7 .self,
 button_bar_segment.fill_ex8 .self,
 button_bar_segment.fill_ex9 .self,
 button_bar_segment.fill_acc .self,
+button_bar_segment.fill_gs3 .self,
+button_bar_segment.fill_gs6 .self,
 button_bar_segment.fill_gs9 .self,
 button_bar_segment.fill_gsA .self,
 button_bar_segment.fill_gsB .self,
@@ -796,6 +865,34 @@ button.circle_ex7 .self,
 button.circle_ex8 .self,
 button.circle_ex9 .self,
 button.circle_acc .self,
+button.circle_ex4Gray .self,
+button.circle_ex4Marsala .self,
+button.circle_ex4Brown .self,
+button.circle_ex4Orange .self,
+button.circle_ex4Amber .self,
+button.circle_ex4Yellow .self,
+button.circle_ex4Lime .self,
+button.circle_ex4Bamboo .self,
+button.circle_ex407 .self,
+button.circle_ex4Green .self,
+button.circle_ex4Meadow .self,
+button.circle_ex410 .self,
+button.circle_ex4Teal .self,
+button.circle_ex4Cyan .self,
+button.circle_ex4Slate .self,
+button.circle_ex4Azure .self,
+button.circle_ex4Blue .self,
+button.circle_ex4Indigo .self,
+button.circle_ex4Violet .self,
+button.circle_ex4Mouve .self,
+button.circle_ex4Purple .self,
+button.circle_ex4Magenta .self,
+button.circle_ex4Orchid .self,
+button.circle_ex4Ruby .self,
+button.circle_ex4Pink .self,
+button.circle_ex4Tomato .self,
+button.circle_gs3 .self,
+button.circle_gs6 .self,
 button.circle_gs9 .self,
 button.circle_gsA .self,
 button.circle_gsB .self,
@@ -803,7 +900,6 @@ button.circle_gsC .self,
 button.circle_gsD .self,
 button.circle_gsE .self,
 button.circle_gsF .self,
-
 button_bar_segment.circle_ex1 .self,
 button_bar_segment.circle_ex2 .self,
 button_bar_segment.circle_ex3 .self,
@@ -814,6 +910,34 @@ button_bar_segment.circle_ex7 .self,
 button_bar_segment.circle_ex8 .self,
 button_bar_segment.circle_ex9 .self,
 button_bar_segment.circle_acc .self,
+button_bar_segment.circle_ex4Gray .self,
+button_bar_segment.circle_ex4Marsala .self,
+button_bar_segment.circle_ex4Brown .self,
+button_bar_segment.circle_ex4Orange .self,
+button_bar_segment.circle_ex4Amber .self,
+button_bar_segment.circle_ex4Yellow .self,
+button_bar_segment.circle_ex4Lime .self,
+button_bar_segment.circle_ex4Bamboo .self,
+button_bar_segment.circle_ex407 .self,
+button_bar_segment.circle_ex4Green .self,
+button_bar_segment.circle_ex4Meadow .self,
+button_bar_segment.circle_ex410 .self,
+button_bar_segment.circle_ex4Teal .self,
+button_bar_segment.circle_ex4Cyan .self,
+button_bar_segment.circle_ex4Slate .self,
+button_bar_segment.circle_ex4Azure .self,
+button_bar_segment.circle_ex4Blue .self,
+button_bar_segment.circle_ex4Indigo .self,
+button_bar_segment.circle_ex4Violet .self,
+button_bar_segment.circle_ex4Mouve .self,
+button_bar_segment.circle_ex4Purple .self,
+button_bar_segment.circle_ex4Magenta .self,
+button_bar_segment.circle_ex4Orchid .self,
+button_bar_segment.circle_ex4Ruby .self,
+button_bar_segment.circle_ex4Pink .self,
+button_bar_segment.circle_ex4Tomato .self,
+button_bar_segment.circle_gs3 .self,
+button_bar_segment.circle_gs6 .self,
 button_bar_segment.circle_gs9 .self,
 button_bar_segment.circle_gsA .self,
 button_bar_segment.circle_gsB .self,
@@ -836,6 +960,8 @@ button_bar_segment.fill_ex7 .self,
 button_bar_segment.fill_ex8 .self,
 button_bar_segment.fill_ex9 .self,
 button_bar_segment.fill_acc .self,
+button_bar_segment.fill_gs3 .self,
+button_bar_segment.fill_gs6 .self,
 button_bar_segment.fill_gs9 .self,
 button_bar_segment.fill_gsA .self,
 button_bar_segment.fill_gsB .self,
@@ -859,6 +985,34 @@ button_bar_segment.circle_ex7 .self,
 button_bar_segment.circle_ex8 .self,
 button_bar_segment.circle_ex9 .self,
 button_bar_segment.circle_acc .self,
+button_bar_segment.circle_ex4Gray .self,
+button_bar_segment.circle_ex4Marsala .self,
+button_bar_segment.circle_ex4Brown .self,
+button_bar_segment.circle_ex4Orange .self,
+button_bar_segment.circle_ex4Amber .self,
+button_bar_segment.circle_ex4Yellow .self,
+button_bar_segment.circle_ex4Lime .self,
+button_bar_segment.circle_ex4Bamboo .self,
+button_bar_segment.circle_ex407 .self,
+button_bar_segment.circle_ex4Green .self,
+button_bar_segment.circle_ex4Meadow .self,
+button_bar_segment.circle_ex410 .self,
+button_bar_segment.circle_ex4Teal .self,
+button_bar_segment.circle_ex4Cyan .self,
+button_bar_segment.circle_ex4Slate .self,
+button_bar_segment.circle_ex4Azure .self,
+button_bar_segment.circle_ex4Blue .self,
+button_bar_segment.circle_ex4Indigo .self,
+button_bar_segment.circle_ex4Violet .self,
+button_bar_segment.circle_ex4Mouve .self,
+button_bar_segment.circle_ex4Purple .self,
+button_bar_segment.circle_ex4Magenta .self,
+button_bar_segment.circle_ex4Orchid .self,
+button_bar_segment.circle_ex4Ruby .self,
+button_bar_segment.circle_ex4Pink .self,
+button_bar_segment.circle_ex4Tomato .self,
+button_bar_segment.circle_gs3 .self,
+button_bar_segment.circle_gs6 .self,
 button_bar_segment.circle_gs9 .self,
 button_bar_segment.circle_gsA .self,
 button_bar_segment.circle_gsB .self,
@@ -883,6 +1037,32 @@ button.fill_ex4 .self, button.circle_ex4 .self,
 button.fill_ex5 .self, button.circle_ex5 .self,
 button.fill_ex6 .self, button.circle_ex6 .self,
 button.fill_acc .self, button.circle_acc .self,
+button.circle_ex4Gray .self,
+button.circle_ex4Marsala .self,
+button.circle_ex4Brown .self,
+button.circle_ex4Orange .self,
+button.circle_ex4Amber .self,
+button.circle_ex4Yellow .self,
+button.circle_ex4Lime .self,
+button.circle_ex4Bamboo .self,
+button.circle_ex407 .self,
+button.circle_ex4Green .self,
+button.circle_ex4Meadow .self,
+button.circle_ex410 .self,
+button.circle_ex4Teal .self,
+button.circle_ex4Cyan .self,
+button.circle_ex4Slate .self,
+button.circle_ex4Azure .self,
+button.circle_ex4Blue .self,
+button.circle_ex4Indigo .self,
+button.circle_ex4Violet .self,
+button.circle_ex4Mouve .self,
+button.circle_ex4Purple .self,
+button.circle_ex4Magenta .self,
+button.circle_ex4Orchid .self,
+button.circle_ex4Ruby .self,
+button.circle_ex4Pink .self,
+button.circle_ex4Tomato .self,
 button.fill_gs9 .self, button.circle_gs9 .self,
 button.fill_gsA .self, button.circle_gsA .self,
 button.fill_gsB .self, button.circle_gsB .self,
@@ -892,6 +1072,34 @@ button_bar_segment.fill_ex4 .self, button_bar_segment.circle_ex4 .self,
 button_bar_segment.fill_ex5 .self, button_bar_segment.circle_ex5 .self,
 button_bar_segment.fill_ex6 .self, button_bar_segment.circle_ex6 .self,
 button_bar_segment.fill_acc .self, button_bar_segment.circle_acc .self,
+button_bar_segment.circle_ex4Gray .self,
+button_bar_segment.circle_ex4Marsala .self,
+button_bar_segment.circle_ex4Brown .self,
+button_bar_segment.circle_ex4Orange .self,
+button_bar_segment.circle_ex4Amber .self,
+button_bar_segment.circle_ex4Yellow .self,
+button_bar_segment.circle_ex4Lime .self,
+button_bar_segment.circle_ex4Bamboo .self,
+button_bar_segment.circle_ex407 .self,
+button_bar_segment.circle_ex4Green .self,
+button_bar_segment.circle_ex4Meadow .self,
+button_bar_segment.circle_ex410 .self,
+button_bar_segment.circle_ex4Teal .self,
+button_bar_segment.circle_ex4Cyan .self,
+button_bar_segment.circle_ex4Slate .self,
+button_bar_segment.circle_ex4Azure .self,
+button_bar_segment.circle_ex4Blue .self,
+button_bar_segment.circle_ex4Indigo .self,
+button_bar_segment.circle_ex4Violet .self,
+button_bar_segment.circle_ex4Mouve .self,
+button_bar_segment.circle_ex4Purple .self,
+button_bar_segment.circle_ex4Magenta .self,
+button_bar_segment.circle_ex4Orchid .self,
+button_bar_segment.circle_ex4Ruby .self,
+button_bar_segment.circle_ex4Pink .self,
+button_bar_segment.circle_ex4Tomato .self,
+button_bar_segment.fill_gs3 .self, button_bar_segment.circle_gs3 .self,
+button_bar_segment.fill_gs6 .self, button_bar_segment.circle_gs6 .self,
 button_bar_segment.fill_gs9 .self, button_bar_segment.circle_gs9 .self,
 button_bar_segment.fill_gsA .self, button_bar_segment.circle_gsA .self,
 button_bar_segment.fill_gsB .self, button_bar_segment.circle_gsB .self,
@@ -923,6 +1131,34 @@ button.fill_ex7:hover .self, button.circle_ex7:hover .self,
 button.fill_ex8:hover .self, button.circle_ex8:hover .self,
 button.fill_ex9:hover .self, button.circle_ex9:hover .self,
 button.fill_acc:hover .self, button.circle_acc:hover .self,
+button.circle_ex4Gray:hover .self,
+button.circle_ex4Marsala:hover .self,
+button.circle_ex4Brown:hover .self,
+button.circle_ex4Orange:hover .self,
+button.circle_ex4Amber:hover .self,
+button.circle_ex4Yellow:hover .self,
+button.circle_ex4Lime:hover .self,
+button.circle_ex4Bamboo:hover .self,
+button.circle_ex407:hover .self,
+button.circle_ex4Green:hover .self,
+button.circle_ex4Meadow:hover .self,
+button.circle_ex410:hover .self,
+button.circle_ex4Teal:hover .self,
+button.circle_ex4Cyan:hover .self,
+button.circle_ex4Slate:hover .self,
+button.circle_ex4Azure:hover .self,
+button.circle_ex4Blue:hover .self,
+button.circle_ex4Indigo:hover .self,
+button.circle_ex4Violet:hover .self,
+button.circle_ex4Mouve:hover .self,
+button.circle_ex4Purple:hover .self,
+button.circle_ex4Magenta:hover .self,
+button.circle_ex4Orchid .self,
+button.circle_ex4Ruby:hover .self,
+button.circle_ex4Pink:hover .self,
+button.circle_ex4Tomato:hover .self,
+button.fill_gs3:hover .self, button.circle_gs3:hover .self,
+button.fill_gs6:hover .self, button.circle_gs6:hover .self,
 button.fill_gs9:hover .self, button.circle_gs9:hover .self,
 button.fill_gsA:hover .self, button.circle_gsA:hover .self,
 button.fill_gsB:hover .self, button.circle_gsB:hover .self,
@@ -940,6 +1176,34 @@ button_bar_segment.fill_ex7:hover .self, button_bar_segment.circle_ex7:hover .se
 button_bar_segment.fill_ex8:hover .self, button_bar_segment.circle_ex8:hover .self,
 button_bar_segment.fill_ex9:hover .self, button_bar_segment.circle_ex9:hover .self,
 button_bar_segment.fill_acc:hover .self, button_bar_segment.circle_acc:hover .self,
+button_bar_segment.circle_ex4Gray:hover .self,
+button_bar_segment.circle_ex4Marsala:hover .self,
+button_bar_segment.circle_ex4Brown:hover .self,
+button_bar_segment.circle_ex4Orange:hover .self,
+button_bar_segment.circle_ex4Amber:hover .self,
+button_bar_segment.circle_ex4Yellow:hover .self,
+button_bar_segment.circle_ex4Lime:hover .self,
+button_bar_segment.circle_ex4Bamboo:hover .self,
+button_bar_segment.circle_ex407:hover .self,
+button_bar_segment.circle_ex4Green:hover .self,
+button_bar_segment.circle_ex4Meadow:hover .self,
+button_bar_segment.circle_ex410:hover .self,
+button_bar_segment.circle_ex4Teal:hover .self,
+button_bar_segment.circle_ex4Cyan:hover .self,
+button_bar_segment.circle_ex4Slate:hover .self,
+button_bar_segment.circle_ex4Azure:hover .self,
+button_bar_segment.circle_ex4Blue:hover .self,
+button_bar_segment.circle_ex4Indigo:hover .self,
+button_bar_segment.circle_ex4Violet:hover .self,
+button_bar_segment.circle_ex4Mouve:hover .self,
+button_bar_segment.circle_ex4Purple:hover .self,
+button_bar_segment.circle_ex4Magenta:hover .self,
+button_bar_segment.circle_ex4Orchid:hover .self,
+button_bar_segment.circle_ex4Ruby:hover .self,
+button_bar_segment.circle_ex4Pink:hover .self,
+button_bar_segment.circle_ex4Tomato:hover .self,
+button_bar_segment.fill_gs3:hover .self, button_bar_segment.circle_gs3:hover .self,
+button_bar_segment.fill_gs6:hover .self, button_bar_segment.circle_gs6:hover .self,
 button_bar_segment.fill_gs9:hover .self, button_bar_segment.circle_gs9:hover .self,
 button_bar_segment.fill_gsA:hover .self, button_bar_segment.circle_gsA:hover .self,
 button_bar_segment.fill_gsB:hover .self, button_bar_segment.circle_gsB:hover .self,
@@ -961,6 +1225,34 @@ button.fill_ex7:pressed .self, button.circle_ex7:pressed .self,
 button.fill_ex8:pressed .self, button.circle_ex8:pressed .self,
 button.fill_ex9:pressed .self, button.circle_ex9:pressed .self,
 button.fill_acc:pressed .self, button.circle_acc:pressed .self,
+button.circle_ex4Gray:pressed .self,
+button.circle_ex4Marsala:pressed .self,
+button.circle_ex4Brown:pressed .self,
+button.circle_ex4Orange:pressed .self,
+button.circle_ex4Amber:pressed .self,
+button.circle_ex4Yellow:pressed .self,
+button.circle_ex4Lime:pressed .self,
+button.circle_ex4Bamboo:pressed .self,
+button.circle_ex407:pressed .self,
+button.circle_ex4Green:pressed .self,
+button.circle_ex4Meadow:pressed .self,
+button.circle_ex410:pressed .self,
+button.circle_ex4Teal:pressed .self,
+button.circle_ex4Cyan:pressed .self,
+button.circle_ex4Slate:pressed .self,
+button.circle_ex4Azure:pressed .self,
+button.circle_ex4Blue:pressed .self,
+button.circle_ex4Indigo:pressed .self,
+button.circle_ex4Violet:pressed .self,
+button.circle_ex4Mouve:pressed .self,
+button.circle_ex4Purple:pressed .self,
+button.circle_ex4Magenta:pressed .self,
+button.circle_ex4Orchid:pressed .self,
+button.circle_ex4Ruby:pressed .self,
+button.circle_ex4Pink:pressed .self,
+button.circle_ex4Tomato:pressed .self,
+button.fill_gs3:pressed .self, button.circle_gs3:pressed .self,
+button.fill_gs6:pressed .self, button.circle_gs6:pressed .self,
 button.fill_gs9:pressed .self, button.circle_gs9:pressed .self,
 button.fill_gsA:pressed .self, button.circle_gsA:pressed .self,
 button.fill_gsB:pressed .self, button.circle_gsB:pressed .self,
@@ -978,6 +1270,34 @@ button_bar_segment.fill_ex7:pressed .self, button_bar_segment.circle_ex7:pressed
 button_bar_segment.fill_ex8:pressed .self, button_bar_segment.circle_ex8:pressed .self,
 button_bar_segment.fill_ex9:pressed .self, button_bar_segment.circle_ex9:pressed .self,
 button_bar_segment.fill_acc:pressed .self, button_bar_segment.circle_acc:pressed .self,
+button_bar_segment.circle_ex4Gray:pressed .self,
+button_bar_segment.circle_ex4Marsala:pressed .self,
+button_bar_segment.circle_ex4Brown:pressed .self,
+button_bar_segment.circle_ex4Orange:pressed .self,
+button_bar_segment.circle_ex4Amber:pressed .self,
+button_bar_segment.circle_ex4Yellow:pressed .self,
+button_bar_segment.circle_ex4Lime:pressed .self,
+button_bar_segment.circle_ex4Bamboo:pressed .self,
+button_bar_segment.circle_ex407:pressed .self,
+button_bar_segment.circle_ex4Green:pressed .self,
+button_bar_segment.circle_ex4Meadow:pressed .self,
+button_bar_segment.circle_ex410:pressed .self,
+button_bar_segment.circle_ex4Teal:pressed .self,
+button_bar_segment.circle_ex4Cyan:pressed .self,
+button_bar_segment.circle_ex4Slate:pressed .self,
+button_bar_segment.circle_ex4Azure:pressed .self,
+button_bar_segment.circle_ex4Blue:pressed .self,
+button_bar_segment.circle_ex4Indigo:pressed .self,
+button_bar_segment.circle_ex4Violet:pressed .self,
+button_bar_segment.circle_ex4Mouve:pressed .self,
+button_bar_segment.circle_ex4Purple:pressed .self,
+button_bar_segment.circle_ex4Magenta:pressed .self,
+button_bar_segment.circle_ex4Orchid:pressed .self,
+button_bar_segment.circle_ex4Ruby:pressed .self,
+button_bar_segment.circle_ex4Pink:pressed .self,
+button_bar_segment.circle_ex4Tomato:pressed .self,
+button_bar_segment.fill_gs3:pressed .self, button_bar_segment.circle_gs3:pressed .self,
+button_bar_segment.fill_gs6:pressed .self, button_bar_segment.circle_gs6:pressed .self,
 button_bar_segment.fill_gs9:pressed .self, button_bar_segment.circle_gs9:pressed .self,
 button_bar_segment.fill_gsA:pressed .self, button_bar_segment.circle_gsA:pressed .self,
 button_bar_segment.fill_gsB:pressed .self, button_bar_segment.circle_gsB:pressed .self,
@@ -991,72 +1311,132 @@ button_bar_segment.fill_gsF:pressed .self, button_bar_segment.circle_gsF:pressed
 }
 
 button.fill_ex1 .inner_border, button.fill_ex1:hover .inner_border,
-button.circle_ex1 .inner_border, button.circle_ex1:hover .inner_border,
 button.fill_ex2 .inner_border, button.fill_ex2:hover .inner_border,
-button.circle_ex2 .inner_border, button.circle_ex2:hover .inner_border,
 button.fill_ex3 .inner_border, button.fill_ex3:hover .inner_border,
-button.circle_ex3 .inner_border, button.circle_ex3:hover .inner_border,
 button.fill_ex4 .inner_border, button.fill_ex4:hover .inner_border,
-button.circle_ex4 .inner_border, button.circle_ex4:hover .inner_border,
 button.fill_ex5 .inner_border, button.fill_ex5:hover .inner_border,
-button.circle_ex5 .inner_border, button.circle_ex5:hover .inner_border,
 button.fill_ex6 .inner_border, button.fill_ex6:hover .inner_border,
-button.circle_ex6 .inner_border, button.circle_ex6:hover .inner_border,
 button.fill_ex7 .inner_border, button.fill_ex7:hover .inner_border,
-button.circle_ex7 .inner_border, button.circle_ex7:hover .inner_border,
 button.fill_ex8 .inner_border, button.fill_ex8:hover .inner_border,
-button.circle_ex8 .inner_border, button.circle_ex8:hover .inner_border,
 button.fill_ex9 .inner_border, button.fill_ex9:hover .inner_border,
-button.circle_ex9 .inner_border, button.circle_ex9:hover .inner_border,
 button.fill_acc .inner_border, button.fill_acc:hover .inner_border,
+button.circle_ex1 .inner_border, button.circle_ex1:hover .inner_border,
+button.circle_ex2 .inner_border, button.circle_ex2:hover .inner_border,
+button.circle_ex3 .inner_border, button.circle_ex3:hover .inner_border,
+button.circle_ex4 .inner_border, button.circle_ex4:hover .inner_border,
+button.circle_ex5 .inner_border, button.circle_ex5:hover .inner_border,
+button.circle_ex6 .inner_border, button.circle_ex6:hover .inner_border,
+button.circle_ex7 .inner_border, button.circle_ex7:hover .inner_border,
+button.circle_ex8 .inner_border, button.circle_ex8:hover .inner_border,
+button.circle_ex9 .inner_border, button.circle_ex9:hover .inner_border,
 button.circle_acc .inner_border, button.circle_acc:hover .inner_border,
+button.circle_ex4Gray .inner_border,    button.circle_ex4Gray:hover .inner_border,
+button.circle_ex4Marsala .inner_border, button.circle_ex4Marsala:hover .inner_border,
+button.circle_ex4Brown .inner_border,   button.circle_ex4Brown:hover .inner_border,
+button.circle_ex4Orange .inner_border,  button.circle_ex4Orange:hover .inner_border,
+button.circle_ex4Amber .inner_border,   button.circle_ex4Amber:hover .inner_border,
+button.circle_ex4Yellow .inner_border,  button.circle_ex4Yellow:hover .inner_border,
+button.circle_ex4Lime .inner_border,    button.circle_ex4Lime:hover .inner_border,
+button.circle_ex4Bamboo .inner_border,  button.circle_ex4Bamboo:hover .inner_border,
+button.circle_ex407 .inner_border,      button.circle_ex407:hover .inner_border,
+button.circle_ex4Green .inner_border,   button.circle_ex4Green:hover .inner_border,
+button.circle_ex4Meadow .inner_border,  button.circle_ex4Meadow:hover .inner_border,
+button.circle_ex410 .inner_border,      button.circle_ex410:hover .inner_border,
+button.circle_ex4Teal .inner_border,    button.circle_ex4Teal:hover .inner_border,
+button.circle_ex4Cyan .inner_border,    button.circle_ex4Cyan:hover .inner_border,
+button.circle_ex4Slate .inner_border,   button.circle_ex4Slate:hover .inner_border,
+button.circle_ex4Azure .inner_border,   button.circle_ex4Azure:hover .inner_border,
+button.circle_ex4Blue .inner_border,    button.circle_ex4Blue:hover .inner_border,
+button.circle_ex4Indigo .inner_border,  button.circle_ex4Indigo:hover .inner_border,
+button.circle_ex4Violet .inner_border,  button.circle_ex4Violet:hover .inner_border,
+button.circle_ex4Mouve .inner_border,   button.circle_ex4Mouve:hover .inner_border,
+button.circle_ex4Purple .inner_border,  button.circle_ex4Purple:hover .inner_border,
+button.circle_ex4Magenta .inner_border, button.circle_ex4Magenta:hover .inner_border,
+button.circle_ex4Orchid .inner_border,  button.circle_ex4Orchid:hover .inner_border,
+button.circle_ex4Ruby .inner_border,    button.circle_ex4Ruby:hover .inner_border,
+button.circle_ex4Pink .inner_border,    button.circle_ex4Pink:hover .inner_border,
+button.circle_ex4Tomato .inner_border,  button.circle_ex4Tomato:hover .inner_border,
+button.fill_gs3 .inner_border, button.fill_gs3:hover .inner_border,
+button.fill_gs6 .inner_border, button.fill_gs6:hover .inner_border,
 button.fill_gs9 .inner_border, button.fill_gs9:hover .inner_border,
-button.circle_gs9 .inner_border, button.circle_gs9:hover .inner_border,
 button.fill_gsA .inner_border, button.fill_gsA:hover .inner_border,
-button.circle_gsA .inner_border, button.circle_gsA:hover .inner_border,
 button.fill_gsB .inner_border, button.fill_gsB:hover .inner_border,
-button.circle_gsB .inner_border, button.circle_gsB:hover .inner_border,
 button.fill_gsC .inner_border, button.fill_gsC:hover .inner_border,
-button.circle_gsC .inner_border, button.circle_gsC:hover .inner_border,
 button.fill_gsD .inner_border, button.fill_gsD:hover .inner_border,
-button.circle_gsD .inner_border, button.circle_gsD:hover .inner_border,
 button.fill_gsE .inner_border, button.fill_gsE:hover .inner_border,
-button.circle_gsE .inner_border, button.circle_gsE:hover .inner_border,
 button.fill_gsF .inner_border, button.fill_gsF:hover .inner_border,
+button.circle_gs3 .inner_border, button.circle_gs3:hover .inner_border,
+button.circle_gs6 .inner_border, button.circle_gs6:hover .inner_border,
+button.circle_gs9 .inner_border, button.circle_gs9:hover .inner_border,
+button.circle_gsA .inner_border, button.circle_gsA:hover .inner_border,
+button.circle_gsB .inner_border, button.circle_gsB:hover .inner_border,
+button.circle_gsC .inner_border, button.circle_gsC:hover .inner_border,
+button.circle_gsD .inner_border, button.circle_gsD:hover .inner_border,
+button.circle_gsE .inner_border, button.circle_gsE:hover .inner_border,
 button.circle_gsF .inner_border, button.circle_gsF:hover .inner_border,
 button_bar_segment.fill_ex1 .inner_border, button_bar_segment.fill_ex1:hover .inner_border,
-button_bar_segment.circle_ex1 .inner_border, button_bar_segment.circle_ex1:hover .inner_border,
 button_bar_segment.fill_ex2 .inner_border, button_bar_segment.fill_ex2:hover .inner_border,
-button_bar_segment.circle_ex2 .inner_border, button_bar_segment.circle_ex2:hover .inner_border,
 button_bar_segment.fill_ex3 .inner_border, button_bar_segment.fill_ex3:hover .inner_border,
-button_bar_segment.circle_ex3 .inner_border, button_bar_segment.circle_ex3:hover .inner_border,
 button_bar_segment.fill_ex4 .inner_border, button_bar_segment.fill_ex4:hover .inner_border,
-button_bar_segment.circle_ex4 .inner_border, button_bar_segment.circle_ex4:hover .inner_border,
 button_bar_segment.fill_ex5 .inner_border, button_bar_segment.fill_ex5:hover .inner_border,
-button_bar_segment.circle_ex5 .inner_border, button_bar_segment.circle_ex5:hover .inner_border,
 button_bar_segment.fill_ex6 .inner_border, button_bar_segment.fill_ex6:hover .inner_border,
-button_bar_segment.circle_ex6 .inner_border, button_bar_segment.circle_ex6:hover .inner_border,
 button_bar_segment.fill_ex7 .inner_border, button_bar_segment.fill_ex7:hover .inner_border,
-button_bar_segment.circle_ex7 .inner_border, button_bar_segment.circle_ex7:hover .inner_border,
 button_bar_segment.fill_ex8 .inner_border, button_bar_segment.fill_ex8:hover .inner_border,
-button_bar_segment.circle_ex8 .inner_border, button_bar_segment.circle_ex8:hover .inner_border,
 button_bar_segment.fill_ex9 .inner_border, button_bar_segment.fill_ex9:hover .inner_border,
-button_bar_segment.circle_ex9 .inner_border, button_bar_segment.circle_ex9:hover .inner_border,
 button_bar_segment.fill_acc .inner_border, button_bar_segment.fill_acc:hover .inner_border,
+button_bar_segment.circle_ex1 .inner_border, button_bar_segment.circle_ex1:hover .inner_border,
+button_bar_segment.circle_ex2 .inner_border, button_bar_segment.circle_ex2:hover .inner_border,
+button_bar_segment.circle_ex3 .inner_border, button_bar_segment.circle_ex3:hover .inner_border,
+button_bar_segment.circle_ex4 .inner_border, button_bar_segment.circle_ex4:hover .inner_border,
+button_bar_segment.circle_ex5 .inner_border, button_bar_segment.circle_ex5:hover .inner_border,
+button_bar_segment.circle_ex6 .inner_border, button_bar_segment.circle_ex6:hover .inner_border,
+button_bar_segment.circle_ex7 .inner_border, button_bar_segment.circle_ex7:hover .inner_border,
+button_bar_segment.circle_ex8 .inner_border, button_bar_segment.circle_ex8:hover .inner_border,
+button_bar_segment.circle_ex9 .inner_border, button_bar_segment.circle_ex9:hover .inner_border,
 button_bar_segment.circle_acc .inner_border, button_bar_segment.circle_acc:hover .inner_border,
+button_bar_segment.circle_ex4Gray .inner_border,    button_bar_segment.circle_ex4Gray:hover .inner_border,
+button_bar_segment.circle_ex4Marsala .inner_border, button_bar_segment.circle_ex4Marsala:hover .inner_border,
+button_bar_segment.circle_ex4Brown .inner_border,   button_bar_segment.circle_ex4Brown:hover .inner_border,
+button_bar_segment.circle_ex4Orange .inner_border,  button_bar_segment.circle_ex4Orange:hover .inner_border,
+button_bar_segment.circle_ex4Amber .inner_border,   button_bar_segment.circle_ex4Amber:hover .inner_border,
+button_bar_segment.circle_ex4Yellow .inner_border,  button_bar_segment.circle_ex4Yellow:hover .inner_border,
+button_bar_segment.circle_ex4Lime .inner_border,    button_bar_segment.circle_ex4Lime:hover .inner_border,
+button_bar_segment.circle_ex4Bamboo .inner_border,  button_bar_segment.circle_ex4Bamboo:hover .inner_border,
+button_bar_segment.circle_ex407 .inner_border,      button_bar_segment.circle_ex407:hover .inner_border,
+button_bar_segment.circle_ex4Green .inner_border,   button_bar_segment.circle_ex4Green:hover .inner_border,
+button_bar_segment.circle_ex4Meadow .inner_border,  button_bar_segment.circle_ex4Meadow:hover .inner_border,
+button_bar_segment.circle_ex410 .inner_border,      button_bar_segment.circle_ex410:hover .inner_border,
+button_bar_segment.circle_ex4Teal .inner_border,    button_bar_segment.circle_ex4Teal:hover .inner_border,
+button_bar_segment.circle_ex4Cyan .inner_border,    button_bar_segment.circle_ex4Cyan:hover .inner_border,
+button_bar_segment.circle_ex4Slate .inner_border,   button_bar_segment.circle_ex4Slate:hover .inner_border,
+button_bar_segment.circle_ex4Azure .inner_border,   button_bar_segment.circle_ex4Azure:hover .inner_border,
+button_bar_segment.circle_ex4Blue .inner_border,    button_bar_segment.circle_ex4Blue:hover .inner_border,
+button_bar_segment.circle_ex4Indigo .inner_border,  button_bar_segment.circle_ex4Indigo:hover .inner_border,
+button_bar_segment.circle_ex4Violet .inner_border,  button_bar_segment.circle_ex4Violet:hover .inner_border,
+button_bar_segment.circle_ex4Mouve .inner_border,   button_bar_segment.circle_ex4Mouve:hover .inner_border,
+button_bar_segment.circle_ex4Purple .inner_border,  button_bar_segment.circle_ex4Purple:hover .inner_border,
+button_bar_segment.circle_ex4Magenta .inner_border, button_bar_segment.circle_ex4Magenta:hover .inner_border,
+button_bar_segment.circle_ex4Orchid .inner_border,  button_bar_segment.circle_ex4Orchid:hover .inner_border,
+button_bar_segment.circle_ex4Ruby .inner_border,    button_bar_segment.circle_ex4Ruby:hover .inner_border,
+button_bar_segment.circle_ex4Pink .inner_border,    button_bar_segment.circle_ex4Pink:hover .inner_border,
+button_bar_segment.circle_ex4Tomato .inner_border,  button_bar_segment.circle_ex4Tomato:hover .inner_border,
+button_bar_segment.fill_gs3 .inner_border, button_bar_segment.fill_gs3:hover .inner_border,
+button_bar_segment.fill_gs6 .inner_border, button_bar_segment.fill_gs6:hover .inner_border,
 button_bar_segment.fill_gs9 .inner_border, button_bar_segment.fill_gs9:hover .inner_border,
-button_bar_segment.circle_gs9 .inner_border, button_bar_segment.circle_gs9:hover .inner_border,
 button_bar_segment.fill_gsA .inner_border, button_bar_segment.fill_gsA:hover .inner_border,
-button_bar_segment.circle_gsA .inner_border, button_bar_segment.circle_gsA:hover .inner_border,
 button_bar_segment.fill_gsB .inner_border, button_bar_segment.fill_gsB:hover .inner_border,
-button_bar_segment.circle_gsB .inner_border, button_bar_segment.circle_gsB:hover .inner_border,
 button_bar_segment.fill_gsC .inner_border, button_bar_segment.fill_gsC:hover .inner_border,
-button_bar_segment.circle_gsC .inner_border, button_bar_segment.circle_gsC:hover .inner_border,
 button_bar_segment.fill_gsD .inner_border, button_bar_segment.fill_gsD:hover .inner_border,
-button_bar_segment.circle_gsD .inner_border, button_bar_segment.circle_gsD:hover .inner_border,
 button_bar_segment.fill_gsE .inner_border, button_bar_segment.fill_gsE:hover .inner_border,
-button_bar_segment.circle_gsE .inner_border, button_bar_segment.circle_gsE:hover .inner_border,
 button_bar_segment.fill_gsF .inner_border, button_bar_segment.fill_gsF:hover .inner_border,
+button_bar_segment.circle_gs3 .inner_border, button_bar_segment.circle_gs3:hover .inner_border,
+button_bar_segment.circle_gs6 .inner_border, button_bar_segment.circle_gs6:hover .inner_border,
+button_bar_segment.circle_gs9 .inner_border, button_bar_segment.circle_gs9:hover .inner_border,
+button_bar_segment.circle_gsA .inner_border, button_bar_segment.circle_gsA:hover .inner_border,
+button_bar_segment.circle_gsB .inner_border, button_bar_segment.circle_gsB:hover .inner_border,
+button_bar_segment.circle_gsC .inner_border, button_bar_segment.circle_gsC:hover .inner_border,
+button_bar_segment.circle_gsD .inner_border, button_bar_segment.circle_gsD:hover .inner_border,
+button_bar_segment.circle_gsE .inner_border, button_bar_segment.circle_gsE:hover .inner_border,
 button_bar_segment.circle_gsF .inner_border, button_bar_segment.circle_gsF:hover .inner_border
 {
   box-shadow: none;
@@ -1072,17 +1452,73 @@ button.fill_ex4 .icon, button.circle_ex4 .icon,
 button.fill_ex5 .icon, button.circle_ex5 .icon,
 button.fill_ex6 .icon, button.circle_ex6 .icon,
 button.fill_acc .icon, button.circle_acc .icon,
+button.circle_ex4Gray .icon,
+button.circle_ex4Marsala .icon,
+button.circle_ex4Brown .icon,
+button.circle_ex4Orange .icon,
+button.circle_ex4Amber .icon,
+button.circle_ex4Yellow .icon,
+button.circle_ex4Lime .icon,
+button.circle_ex4Bamboo .icon,
+button.circle_ex407 .icon,
+button.circle_ex4Green .icon,
+button.circle_ex4Meadow .icon,
+button.circle_ex410 .icon,
+button.circle_ex4Teal .icon,
+button.circle_ex4Cyan .icon,
+button.circle_ex4Slate .icon,
+button.circle_ex4Azure .icon,
+button.circle_ex4Blue .icon,
+button.circle_ex4Indigo .icon,
+button.circle_ex4Violet .icon,
+button.circle_ex4Mouve .icon,
+button.circle_ex4Purple .icon,
+button.circle_ex4Magenta .icon,
+button.circle_ex4Orchid .icon,
+button.circle_ex4Ruby .icon,
+button.circle_ex4Pink .icon,
+button.circle_ex4Tomato .icon,
+button.fill_gs3 .icon, button.circle_gs3 .icon,
+button.fill_gs6 .icon, button.circle_gs6 .icon,
 button.fill_gs9 .icon, button.circle_gs9 .icon,
 button.fill_gsA .icon, button.circle_gsA .icon,
 button.fill_gsB .icon, button.circle_gsB .icon,
 button.fill_gsC .icon, button.circle_gsC .icon,
 button_bar_segment.fill_ex1 .icon, button_bar_segment.circle_ex1 .icon,
-button_bar_segment.fill_ex2 .icon, button_bar_segment.circle_ex2 .icon
+button_bar_segment.fill_ex2 .icon, button_bar_segment.circle_ex2 .icon,
 button_bar_segment.fill_ex3 .icon, button_bar_segment.circle_ex3 .icon,
 button_bar_segment.fill_ex4 .icon, button_bar_segment.circle_ex4 .icon,
 button_bar_segment.fill_ex5 .icon, button_bar_segment.circle_ex5 .icon,
 button_bar_segment.fill_ex6 .icon, button_bar_segment.circle_ex6 .icon,
 button_bar_segment.fill_acc .icon, button_bar_segment.circle_acc .icon,
+button_bar_segment.circle_ex4Gray .icon,
+button_bar_segment.circle_ex4Marsala .icon,
+button_bar_segment.circle_ex4Brown .icon,
+button_bar_segment.circle_ex4Orange .icon,
+button_bar_segment.circle_ex4Amber .icon,
+button_bar_segment.circle_ex4Yellow .icon,
+button_bar_segment.circle_ex4Lime .icon,
+button_bar_segment.circle_ex4Bamboo .icon,
+button_bar_segment.circle_ex407 .icon,
+button_bar_segment.circle_ex4Green .icon,
+button_bar_segment.circle_ex4Meadow .icon,
+button_bar_segment.circle_ex410 .icon,
+button_bar_segment.circle_ex4Teal .icon,
+button_bar_segment.circle_ex4Cyan .icon,
+button_bar_segment.circle_ex4Slate .icon,
+button_bar_segment.circle_ex4Azure .icon,
+button_bar_segment.circle_ex4Blue .icon,
+button_bar_segment.circle_ex4Indigo .icon,
+button_bar_segment.circle_ex4Violet .icon,
+button_bar_segment.circle_ex4Mouve .icon,
+button_bar_segment.circle_ex4Purple .icon,
+button_bar_segment.circle_ex4Magenta .icon,
+button_bar_segment.circle_ex4Orchid .icon,
+button_bar_segment.circle_ex4Ruby .icon,
+button_bar_segment.circle_ex4Pink .icon,
+button_bar_segment.circle_ex4Tomato .icon,
+button_bar_segment.fill_gs3 .icon, button_bar_segment.circle_gs3 .icon,
+button_bar_segment.fill_gs6 .icon, button_bar_segment.circle_gs6 .icon,
 button_bar_segment.fill_gs9 .icon, button_bar_segment.circle_gs9 .icon,
 button_bar_segment.fill_gsA .icon, button_bar_segment.circle_gsA .icon,
 button_bar_segment.fill_gsB .icon, button_bar_segment.circle_gsB .icon,
@@ -1113,6 +1549,100 @@ button_bar_segment.fill_gsF .icon, button_bar_segment.circle_gsF .icon
 
 
 
+/*
+button.fill_acc .self,
+button.circle_acc .self,
+button_bar_segment.fill_acc .self,
+button_bar_segment.circle_acc .self,
+popover.fill_acc .self
+{
+  background-color: #b1ca4f;
+}
+*/
+button.circle_ex4Gray .self,
+button_bar_segment.circle_ex4Gray .self
+{background-color: #A1A1A1;}
+button.circle_ex4Marsala .self,
+button_bar_segment.circle_ex4Marsala .self
+{background-color: #B67056;}
+button.circle_ex4Brown .self,
+button_bar_segment.circle_ex4Brown .self
+{background-color: #BA9377;}
+button.circle_ex4Orange .self,
+button_bar_segment.circle_ex4Orange .self
+{background-color: #F8972C;}
+button.circle_ex4Amber .self,
+button_bar_segment.circle_ex4Amber .self
+{background-color: #E9AF01;}
+button.circle_ex4Yellow .self,
+button_bar_segment.circle_ex4Yellow .self
+{background-color: #C3B831;}
+button.circle_ex4Lime .self,
+button_bar_segment.circle_ex4Lime .self
+{background-color: #AABC11;}
+button.circle_ex4Bamboo .self,
+button_bar_segment.circle_ex4Bamboo .self
+{background-color: #80BA3F;}
+button.circle_ex407 .self,
+button_bar_segment.circle_ex407 .self
+{background-color: #000000;}
+button.circle_ex4Green .self,
+button_bar_segment.circle_ex4Green .self
+{background-color: #52BC57;}
+button.circle_ex4Meadow .self,
+button_bar_segment.circle_ex4Meadow .self
+{background-color: #3CBD60;}
+button.circle_ex410 .self,
+button_bar_segment.circle_ex410 .self
+{background-color: #000000;}
+button.circle_ex4Teal .self,
+button_bar_segment.circle_ex4Teal .self
+{background-color: #10B4A4;}
+button.circle_ex4Cyan .self,
+button_bar_segment.circle_ex4Cyan .self
+{background-color: #0EA8BE;}
+button.circle_ex4Slate .self,
+button_bar_segment.circle_ex4Slate .self
+{background-color: #7E9AA5;}
+button.circle_ex4Azure .self,
+button_bar_segment.circle_ex4Azure .self
+{background-color: #3593DF;}
+button.circle_ex4Blue .self,
+button_bar_segment.circle_ex4Blue .self
+{background-color: #5287E0;}
+button.circle_ex4Indigo .self,
+button_bar_segment.circle_ex4Indigo .self
+{background-color: #6777CF;}
+button.circle_ex4Violet .self,
+button_bar_segment.circle_ex4Violet .self
+{background-color: #846DDC;}
+button.circle_ex4Mouve .self,
+button_bar_segment.circle_ex4Mouve .self
+{background-color: #936FCE;}
+button.circle_ex4Purple .self,
+button_bar_segment.circle_ex4Purple .self
+{background-color: #BB57CC;}
+button.circle_ex4Magenta .self,
+button_bar_segment.circle_ex4Magenta .self
+{background-color: #C94EC9;}
+button.circle_ex4Orchid .self,
+button_bar_segment.circle_ex4Orchid .self
+{background-color: #D63DAF;}
+button.circle_ex4Ruby .self,
+button_bar_segment.circle_ex4Ruby .self
+{background-color: #DF4298;}
+button.circle_ex4Pink .self,
+button_bar_segment.circle_ex4Pink .self
+{background-color: #DF427E;}
+button.circle_ex4Tomato .self,
+button_bar_segment.circle_ex4Tomato .self
+{background-color: #E95450;}
+
+
+
+
+
+
 /** (btn)min_exN */
 /** (btn)mat_hNN */
 button.min_ex2 .self,
@@ -1138,14 +1668,7 @@ button.min_gsF .inner_border
   box-shadow: none;
 }
 
-text_box.min_ex2 .self,
-text_box.min_ex4 .self,
-text_box.min_ex8 .self,
-text_box.min_gs3 .self,
-text_box.min_gs6 .self,
-text_box.min_gs9 .self,
-text_box.min_gsF .self,
-button.min_ex2 .self, button_bar_segment.min_ex2 .self, button_bar_segment.min_ex2 .self,
+button.min_ex2 .self, button_bar_segment.min_ex2 .self,
 button.min_ex4 .self, button_bar_segment.min_ex4 .self,
 button.min_ex8 .self, button_bar_segment.min_ex8 .self,
 button.min_gs3 .self, button_bar_segment.min_gs3 .self,
@@ -1176,19 +1699,15 @@ button.min_gsF .icon, button_bar_segment.min_gsF .icon
 
 
 
-text_box.min_gs3 .self,
 button.min_gs3 .self, button_bar_segment.min_gs3 .self,
 button.mro_gs3 .self, button_bar_segment.mro_gs3 .self
 {color: #333;}
-text_box.min_gs6 .self,
 button.min_gs6 .self, button_bar_segment.min_gs6 .self,
 button.mro_gs6 .self, button_bar_segment.mro_gs6 .self
 {color: #666;}
-text_box.min_gs9 .self,
 button.min_gs9 .self, button_bar_segment.min_gs9 .self,
 button.mro_gs9 .self, button_bar_segment.mro_gs9 .self
 {color: #999;}
-text_box.min_gsF .self,
 button.min_gsF .self, button_bar_segment.min_gsF .self,
 button.mro_gsF .self, button_bar_segment.mro_gsF .self
 {color: #FFF;}
@@ -1208,13 +1727,13 @@ button.mro_gsF .icon, button_bar_segment.mro_gsF .icon
 
 
 
-text_box.min_ex2:hover .self, button.min_ex2:hover .self, button_bar_segment.min_ex2:hover .self,
-text_box.min_ex4:hover .self, button.min_ex4:hover .self, button_bar_segment.min_ex4:hover .self,
-text_box.min_ex8:hover .self, button.min_ex8:hover .self, button_bar_segment.min_ex8:hover .self,
-text_box.min_gs3:hover .self, button.min_gs3:hover .self, button_bar_segment.min_gs3:hover .self,
-text_box.min_gs6:hover .self, button.min_gs6:hover .self, button_bar_segment.min_gs6:hover .self,
-text_box.min_gs9:hover .self, button.min_gs9:hover .self, button_bar_segment.min_gs9:hover .self,
-text_box.min_gsF:hover .self, button.min_gsF:hover .self, button_bar_segment.min_gsF:hover .self
+button.min_ex2:hover .self, button_bar_segment.min_ex2:hover .self,
+button.min_ex4:hover .self, button_bar_segment.min_ex4:hover .self,
+button.min_ex8:hover .self, button_bar_segment.min_ex8:hover .self,
+button.min_gs3:hover .self, button_bar_segment.min_gs3:hover .self,
+button.min_gs6:hover .self, button_bar_segment.min_gs6:hover .self,
+button.min_gs9:hover .self, button_bar_segment.min_gs9:hover .self,
+button.min_gsF:hover .self, button_bar_segment.min_gsF:hover .self
 {
   border-style: solid; border-width: 1pt; border-color: rgba(76%,76%,76%,0.3);
   /*background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(92%,92%,92%,0.3)), to(rgba(86%,86%,86%,0.3)));*/
@@ -1240,14 +1759,13 @@ button.min_gs9:pressed .icon, button_bar_segment.min_gs9:pressed .icon,
 button.min_gsF:pressed .icon, button_bar_segment.min_gsF:pressed .icon
 {-fm-icon-color: #333;}
 
-
-text_box.min_ex2:pressed .self, button.min_ex2:pressed .self, button_bar_segment.min_ex2:pressed .self,
-text_box.min_ex4:pressed .self, button.min_ex4:pressed .self, button_bar_segment.min_ex4:pressed .self,
-text_box.min_ex8:pressed .self, button.min_ex8:pressed .self, button_bar_segment.min_ex8:pressed .self,
-text_box.min_gs3:pressed .self, button.min_gs3:pressed .self, button_bar_segment.min_gs3:pressed .self,
-text_box.min_gs6:pressed .self, button.min_gs6:pressed .self, button_bar_segment.min_gs6:pressed .self,
-text_box.min_gs9:pressed .self, button.min_gs9:pressed .self, button_bar_segment.min_gs9:pressed .self,
-text_box.min_gsF:pressed .self, button.min_gsF:pressed .self, button_bar_segment.min_gsF:pressed .self
+button.min_ex2:pressed .self, button_bar_segment.min_ex2:pressed .self,
+button.min_ex4:pressed .self, button_bar_segment.min_ex4:pressed .self,
+button.min_ex8:pressed .self, button_bar_segment.min_ex8:pressed .self,
+button.min_gs3:pressed .self, button_bar_segment.min_gs3:pressed .self,
+button.min_gs6:pressed .self, button_bar_segment.min_gs6:pressed .self,
+button.min_gs9:pressed .self, button_bar_segment.min_gs9:pressed .self,
+button.min_gsF:pressed .self, button_bar_segment.min_gsF:pressed .self
 {
   border-top-color: rgba(48%,48%,48%,1);
   border-right-color: rgba(54%,54%,54%,1);
@@ -1257,13 +1775,13 @@ text_box.min_gsF:pressed .self, button.min_gsF:pressed .self, button_bar_segment
   background-color: rgba(124,124,124,0.18);
   color: #333;
 }
-text_box.min_ex2:pressed .inner_border, button.min_ex2:pressed .inner_border, button_bar_segment.min_ex2:pressed .inner_border,
-text_box.min_ex4:pressed .inner_border, button.min_ex4:pressed .inner_border, button_bar_segment.min_ex4:pressed .inner_border,
-text_box.min_ex8:pressed .inner_border, button.min_ex8:pressed .inner_border, button_bar_segment.min_ex8:pressed .inner_border,
-text_box.min_gs3:pressed .inner_border, button.min_gs3:pressed .inner_border, button_bar_segment.min_gs3:pressed .inner_border,
-text_box.min_gs6:pressed .inner_border, button.min_gs6:pressed .inner_border, button_bar_segment.min_gs6:pressed .inner_border,
-text_box.min_gs9:pressed .inner_border, button.min_gs9:pressed .inner_border, button_bar_segment.min_gs9:pressed .inner_border,
-text_box.min_gsF:pressed .inner_border, button.min_gsF:pressed .inner_border, button_bar_segment.min_gsF:pressed .inner_border
+button.min_ex2:pressed .inner_border, button_bar_segment.min_ex2:pressed .inner_border,
+button.min_ex4:pressed .inner_border, button_bar_segment.min_ex4:pressed .inner_border,
+button.min_ex8:pressed .inner_border, button_bar_segment.min_ex8:pressed .inner_border,
+button.min_gs3:pressed .inner_border, button_bar_segment.min_gs3:pressed .inner_border,
+button.min_gs6:pressed .inner_border, button_bar_segment.min_gs6:pressed .inner_border,
+button.min_gs9:pressed .inner_border, button_bar_segment.min_gs9:pressed .inner_border,
+button.min_gsF:pressed .inner_border, button_bar_segment.min_gsF:pressed .inner_border
 {
   box-shadow: inset 0pt 0pt 2pt 0pt rgba(20%,20%,20%,0.4);
 }
@@ -1418,5 +1936,38 @@ button_bar_segment.selectknob .text {
   padding-top: -2pt;
 }
 */
+
+
+
+/** (btn).ear */
+button_bar.ear .self {}
+
+button_bar_segment.ear:active .self {
+  background-color: #333;/* theme_colors */
+  color: #FFF;
+}
+
+button_bar_segment.ear:hover .self {
+  /*
+  background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(#F6F6F6), to(#EEE));
+  background-color: #CCC;
+  */
+  background-image: none; background-color: #F3F3F3;
+  /*color: #333;*/
+  box-shadow: 0pt 0pt 3pt 0pt rgba(0,0,0,0.07);
+}
+button_bar_segment.ear:pressed .self {
+  background-image: none; background-color: #E6E6E6;/*#C0C0C0*/
+  /*background-image: -webkit-gradient(linear,0% 0%,0% 100%, from(#E6E6E6), to(#EEE));*/
+  box-shadow: none;
+  color: #333;
+}
+
+button_bar_segment.ear:hover .inner_border {
+  box-shadow: none;/*inset 0pt 0pt 2pt 0pt rgba(255,255,255,0.8)*/
+}
+
+button_bar_segment.ear:active .icon {-fm-icon-color: #FFF;}
+button_bar_segment.ear:pressed .icon {-fm-icon-color: #333;}
 
 

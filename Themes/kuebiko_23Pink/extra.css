@@ -168,7 +168,6 @@ text_box.center_ex2_p17 .self,
 text_box.left_ex2_p18 .self,
 text_box.right_ex2_p18 .self,
 text_box.center_ex2_p18 .self,
-text_box.min_ex2 .self,
 button_bar_segment.min_ex2:normal .self,
 button_bar_segment.mro_ex2:normal .self {
   color: #aa144d;
@@ -207,7 +206,6 @@ text_box.center_ex4_p17 .self,
 text_box.left_ex4_p18 .self,
 text_box.right_ex4_p18 .self,
 text_box.center_ex4_p18 .self,
-text_box.min_ex4 .self,
 button_bar_segment.min_ex4:normal .self,
 button_bar_segment.mro_ex4:normal .self {
   color: #df427e;
@@ -246,7 +244,6 @@ text_box.center_ex8_p17 .self,
 text_box.left_ex8_p18 .self,
 text_box.right_ex8_p18 .self,
 text_box.center_ex8_p18 .self,
-text_box.min_ex8 .self,
 button_bar_segment.min_ex8:normal .self,
 button_bar_segment.mro_ex8:normal .self {
   color: #fcc2d8;
@@ -261,6 +258,9 @@ body:checked .self {
 }
 button.row:hover .self {
   background-color: #ffdde9;
+}
+button_bar_segment.ear:active .self {
+  background-color: #df427e;
 }
 button.cap:normal .self,
 text_box.cap:normal .self {

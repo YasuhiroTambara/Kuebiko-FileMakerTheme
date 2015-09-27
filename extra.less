@@ -1,5 +1,5 @@
 //00Gray
-@ex1: #646464; @ex2: #7C7C7C; @ex3: #909090; @ex4: #A1A1A1; @ex5: #B2B2B2; @ex6: #C6C6C6; @ex7: #D0D0D0; @ex8: #DCDCDC; @ex9: #E9E9E9; @accent: #3593DF;
+//@ex1: #646464; @ex2: #7C7C7C; @ex3: #909090; @ex4: #A1A1A1; @ex5: #B2B2B2; @ex6: #C6C6C6; @ex7: #D0D0D0; @ex8: #DCDCDC; @ex9: #E9E9E9; @accent: #3593DF;
 
 //01Marsala
 //@ex1: #6A3624; @ex2: #853B23; @ex3: #9C543D; @ex4: #B67056; @ex5: #C88770; @ex6: #DBA897; @ex7: #E7BDAF; @ex8: #EDCFC4; @ex9: #F4EBE8; @accent: #DF427E;
@@ -75,7 +75,34 @@
 //@ex1: #921242; @ex2: #AA144D; @ex3: #C62360; @ex4: #DF427E; @ex5: #EF5F95; @ex6: #F687B1; @ex7: #FAA3C4; @ex8: #FCC2D8; @ex9: #FFDDE9; @accent: #80BA3F;
 
 //24Tomato
-//@ex1: #941E1B; @ex2: #AD2421; @ex3: #CE312D; @ex4: #E95450; @ex5: #F07673; @ex6: #F59A98; @ex7: #F7AEAC; @ex8: #F9CBCA; @ex9: #FBE2E1; @accent: #0EA8BE;
+@ex1: #941E1B; @ex2: #AD2421; @ex3: #CE312D; @ex4: #E95450; @ex5: #F07673; @ex6: #F59A98; @ex7: #F7AEAC; @ex8: #F9CBCA; @ex9: #FBE2E1; @accent: #0EA8BE;
+
+@Gray_ex4: #A1A1A1;
+@Marsala_ex4: #B67056;
+@Brown_ex4: #BA9377;
+@Orange_ex4: #F8972C;
+@Amber_ex4: #E9AF01;
+@Yellow_ex4: #C3B831;
+@Lime_ex4: #AABC11;
+@Bamboo_ex4: #80BA3F;
+//@07_ex4: #;
+@Green_ex4: #52BC57;
+@Meadow_ex4: #3CBD60;
+//@10_ex4: #;
+@Teal_ex4: #10B4A4;
+@Cyan_ex4: #0EA8BE;
+@Slate_ex4: #7E9AA5;
+@Azure_ex4: #3593DF;
+@Blue_ex4: #5287E0;
+@Indigo_ex4: #6777CF;
+@Violet_ex4: #846DDC;
+@Mouve_ex4: #936FCE;
+@Purple_ex4: #BB57CC;
+@Magenta_ex4: #C94EC9;
+@Orchid_ex4: #D63DAF;
+@Ruby_ex4: #DF4298;
+@Pink_ex4: #DF427E;
+@Tomato_ex4: #E95450;
 
 
 
@@ -193,7 +220,6 @@ text_box.left_ex2_p15 .self, text_box.right_ex2_p15 .self, text_box.center_ex2_p
 text_box.left_ex2_p16 .self, text_box.right_ex2_p16 .self, text_box.center_ex2_p16 .self,
 text_box.left_ex2_p17 .self, text_box.right_ex2_p17 .self, text_box.center_ex2_p17 .self,
 text_box.left_ex2_p18 .self, text_box.right_ex2_p18 .self, text_box.center_ex2_p18 .self,
-text_box.min_ex2 .self,
 button_bar_segment.min_ex2:normal .self,
 button_bar_segment.mro_ex2:normal .self
 {color: @ex2;}
@@ -211,7 +237,6 @@ text_box.left_ex4_p15 .self, text_box.right_ex4_p15 .self, text_box.center_ex4_p
 text_box.left_ex4_p16 .self, text_box.right_ex4_p16 .self, text_box.center_ex4_p16 .self,
 text_box.left_ex4_p17 .self, text_box.right_ex4_p17 .self, text_box.center_ex4_p17 .self,
 text_box.left_ex4_p18 .self, text_box.right_ex4_p18 .self, text_box.center_ex4_p18 .self,
-text_box.min_ex4 .self,
 button_bar_segment.min_ex4:normal .self,
 button_bar_segment.mro_ex4:normal .self
 {color: @ex4;}
@@ -229,7 +254,6 @@ text_box.left_ex8_p15 .self, text_box.right_ex8_p15 .self, text_box.center_ex8_p
 text_box.left_ex8_p16 .self, text_box.right_ex8_p16 .self, text_box.center_ex8_p16 .self,
 text_box.left_ex8_p17 .self, text_box.right_ex8_p17 .self, text_box.center_ex8_p17 .self,
 text_box.left_ex8_p18 .self, text_box.right_ex8_p18 .self, text_box.center_ex8_p18 .self,
-text_box.min_ex8 .self,
 button_bar_segment.min_ex8:normal .self,
 button_bar_segment.mro_ex8:normal .self
 {color: @ex8;}
@@ -242,6 +266,12 @@ button_bar_segment.mro_ex8:normal .icon
 /** BLOCK ------------------------*/
 body:checked .self {background-color: @ex8;}
 button.row:hover .self{background-color: @ex9;}
+
+
+
+button_bar_segment.ear:active .self {
+  background-color: @ex4;
+}
 
 
 
