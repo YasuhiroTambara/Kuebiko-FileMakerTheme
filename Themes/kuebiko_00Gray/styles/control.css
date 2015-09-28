@@ -5,27 +5,36 @@ portal:normal .row {background-color: #FCFCFC;}
 portal:normal .row_alt {background-color: #F6F6F6;}
 portal:normal .row_active {background-color: rgba(230,239,249,1);}
 
-portal.port_liner:normal .row,
-portal.port_liner:normal .row_alt,
-portal.port_liner:normal .row_active
+
+
+portal.def:normal .row,
+portal.def:normal .row_alt,
+portal.def:normal .row_active
 {
   border-bottom-width: 1pt;
   border-bottom-style: solid;
   border-color: #DCDCDC;/**/
 }
-portal.port_liner:normal .row {background-color: #FCFCFC;}
-portal.port_liner:normal .row_alt {background-color: #F6F6F6;}
-portal.port_liner:normal .row_active {background-color: rgba(230,239,249,1);}
+portal.def:normal .row {background-color: #FCFCFC;}
+portal.def:normal .row_alt {background-color: #F6F6F6;}
+portal.def:normal .row_active {background-color: rgba(230,239,249,1);}
+
+
+
+portal.trp:normal .row,
+portal.trp:normal .row_alt,
+portal.trp:normal .row_active
+{background-color: transparent;}
 
 
 
 /* PORTAL ----------------------------*/
-portal:normal .self {
-  border-width: 1pt;
-  border-style: solid;
-  border-color: #CCC;
-  border-radius: 0pt;
--fm-use-portal-current-row-style: true;
+portal .self {
+  border-style: solid; border-width: 1pt; border-radius: 0pt; border-color: #CCC;
+  -fm-use-portal-current-row-style: true;
+}
+portal.trp .self {
+  border-style: none; border-width: 0pt;
 }
 
 portal:normal .inner_border {
@@ -230,6 +239,9 @@ chart:focus .self {
 
 
 
+chart.trp .self
+{background-color: transparent;}
+
 chart.fill_gsC .self,
 chart.view_gsC .self
 {background-color: #CCC;}
@@ -243,6 +255,7 @@ chart.fill_gsF .self,
 chart.view_gsF .self
 {background-color: #FFF;}
 
+chart.trp .self,
 chart.view_gsC .self,
 chart.view_gsD .self,
 chart.view_gsE .self,
@@ -586,8 +599,8 @@ button_bar_segment.mat_h25:hover .self, button_bar_segment.mat_h25_gsF:hover .se
 button_bar_segment.mat_h30:hover .self, button_bar_segment.mat_h30_gsF:hover .self,
 button_bar_segment.mat_h35:hover .self, button_bar_segment.mat_h35_gsF:hover .self
 {
-  background-image: none; background-color: rgba(77,77,77,0);/* 0.1 */
-  border-color: rgba(77,77,77,0);/* 0.1 */
+  background-image: none; background-color: rgba(77,77,77,0.1);
+  border-color: rgba(77,77,77,0.1);
 }
 
 tab_panel.mat_h25:active .tab,

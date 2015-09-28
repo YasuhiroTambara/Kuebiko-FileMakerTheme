@@ -407,13 +407,13 @@ popover.fill_gsF .text
 
 
 
-popover.pov_transparent .self {
+popover.trp .self {
   background-image: none; background-color: rgba(0,0,0,0);
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   box-shadow: none;
   /*color: #FFF;*/
 }
-popover.pov_transparent .contents {
+popover.trp .contents {
   background-image: none; background-color: rgba(0,0,0,0);
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
 }
@@ -557,9 +557,7 @@ button.row:focus .inner_border
   box-shadow: none;
 }
 
-button.row:hover .self,
-button.row:focus .self
-{
+button.row:hover .self {/*button.row:focus .self*/
   background-image: none; background-color: rgba(230,237,242,1);/* theme color */
   box-shadow: none;
 }
@@ -568,7 +566,7 @@ button.row:pressed .self {
   background-image: none; background-color: rgba(230,230,230,0.7);
 }
 button.row:pressed .inner_border {
-  box-shadow: inset 0pt 0pt 2pt 0pt rgba(51,51,51,0.12);
+  box-shadow: inset 0pt 0pt 4pt 1pt rgba(51,51,51,0.18);/* theme color */
 }
 
 button.row .text {
@@ -1306,7 +1304,7 @@ button_bar_segment.fill_gsD:pressed .self, button_bar_segment.circle_gsD:pressed
 button_bar_segment.fill_gsE:pressed .self, button_bar_segment.circle_gsE:pressed .self,
 button_bar_segment.fill_gsF:pressed .self, button_bar_segment.circle_gsF:pressed .self
 {
-  background-image: none; background-color: #C0C0C0;
+  background-image: none; background-color: #999;
   box-shadow: none;
 }
 
@@ -1439,8 +1437,7 @@ button_bar_segment.circle_gsD .inner_border, button_bar_segment.circle_gsD:hover
 button_bar_segment.circle_gsE .inner_border, button_bar_segment.circle_gsE:hover .inner_border,
 button_bar_segment.circle_gsF .inner_border, button_bar_segment.circle_gsF:hover .inner_border
 {
-  box-shadow: none;
-  /*-fm-box-shadow-persist: none;*/
+  box-shadow: none;/*-fm-box-shadow-persist: none;*/
 }
 
 
@@ -1545,6 +1542,22 @@ button_bar_segment.fill_gsF .icon, button_bar_segment.circle_gsF .icon
   box-sizing: border-box;/* ! */
   /*-fm-icon-padding: 0pt 3pt;*/
   -fm-icon-color: #666;
+}
+
+button.fill_ex7:pressed .icon, button.circle_ex7:pressed .icon,
+button.fill_ex8:pressed .icon, button.circle_ex8:pressed .icon,
+button.fill_ex9:pressed .icon, button.circle_ex9:pressed .icon,
+button.fill_gsD:pressed .icon, button.circle_gsD:pressed .icon,
+button.fill_gsE:pressed .icon, button.circle_gsE:pressed .icon,
+button.fill_gsF:pressed .icon, button.circle_gsF:pressed .icon,
+button_bar_segment.fill_ex7:pressed .icon, button_bar_segment.circle_ex7:pressed .icon,
+button_bar_segment.fill_ex8:pressed .icon, button_bar_segment.circle_ex8:pressed .icon,
+button_bar_segment.fill_ex9:pressed .icon, button_bar_segment.circle_ex9:pressed .icon,
+button_bar_segment.fill_gsD:pressed .icon, button_bar_segment.circle_gsD:pressed .icon,
+button_bar_segment.fill_gsE:pressed .icon, button_bar_segment.circle_gsE:pressed .icon,
+button_bar_segment.fill_gsF:pressed .icon, button_bar_segment.circle_gsF:pressed .icon
+{
+  -fm-icon-color: #FFF;
 }
 
 

@@ -259,6 +259,9 @@ body:checked .self {
 button.row:hover .self {
   background-color: #e9e9e9;
 }
+button.row:pressed .inner_border {
+  box-shadow: inset 0pt 0pt 3pt 0pt rgba(100, 100, 100, 0.18);
+}
 button_bar_segment.ear:active .self {
   background-color: #a1a1a1;
 }

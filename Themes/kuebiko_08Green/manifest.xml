@@ -139,8 +139,6 @@
 			<btn_check>btn_check</btn_check>
 			<btn_radio>btn_radio</btn_radio>
 			<selectknob>selectknob</selectknob>
-			<pov_def>pov_def_NU</pov_def>
-			<pov_transparent>pov_transparent</pov_transparent>
 			<min_ex2>min_ex2</min_ex2>
 			<min_ex4>min_ex4</min_ex4>
 			<min_ex8>min_ex8</min_ex8>
@@ -163,6 +161,7 @@
 			<min>min</min>
 			<ear>ear</ear>
 			<mat>mat</mat>
+			<trp>trp</trp>
 			<def_h20>def_h20</def_h20>
 			<def_h25>def_h25</def_h25>
 			<def_h30>def_h30</def_h30>
