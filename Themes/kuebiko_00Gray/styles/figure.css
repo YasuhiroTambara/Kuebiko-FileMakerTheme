@@ -1308,6 +1308,24 @@ button_bar_segment.fill_gsF:pressed .self, button_bar_segment.circle_gsF:pressed
   box-shadow: none;
 }
 
+button.fill_ex7:pressed .self, button.circle_ex7:pressed .self,
+button.fill_ex8:pressed .self, button.circle_ex8:pressed .self,
+button.fill_ex9:pressed .self, button.circle_ex9:pressed .self,
+button.fill_gsD:pressed .self, button.circle_gsD:pressed .self,
+button.fill_gsE:pressed .self, button.circle_gsE:pressed .self,
+button.fill_gsF:pressed .self, button.circle_gsF:pressed .self,
+button_bar_segment.fill_ex7:pressed .self, button_bar_segment.circle_ex7:pressed .self,
+button_bar_segment.fill_ex8:pressed .self, button_bar_segment.circle_ex8:pressed .self,
+button_bar_segment.fill_ex9:pressed .self, button_bar_segment.circle_ex9:pressed .self,
+button_bar_segment.fill_gsD:pressed .self, button_bar_segment.circle_gsD:pressed .self,
+button_bar_segment.fill_gsE:pressed .self, button_bar_segment.circle_gsE:pressed .self,
+button_bar_segment.fill_gsF:pressed .self, button_bar_segment.circle_gsF:pressed .self
+{
+  color: #FFF;
+}
+
+
+
 button.fill_ex1 .inner_border, button.fill_ex1:hover .inner_border,
 button.fill_ex2 .inner_border, button.fill_ex2:hover .inner_border,
 button.fill_ex3 .inner_border, button.fill_ex3:hover .inner_border,
