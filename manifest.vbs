@@ -3,20 +3,23 @@ Dim Arr, Str, Xstr
 Arr = _
 Array(_
   "00Gray",_
-  "01Marsala",_
   "01Brown",_
+  "01Marsala",_
   "02Orange",_
+  "03Khaki",_
   "03Amber",_
   "04Yellow",_
   "05Lime",_
+  "06Sage",_
   "06Bamboo",_
-  _
+  "07Meadow",_
   "08Green",_
-  "09Meadow",_
-  _
+  "09Shamrock",_
+  "10Emerald",_
   "11Teal",_
   "12Cyan",_
   "13Slate",_
+  "13Ocean",_
   "14Azure",_
   "15Blue",_
   "16Indigo",_

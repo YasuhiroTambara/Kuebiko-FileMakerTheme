@@ -7,7 +7,7 @@ line.stroke_ex2 .self,
 rectangle.stroke_ex2 .self,
 rectangle.stroke0001_rad_ex2 .self,
 rounded.stroke0001_rad_ex2 .self {
-  border-color: #951595;
+  border-color: #911e91;
 }
 line.stroke_ex3 .self,
 rectangle.stroke_ex3 .self {
@@ -59,7 +59,7 @@ button_bar_segment.circle_ex2 .self,
 popover.fill_ex2 .self,
 rectangle.fill_ex2 .self,
 oval.fill_ex2 .self {
-  background-color: #951595;
+  background-color: #911e91;
 }
 body.fill_ex3 .self,
 button.fill_ex3 .self,
@@ -170,11 +170,11 @@ text_box.right_ex2_p18 .self,
 text_box.center_ex2_p18 .self,
 button_bar_segment.min_ex2:normal .self,
 button_bar_segment.mro_ex2:normal .self {
-  color: #951595;
+  color: #911e91;
 }
 button_bar_segment.min_ex2:normal .icon,
 button_bar_segment.mro_ex2:normal .icon {
-  -fm-icon-color: #951595;
+  -fm-icon-color: #911e91;
 }
 text_box.left_ex4_p09 .self,
 text_box.right_ex4_p09 .self,
@@ -277,12 +277,12 @@ text_box.cap:hover .self {
 }
 button.cap:pressed .self,
 text_box.cap:pressed .self {
-  border-color: #951595;
+  border-color: #911e91;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ac37ac), to(#c94ec9));
 }
 button.cap:pressed .inner_border,
 text_box.cap:pressed .inner_border {
-  box-shadow: inset 0pt 0pt 3pt 1pt #951595;
+  box-shadow: inset 0pt 0pt 3pt 1pt #911e91;
 }
 /** CHECK, RADIO ------------------------*/
 button.btn_check:normal .self,
@@ -323,6 +323,9 @@ tab_panel.def_h35:normal .tab {
 tab_control.mat_h25:active .self,
 tab_control.mat_h30:active .self,
 tab_control.mat_h35:active .self,
+tab_control.mat_h25_right:active .self,
+tab_control.mat_h30_right:active .self,
+tab_control.mat_h35_right:active .self,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self {
@@ -331,10 +334,24 @@ button_bar_segment.mat_h35:active .self {
 tab_panel.mat_h25:active .tab,
 tab_panel.mat_h30:active .tab,
 tab_panel.mat_h35:active .tab,
+tab_panel.mat_h25_right:active .tab,
+tab_panel.mat_h30_right:active .tab,
+tab_panel.mat_h35_right:active .tab,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self {
   border-bottom-color: #c94ec9;
+}
+tab_control.mat_h25_gsF .self,
+tab_control.mat_h30_gsF .self,
+tab_control.mat_h35_gsF .self,
+tab_control.mat_h25_gsF_right .self,
+tab_control.mat_h30_gsF_right .self,
+tab_control.mat_h35_gsF_right .self,
+button_bar_segment.mat_h25_gsF .self,
+button_bar_segment.mat_h30_gsF .self,
+button_bar_segment.mat_h35_gsF .self {
+  color: #ffddff;
 }
 tab_control.ear_h25:normal .self,
 tab_control.ear_h25_lite:normal .self,

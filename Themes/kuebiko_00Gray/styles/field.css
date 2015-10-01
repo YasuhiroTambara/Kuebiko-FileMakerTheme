@@ -41,9 +41,10 @@ field .text {
   bottom: 0pt;
   right: 0pt;
   margin-top: 2pt;
-  margin-right: 4.8pt;
+  margin-right: 4.2pt;
   margin-bottom: -4.8pt;
-  margin-left: 4.8pt;
+  margin-left: 4.2pt;
+  padding: 0pt;
 }
 
 field:hover .self {
@@ -120,7 +121,7 @@ calendar:normal  .self,
 drop_down:normal .self,
 pop_up:normal    .self
 {
-  border-style: solid; border-width: 1pt;
+  border-style: solid; border-width: 1pt; border-color: #BBB;
   background-color: #FFF;
 }
 
@@ -260,8 +261,8 @@ drop_down.edt_p16h24 .self, drop_down.edt_p16h29 .self,
 drop_down.edt_p10h14 .text,
    pop_up.edt_p10h14 .text
 {
-  margin-top: -1.2pt; padding-bottom: -7.2pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: -1.2pt; margin-bottom: -7.2pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
  edit_box.vew_p10h19 .text,
@@ -271,8 +272,8 @@ drop_down.edt_p10h14 .text,
 drop_down.edt_p10h19 .text,
    pop_up.edt_p10h19 .text
 {
-  margin-top: 1pt; padding-bottom: -3.6pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: 1pt; margin-bottom: -3.6pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
  edit_box.vew_p11h14 .text,
@@ -282,8 +283,8 @@ drop_down.edt_p10h19 .text,
 drop_down.edt_p11h14 .text,
    pop_up.edt_p11h14 .text
 {
-  margin-top: -1.8pt; padding-bottom: -7.8pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: -1.8pt; margin-bottom: -7.8pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
  edit_box.vew_p11h19 .text,
@@ -293,8 +294,8 @@ drop_down.edt_p11h14 .text,
 drop_down.edt_p11h19 .text,
    pop_up.edt_p11h19 .text
 {
-  margin-top: 0pt; padding-bottom: -4.8pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: 0pt; margin-bottom: -4.8pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
  edit_box.vew_p12h19 .text,
@@ -304,8 +305,8 @@ drop_down.edt_p11h19 .text,
 drop_down.edt_p12h19 .text,
    pop_up.edt_p12h19 .text
 {
-  margin-top: -0.3pt; padding-bottom: -5.4pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: -0.3pt; margin-bottom: -5.4pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
  edit_box.vew_p12h24 .text,
@@ -315,8 +316,8 @@ drop_down.edt_p12h19 .text,
 drop_down.edt_p12h24 .text,
    pop_up.edt_p12h24 .text
 {
-  margin-top: 2pt; padding-bottom: -4.8pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: 2pt; margin-bottom: -4.8pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
  edit_box.vew_p13h24 .text,  edit_box.vew_p14h24 .text,
@@ -326,8 +327,8 @@ drop_down.edt_p12h24 .text,
 drop_down.edt_p13h24 .text, drop_down.edt_p14h24 .text,
    pop_up.edt_p13h24 .text,    pop_up.edt_p14h24 .text
 {
-  margin-top: 1pt; padding-bottom: -4.8pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: 1pt; margin-bottom: -4.8pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
  edit_box.vew_p14h29 .text,
@@ -337,8 +338,8 @@ drop_down.edt_p13h24 .text, drop_down.edt_p14h24 .text,
 drop_down.edt_p14h29 .text,
    pop_up.edt_p14h29 .text
 {
-  margin-top: 3pt; padding-bottom: -4.8pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: 3pt; margin-bottom: -4.8pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
  edit_box.vew_p16h24 .text,
@@ -348,8 +349,8 @@ drop_down.edt_p14h29 .text,
 drop_down.edt_p16h24 .text,
    pop_up.edt_p16h24 .text
 {
-  margin-top: -0.4pt; padding-bottom: -5pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: -0.4pt; margin-bottom: -5pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
  edit_box.vew_p16h29 .text,
@@ -359,8 +360,8 @@ drop_down.edt_p16h24 .text,
 drop_down.edt_p16h29 .text,
    pop_up.edt_p16h29 .text
 {
-  margin-top: 1.6pt; padding-bottom: -6pt;
-  padding-right: 4.2pt; padding-left: 4.2pt;
+  margin-top: 1.6pt; margin-bottom: -6pt;
+  margin-right: 4.2pt; margin-left: 4.2pt;
 }
 
 
@@ -383,7 +384,7 @@ drop_down:normal .icon
   border-top-right-radius: 0pt;/*2pt*/
   border-bottom-right-radius: 0pt;/*2pt*/
   border-left-width: 1pt;
-  border-left-color: #CCC;
+  border-left-color: #BBB;
   border-left-style: solid;
 }
 
@@ -400,7 +401,7 @@ drop_down:hover .icon
 calendar:focus .icon,
 drop_down:focus .icon
 {
-  border-left-color: #CCC;
+  border-left-color: #BBB;
 }
 
 /*field:pressed .icon,*/

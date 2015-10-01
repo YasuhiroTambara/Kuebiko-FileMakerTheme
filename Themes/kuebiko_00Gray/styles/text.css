@@ -410,7 +410,7 @@ text_box.left_ex8_p18 .inner_border, text_box.right_ex8_p18 .inner_border, text_
 text_box.left_gs3_p18 .inner_border, text_box.right_gs3_p18 .inner_border, text_box.center_gs3_p18 .inner_border,
 text_box.left_gsF_p18 .inner_border, text_box.right_gsF_p18 .inner_border, text_box.center_gsF_p18 .inner_border
 {
-  margin-top: -38%; margin-bottom: -50%;
+  margin-top: -28%; margin-bottom: -40%;
   /*padding-right: 4.8pt; padding-left: 4.8pt;*/
   padding: 0pt 0.16em;
 }

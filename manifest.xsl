@@ -185,7 +185,10 @@
         <min_gs6>min_gs6</min_gs6>
         <min_gs9>min_gs9</min_gs9>
         <min_gsA>min_gsA</min_gsA>
+        <min_gsB>min_gsB</min_gsB>
         <min_gsC>min_gsC</min_gsC>
+        <min_gsD>min_gsD</min_gsD>
+        <min_gsE>min_gsE</min_gsE>
         <min_gsF>min_gsF</min_gsF>
         
         <mro_ex2>mro_ex2</mro_ex2>
@@ -201,6 +204,9 @@
         
         
         <!--control-->
+        <fill>fill</fill>
+        <vew>vew</vew>
+        
         <def>def</def>
         <min>min</min>
         <ear>ear</ear>
@@ -236,11 +242,18 @@
         <mat_h25>mat_h25</mat_h25>
         <mat_h30>mat_h30</mat_h30>
         <mat_h35>mat_h35</mat_h35>
-        
         <mat_h20_gsF>mat_h20_gsF</mat_h20_gsF>
         <mat_h25_gsF>mat_h25_gsF</mat_h25_gsF>
         <mat_h30_gsF>mat_h30_gsF</mat_h30_gsF>
         <mat_h35_gsF>mat_h35_gsF</mat_h35_gsF>
+        <mat_h20_right>mat_h20_right</mat_h20_right>
+        <mat_h25_right>mat_h25_right</mat_h25_right>
+        <mat_h30_right>mat_h30_right</mat_h30_right>
+        <mat_h35_right>mat_h35_right</mat_h35_right>
+        <mat_h20_gsF_right>mat_h20_gsF_right</mat_h20_gsF_right>
+        <mat_h25_gsF_right>mat_h25_gsF_right</mat_h25_gsF_right>
+        <mat_h30_gsF_right>mat_h30_gsF_right</mat_h30_gsF_right>
+        <mat_h35_gsF_right>mat_h35_gsF_right</mat_h35_gsF_right>
         
         
         
@@ -265,15 +278,15 @@
         <stroke_gsE>stroke_gsE</stroke_gsE>
         <stroke_gsF>stroke_gsF</stroke_gsF>
         
-        <edit_gsC>edit_gsC</edit_gsC>
-        <edit_gsD>edit_gsD</edit_gsD>
-        <edit_gsE>edit_gsE</edit_gsE>
-        <edit_gsF>edit_gsF</edit_gsF>
+        <edt_gsC>edt_gsC</edt_gsC>
+        <edt_gsD>edt_gsD</edt_gsD>
+        <edt_gsE>edt_gsE</edt_gsE>
+        <edt_gsF>edt_gsF</edt_gsF>
         
-        <view_gsC>view_gsC</view_gsC>
-        <view_gsD>view_gsD</view_gsD>
-        <view_gsE>view_gsE</view_gsE>
-        <view_gsF>view_gsF</view_gsF>
+        <vew_gsC>vew_gsC</vew_gsC>
+        <vew_gsD>vew_gsD</vew_gsD>
+        <vew_gsE>vew_gsE</vew_gsE>
+        <vew_gsF>vew_gsF</vew_gsF>
         
         <circle_ex1>circle_ex1</circle_ex1>
         <circle_ex2>circle_ex2</circle_ex2>
@@ -322,6 +335,7 @@
         <circle_gsE>circle_gsE</circle_gsE>
         <circle_gsF>circle_gsF</circle_gsF>
         
+        <fill_a06>fill_a06</fill_a06>
         <fill_a18>fill_a18</fill_a18>
         <fill_a30>fill_a30</fill_a30>
         <fill_a42>fill_a42</fill_a42>

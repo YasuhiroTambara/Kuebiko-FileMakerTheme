@@ -323,6 +323,9 @@ tab_panel.def_h35:normal .tab {
 tab_control.mat_h25:active .self,
 tab_control.mat_h30:active .self,
 tab_control.mat_h35:active .self,
+tab_control.mat_h25_right:active .self,
+tab_control.mat_h30_right:active .self,
+tab_control.mat_h35_right:active .self,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self {
@@ -331,10 +334,24 @@ button_bar_segment.mat_h35:active .self {
 tab_panel.mat_h25:active .tab,
 tab_panel.mat_h30:active .tab,
 tab_panel.mat_h35:active .tab,
+tab_panel.mat_h25_right:active .tab,
+tab_panel.mat_h30_right:active .tab,
+tab_panel.mat_h35_right:active .tab,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self {
   border-bottom-color: #0ea8be;
+}
+tab_control.mat_h25_gsF .self,
+tab_control.mat_h30_gsF .self,
+tab_control.mat_h35_gsF .self,
+tab_control.mat_h25_gsF_right .self,
+tab_control.mat_h30_gsF_right .self,
+tab_control.mat_h35_gsF_right .self,
+button_bar_segment.mat_h25_gsF .self,
+button_bar_segment.mat_h30_gsF .self,
+button_bar_segment.mat_h35_gsF .self {
+  color: #daf4f9;
 }
 tab_control.ear_h25:normal .self,
 tab_control.ear_h25_lite:normal .self,

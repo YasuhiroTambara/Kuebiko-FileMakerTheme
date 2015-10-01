@@ -124,20 +124,20 @@ container:focus .self
 
 
 container.fill_gsC .self,
-container.edit_gsC .self,
-container.view_gsC .self
+container.edt_gsC .self,
+container.vew_gsC .self
 {background-color: #CCC;}
 container.fill_gsD .self,
-container.edit_gsD .self,
-container.view_gsD .self
+container.edt_gsD .self,
+container.vew_gsD .self
 {background-color: #DDD;}
 container.fill_gsE .self,
-container.edit_gsE .self,
-container.view_gsE .self
+container.edt_gsE .self,
+container.vew_gsE .self
 {background-color: #EEE;}
 container.fill_gsF .self,
-container.edit_gsF .self,
-container.view_gsF .self
+container.edt_gsF .self,
+container.vew_gsF .self
 {background-color: #FFF;}
 
 container.fill_gsC .self
@@ -161,32 +161,32 @@ container.fill_gsF .repeat_border
   border-bottom-style: solid; border-bottom-width: 1pt;
 }
 
-container.edit_gsC .self,
-container.edit_gsD .self,
-container.edit_gsE .self,
-container.edit_gsF .self
+container.edt_gsC .self,
+container.edt_gsD .self,
+container.edt_gsE .self,
+container.edt_gsF .self
 {
   border-style: dashed; border-width: 3pt; border-radius: 0pt; border-color: #AAA;
 }
-container.edit_gsC .repeat_border,
-container.edit_gsD .repeat_border,
-container.edit_gsE .repeat_border,
-container.edit_gsF .repeat_border
+container.edt_gsC .repeat_border,
+container.edt_gsD .repeat_border,
+container.edt_gsE .repeat_border,
+container.edt_gsF .repeat_border
 {
   border-bottom-style: dashed; border-bottom-width: 3pt;
 }
 
-container.view_gsC .self,
-container.view_gsD .self,
-container.view_gsE .self,
-container.view_gsF .self
+container.vew_gsC .self,
+container.vew_gsD .self,
+container.vew_gsE .self,
+container.vew_gsF .self
 {
   border-style: none; border-width: 0pt; border-radius: 1pt; border-color: #CCC;
 }
-container.view_gsC .repeat_border,
-container.view_gsD .repeat_border,
-container.view_gsE .repeat_border,
-container.view_gsF .repeat_border
+container.vew_gsC .repeat_border,
+container.vew_gsD .repeat_border,
+container.vew_gsE .repeat_border,
+container.vew_gsF .repeat_border
 {
   border-bottom-style: none; border-bottom-width: 0pt;
 }
@@ -195,22 +195,13 @@ container.fill_gsC:normal .inner_border,
 container.fill_gsD:normal .inner_border,
 container.fill_gsE:normal .inner_border,
 container.fill_gsF:normal .inner_border,
-container.edit_gsC:normal .inner_border,
-container.edit_gsD:normal .inner_border,
-container.edit_gsE:normal .inner_border
-/*container.edit_gsF:normal .inner_border*/
+container.edt_gsC:normal .inner_border,
+container.edt_gsD:normal .inner_border,
+container.edt_gsE:normal .inner_border
+/*container.edt_gsF:normal .inner_border*/
 {
   box-shadow: 0pt 0pt 2pt rgba(0,0,0,0.18) inset;
 }
-
-/*
-container.minimal_container:hover .self {
-  border-color: #CCC;
-}
-container.minimal_container:focus .self {
-  background-color: #FFF;
-}
-*/
 
 
 
@@ -243,23 +234,23 @@ chart.trp .self
 {background-color: transparent;}
 
 chart.fill_gsC .self,
-chart.view_gsC .self
+chart.min_gsC .self
 {background-color: #CCC;}
 chart.fill_gsD .self,
-chart.view_gsD .self
+chart.min_gsD .self
 {background-color: #DDD;}
 chart.fill_gsE .self,
-chart.view_gsE .self
+chart.min_gsE .self
 {background-color: #EEE;}
 chart.fill_gsF .self,
-chart.view_gsF .self
+chart.min_gsF .self
 {background-color: #FFF;}
 
 chart.trp .self,
-chart.view_gsC .self,
-chart.view_gsD .self,
-chart.view_gsE .self,
-chart.view_gsF .self
+chart.min_gsC .self,
+chart.min_gsD .self,
+chart.min_gsE .self,
+chart.min_gsF .self
 {
   border-style: none; border-width: 0pt; border-radius: 1pt; border-color: #CCC;
 }
@@ -288,6 +279,9 @@ web_viewer:focus .self {
 
 
 
+web_viewer.def .self {}
+web_viewer.min .self {border-style: none; border-width: 0pt; border-radius: 1pt; border-color: #CCC;}
+/*
 web_viewer.fill_gsC .self,
 web_viewer.view_gsC .self
 {background-color: #CCC;}
@@ -308,7 +302,7 @@ web_viewer.view_gsF .self
 {
   border-style: none; border-width: 0pt; border-radius: 1pt; border-color: #CCC;
 }
-
+*/
 
 
 
@@ -493,12 +487,20 @@ tab_control.mat_h35 .self,tab_control.mat_h35_gsF .self
   /*background-image: none;background-color: rgba(0,0,0,0);*/
   font-style: normal;
   text-align: left;
-  
-  -fm-tab-spacing: 0;
+}
+tab_control.mat_h25_right .self,tab_control.mat_h25_gsF_right .self,
+tab_control.mat_h30_right .self,tab_control.mat_h30_gsF_right .self,
+tab_control.mat_h35_right .self,tab_control.mat_h35_gsF_right .self
+{
+  font-style: normal;
+  text-align: right;
 }
 tab_control.mat_h25:normal .self,
 tab_control.mat_h30:normal .self,
 tab_control.mat_h35:normal .self,
+tab_control.mat_h25_right:normal .self,
+tab_control.mat_h30_right:normal .self,
+tab_control.mat_h35_right:normal .self,
 button_bar_segment.mat_h25 .self,
 button_bar_segment.mat_h30 .self,
 button_bar_segment.mat_h35 .self
@@ -506,12 +508,16 @@ button_bar_segment.mat_h35 .self
 tab_control.mat_h25_gsF:normal .self,
 tab_control.mat_h30_gsF:normal .self,
 tab_control.mat_h35_gsF:normal .self,
+tab_control.mat_h25_gsF_right:normal .self,
+tab_control.mat_h30_gsF_right:normal .self,
+tab_control.mat_h35_gsF_right:normal .self,
 button_bar_segment.mat_h25_gsF .self,
 button_bar_segment.mat_h30_gsF .self,
 button_bar_segment.mat_h35_gsF .self
 {color: #FFF;}
 
 tab_control.mat_h25 .self, tab_control.mat_h25_gsF .self,
+tab_control.mat_h25_right .self, tab_control.mat_h25_gsF_right .self,
 button_bar_segment.mat_h25 .self, button_bar_segment.mat_h25_gsF .self
 {font-size: 12pt;}
 tab_control.mat_h30 .self, tab_control.mat_h30_gsF .self,
@@ -524,6 +530,9 @@ button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
 tab_control.mat_h25:hover .self,
 tab_control.mat_h30:hover .self,
 tab_control.mat_h35:hover .self,
+tab_control.mat_h25_right:hover .self,
+tab_control.mat_h30_right:hover .self,
+tab_control.mat_h35_right:hover .self,
 button_bar_segment.mat_h25:hover .self,
 button_bar_segment.mat_h30:hover .self,
 button_bar_segment.mat_h35:hover .self
@@ -536,6 +545,9 @@ button_bar_segment.mat_h35_gsF:hover .self
 tab_control.mat_h25:active .self,
 tab_control.mat_h30:active .self,
 tab_control.mat_h35:active .self,
+tab_control.mat_h25_right:active .self,
+tab_control.mat_h30_right:active .self,
+tab_control.mat_h35_right:active .self,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self
@@ -545,6 +557,9 @@ button_bar_segment.mat_h35:active .self
 tab_control.mat_h25_gsF:active .self,
 tab_control.mat_h30_gsF:active .self,
 tab_control.mat_h35_gsF:active .self,
+tab_control.mat_h25_gsF_right:active .self,
+tab_control.mat_h30_gsF_right:active .self,
+tab_control.mat_h35_gsF_right:active .self,
 button_bar_segment.mat_h25_gsF:active .self,
 button_bar_segment.mat_h30_gsF:active .self,
 button_bar_segment.mat_h35_gsF:active .self
@@ -558,7 +573,13 @@ tab_panel.mat_h30 .self, tab_panel.mat_h30_gsF .self,
 tab_panel.mat_h35 .self, tab_panel.mat_h35_gsF .self,
 tab_panel.mat_h25:active .self,tab_panel.mat_h25_gsF:active .self,
 tab_panel.mat_h30:active .self,tab_panel.mat_h30_gsF:active .self,
-tab_panel.mat_h35:active .self,tab_panel.mat_h35_gsF:active .self
+tab_panel.mat_h35:active .self,tab_panel.mat_h35_gsF:active .self,
+tab_panel.mat_h25_right .self, tab_panel.mat_h25_gsF_right .self,
+tab_panel.mat_h30_right .self, tab_panel.mat_h30_gsF_right .self,
+tab_panel.mat_h35_right .self, tab_panel.mat_h35_gsF_right .self,
+tab_panel.mat_h25_right:active .self,tab_panel.mat_h25_gsF_right:active .self,
+tab_panel.mat_h30_right:active .self,tab_panel.mat_h30_gsF_right:active .self,
+tab_panel.mat_h35_right:active .self,tab_panel.mat_h35_gsF_right:active .self
 {
   background-image: none; background-color: rgba(0,0,0,0);
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
@@ -573,7 +594,10 @@ tab_panel.tab_mat_gsF:activefocus .self {box-shadow: none;}
 
 tab_panel.mat_h25 .inner_border, tab_panel.mat_h25_gsF .inner_border,
 tab_panel.mat_h30 .inner_border, tab_panel.mat_h30_gsF .inner_border,
-tab_panel.mat_h35 .inner_border, tab_panel.mat_h35_gsF .inner_border
+tab_panel.mat_h35 .inner_border, tab_panel.mat_h35_gsF .inner_border,
+tab_panel.mat_h25_right .inner_border, tab_panel.mat_h25_gsF_right .inner_border,
+tab_panel.mat_h30_right .inner_border, tab_panel.mat_h30_gsF_right .inner_border,
+tab_panel.mat_h35_right .inner_border, tab_panel.mat_h35_gsF_right .inner_border
 {
   border-radius: 0pt;
 }
@@ -584,7 +608,13 @@ tab_panel.mat_h30 .tab,tab_panel.mat_h30_gsF .tab,
 tab_panel.mat_h35 .tab,tab_panel.mat_h35_gsF .tab,
 tab_panel.mat_h25:active .tab,tab_panel.mat_h25_gsF:active .tab,
 tab_panel.mat_h30:active .tab,tab_panel.mat_h30_gsF:active .tab,
-tab_panel.mat_h35:active .tab,tab_panel.mat_h35_gsF:active .tab
+tab_panel.mat_h35:active .tab,tab_panel.mat_h35_gsF:active .tab,
+tab_panel.mat_h25_right .tab,tab_panel.mat_h25_gsF_right .tab,
+tab_panel.mat_h30_right .tab,tab_panel.mat_h30_gsF_right .tab,
+tab_panel.mat_h35_right .tab,tab_panel.mat_h35_gsF_right .tab,
+tab_panel.mat_h25_right:active .tab,tab_panel.mat_h25_gsF_right:active .tab,
+tab_panel.mat_h30_right:active .tab,tab_panel.mat_h30_gsF_right:active .tab,
+tab_panel.mat_h35_right:active .tab,tab_panel.mat_h35_gsF_right:active .tab
 {
   background-image: none; background-color: rgba(0,0,0,0);
   border-bottom-style: solid;
@@ -595,6 +625,9 @@ tab_panel.mat_h35:active .tab,tab_panel.mat_h35_gsF:active .tab
 tab_panel.mat_h25:hover .tab, tab_panel.mat_h25_gsF:hover .tab,
 tab_panel.mat_h30:hover .tab, tab_panel.mat_h30_gsF:hover .tab,
 tab_panel.mat_h35:hover .tab, tab_panel.mat_h35_gsF:hover .tab,
+tab_panel.mat_h25_right:hover .tab, tab_panel.mat_h25_gsF_right:hover .tab,
+tab_panel.mat_h30_right:hover .tab, tab_panel.mat_h30_gsF_right:hover .tab,
+tab_panel.mat_h35_right:hover .tab, tab_panel.mat_h35_gsF_right:hover .tab,
 button_bar_segment.mat_h25:hover .self, button_bar_segment.mat_h25_gsF:hover .self,
 button_bar_segment.mat_h30:hover .self, button_bar_segment.mat_h30_gsF:hover .self,
 button_bar_segment.mat_h35:hover .self, button_bar_segment.mat_h35_gsF:hover .self
@@ -606,6 +639,9 @@ button_bar_segment.mat_h35:hover .self, button_bar_segment.mat_h35_gsF:hover .se
 tab_panel.mat_h25:active .tab,
 tab_panel.mat_h30:active .tab,
 tab_panel.mat_h35:active .tab,
+tab_panel.mat_h25_right:active .tab,
+tab_panel.mat_h30_right:active .tab,
+tab_panel.mat_h35_right:active .tab,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self
@@ -615,6 +651,9 @@ button_bar_segment.mat_h35:active .self
 tab_panel.mat_h25_gsF:active .tab,
 tab_panel.mat_h30_gsF:active .tab,
 tab_panel.mat_h35_gsF:active .tab,
+tab_panel.mat_h25_gsF_right:active .tab,
+tab_panel.mat_h30_gsF_right:active .tab,
+tab_panel.mat_h35_gsF_right:active .tab,
 button_bar_segment.mat_h25_gsF:active .self,
 button_bar_segment.mat_h30_gsF:active .self,
 button_bar_segment.mat_h35_gsF:active .self
@@ -626,11 +665,14 @@ button_bar_segment.mat_h35_gsF:active .self
 tab_panel.tab_mat:focus .tab {box-shadow: none;}
 */
 
-tab_panel.mat_h25 .tab_inner_border, tab_panel.mat_h25_gsF .tab_inner_border
+tab_panel.mat_h25 .tab_inner_border, tab_panel.mat_h25_gsF .tab_inner_border,
+tab_panel.mat_h25_right .tab_inner_border, tab_panel.mat_h25_gsF_right .tab_inner_border
 {padding: 2pt 3pt 0pt 3pt;}
-tab_panel.mat_h30 .tab_inner_border, tab_panel.mat_h30_gsF .tab_inner_border
+tab_panel.mat_h30 .tab_inner_border, tab_panel.mat_h30_gsF .tab_inner_border,
+tab_panel.mat_h30_right .tab_inner_border, tab_panel.mat_h30_gsF_right .tab_inner_border
 {padding: 3pt 3pt 0pt 3pt;}
-tab_panel.mat_h35 .tab_inner_border, tab_panel.mat_h35_gsF .tab_inner_border
+tab_panel.mat_h35 .tab_inner_border, tab_panel.mat_h35_gsF .tab_inner_border,
+tab_panel.mat_h35_right .tab_inner_border, tab_panel.mat_h35_gsF_right .tab_inner_border
 {padding: 4pt 3pt 0pt 3pt;}
 
 
