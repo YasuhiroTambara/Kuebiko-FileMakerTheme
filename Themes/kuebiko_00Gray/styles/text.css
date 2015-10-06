@@ -49,7 +49,21 @@ text_box.left_ex2_p12 .self, text_box.right_ex2_p12 .self, text_box.center_ex2_p
 text_box.left_ex4_p12 .self, text_box.right_ex4_p12 .self, text_box.center_ex4_p12 .self,
 text_box.left_ex8_p12 .self, text_box.right_ex8_p12 .self, text_box.center_ex8_p12 .self,
 text_box.left_gs3_p12 .self, text_box.right_gs3_p12 .self, text_box.center_gs3_p12 .self,
-text_box.left_gsF_p12 .self, text_box.right_gsF_p12 .self, text_box.center_gsF_p12 .self
+text_box.left_gsF_p12 .self, text_box.right_gsF_p12 .self, text_box.center_gsF_p12 .self,
+
+text_box.left_fill2_p12 .self, text_box.right_fill2_p12 .self, text_box.center_fill2_p12 .self,
+text_box.left_fill3_p12 .self, text_box.right_fill3_p12 .self, text_box.center_fill3_p12 .self,
+text_box.left_fill4_p12 .self, text_box.right_fill4_p12 .self, text_box.center_fill4_p12 .self,
+text_box.left_fill5_p12 .self, text_box.right_fill5_p12 .self, text_box.center_fill5_p12 .self,
+text_box.left_fill6_p12 .self, text_box.right_fill6_p12 .self, text_box.center_fill6_p12 .self,
+text_box.left_fill7_p12 .self, text_box.right_fill7_p12 .self, text_box.center_fill7_p12 .self,
+
+text_box.left_upp_fill2_p12 .self, text_box.right_upp_fill2_p12 .self, text_box.center_upp_fill2_p12 .self,
+text_box.left_upp_fill3_p12 .self, text_box.right_upp_fill3_p12 .self, text_box.center_upp_fill3_p12 .self,
+text_box.left_upp_fill4_p12 .self, text_box.right_upp_fill4_p12 .self, text_box.center_upp_fill4_p12 .self,
+text_box.left_upp_fill5_p12 .self, text_box.right_upp_fill5_p12 .self, text_box.center_upp_fill5_p12 .self,
+text_box.left_upp_fill6_p12 .self, text_box.right_upp_fill6_p12 .self, text_box.center_upp_fill6_p12 .self,
+text_box.left_upp_fill7_p12 .self, text_box.right_upp_fill7_p12 .self, text_box.center_upp_fill7_p12 .self
 {font-size: 12pt;}
 
 text_box.left_upp_gs3_p13 .self, text_box.right_upp_gs3_p13 .self, text_box.center_upp_gs3_p13 .self,
@@ -127,6 +141,7 @@ text_box.center_ex2_p17 .self, text_box.center_ex4_p17 .self, text_box.center_ex
 text_box.center_gs3_p17 .self, text_box.center_gsF_p17 .self,
 text_box.center_ex2_p18 .self, text_box.center_ex4_p18 .self, text_box.center_ex8_p18 .self,
 text_box.center_gs3_p18 .self, text_box.center_gsF_p18 .self,
+
 text_box.center_upp_gs3_p09 .self, text_box.center_upp_gsF_p09 .self,
 text_box.center_upp_gs3_p10 .self, text_box.center_upp_gsF_p10 .self,
 text_box.center_upp_gs3_p11 .self, text_box.center_upp_gsF_p11 .self,
@@ -136,7 +151,21 @@ text_box.center_upp_gs3_p14 .self, text_box.center_upp_gsF_p14 .self,
 text_box.center_upp_gs3_p15 .self, text_box.center_upp_gsF_p15 .self,
 text_box.center_upp_gs3_p16 .self, text_box.center_upp_gsF_p16 .self,
 text_box.center_upp_gs3_p17 .self, text_box.center_upp_gsF_p17 .self,
-text_box.center_upp_gs3_p18 .self, text_box.center_upp_gsF_p18 .self
+text_box.center_upp_gs3_p18 .self, text_box.center_upp_gsF_p18 .self,
+
+text_box.center_fill2_p12 .self,
+text_box.center_fill3_p12 .self,
+text_box.center_fill4_p12 .self,
+text_box.center_fill5_p12 .self,
+text_box.center_fill6_p12 .self,
+text_box.center_fill7_p12 .self,
+
+text_box.center_upp_fill2_p12 .self,
+text_box.center_upp_fill3_p12 .self,
+text_box.center_upp_fill4_p12 .self,
+text_box.center_upp_fill5_p12 .self,
+text_box.center_upp_fill6_p12 .self,
+text_box.center_upp_fill7_p12 .self
 {text-align: center;}
 
 text_box.right_ex2_p09 .self, text_box.right_ex4_p09 .self, text_box.right_ex8_p09 .self,
@@ -159,6 +188,7 @@ text_box.right_ex2_p17 .self, text_box.right_ex4_p17 .self, text_box.right_ex8_p
 text_box.right_gs3_p17 .self, text_box.right_gsF_p17 .self,
 text_box.right_ex2_p18 .self, text_box.right_ex4_p18 .self, text_box.right_ex8_p18 .self,
 text_box.right_gs3_p18 .self, text_box.right_gsF_p18 .self,
+
 text_box.right_upp_gs3_p09 .self, text_box.right_upp_gsF_p09 .self,
 text_box.right_upp_gs3_p10 .self, text_box.right_upp_gsF_p10 .self,
 text_box.right_upp_gs3_p11 .self, text_box.right_upp_gsF_p11 .self,
@@ -168,7 +198,21 @@ text_box.right_upp_gs3_p14 .self, text_box.right_upp_gsF_p14 .self,
 text_box.right_upp_gs3_p15 .self, text_box.right_upp_gsF_p15 .self,
 text_box.right_upp_gs3_p16 .self, text_box.right_upp_gsF_p16 .self,
 text_box.right_upp_gs3_p17 .self, text_box.right_upp_gsF_p17 .self,
-text_box.right_upp_gs3_p18 .self, text_box.right_upp_gsF_p18 .self
+text_box.right_upp_gs3_p18 .self, text_box.right_upp_gsF_p18 .self,
+
+text_box.right_fill2_p12 .self,
+text_box.right_fill3_p12 .self,
+text_box.right_fill4_p12 .self,
+text_box.right_fill5_p12 .self,
+text_box.right_fill6_p12 .self,
+text_box.right_fill7_p12 .self,
+
+text_box.right_upp_fill2_p12 .self,
+text_box.right_upp_fill3_p12 .self,
+text_box.right_upp_fill4_p12 .self,
+text_box.right_upp_fill5_p12 .self,
+text_box.right_upp_fill6_p12 .self,
+text_box.right_upp_fill7_p12 .self
 {text-align: right;}
 
 
@@ -183,6 +227,7 @@ text_box.left_upp_gs3_p15 .self, text_box.right_upp_gs3_p15 .self, text_box.cent
 text_box.left_upp_gs3_p16 .self, text_box.right_upp_gs3_p16 .self, text_box.center_upp_gs3_p16 .self,
 text_box.left_upp_gs3_p17 .self, text_box.right_upp_gs3_p17 .self, text_box.center_upp_gs3_p17 .self,
 text_box.left_upp_gs3_p18 .self, text_box.right_upp_gs3_p18 .self, text_box.center_upp_gs3_p18 .self,
+
 text_box.left_upp_gsF_p09 .self, text_box.right_upp_gsF_p09 .self, text_box.center_upp_gsF_p09 .self,
 text_box.left_upp_gsF_p10 .self, text_box.right_upp_gsF_p10 .self, text_box.center_upp_gsF_p10 .self,
 text_box.left_upp_gsF_p11 .self, text_box.right_upp_gsF_p11 .self, text_box.center_upp_gsF_p11 .self,
@@ -192,9 +237,16 @@ text_box.left_upp_gsF_p14 .self, text_box.right_upp_gsF_p14 .self, text_box.cent
 text_box.left_upp_gsF_p15 .self, text_box.right_upp_gsF_p15 .self, text_box.center_upp_gsF_p15 .self,
 text_box.left_upp_gsF_p16 .self, text_box.right_upp_gsF_p16 .self, text_box.center_upp_gsF_p16 .self,
 text_box.left_upp_gsF_p17 .self, text_box.right_upp_gsF_p17 .self, text_box.center_upp_gsF_p17 .self,
-text_box.left_upp_gsF_p18 .self, text_box.right_upp_gsF_p18 .self, text_box.center_upp_gsF_p18 .self
+text_box.left_upp_gsF_p18 .self, text_box.right_upp_gsF_p18 .self, text_box.center_upp_gsF_p18 .self,
+
+text_box.left_upp_fill2_p12 .self, text_box.right_upp_fill2_p12 .self, text_box.center_upp_fill2_p12 .self,
+text_box.left_upp_fill3_p12 .self, text_box.right_upp_fill3_p12 .self, text_box.center_upp_fill3_p12 .self,
+text_box.left_upp_fill4_p12 .self, text_box.right_upp_fill4_p12 .self, text_box.center_upp_fill4_p12 .self,
+text_box.left_upp_fill5_p12 .self, text_box.right_upp_fill5_p12 .self, text_box.center_upp_fill5_p12 .self,
+text_box.left_upp_fill6_p12 .self, text_box.right_upp_fill6_p12 .self, text_box.center_upp_fill6_p12 .self,
+text_box.left_upp_fill7_p12 .self, text_box.right_upp_fill7_p12 .self, text_box.center_upp_fill7_p12 .self
 {
-  border-style: solid; border-width: 1pt;
+  border-style: none; border-width: 0pt;
   /* background-image: none; border-color: rgba(0,0,0,0); */
   line-height: 0.8line;
   -fm-text-vertical-align: top;
@@ -210,6 +262,7 @@ text_box.left_upp_gs3_p15 .inner_border, text_box.right_upp_gs3_p15 .inner_borde
 text_box.left_upp_gs3_p16 .inner_border, text_box.right_upp_gs3_p16 .inner_border, text_box.center_upp_gs3_p16 .inner_border,
 text_box.left_upp_gs3_p17 .inner_border, text_box.right_upp_gs3_p17 .inner_border, text_box.center_upp_gs3_p17 .inner_border,
 text_box.left_upp_gs3_p18 .inner_border, text_box.right_upp_gs3_p18 .inner_border, text_box.center_upp_gs3_p18 .inner_border,
+
 text_box.left_upp_gsF_p09 .inner_border, text_box.right_upp_gsF_p09 .inner_border, text_box.center_upp_gsF_p09 .inner_border,
 text_box.left_upp_gsF_p10 .inner_border, text_box.right_upp_gsF_p10 .inner_border, text_box.center_upp_gsF_p10 .inner_border,
 text_box.left_upp_gsF_p11 .inner_border, text_box.right_upp_gsF_p11 .inner_border, text_box.center_upp_gsF_p11 .inner_border,
@@ -219,10 +272,17 @@ text_box.left_upp_gsF_p14 .inner_border, text_box.right_upp_gsF_p14 .inner_borde
 text_box.left_upp_gsF_p15 .inner_border, text_box.right_upp_gsF_p15 .inner_border, text_box.center_upp_gsF_p15 .inner_border,
 text_box.left_upp_gsF_p16 .inner_border, text_box.right_upp_gsF_p16 .inner_border, text_box.center_upp_gsF_p16 .inner_border,
 text_box.left_upp_gsF_p17 .inner_border, text_box.right_upp_gsF_p17 .inner_border, text_box.center_upp_gsF_p17 .inner_border,
-text_box.left_upp_gsF_p18 .inner_border, text_box.right_upp_gsF_p18 .inner_border, text_box.center_upp_gsF_p18 .inner_border
+text_box.left_upp_gsF_p18 .inner_border, text_box.right_upp_gsF_p18 .inner_border, text_box.center_upp_gsF_p18 .inner_border,
+
+text_box.left_upp_fill2_p12 .inner_border, text_box.right_upp_fill2_p12 .inner_border, text_box.center_upp_fill2_p12 .inner_border,
+text_box.left_upp_fill3_p12 .inner_border, text_box.right_upp_fill3_p12 .inner_border, text_box.center_upp_fill3_p12 .inner_border,
+text_box.left_upp_fill4_p12 .inner_border, text_box.right_upp_fill4_p12 .inner_border, text_box.center_upp_fill4_p12 .inner_border,
+text_box.left_upp_fill5_p12 .inner_border, text_box.right_upp_fill5_p12 .inner_border, text_box.center_upp_fill5_p12 .inner_border,
+text_box.left_upp_fill6_p12 .inner_border, text_box.right_upp_fill6_p12 .inner_border, text_box.center_upp_fill6_p12 .inner_border,
+text_box.left_upp_fill7_p12 .inner_border, text_box.right_upp_fill7_p12 .inner_border, text_box.center_upp_fill7_p12 .inner_border
 {
-  margin-top: -0.1em; margin-bottom: -0.4em;
-  padding: 0pt 0.16em;
+  padding: 0pt 0.22em;/* 0.16em */
+  padding-top: 0.2em; padding-bottom: -0.4em;
 }
 
 text_box.left_upp_gs3_p09 .text, text_box.right_upp_gs3_p09 .text, text_box.center_upp_gs3_p09 .text,
@@ -235,6 +295,7 @@ text_box.left_upp_gs3_p15 .text, text_box.right_upp_gs3_p15 .text, text_box.cent
 text_box.left_upp_gs3_p16 .text, text_box.right_upp_gs3_p16 .text, text_box.center_upp_gs3_p16 .text,
 text_box.left_upp_gs3_p17 .text, text_box.right_upp_gs3_p17 .text, text_box.center_upp_gs3_p17 .text,
 text_box.left_upp_gs3_p18 .text, text_box.right_upp_gs3_p18 .text, text_box.center_upp_gs3_p18 .text,
+
 text_box.left_upp_gsF_p09 .text, text_box.right_upp_gsF_p09 .text, text_box.center_upp_gsF_p09 .text,
 text_box.left_upp_gsF_p10 .text, text_box.right_upp_gsF_p10 .text, text_box.center_upp_gsF_p10 .text,
 text_box.left_upp_gsF_p11 .text, text_box.right_upp_gsF_p11 .text, text_box.center_upp_gsF_p11 .text,
@@ -244,7 +305,14 @@ text_box.left_upp_gsF_p14 .text, text_box.right_upp_gsF_p14 .text, text_box.cent
 text_box.left_upp_gsF_p15 .text, text_box.right_upp_gsF_p15 .text, text_box.center_upp_gsF_p15 .text,
 text_box.left_upp_gsF_p16 .text, text_box.right_upp_gsF_p16 .text, text_box.center_upp_gsF_p16 .text,
 text_box.left_upp_gsF_p17 .text, text_box.right_upp_gsF_p17 .text, text_box.center_upp_gsF_p17 .text,
-text_box.left_upp_gsF_p18 .text, text_box.right_upp_gsF_p18 .text, text_box.center_upp_gsF_p18 .text
+text_box.left_upp_gsF_p18 .text, text_box.right_upp_gsF_p18 .text, text_box.center_upp_gsF_p18 .text,
+
+text_box.left_upp_fill2_p12 .text, text_box.right_upp_fill2_p12 .text, text_box.center_upp_fill2_p12 .text,
+text_box.left_upp_fill3_p12 .text, text_box.right_upp_fill3_p12 .text, text_box.center_upp_fill3_p12 .text,
+text_box.left_upp_fill4_p12 .text, text_box.right_upp_fill4_p12 .text, text_box.center_upp_fill4_p12 .text,
+text_box.left_upp_fill5_p12 .text, text_box.right_upp_fill5_p12 .text, text_box.center_upp_fill5_p12 .text,
+text_box.left_upp_fill6_p12 .text, text_box.right_upp_fill6_p12 .text, text_box.center_upp_fill6_p12 .text,
+text_box.left_upp_fill7_p12 .text, text_box.right_upp_fill7_p12 .text, text_box.center_upp_fill7_p12 .text
 {
   /*
   position: absolute;
@@ -270,6 +338,7 @@ text_box.left_gsF_p15 .self, text_box.right_gsF_p15 .self, text_box.center_gsF_p
 text_box.left_gsF_p16 .self, text_box.right_gsF_p16 .self, text_box.center_gsF_p16 .self,
 text_box.left_gsF_p17 .self, text_box.right_gsF_p17 .self, text_box.center_gsF_p17 .self,
 text_box.left_gsF_p18 .self, text_box.right_gsF_p18 .self, text_box.center_gsF_p18 .self,
+
 text_box.left_upp_gsF_p09 .self, text_box.right_upp_gsF_p09 .self, text_box.center_upp_gsF_p09 .self,
 text_box.left_upp_gsF_p10 .self, text_box.right_upp_gsF_p10 .self, text_box.center_upp_gsF_p10 .self,
 text_box.left_upp_gsF_p11 .self, text_box.right_upp_gsF_p11 .self, text_box.center_upp_gsF_p11 .self,
@@ -279,8 +348,33 @@ text_box.left_upp_gsF_p14 .self, text_box.right_upp_gsF_p14 .self, text_box.cent
 text_box.left_upp_gsF_p15 .self, text_box.right_upp_gsF_p15 .self, text_box.center_upp_gsF_p15 .self,
 text_box.left_upp_gsF_p16 .self, text_box.right_upp_gsF_p16 .self, text_box.center_upp_gsF_p16 .self,
 text_box.left_upp_gsF_p17 .self, text_box.right_upp_gsF_p17 .self, text_box.center_upp_gsF_p17 .self,
-text_box.left_upp_gsF_p18 .self, text_box.right_upp_gsF_p18 .self, text_box.center_upp_gsF_p18 .self
+text_box.left_upp_gsF_p18 .self, text_box.right_upp_gsF_p18 .self, text_box.center_upp_gsF_p18 .self,
+
+text_box.left_fill2_p12 .self, text_box.right_fill2_p12 .self, text_box.center_fill2_p12 .self,
+text_box.left_fill3_p12 .self, text_box.right_fill3_p12 .self, text_box.center_fill3_p12 .self,
+text_box.left_fill4_p12 .self, text_box.right_fill4_p12 .self, text_box.center_fill4_p12 .self,
+text_box.left_fill5_p12 .self, text_box.right_fill5_p12 .self, text_box.center_fill5_p12 .self,
+
+text_box.left_upp_fill2_p12 .self, text_box.right_upp_fill2_p12 .self, text_box.center_upp_fill2_p12 .self,
+text_box.left_upp_fill3_p12 .self, text_box.right_upp_fill3_p12 .self, text_box.center_upp_fill3_p12 .self,
+text_box.left_upp_fill4_p12 .self, text_box.right_upp_fill4_p12 .self, text_box.center_upp_fill4_p12 .self,
+text_box.left_upp_fill5_p12 .self, text_box.right_upp_fill5_p12 .self, text_box.center_upp_fill5_p12 .self
 {color: #FFF;}
+
+/*
+text_box.left_ex2_p12_fill .self, text_box.right_ex2_p12_fill .self, text_box.center_ex2_p12_fill .self
+{
+  background-color: #CE9B00;
+  color: #B18501;@ex2
+}
+text_box.left_gsF_p12_fill .self, text_box.right_gsF_p12_fill .self, text_box.center_gsF_p12_fill .self
+{
+  background-color: #B18501;
+}
+*/
+
+
+
 
 
 
@@ -342,9 +436,16 @@ text_box.left_ex2_p18 .self, text_box.right_ex2_p18 .self, text_box.center_ex2_p
 text_box.left_ex4_p18 .self, text_box.right_ex4_p18 .self, text_box.center_ex4_p18 .self,
 text_box.left_ex8_p18 .self, text_box.right_ex8_p18 .self, text_box.center_ex8_p18 .self,
 text_box.left_gs3_p18 .self, text_box.right_gs3_p18 .self, text_box.center_gs3_p18 .self,
-text_box.left_gsF_p18 .self, text_box.right_gsF_p18 .self, text_box.center_gsF_p18 .self
+text_box.left_gsF_p18 .self, text_box.right_gsF_p18 .self, text_box.center_gsF_p18 .self,
+
+text_box.left_fill2_p12 .self, text_box.right_fill2_p12 .self, text_box.center_fill2_p12 .self,
+text_box.left_fill3_p12 .self, text_box.right_fill3_p12 .self, text_box.center_fill3_p12 .self,
+text_box.left_fill4_p12 .self, text_box.right_fill4_p12 .self, text_box.center_fill4_p12 .self,
+text_box.left_fill5_p12 .self, text_box.right_fill5_p12 .self, text_box.center_fill5_p12 .self,
+text_box.left_fill6_p12 .self, text_box.right_fill6_p12 .self, text_box.center_fill6_p12 .self,
+text_box.left_fill7_p12 .self, text_box.right_fill7_p12 .self, text_box.center_fill7_p12 .self
 {
-  border-style: solid; border-width: 1pt;
+  border-style: none; border-width: 0pt;
   /* background-image: none; border-color: rgba(0,0,0,0); */
   line-height: 0.8line;
   -fm-text-vertical-align: center;
@@ -408,11 +509,22 @@ text_box.left_ex2_p18 .inner_border, text_box.right_ex2_p18 .inner_border, text_
 text_box.left_ex4_p18 .inner_border, text_box.right_ex4_p18 .inner_border, text_box.center_ex4_p18 .inner_border,
 text_box.left_ex8_p18 .inner_border, text_box.right_ex8_p18 .inner_border, text_box.center_ex8_p18 .inner_border,
 text_box.left_gs3_p18 .inner_border, text_box.right_gs3_p18 .inner_border, text_box.center_gs3_p18 .inner_border,
-text_box.left_gsF_p18 .inner_border, text_box.right_gsF_p18 .inner_border, text_box.center_gsF_p18 .inner_border
+text_box.left_gsF_p18 .inner_border, text_box.right_gsF_p18 .inner_border, text_box.center_gsF_p18 .inner_border,
+
+text_box.left_fill2_p12 .inner_border, text_box.right_fill2_p12 .inner_border, text_box.center_fill2_p12 .inner_border,
+text_box.left_fill3_p12 .inner_border, text_box.right_fill3_p12 .inner_border, text_box.center_fill3_p12 .inner_border,
+text_box.left_fill4_p12 .inner_border, text_box.right_fill4_p12 .inner_border, text_box.center_fill4_p12 .inner_border,
+text_box.left_fill5_p12 .inner_border, text_box.right_fill5_p12 .inner_border, text_box.center_fill5_p12 .inner_border,
+text_box.left_fill6_p12 .inner_border, text_box.right_fill6_p12 .inner_border, text_box.center_fill6_p12 .inner_border,
+text_box.left_fill7_p12 .inner_border, text_box.right_fill7_p12 .inner_border, text_box.center_fill7_p12 .inner_border
 {
-  margin-top: -28%; margin-bottom: -40%;
-  /*padding-right: 4.8pt; padding-left: 4.8pt;*/
-  padding: 0pt 0.16em;
+  /*
+  margin-top: -24%; margin-bottom: -36%;
+  margin-top: -24%; margin-bottom: -38%;
+  */
+  margin-top: -39%; margin-bottom: -37%;/* [memo]for allowing to shrink height. */
+  padding: 0pt 0.22em;
+  padding-top: 0em; padding-bottom: -0.4em;
 }
 
 text_box.left_ex2_p09 .text, text_box.right_ex2_p09 .text, text_box.center_ex2_p09 .text,
@@ -473,7 +585,14 @@ text_box.left_ex2_p18 .text, text_box.right_ex2_p18 .text, text_box.center_ex2_p
 text_box.left_ex4_p18 .text, text_box.right_ex4_p18 .text, text_box.center_ex4_p18 .text,
 text_box.left_ex8_p18 .text, text_box.right_ex8_p18 .text, text_box.center_ex8_p18 .text,
 text_box.left_gs3_p18 .text, text_box.right_gs3_p18 .text, text_box.center_gs3_p18 .text,
-text_box.left_gsF_p18 .text, text_box.right_gsF_p18 .text, text_box.center_gsF_p18 .text
+text_box.left_gsF_p18 .text, text_box.right_gsF_p18 .text, text_box.center_gsF_p18 .text,
+
+text_box.left_fill2_p12 .text, text_box.right_fill2_p12 .text, text_box.center_fill2_p12 .text,
+text_box.left_fill3_p12 .text, text_box.right_fill3_p12 .text, text_box.center_fill3_p12 .text,
+text_box.left_fill4_p12 .text, text_box.right_fill4_p12 .text, text_box.center_fill4_p12 .text,
+text_box.left_fill5_p12 .text, text_box.right_fill5_p12 .text, text_box.center_fill5_p12 .text,
+text_box.left_fill6_p12 .text, text_box.right_fill6_p12 .text, text_box.center_fill6_p12 .text,
+text_box.left_fill7_p12 .text, text_box.right_fill7_p12 .text, text_box.center_fill7_p12 .text
 {
   /*
   position: absolute;

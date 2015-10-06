@@ -43,8 +43,10 @@ rectangle.stroke_ex9 .self {
 }
 body.fill_ex1 .self,
 button.fill_ex1 .self,
+button.fill_ex1_right .self,
 button.circle_ex1 .self,
 button_bar_segment.fill_ex1 .self,
+button_bar_segment.fill_ex1_right .self,
 button_bar_segment.circle_ex1 .self,
 popover.fill_ex1 .self,
 rectangle.fill_ex1 .self,
@@ -53,8 +55,10 @@ oval.fill_ex1 .self {
 }
 body.fill_ex2 .self,
 button.fill_ex2 .self,
+button.fill_ex2_right .self,
 button.circle_ex2 .self,
 button_bar_segment.fill_ex2 .self,
+button_bar_segment.fill_ex2_right .self,
 button_bar_segment.circle_ex2 .self,
 popover.fill_ex2 .self,
 rectangle.fill_ex2 .self,
@@ -63,8 +67,10 @@ oval.fill_ex2 .self {
 }
 body.fill_ex3 .self,
 button.fill_ex3 .self,
+button.fill_ex3_right .self,
 button.circle_ex3 .self,
 button_bar_segment.fill_ex3 .self,
+button_bar_segment.fill_ex3_right .self,
 button_bar_segment.circle_ex3 .self,
 popover.fill_ex3 .self,
 rectangle.fill_ex3 .self,
@@ -73,8 +79,10 @@ oval.fill_ex3 .self {
 }
 body.fill_ex4 .self,
 button.fill_ex4 .self,
+button.fill_ex4_right .self,
 button.circle_ex4 .self,
 button_bar_segment.fill_ex4 .self,
+button_bar_segment.fill_ex4_right .self,
 button_bar_segment.circle_ex4 .self,
 popover.fill_ex4 .self,
 rectangle.fill_ex4 .self,
@@ -83,8 +91,10 @@ oval.fill_ex4 .self {
 }
 body.fill_ex5 .self,
 button.fill_ex5 .self,
+button.fill_ex5_right .self,
 button.circle_ex5 .self,
 button_bar_segment.fill_ex5 .self,
+button_bar_segment.fill_ex5_right .self,
 button_bar_segment.circle_ex5 .self,
 popover.fill_ex5 .self,
 rectangle.fill_ex5 .self,
@@ -93,8 +103,10 @@ oval.fill_ex5 .self {
 }
 body.fill_ex6 .self,
 button.fill_ex6 .self,
+button.fill_ex6_right .self,
 button.circle_ex6 .self,
 button_bar_segment.fill_ex6 .self,
+button_bar_segment.fill_ex6_right .self,
 button_bar_segment.circle_ex6 .self,
 popover.fill_ex6 .self,
 rectangle.fill_ex6 .self,
@@ -103,8 +115,10 @@ oval.fill_ex6 .self {
 }
 body.fill_ex7 .self,
 button.fill_ex7 .self,
+button.fill_ex7_right .self,
 button.circle_ex7 .self,
 button_bar_segment.fill_ex7 .self,
+button_bar_segment.fill_ex7_right .self,
 button_bar_segment.circle_ex7 .self,
 popover.fill_ex7 .self,
 rectangle.fill_ex7 .self,
@@ -113,8 +127,10 @@ oval.fill_ex7 .self {
 }
 body.fill_ex8 .self,
 button.fill_ex8 .self,
+button.fill_ex8_right .self,
 button.circle_ex8 .self,
 button_bar_segment.fill_ex8 .self,
+button_bar_segment.fill_ex8_right .self,
 button_bar_segment.circle_ex8 .self,
 popover.fill_ex8 .self,
 rectangle.fill_ex8 .self,
@@ -123,8 +139,10 @@ oval.fill_ex8 .self {
 }
 body.fill_ex9 .self,
 button.fill_ex9 .self,
+button.fill_ex9_right .self,
 button.circle_ex9 .self,
 button_bar_segment.fill_ex9 .self,
+button_bar_segment.fill_ex9_right .self,
 button_bar_segment.circle_ex9 .self,
 popover.fill_ex9 .self,
 rectangle.fill_ex9 .self,
@@ -168,10 +186,14 @@ text_box.center_ex2_p17 .self,
 text_box.left_ex2_p18 .self,
 text_box.right_ex2_p18 .self,
 text_box.center_ex2_p18 .self,
+button.min_ex2 .self,
+button.mro_ex2 .self,
 button_bar_segment.min_ex2:normal .self,
 button_bar_segment.mro_ex2:normal .self {
   color: #a0117c;
 }
+button.min_ex2 .icon,
+button.mro_ex2 .icon,
 button_bar_segment.min_ex2:normal .icon,
 button_bar_segment.mro_ex2:normal .icon {
   -fm-icon-color: #a0117c;
@@ -206,10 +228,14 @@ text_box.center_ex4_p17 .self,
 text_box.left_ex4_p18 .self,
 text_box.right_ex4_p18 .self,
 text_box.center_ex4_p18 .self,
+button.min_ex4 .self,
+button.mro_ex4 .self,
 button_bar_segment.min_ex4:normal .self,
 button_bar_segment.mro_ex4:normal .self {
   color: #d63daf;
 }
+button.min_ex4 .icon,
+button.mro_ex4 .icon,
 button_bar_segment.min_ex4:normal .icon,
 button_bar_segment.mro_ex4:normal .icon {
   -fm-icon-color: #d63daf;
@@ -244,13 +270,67 @@ text_box.center_ex8_p17 .self,
 text_box.left_ex8_p18 .self,
 text_box.right_ex8_p18 .self,
 text_box.center_ex8_p18 .self,
+button.min_ex8 .self,
+button.mro_ex8 .self,
 button_bar_segment.min_ex8:normal .self,
 button_bar_segment.mro_ex8:normal .self {
   color: #fac5ed;
 }
+button.min_ex8 .icon,
+button.mro_ex8 .icon,
 button_bar_segment.min_ex8:normal .icon,
 button_bar_segment.mro_ex8:normal .icon {
   -fm-icon-color: #fac5ed;
+}
+text_box.left_fill7_p12 .self,
+text_box.right_fill7_p12 .self,
+text_box.center_fill7_p12 .self,
+text_box.left_upp_fill7_p12 .self,
+text_box.right_upp_fill7_p12 .self,
+text_box.center_upp_fill7_p12 .self {
+  background-color: #f5a7e2;
+  color: #a0117c;
+}
+text_box.left_fill6_p12 .self,
+text_box.right_fill6_p12 .self,
+text_box.center_fill6_p12 .self,
+text_box.left_upp_fill6_p12 .self,
+text_box.right_upp_fill6_p12 .self,
+text_box.center_upp_fill6_p12 .self {
+  background-color: #f286d8;
+  color: #a0117c;
+}
+text_box.left_fill5_p12 .self,
+text_box.right_fill5_p12 .self,
+text_box.center_fill5_p12 .self,
+text_box.left_upp_fill5_p12 .self,
+text_box.right_upp_fill5_p12 .self,
+text_box.center_upp_fill5_p12 .self {
+  background-color: #e660c6;
+}
+text_box.left_fill4_p12 .self,
+text_box.right_fill4_p12 .self,
+text_box.center_fill4_p12 .self,
+text_box.left_upp_fill4_p12 .self,
+text_box.right_upp_fill4_p12 .self,
+text_box.center_upp_fill4_p12 .self {
+  background-color: #d63daf;
+}
+text_box.left_fill3_p12 .self,
+text_box.right_fill3_p12 .self,
+text_box.center_fill3_p12 .self,
+text_box.left_upp_fill3_p12 .self,
+text_box.right_upp_fill3_p12 .self,
+text_box.center_upp_fill3_p12 .self {
+  background-color: #be2397;
+}
+text_box.left_fill2_p12 .self,
+text_box.right_fill2_p12 .self,
+text_box.center_fill2_p12 .self,
+text_box.left_upp_fill2_p12 .self,
+text_box.right_upp_fill2_p12 .self,
+text_box.center_upp_fill2_p12 .self {
+  background-color: #a0117c;
 }
 /** BLOCK ------------------------*/
 body:checked .self {

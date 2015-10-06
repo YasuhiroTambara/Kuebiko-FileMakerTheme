@@ -9,9 +9,11 @@ Array(_
   "03Khaki",_
   "03Amber",_
   "04Yellow",_
+  "05Moss",_
   "05Lime",_
-  "06Sage",_
+  "06Olive",_
   "06Bamboo",_
+  "07Sage",_
   "07Meadow",_
   "08Green",_
   "09Shamrock",_
@@ -22,6 +24,7 @@ Array(_
   "13Ocean",_
   "14Azure",_
   "15Blue",_
+  "16Sapphire",_
   "16Indigo",_
   "17Violet",_
   "18Mouve",_
@@ -29,7 +32,8 @@ Array(_
   "20Magenta",_
   "21Orchid",_
   "22Ruby",_
-  "23Pink",_
+  "23Peony",_
+  "23Coral",_
   "24Tomato"_
 )
 

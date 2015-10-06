@@ -958,7 +958,7 @@ button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   border-bottom-style: solid;
   border-bottom-width: 4pt;
-  border-color: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0);/* 0.1 */
   background-image: none; background-color: rgba(0,0,0,0);
 }
 button_bar_segment.mat_h25:active .self,
