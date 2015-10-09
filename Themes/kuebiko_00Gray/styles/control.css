@@ -1,6 +1,6 @@
 /** CONTROL ==================================================================*/
 
-/** PORTAL ROW -----------------------*/
+/** (PORTAL ROW) -----------------------*/
 portal:normal .row {background-color: #FCFCFC;}
 portal:normal .row_alt {background-color: #F6F6F6;}
 portal:normal .row_active {background-color: rgba(230,239,249,1);}
@@ -28,7 +28,7 @@ portal.trp:normal .row_active
 
 
 
-/* PORTAL ----------------------------*/
+/** (PORTAL) ----------------------------*/
 portal .self {
   border-style: solid; border-width: 1pt; border-radius: 0pt; border-color: #CCC;
   -fm-use-portal-current-row-style: true;
@@ -63,7 +63,7 @@ portal:normal .scrollbar_track {
 
 
 
-/** CONTAINER ------------------------*/
+/** (CONTAINER) ------------------------*/
 container:placeholder .self
 {font-size: 16pt;}
 
@@ -208,7 +208,7 @@ container.edt_gsE:normal .inner_border
 
 
 
-/** CHART ----------------------------*/
+/** (CHART) ----------------------------*/
 chart:normal .self {
   border-style: solid; border-width: 1pt; border-radius: 0pt; border-color: #CCC;
   background-color: #FFF;
@@ -257,7 +257,7 @@ chart.min_gsF .self
 
 
 
-/** WEBVIEWER ------------------------*/
+/** (WEBVIEWER) ------------------------*/
 web_viewer .self {
   border-style: solid; border-width: 1pt; border-radius: 0pt; border-color: #CCC;
   background-color: #FFF;
@@ -281,28 +281,7 @@ web_viewer:focus .self {
 
 web_viewer.def .self {}
 web_viewer.min .self {border-style: none; border-width: 0pt; border-radius: 1pt; border-color: #CCC;}
-/*
-web_viewer.fill_gsC .self,
-web_viewer.view_gsC .self
-{background-color: #CCC;}
-web_viewer.fill_gsD .self,
-web_viewer.view_gsD .self
-{background-color: #DDD;}
-web_viewer.fill_gsE .self,
-web_viewer.view_gsE .self
-{background-color: #EEE;}
-web_viewer.fill_gsF .self,
-web_viewer.view_gsF .self
-{background-color: #FFF;}
 
-web_viewer.view_gsC .self,
-web_viewer.view_gsD .self,
-web_viewer.view_gsE .self,
-web_viewer.view_gsF .self
-{
-  border-style: none; border-width: 0pt; border-radius: 1pt; border-color: #CCC;
-}
-*/
 
 
 
@@ -323,21 +302,15 @@ scrollbar:disabled .self {
   border-left-width: 1pt;
   border-left-style: solid;
   border-left-color: #CCC;
-  border-top-right-radius: 3pt;
-  border-bottom-right-radius: 3pt;
+  border-top-right-radius: 1pt;
+  border-bottom-right-radius: 1pt;
   background-color: #F6F6F6;
 }
 
 
 
-scrollbar:normal   .scrollbar_top_button,
-scrollbar:normal   .scrollbar_bottom_button,
-scrollbar:disabled .scrollbar_top_button,
-scrollbar:disabled .scrollbar_bottom_button,
-scrollbar:hover    .scrollbar_top_button,
-scrollbar:hover    .scrollbar_bottom_button,
-scrollbar:pressed  .scrollbar_top_button,
-scrollbar:pressed  .scrollbar_bottom_button
+scrollbar .scrollbar_top_button,
+scrollbar .scrollbar_bottom_button,
 {
   border-left-width: 1pt;
   border-left-style: solid;
@@ -346,32 +319,14 @@ scrollbar:pressed  .scrollbar_bottom_button
   height: 17pt;
 }
 
-scrollbar:normal   .scrollbar_top_button,
-scrollbar:disabled .scrollbar_top_button,
-scrollbar:hover    .scrollbar_top_button,
-scrollbar:pressed  .scrollbar_top_button
-{
+scrollbar .scrollbar_top_button {
   -fm-icon: up-arrow;
   -fm-icon-color: #666;
 }
-
-scrollbar:normal   .scrollbar_bottom_button,
-scrollbar:disabled .scrollbar_bottom_button,
-scrollbar:hover    .scrollbar_bottom_button,
-scrollbar:pressed  .scrollbar_bottom_button
-{
+scrollbar .scrollbar_bottom_button {
   -fm-icon: down-arrow;
   -fm-icon-color: #666;
 }
-
-scrollbar .scrollbar_top_button {
-}
-scrollbar .scrollbar_bottom_button {
-}
-
-scrollbar:normal .scrollbar_top_button,
-scrollbar:normal .scrollbar_bottom_button
-{}
 
 scrollbar:hover .scrollbar_top_button,
 scrollbar:hover .scrollbar_bottom_button
@@ -384,25 +339,34 @@ scrollbar:pressed .scrollbar_bottom_button
 {
   background-color: #AAA;
   -fm-icon-color: #FFF;
+  /*border-left-color: #EEE;*/
 }
-scrollbar:pressed .scrollbar_top_button {
-}
-scrollbar:pressed .scrollbar_bottom_button {
-}
+
 
 
 scrollbar:normal .scrollbar_thumb {
-  border-width: 1pt;
-  border-style: solid;
-  border-color: #CCC;
-
+  border-style: none;
+  border-right-style: solid; border-right-width: 0.7pt; border-right-color: #EEE;
+  border-left-style: solid; border-left-width: 1pt; border-left-color: #CCC;
+  /*border-left-color: #CCC;*/
   background-color: #CCC;
-  width: 100%;
+  /*background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(rgba(52, 160, 244, 1)), to(rgba(18, 104, 166, 1)));*/
+  background-image: -webkit-gradient(linear, 0% 0%,100% 0%, from(#FFF), to(#CCC));
+  background-image: -webkit-gradient(linear,0% 0%,100% 0%, color-stop(0, #EEE), color-stop(0.09, #EEE), color-stop(0.1, #CCC), color-stop(1, #CCC));
+
 }
+/* ! not work
+scrollbar:hover .scrollbar_thumb,
+scrollbar:pressed .scrollbar_thumb
+{
+  border-color: #AAA;
+  background-color: #AAA;
+}
+*/
 
 
 
-/** TAB CONTROL -----------------------*/
+/** (TAB CONTROL) -----------------------*/
 
 tab_control:normal .self {
   font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
@@ -413,10 +377,19 @@ tab_control:normal .self {
 
   -fm-tab-spacing: 0;
 }
-tab_control.def_h25:normal .self {font-size: 12pt;}
-tab_control.def_h30:normal .self {font-size: 14pt;}
-tab_control.def_h35:normal .self {font-size: 16pt;}
+tab_control.def_h25 .self {font-size: 12pt;}
+tab_control.def_h30 .self {font-size: 14pt;}
+tab_control.def_h35 .self {font-size: 16pt;}
 tab_control:active .self {color: #333;}
+
+/* 
+tab_control:hover .self {color: @ex1;}
+tab_control.def_h25:hover .self,
+tab_control.def_h30:hover .self,
+tab_control.def_h35:hover .self,
+{color: #333;}
+*/
+
 
 tab_panel .self {
   border-style: solid; border-width: 1pt; border-radius: 0pt; border-color: #BBB;
@@ -479,7 +452,7 @@ tab_panel:activefocus .text
 
 
 
-/*MAT(Control>SELF)*/
+/** (Control>SELF) .mat */
 tab_control.mat_h25 .self,tab_control.mat_h25_gsF .self,
 tab_control.mat_h30 .self,tab_control.mat_h30_gsF .self,
 tab_control.mat_h35 .self,tab_control.mat_h35_gsF .self
@@ -537,6 +510,12 @@ button_bar_segment.mat_h25:hover .self,
 button_bar_segment.mat_h30:hover .self,
 button_bar_segment.mat_h35:hover .self
 {color: #333;}
+tab_control.mat_h25_gsF:hover .self,
+tab_control.mat_h30_gsF:hover .self,
+tab_control.mat_h35_gsF:hover .self,
+tab_control.mat_h25_gsF_right:hover .self,
+tab_control.mat_h30_gsF_right:hover .self,
+tab_control.mat_h35_gsF_right:hover .self,
 button_bar_segment.mat_h25_gsF:hover .self,
 button_bar_segment.mat_h30_gsF:hover .self,
 button_bar_segment.mat_h35_gsF:hover .self
@@ -567,7 +546,7 @@ button_bar_segment.mat_h35_gsF:active .self
   color: #FFF;
 }
 
-/*MAT(Panel>SELF)*/
+/** (Panel>SELF) .mat */
 tab_panel.mat_h25 .self, tab_panel.mat_h25_gsF .self,
 tab_panel.mat_h30 .self, tab_panel.mat_h30_gsF .self,
 tab_panel.mat_h35 .self, tab_panel.mat_h35_gsF .self,
@@ -602,7 +581,7 @@ tab_panel.mat_h35_right .inner_border, tab_panel.mat_h35_gsF_right .inner_border
   border-radius: 0pt;
 }
 
-/*MAT(Panel>TAB)*/
+/** (Panel>TAB) .mat */
 tab_panel.mat_h25 .tab,tab_panel.mat_h25_gsF .tab,
 tab_panel.mat_h30 .tab,tab_panel.mat_h30_gsF .tab,
 tab_panel.mat_h35 .tab,tab_panel.mat_h35_gsF .tab,
@@ -677,12 +656,12 @@ tab_panel.mat_h35_right .tab_inner_border, tab_panel.mat_h35_gsF_right .tab_inne
 
 
 
-/*EAR(Control>SELF)*/
+/** (Control>SELF) .ear */
 tab_control.ear_h25 .self, tab_control.ear_h25_lite .self,
 tab_control.ear_h30 .self, tab_control.ear_h30_lite .self,
 tab_control.ear_h35 .self, tab_control.ear_h35_lite .self
 {
-  background-image: none;background-color: rgba(0,0,0,0);
+  background-image: none; background-color: rgba(0,0,0,0);
   border-style: none;border-width: 0pt;border-color: rgba(0,0,0,0);border-radius: 0pt;
   font-style: normal;
   font-size: 12pt;
@@ -693,10 +672,12 @@ tab_control.ear_h25:normal .self, tab_control.ear_h25_lite:normal .self,
 tab_control.ear_h30:normal .self, tab_control.ear_h30_lite:normal .self,
 tab_control.ear_h35:normal .self, tab_control.ear_h35_lite:normal .self
 {color: #666;}/* theme_colors */
+/*
 tab_control.ear_h25:hover .self, tab_control.ear_h25_lite:hover .self,
 tab_control.ear_h30:hover .self, tab_control.ear_h30_lite:hover .self,
 tab_control.ear_h35:hover .self, tab_control.ear_h35_lite:hover .self
-{color: #FFF;}
+{color: #333;}
+*/
 tab_control.ear_h25:active .self, tab_control.ear_h25_lite:active .self,
 tab_control.ear_h30:active .self, tab_control.ear_h30_lite:active .self,
 tab_control.ear_h35:active .self, tab_control.ear_h35_lite:active .self
@@ -705,7 +686,7 @@ tab_control.ear_h25 .self, tab_control.ear_h25_lite .self {font-size: 12pt;}
 tab_control.ear_h30 .self, tab_control.ear_h30_lite .self {font-size: 14pt;}
 tab_control.ear_h35 .self, tab_control.ear_h35_lite .self {font-size: 16pt;}
 
-/*EAR(Panel>SELF)*/
+/** (Panel>SELF) .ear */
 tab_panel.ear_h25 .self, tab_panel.ear_h25_lite .self,
 tab_panel.ear_h30 .self, tab_panel.ear_h30_lite .self,
 tab_panel.ear_h35 .self, tab_panel.ear_h35_lite .self
@@ -726,7 +707,7 @@ tab_panel:normal .inner_border {
 }
 */
 
-/*EAR(Panel>TAB)*/
+/** (Panel>TAB) .ear */
 tab_panel.ear_h25 .tab,
 tab_panel.ear_h30 .tab,
 tab_panel.ear_h35 .tab
@@ -758,32 +739,31 @@ tab_panel.tab_ear:active .tab {}
 tab_panel.tab_ear:checked .tab {}
 */
 
-tab_panel.ear_h25 .tab_inner_border,tab_panel.ear_h25_lite .tab_inner_border {
+tab_panel.ear_h25 .tab_inner_border, tab_panel.ear_h25_lite .tab_inner_border {
   margin: -7pt 0pt;
   padding: 7pt 3pt 3pt 3pt;
 }
-tab_panel.ear_h30 .tab_inner_border,tab_panel.ear_h30_lite .tab_inner_border {
+tab_panel.ear_h30 .tab_inner_border, tab_panel.ear_h30_lite .tab_inner_border {
   margin: -7pt 0pt;
   padding: 7pt 3pt 4pt 3pt;
 }
-tab_panel.ear_h35 .tab_inner_border,tab_panel.ear_h35_lite .tab_inner_border {
+tab_panel.ear_h35 .tab_inner_border, tab_panel.ear_h35_lite .tab_inner_border {
   margin: -7pt 0pt;
   padding: 9pt 3pt 3pt 3pt;/*7pt 3pt 0pt 3pt;*/
 }
 
-/*EAR(Panel>TEXT)*/
+/** (Panel>TEXT) .ear */
 /*
 tab_panel.tab_ear:hover .text {color:#FFF;}
 tab_panel.tab_ear:active .text {color: #FFF;}
 */
 
-/*EAR(Panel>PANEL)*/
+/** (Panel>PANEL) .ear */
 tab_panel.ear_h25 .panel,tab_panel.ear_h25_lite .panel,
 tab_panel.ear_h30 .panel,tab_panel.ear_h30_lite .panel,
 tab_panel.ear_h35 .panel,tab_panel.ear_h35_lite .panel
 {
-  background-image: none;
-  background-color: #F6F6F6;
+  background-image: none; background-color: #F6F6F6;
   border-style: solid;
   border-width: 6pt 1pt 1pt 1pt;
   /*border-color: #A9D;*/
@@ -791,10 +771,19 @@ tab_panel.ear_h35 .panel,tab_panel.ear_h35_lite .panel
 
 
 
-/** SLIDE CONTROL -----------------------*/
+/* <<<<kagutsuchi !!!!!omoshiroi!!!!!!>>>>
+tab_panel .inner_border{
+  background-color: A3F;
+  border-style: solid;
+  border-width: 3pt;
+  border-color: #ee3;
+  border-radius: 12pt;
+  
+  box-shadow: inset 0pt 0pt 2pt 0pt rgba(20%,20%,20%,0.4);
+}
+/** (SLIDE CONTROL) -----------------------*/
 dot_control:normal .self {
   box-sizing: border-box;/* ! */
-  /*border-image-source: none;*/
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   background-image: none; background-color: rgba(0,0,0,0);
   box-shadow: none;
@@ -950,7 +939,7 @@ dot_control.min_h35:normal .contents
 
 
 /**  ---------------------------------*/
-/** (btn)mat_hNN */
+/** (btn) .mat_hNN */
 button_bar_segment.mat_h25 .self, button_bar_segment.mat_h25_gsF .self,
 button_bar_segment.mat_h30 .self, button_bar_segment.mat_h30_gsF .self,
 button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
@@ -969,13 +958,17 @@ button_bar_segment.mat_h25_gsF:active .self,
 button_bar_segment.mat_h30_gsF:active .self,
 button_bar_segment.mat_h35_gsF:active .self
 {border-color: #FFF;}
+button_bar_segment.mat_h25_gsF:active .icon,
+button_bar_segment.mat_h30_gsF:active .icon,
+button_bar_segment.mat_h35_gsF:active .icon
+{-fm-icon-color: #FFF;}
 
 button_bar_segment.mat_h25:pressed .self, button_bar_segment.mat_h25_gsF:pressed .self,
 button_bar_segment.mat_h30:pressed .self, button_bar_segment.mat_h30_gsF:pressed .self,
 button_bar_segment.mat_h35:pressed .self, button_bar_segment.mat_h35_gsF:pressed .self
 {
-  border-color: rgba(212,212,212,0.48);
-  background-image: none; background-color: rgba(212,212,212,0.48);
+  border-color: rgba(0,0,0,0.12);
+  background-image: none; background-color: rgba(0,0,0,0.12);
 }
 
 
@@ -991,6 +984,22 @@ button_bar_segment.mat_h30:pressed .inner_border, button_bar_segment.mat_h30_gsF
 button_bar_segment.mat_h35:pressed .inner_border, button_bar_segment.mat_h35_gsF:pressed .inner_border
 {
   box-shadow: none;
+}
+
+button_bar_segment.mat_h25:pressed .icon,
+button_bar_segment.mat_h30:pressed .icon,
+button_bar_segment.mat_h35:pressed .icon
+{
+  -fm-icon-color: #333;
+}
+button_bar_segment.mat_h25_gsF .icon,
+button_bar_segment.mat_h30_gsF .icon,
+button_bar_segment.mat_h35_gsF .icon,
+button_bar_segment.mat_h25_gsF:hover .icon,
+button_bar_segment.mat_h30_gsF:hover .icon,
+button_bar_segment.mat_h35_gsF:hover .icon
+{
+  -fm-icon-color: #FFF;
 }
 
 

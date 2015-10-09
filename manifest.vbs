@@ -27,6 +27,7 @@ Array(_
   "16Sapphire",_
   "16Indigo",_
   "17Violet",_
+  "18Wisteria",_
   "18Mouve",_
   "19Purple",_
   "20Magenta",_

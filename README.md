@@ -21,7 +21,7 @@ Kuebiko - FileMaker Theme
 
 
 
-また、キーカラーバリエーション（24色）を含むので、テーマの適応後でもカラーを一括で変更できます。
+また、色相のバリエーション（34色）を含み、それらに互換性があるので、テーマのカラートーンの適応後の一括変更が容易です。
 
 
 ※ ウェブダイレクト公開ではスタイルが崩れます。悪しからず。
@@ -77,11 +77,11 @@ FileMaker Pro ver12 以降が必要です。
 
 
 
-## Usage (Install)
+## Install & Usage
 FileMaker Path 直下の Themes フォルダ内に、同梱の Themes フォルダ内のすべてのフォルダを入れてください。
-FileMaker Path 例) C:\Program Files\FileMaker\FileMaker Pro 14 Advanced\Themes
+例) C:\Program Files\FileMaker\FileMaker Pro 14 Advanced\Themes
 
-FileMaker Pro を再起動してください。
+FileMaker Pro を再起動する必要はなく、すぐにレイアウトに当テーマを割り当てることができるようになります。
 
 
 ## Author

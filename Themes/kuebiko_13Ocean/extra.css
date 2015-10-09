@@ -41,6 +41,9 @@ line.stroke_ex9 .self,
 rectangle.stroke_ex9 .self {
   border-color: #d8f1fc;
 }
+body:checked .self {
+  background-color: #afdff3;
+}
 body.fill_ex1 .self,
 button.fill_ex1 .self,
 button.fill_ex1_right .self,
@@ -332,18 +335,26 @@ text_box.right_upp_fill2_p12 .self,
 text_box.center_upp_fill2_p12 .self {
   background-color: #0773a0;
 }
-/** BLOCK ------------------------*/
-body:checked .self {
-  background-color: #afdff3;
-}
-button.row:hover .self {
-  background-color: #d8f1fc;
-}
-button.row:pressed .inner_border {
-  box-shadow: inset 0pt 0pt 3pt 0pt rgba(0, 89, 128, 0.18);
-}
 button_bar_segment.ear:active .self {
   background-color: #1b9cd3;
+}
+button.row:hover .self,
+button.row_left:hover .self {
+  background-color: #d8f1fc;
+}
+button.row:pressed .inner_border,
+button.row_left:pressed .inner_border {
+  box-shadow: inset 0pt 0pt 3pt 0pt rgba(0, 89, 128, 0.18);
+}
+button.row .icon,
+button.row_left .icon {
+  -fm-icon-color: #1b9cd3;
+}
+button.row:hover .icon,
+button.row_left:hover .icon,
+button.row:pressed .icon,
+button.row_left:pressed .icon {
+  -fm-icon-color: #0773a0;
 }
 button.cap:normal .self,
 text_box.cap:normal .self {
@@ -394,6 +405,9 @@ dot_control.min_h35:active .dot {
   background-color: #1b9cd3;
 }
 /** TABCONTROL -----------------------*/
+tab_control:hover .self {
+  color: #005980;
+}
 tab_panel:normal .tab,
 tab_panel.def_h25:normal .tab,
 tab_panel.def_h30:normal .tab,
@@ -410,6 +424,14 @@ button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self {
   color: #1b9cd3;
+}
+button_bar_segment.mat_h25 .icon,
+button_bar_segment.mat_h30 .icon,
+button_bar_segment.mat_h35 .icon,
+button_bar_segment.mat_h25:active .icon,
+button_bar_segment.mat_h30:active .icon,
+button_bar_segment.mat_h35:active .icon {
+  -fm-icon-color: #1b9cd3;
 }
 tab_panel.mat_h25:active .tab,
 tab_panel.mat_h30:active .tab,

@@ -8,6 +8,7 @@
 	<cssfile>../kuebiko_00Gray/styles/figure.css</cssfile>
 	<cssfile>../kuebiko_00Gray/styles/text.css</cssfile>
 	<cssfile>../kuebiko_00Gray/styles/field.css</cssfile>
+	<cssfile>../kuebiko_00Gray/styles/button.css</cssfile>
 	<cssfile>../kuebiko_00Gray/styles/control.css</cssfile>
 	<cssfile>extra.css</cssfile>
 	<platform>Desktop</platform>
@@ -161,6 +162,7 @@
 			<min_p16h29>min_p16h29</min_p16h29>
 			<cap>cap</cap>
 			<row>row</row>
+			<row_left>row_left</row_left>
 			<btn_check>btn_check</btn_check>
 			<btn_radio>btn_radio</btn_radio>
 			<selectknob>selectknob</selectknob>
@@ -247,6 +249,36 @@
 			<stroke_gsD>stroke_gsD</stroke_gsD>
 			<stroke_gsE>stroke_gsE</stroke_gsE>
 			<stroke_gsF>stroke_gsF</stroke_gsF>
+			<dash_ex1>dash_ex1</dash_ex1>
+			<dash_ex2>dash_ex2</dash_ex2>
+			<dash_ex3>dash_ex3</dash_ex3>
+			<dash_ex4>dash_ex4</dash_ex4>
+			<dash_ex5>dash_ex5</dash_ex5>
+			<dash_ex6>dash_ex6</dash_ex6>
+			<dash_ex7>dash_ex7</dash_ex7>
+			<dash_ex8>dash_ex8</dash_ex8>
+			<dash_ex9>dash_ex9</dash_ex9>
+			<dash_ex1_l2>dash_ex1_l2</dash_ex1_l2>
+			<dash_ex2_l2>dash_ex2_l2</dash_ex2_l2>
+			<dash_ex3_l2>dash_ex3_l2</dash_ex3_l2>
+			<dash_ex4_l2>dash_ex4_l2</dash_ex4_l2>
+			<dash_ex5_l2>dash_ex5_l2</dash_ex5_l2>
+			<dash_ex6_l2>dash_ex6_l2</dash_ex6_l2>
+			<dash_ex7_l2>dash_ex7_l2</dash_ex7_l2>
+			<dash_ex8_l2>dash_ex8_l2</dash_ex8_l2>
+			<dash_ex9_l2>dash_ex9_l2</dash_ex9_l2>
+			<dash_gs3>dash_gs3</dash_gs3>
+			<dash_gs6>dash_gs6</dash_gs6>
+			<dash_gs9>dash_gs9</dash_gs9>
+			<dash_gsA>dash_gsA</dash_gsA>
+			<dash_gsC>dash_gsC</dash_gsC>
+			<dash_gsF>dash_gsF</dash_gsF>
+			<dash_gs3_l2>dash_gs3_l2</dash_gs3_l2>
+			<dash_gs6_l2>dash_gs6_l2</dash_gs6_l2>
+			<dash_gs9_l2>dash_gs9_l2</dash_gs9_l2>
+			<dash_gsA_l2>dash_gsA_l2</dash_gsA_l2>
+			<dash_gsC_l2>dash_gsC_l2</dash_gsC_l2>
+			<dash_gsF_l2>dash_gsF_l2</dash_gsF_l2>
 			<edt_gsC>edt_gsC</edt_gsC>
 			<edt_gsD>edt_gsD</edt_gsD>
 			<edt_gsE>edt_gsE</edt_gsE>

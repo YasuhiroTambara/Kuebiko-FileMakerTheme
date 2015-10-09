@@ -41,6 +41,9 @@ line.stroke_ex9 .self,
 rectangle.stroke_ex9 .self {
   border-color: #f1e9fa;
 }
+body:checked .self {
+  background-color: #e3d6f1;
+}
 body.fill_ex1 .self,
 button.fill_ex1 .self,
 button.fill_ex1_right .self,
@@ -332,18 +335,26 @@ text_box.right_upp_fill2_p12 .self,
 text_box.center_upp_fill2_p12 .self {
   background-color: #7231b3;
 }
-/** BLOCK ------------------------*/
-body:checked .self {
-  background-color: #e3d6f1;
-}
-button.row:hover .self {
-  background-color: #f1e9fa;
-}
-button.row:pressed .inner_border {
-  box-shadow: inset 0pt 0pt 3pt 0pt rgba(95, 36, 153, 0.18);
-}
 button_bar_segment.ear:active .self {
   background-color: #9d6dcd;
+}
+button.row:hover .self,
+button.row_left:hover .self {
+  background-color: #f1e9fa;
+}
+button.row:pressed .inner_border,
+button.row_left:pressed .inner_border {
+  box-shadow: inset 0pt 0pt 3pt 0pt rgba(95, 36, 153, 0.18);
+}
+button.row .icon,
+button.row_left .icon {
+  -fm-icon-color: #9d6dcd;
+}
+button.row:hover .icon,
+button.row_left:hover .icon,
+button.row:pressed .icon,
+button.row_left:pressed .icon {
+  -fm-icon-color: #7231b3;
 }
 button.cap:normal .self,
 text_box.cap:normal .self {
@@ -394,6 +405,9 @@ dot_control.min_h35:active .dot {
   background-color: #9d6dcd;
 }
 /** TABCONTROL -----------------------*/
+tab_control:hover .self {
+  color: #5f2499;
+}
 tab_panel:normal .tab,
 tab_panel.def_h25:normal .tab,
 tab_panel.def_h30:normal .tab,

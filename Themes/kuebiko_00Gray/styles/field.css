@@ -12,7 +12,9 @@ container:placeholder .self
 
 
 
-field .repeat_border {border-bottom-style: solid; border-bottom-width: 1pt;}
+field .repeat_border {
+  border-bottom-style: solid; border-bottom-width: 1pt; border-bottom-color: #CCC;
+}
 field .self {
   border-style: solid; border-width: 1pt; border-radius: 1pt; border-color: #CCC;
   background-color: #FFF;
@@ -58,7 +60,7 @@ field:focus .self {
 }
 
 field .baseline {
-  border-bottom-width: 1pt;
+  border-bottom-style: none; border-bottom-width: 0pt; border-bottom-color: rgba(0,0,0,0);
 }
 
 field:droptarget .inner_border {
@@ -67,7 +69,7 @@ field:droptarget .inner_border {
 
 
 
-/** FIELD(VIEW) ----------------------------------------------------------*/
+/** (FIELD) .vew ----------------------------------------------------------*/
 edit_box.vew_p10h14:normal .self,
 edit_box.vew_p10h19:normal .self,
 edit_box.vew_p11h14:normal .self,
@@ -86,7 +88,21 @@ edit_box.vew_p16h29:normal .self
 
 
 
-/** FIELD(MINI) ----------------------------------------------------------*/
+/** (FIELD) .min ----------------------------------------------------------*/
+edit_box.min_p10h14:normal .repeat_border,
+edit_box.min_p10h19:normal .repeat_border,
+edit_box.min_p11h14:normal .repeat_border,
+edit_box.min_p11h19:normal .repeat_border,
+edit_box.min_p12h19:normal .repeat_border,
+edit_box.min_p12h24:normal .repeat_border,
+edit_box.min_p13h24:normal .repeat_border,
+edit_box.min_p14h24:normal .repeat_border,
+edit_box.min_p14h29:normal .repeat_border,
+edit_box.min_p16h24:normal .repeat_border,
+edit_box.min_p16h29:normal .repeat_border
+{
+  border-bottom-color: rgba(0,0,0,0);
+}
 edit_box.min_p10h14:normal .self,
 edit_box.min_p10h19:normal .self,
 edit_box.min_p11h14:normal .self,
@@ -105,7 +121,24 @@ edit_box.min_p16h29:normal .self
 
 
 
-/** FIELD(EDIT) ----------------------------------------------------------*/
+/** (FIELD) .edt ----------------------------------------------------------*/
+edit_box.edt_p10h14:normal .repeat_border,
+edit_box.edt_p10h19:normal .repeat_border,
+edit_box.edt_p11h14:normal .repeat_border,
+edit_box.edt_p11h19:normal .repeat_border,
+edit_box.edt_p12h19:normal .repeat_border,
+edit_box.edt_p12h24:normal .repeat_border,
+edit_box.edt_p13h24:normal .repeat_border,
+edit_box.edt_p14h24:normal .repeat_border,
+edit_box.edt_p14h29:normal .repeat_border,
+edit_box.edt_p16h24:normal .repeat_border,
+edit_box.edt_p16h29:normal .repeat_border,
+calendar:normal  .repeat_border,
+drop_down:normal .repeat_border,
+pop_up:normal    .repeat_border
+{
+  border-bottom-color: #BBB;
+}
 edit_box.edt_p10h14:normal .self,
 edit_box.edt_p10h19:normal .self,
 edit_box.edt_p11h14:normal .self,
@@ -201,7 +234,7 @@ pop_up:focus    .self
 
 
 
-/** FIELD(ALL) ----------------------------------------------------------*/
+/** (FIELD) ALL ----------------------------------------------------------*/
 /** FONT SIZE */
  edit_box.vew_p10h14 .self,  edit_box.vew_p10h19 .self,
  edit_box.min_p10h14 .self,  edit_box.min_p10h19 .self,
@@ -452,7 +485,7 @@ text_area:normal .scrollbar_track {
 
 
 
-/** CHECKBOX|RADIO ----------------------------------------------------------*/
+/** (CHECKBOX|RADIO) ----------------------------------------------------------*/
 checkbox_set:normal .self,
 radio_set:normal .self,
 checkbox_set:hover .self,
