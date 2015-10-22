@@ -5,6 +5,11 @@ rectangle.stroke_ex1 .self {
 }
 line.stroke_ex2 .self,
 rectangle.stroke_ex2 .self,
+rectangle.bracket_ex2 .self,
+line.dash_ex2 .self,
+rectangle.dash_ex2 .self,
+line.dash_ex2_l2 .self,
+rectangle.dash_ex2_l2 .self,
 rectangle.stroke0001_rad_ex2 .self,
 rounded.stroke0001_rad_ex2 .self {
   border-color: #7a8a39;
@@ -15,6 +20,11 @@ rectangle.stroke_ex3 .self {
 }
 line.stroke_ex4 .self,
 rectangle.stroke_ex4 .self,
+rectangle.bracket_ex4 .self,
+line.dash_ex4 .self,
+rectangle.dash_ex4 .self,
+line.dash_ex4_l2 .self,
+rectangle.dash_ex4_l2 .self,
 rectangle.stroke0001_rad_ex4 .self,
 rounded.stroke0001_rad_ex4 .self {
   border-color: #a5b856;
@@ -24,7 +34,12 @@ rectangle.stroke_ex5 .self {
   border-color: #b9cc6c;
 }
 line.stroke_ex6 .self,
-rectangle.stroke_ex6 .self {
+rectangle.stroke_ex6 .self,
+rectangle.bracket_ex6 .self,
+line.dash_ex6 .self,
+rectangle.dash_ex6 .self,
+line.dash_ex6_l2 .self,
+rectangle.dash_ex6_l2 .self {
   border-color: #c8d984;
 }
 line.stroke_ex7 .self,
@@ -33,6 +48,11 @@ rectangle.stroke_ex7 .self {
 }
 line.stroke_ex8 .self,
 rectangle.stroke_ex8 .self,
+rectangle.bracket_ex8 .self,
+line.dash_ex8 .self,
+rectangle.dash_ex8 .self,
+line.dash_ex8_l2 .self,
+rectangle.dash_ex8_l2 .self,
 rectangle.stroke0001_rad_ex8 .self,
 rounded.stroke0001_rad_ex8 .self {
   border-color: #e2edbc;
@@ -45,11 +65,16 @@ body:checked .self {
   background-color: #e2edbc;
 }
 body.fill_ex1 .self,
+body.list_ex1 .self,
 button.fill_ex1 .self,
-button.fill_ex1_right .self,
+button.fill_ex1_rad0110 .self,
+button.fill_ex1_hrz .self,
+button.fill_ex1_rad0110_hrz .self,
 button.circle_ex1 .self,
 button_bar_segment.fill_ex1 .self,
-button_bar_segment.fill_ex1_right .self,
+button_bar_segment.fill_ex1_rad0110 .self,
+button_bar_segment.fill_ex1_hrz .self,
+button_bar_segment.fill_ex1_rad0110_hrz .self,
 button_bar_segment.circle_ex1 .self,
 popover.fill_ex1 .self,
 rectangle.fill_ex1 .self,
@@ -57,11 +82,24 @@ oval.fill_ex1 .self {
   background-color: #667430;
 }
 body.fill_ex2 .self,
+body.list_ex2 .self,
 button.fill_ex2 .self,
-button.fill_ex2_right .self,
+button.fill_ex2_rad0110 .self,
+button.fill_ex2_rad0010 .self,
+button.fill_ex2_rad0000 .self,
+button.fill_ex2_hrz .self,
+button.fill_ex2_rad0110_hrz .self,
+button.fill_ex2_rad0010_hrz .self,
+button.fill_ex2_rad0000_hrz .self,
 button.circle_ex2 .self,
 button_bar_segment.fill_ex2 .self,
-button_bar_segment.fill_ex2_right .self,
+button_bar_segment.fill_ex2_rad0110 .self,
+button_bar_segment.fill_ex2_rad0010 .self,
+button_bar_segment.fill_ex2_rad0000 .self,
+button_bar_segment.fill_ex2_hrz .self,
+button_bar_segment.fill_ex2_rad0110_hrz .self,
+button_bar_segment.fill_ex2_rad0010_hrz .self,
+button_bar_segment.fill_ex2_rad0000_hrz .self,
 button_bar_segment.circle_ex2 .self,
 popover.fill_ex2 .self,
 rectangle.fill_ex2 .self,
@@ -69,11 +107,16 @@ oval.fill_ex2 .self {
   background-color: #7a8a39;
 }
 body.fill_ex3 .self,
+body.list_ex3 .self,
 button.fill_ex3 .self,
-button.fill_ex3_right .self,
+button.fill_ex3_rad0110 .self,
+button.fill_ex3_hrz .self,
+button.fill_ex3_rad0110_hrz .self,
 button.circle_ex3 .self,
 button_bar_segment.fill_ex3 .self,
-button_bar_segment.fill_ex3_right .self,
+button_bar_segment.fill_ex3_rad0110 .self,
+button_bar_segment.fill_ex3_hrz .self,
+button_bar_segment.fill_ex3_rad0110_hrz .self,
 button_bar_segment.circle_ex3 .self,
 popover.fill_ex3 .self,
 rectangle.fill_ex3 .self,
@@ -81,11 +124,24 @@ oval.fill_ex3 .self {
   background-color: #8d9f44;
 }
 body.fill_ex4 .self,
+body.list_ex4 .self,
 button.fill_ex4 .self,
-button.fill_ex4_right .self,
+button.fill_ex4_rad0110 .self,
+button.fill_ex4_rad0010 .self,
+button.fill_ex4_rad0000 .self,
+button.fill_ex4_hrz .self,
+button.fill_ex4_rad0110_hrz .self,
+button.fill_ex4_rad0010_hrz .self,
+button.fill_ex4_rad0000_hrz .self,
 button.circle_ex4 .self,
 button_bar_segment.fill_ex4 .self,
-button_bar_segment.fill_ex4_right .self,
+button_bar_segment.fill_ex4_rad0110 .self,
+button_bar_segment.fill_ex4_rad0010 .self,
+button_bar_segment.fill_ex4_rad0000 .self,
+button_bar_segment.fill_ex4_hrz .self,
+button_bar_segment.fill_ex4_rad0110_hrz .self,
+button_bar_segment.fill_ex4_rad0010_hrz .self,
+button_bar_segment.fill_ex4_rad0000_hrz .self,
 button_bar_segment.circle_ex4 .self,
 popover.fill_ex4 .self,
 rectangle.fill_ex4 .self,
@@ -93,11 +149,16 @@ oval.fill_ex4 .self {
   background-color: #a5b856;
 }
 body.fill_ex5 .self,
+body.list_ex5 .self,
 button.fill_ex5 .self,
-button.fill_ex5_right .self,
+button.fill_ex5_rad0110 .self,
+button.fill_ex5_hrz .self,
+button.fill_ex5_rad0110_hrz .self,
 button.circle_ex5 .self,
 button_bar_segment.fill_ex5 .self,
-button_bar_segment.fill_ex5_right .self,
+button_bar_segment.fill_ex5_rad0110 .self,
+button_bar_segment.fill_ex5_hrz .self,
+button_bar_segment.fill_ex5_rad0110_hrz .self,
 button_bar_segment.circle_ex5 .self,
 popover.fill_ex5 .self,
 rectangle.fill_ex5 .self,
@@ -105,11 +166,24 @@ oval.fill_ex5 .self {
   background-color: #b9cc6c;
 }
 body.fill_ex6 .self,
+body.list_ex6 .self,
 button.fill_ex6 .self,
-button.fill_ex6_right .self,
+button.fill_ex6_rad0110 .self,
+button.fill_ex6_rad0010 .self,
+button.fill_ex6_rad0000 .self,
+button.fill_ex6_hrz .self,
+button.fill_ex6_rad0110_hrz .self,
+button.fill_ex6_rad0010_hrz .self,
+button.fill_ex6_rad0000_hrz .self,
 button.circle_ex6 .self,
 button_bar_segment.fill_ex6 .self,
-button_bar_segment.fill_ex6_right .self,
+button_bar_segment.fill_ex6_rad0110 .self,
+button_bar_segment.fill_ex6_rad0010 .self,
+button_bar_segment.fill_ex6_rad0000 .self,
+button_bar_segment.fill_ex6_hrz .self,
+button_bar_segment.fill_ex6_rad0110_hrz .self,
+button_bar_segment.fill_ex6_rad0010_hrz .self,
+button_bar_segment.fill_ex6_rad0000_hrz .self,
 button_bar_segment.circle_ex6 .self,
 popover.fill_ex6 .self,
 rectangle.fill_ex6 .self,
@@ -117,11 +191,16 @@ oval.fill_ex6 .self {
   background-color: #c8d984;
 }
 body.fill_ex7 .self,
+body.list_ex7 .self,
 button.fill_ex7 .self,
-button.fill_ex7_right .self,
+button.fill_ex7_rad0110 .self,
+button.fill_ex7_hrz .self,
+button.fill_ex7_rad0110_hrz .self,
 button.circle_ex7 .self,
 button_bar_segment.fill_ex7 .self,
-button_bar_segment.fill_ex7_right .self,
+button_bar_segment.fill_ex7_rad0110 .self,
+button_bar_segment.fill_ex7_hrz .self,
+button_bar_segment.fill_ex7_rad0110_hrz .self,
 button_bar_segment.circle_ex7 .self,
 popover.fill_ex7 .self,
 rectangle.fill_ex7 .self,
@@ -129,11 +208,16 @@ oval.fill_ex7 .self {
   background-color: #d6e79c;
 }
 body.fill_ex8 .self,
+body.list_ex8 .self,
 button.fill_ex8 .self,
-button.fill_ex8_right .self,
+button.fill_ex8_rad0110 .self,
+button.fill_ex8_hrz .self,
+button.fill_ex8_rad0110_hrz .self,
 button.circle_ex8 .self,
 button_bar_segment.fill_ex8 .self,
-button_bar_segment.fill_ex8_right .self,
+button_bar_segment.fill_ex8_rad0110 .self,
+button_bar_segment.fill_ex8_hrz .self,
+button_bar_segment.fill_ex8_rad0110_hrz .self,
 button_bar_segment.circle_ex8 .self,
 popover.fill_ex8 .self,
 rectangle.fill_ex8 .self,
@@ -141,11 +225,16 @@ oval.fill_ex8 .self {
   background-color: #e2edbc;
 }
 body.fill_ex9 .self,
+body.list_ex9 .self,
 button.fill_ex9 .self,
-button.fill_ex9_right .self,
+button.fill_ex9_rad0110 .self,
+button.fill_ex9_hrz .self,
+button.fill_ex9_rad0110_hrz .self,
 button.circle_ex9 .self,
 button_bar_segment.fill_ex9 .self,
-button_bar_segment.fill_ex9_right .self,
+button_bar_segment.fill_ex9_rad0110 .self,
+button_bar_segment.fill_ex9_hrz .self,
+button_bar_segment.fill_ex9_rad0110_hrz .self,
 button_bar_segment.circle_ex9 .self,
 popover.fill_ex9 .self,
 rectangle.fill_ex9 .self,
@@ -153,11 +242,13 @@ oval.fill_ex9 .self {
   background-color: #eef3da;
 }
 button.fill_acc .self,
+button.fill_acc_hrz .self,
 button.circle_acc .self,
 button_bar_segment.fill_acc .self,
+button_bar_segment.fill_acc_hrz .self,
 button_bar_segment.circle_acc .self,
 popover.fill_acc .self {
-  background-color: #5287e0;
+  background-color: #8f72d6;
 }
 text_box.left_ex2_p09 .self,
 text_box.right_ex2_p09 .self,
@@ -190,15 +281,23 @@ text_box.left_ex2_p18 .self,
 text_box.right_ex2_p18 .self,
 text_box.center_ex2_p18 .self,
 button.min_ex2 .self,
+button.min_ex2_hrz .self,
 button.mro_ex2 .self,
+button.mro_ex2_hrz .self,
 button_bar_segment.min_ex2:normal .self,
-button_bar_segment.mro_ex2:normal .self {
+button_bar_segment.min_ex2_hrz:normal .self,
+button_bar_segment.mro_ex2:normal .self,
+button_bar_segment.mro_ex2_hrz:normal .self {
   color: #7a8a39;
 }
 button.min_ex2 .icon,
+button.min_ex2_hrz .icon,
 button.mro_ex2 .icon,
+button.mro_ex2_hrz .icon,
 button_bar_segment.min_ex2:normal .icon,
-button_bar_segment.mro_ex2:normal .icon {
+button_bar_segment.min_ex2_hrz:normal .icon,
+button_bar_segment.mro_ex2:normal .icon,
+button_bar_segment.mro_ex2_hrz:normal .icon {
   -fm-icon-color: #7a8a39;
 }
 text_box.left_ex4_p09 .self,
@@ -232,15 +331,23 @@ text_box.left_ex4_p18 .self,
 text_box.right_ex4_p18 .self,
 text_box.center_ex4_p18 .self,
 button.min_ex4 .self,
+button.min_ex4_hrz .self,
 button.mro_ex4 .self,
+button.mro_ex4_hrz .self,
 button_bar_segment.min_ex4:normal .self,
-button_bar_segment.mro_ex4:normal .self {
+button_bar_segment.min_ex4_hrz:normal .self,
+button_bar_segment.mro_ex4:normal .self,
+button_bar_segment.mro_ex4_hrz:normal .self {
   color: #a5b856;
 }
 button.min_ex4 .icon,
+button.min_ex4_hrz .icon,
 button.mro_ex4 .icon,
+button.mro_ex4_hrz .icon,
 button_bar_segment.min_ex4:normal .icon,
-button_bar_segment.mro_ex4:normal .icon {
+button_bar_segment.min_ex4_hrz:normal .icon,
+button_bar_segment.mro_ex4:normal .icon,
+button_bar_segment.mro_ex4_hrz:normal .icon {
   -fm-icon-color: #a5b856;
 }
 text_box.left_ex8_p09 .self,
@@ -274,15 +381,23 @@ text_box.left_ex8_p18 .self,
 text_box.right_ex8_p18 .self,
 text_box.center_ex8_p18 .self,
 button.min_ex8 .self,
+button.min_ex8_hrz .self,
 button.mro_ex8 .self,
+button.mro_ex8_hrz .self,
 button_bar_segment.min_ex8:normal .self,
-button_bar_segment.mro_ex8:normal .self {
+button_bar_segment.min_ex8_hrz:normal .self,
+button_bar_segment.mro_ex8:normal .self,
+button_bar_segment.mro_ex8_hrz:normal .self {
   color: #e2edbc;
 }
 button.min_ex8 .icon,
+button.min_ex8_hrz .icon,
 button.mro_ex8 .icon,
+button.mro_ex8_hrz .icon,
 button_bar_segment.min_ex8:normal .icon,
-button_bar_segment.mro_ex8:normal .icon {
+button_bar_segment.min_ex8_hrz:normal .icon,
+button_bar_segment.mro_ex8:normal .icon,
+button_bar_segment.mro_ex8_hrz:normal .icon {
   -fm-icon-color: #e2edbc;
 }
 text_box.left_fill7_p12 .self,
@@ -335,7 +450,18 @@ text_box.right_upp_fill2_p12 .self,
 text_box.center_upp_fill2_p12 .self {
   background-color: #7a8a39;
 }
-button_bar_segment.ear:active .self {
+button_bar_segment.ear:active .self,
+button_bar_segment.ear_hrz:active .self {
+  background-color: #a5b856;
+}
+button_bar_segment.ear_ex2:active .self,
+button_bar_segment.ear_ex2_hrz:active .self {
+  background-color: #7a8a39;
+}
+button_bar_segment.ear_ex4:active .self,
+button_bar_segment.ear_ex4_hrz:active .self,
+button_bar_segment.ear1_ex4:active .self,
+button_bar_segment.ear1_ex4_hrz:active .self {
   background-color: #a5b856;
 }
 button.row:hover .self,
@@ -350,11 +476,21 @@ button.row .icon,
 button.row_left .icon {
   -fm-icon-color: #a5b856;
 }
+button.row .self,
+button.row_left .self {
+  color: #a5b856;
+}
 button.row:hover .icon,
 button.row_left:hover .icon,
 button.row:pressed .icon,
 button.row_left:pressed .icon {
   -fm-icon-color: #7a8a39;
+}
+button.row:hover .self,
+button.row_left:hover .self,
+button.row:pressed .self,
+button.row_left:pressed .self {
+  color: #7a8a39;
 }
 button.cap:normal .self,
 text_box.cap:normal .self {
@@ -392,15 +528,19 @@ radio_set:checked .icon {
   -fm-icon-color: #a5b856;
   border-color: #a5b856;
 }
+/** PORTAL ------------------------*/
+portal:normal .row_active {
+  background-color: #eef3da;
+}
 /** DOTCONTROL ------------------------*/
 /*dot_control:active .dot*/
 dot_control.def_h20:active .dot,
-dot_control.min_h20:active .dot,
 dot_control.def_h25:active .dot,
-dot_control.min_h25:active .dot,
 dot_control.def_h30:active .dot,
-dot_control.min_h30:active .dot,
 dot_control.def_h35:active .dot,
+dot_control.min_h20:active .dot,
+dot_control.min_h25:active .dot,
+dot_control.min_h30:active .dot,
 dot_control.min_h35:active .dot {
   background-color: #a5b856;
 }
@@ -425,6 +565,11 @@ button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self {
   color: #a5b856;
 }
+button_bar_segment.mat_h25:active .icon,
+button_bar_segment.mat_h30:active .icon,
+button_bar_segment.mat_h35:active .icon {
+  -fm-icon-color: #a5b856;
+}
 tab_panel.mat_h25:active .tab,
 tab_panel.mat_h30:active .tab,
 tab_panel.mat_h35:active .tab,
@@ -434,6 +579,60 @@ tab_panel.mat_h35_right:active .tab,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
 button_bar_segment.mat_h35:active .self {
+  border-bottom-color: #a5b856;
+}
+tab_control.mat_h25_ex4:active .self,
+tab_control.mat_h30_ex4:active .self,
+tab_control.mat_h35_ex4:active .self,
+tab_control.mat_h25_ex4_right:active .self,
+tab_control.mat_h30_ex4_right:active .self,
+tab_control.mat_h35_ex4_right:active .self,
+button_bar_segment.mat_h25_ex4:active .self,
+button_bar_segment.mat_h30_ex4:active .self,
+button_bar_segment.mat_h35_ex4:active .self {
+  color: #a5b856;
+}
+button_bar_segment.mat_h25_ex4:active .icon,
+button_bar_segment.mat_h30_ex4:active .icon,
+button_bar_segment.mat_h35_ex4:active .icon {
+  -fm-icon-color: #a5b856;
+}
+tab_panel.mat_h25_ex4:active .tab,
+tab_panel.mat_h30_ex4:active .tab,
+tab_panel.mat_h35_ex4:active .tab,
+tab_panel.mat_h25_ex4_right:active .tab,
+tab_panel.mat_h30_ex4_right:active .tab,
+tab_panel.mat_h35_ex4_right:active .tab,
+button_bar_segment.mat_h25_ex4:active .self,
+button_bar_segment.mat_h30_ex4:active .self,
+button_bar_segment.mat_h35_ex4:active .self {
+  border-bottom-color: #a5b856;
+}
+tab_control.mat_h25_ex2:active .self,
+tab_control.mat_h30_ex2:active .self,
+tab_control.mat_h35_ex2:active .self,
+tab_control.mat_h25_ex2_right:active .self,
+tab_control.mat_h30_ex2_right:active .self,
+tab_control.mat_h35_ex2_right:active .self,
+button_bar_segment.mat_h25_ex2:active .self,
+button_bar_segment.mat_h30_ex2:active .self,
+button_bar_segment.mat_h35_ex2:active .self {
+  color: #7a8a39;
+}
+button_bar_segment.mat_h25_ex2:active .icon,
+button_bar_segment.mat_h30_ex2:active .icon,
+button_bar_segment.mat_h35_ex2:active .icon {
+  -fm-icon-color: #7a8a39;
+}
+tab_panel.mat_h25_ex2:active .tab,
+tab_panel.mat_h30_ex2:active .tab,
+tab_panel.mat_h35_ex2:active .tab,
+tab_panel.mat_h25_ex2_right:active .tab,
+tab_panel.mat_h30_ex2_right:active .tab,
+tab_panel.mat_h35_ex2_right:active .tab,
+button_bar_segment.mat_h25_ex2:active .self,
+button_bar_segment.mat_h30_ex2:active .self,
+button_bar_segment.mat_h35_ex2:active .self {
   border-bottom-color: #a5b856;
 }
 tab_control.mat_h25_gsF .self,
@@ -446,6 +645,11 @@ button_bar_segment.mat_h25_gsF .self,
 button_bar_segment.mat_h30_gsF .self,
 button_bar_segment.mat_h35_gsF .self {
   color: #eef3da;
+}
+button_bar_segment.mat_h25_gsF .icon,
+button_bar_segment.mat_h30_gsF .icon,
+button_bar_segment.mat_h35_gsF .icon {
+  -fm-icon-color: #eef3da;
 }
 tab_control.ear_h25:normal .self,
 tab_control.ear_h25_lite:normal .self,
@@ -470,9 +674,5 @@ tab_panel.ear_h30 .panel,
 tab_panel.ear_h30_lite .panel,
 tab_panel.ear_h35 .panel,
 tab_panel.ear_h35_lite .panel {
-  border-color: #a5b856;
-}
-/** RECT ------------------------*/
-rectangle.bracket_ex4 .self {
   border-color: #a5b856;
 }

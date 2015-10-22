@@ -3,7 +3,7 @@
 /** (PORTAL ROW) -----------------------*/
 portal:normal .row {background-color: #FCFCFC;}
 portal:normal .row_alt {background-color: #F6F6F6;}
-portal:normal .row_active {background-color: rgba(230,239,249,1);}
+portal:normal .row_active {background-color: #E6EFF9;}
 
 
 
@@ -15,9 +15,6 @@ portal.def:normal .row_active
   border-bottom-style: solid;
   border-color: #DCDCDC;/**/
 }
-portal.def:normal .row {background-color: #FCFCFC;}
-portal.def:normal .row_alt {background-color: #F6F6F6;}
-portal.def:normal .row_active {background-color: rgba(230,239,249,1);}
 
 
 
@@ -65,7 +62,14 @@ portal:normal .scrollbar_track {
 
 /** (CONTAINER) ------------------------*/
 container:placeholder .self
-{font-size: 16pt;}
+{
+  /*
+  margin: 1em;
+  padding: -2em;
+  background-color: rgba(255,77,77,0.1);
+  */
+  font-size: 16pt;
+}
 
 container .inner_border {
   border-radius: 0pt;
@@ -102,24 +106,22 @@ container .self {
   text-align: left;
 }
 
-container:pressed .self {
-  border-color: #999;
-  background-image: none; background-color: #CCC;
-  color: #FFF;
-}
-container:pressed:placeholder .self
-{color: #FFF;}
-
-container:hover .self,
-container:focus .self
-{
+container:hover .self {
   border-color: #999;
   background-color: #EEE;
   box-shadow: none;
-  /*
-  box-shadow: 0pt 0pt 2pt 1pt #AAA;#72A8FB
-  */
 }
+
+container:pressed .self,
+container:focus .self
+{
+  border-color: #999;
+  background-color: #CCC;
+  color: #FFF;
+  box-shadow: 0pt 0pt 2pt 0pt #AAA;/*#72A8FB*/
+}
+container:pressed:placeholder .self
+{color: #FFF;}
 
 
 
@@ -311,12 +313,19 @@ scrollbar:disabled .self {
 
 scrollbar .scrollbar_top_button,
 scrollbar .scrollbar_bottom_button,
+
+scrollbar:hover .scrollbar_top_button,
+scrollbar:hover .scrollbar_bottom_button,
+
+scrollbar:pressed .scrollbar_top_button,
+scrollbar:pressed .scrollbar_bottom_button
 {
-  border-left-width: 1pt;
-  border-left-style: solid;
-  border-left-color: #CCC;
-  width: 100%;
+  /*width: 100%;*/
   height: 17pt;
+  
+  border-style: none solid;
+  border-right-width: 0.7pt; border-right-color: #EEE;
+  border-left-width: 1pt;    border-left-color: #CCC;
 }
 
 scrollbar .scrollbar_top_button {
@@ -331,15 +340,16 @@ scrollbar .scrollbar_bottom_button {
 scrollbar:hover .scrollbar_top_button,
 scrollbar:hover .scrollbar_bottom_button
 {
-  background-color: #E0E0E0;
+  /*background-color: #E0E0E0;*/
+  background-image: -webkit-gradient(linear,0% 0%,100% 0%, color-stop(0, #EEE), color-stop(0.09, #EEE), color-stop(0.1, #E0E0E0), color-stop(1, #E0E0E0));
 }
 
 scrollbar:pressed .scrollbar_top_button,
 scrollbar:pressed .scrollbar_bottom_button
 {
-  background-color: #AAA;
+  /*background-color: #AAA;*/
+  background-image: -webkit-gradient(linear,0% 0%,100% 0%, color-stop(0, #EEE), color-stop(0.09, #EEE), color-stop(0.1, #AAA), color-stop(1, #AAA));
   -fm-icon-color: #FFF;
-  /*border-left-color: #EEE;*/
 }
 
 
@@ -350,10 +360,9 @@ scrollbar:normal .scrollbar_thumb {
   border-left-style: solid; border-left-width: 1pt; border-left-color: #CCC;
   /*border-left-color: #CCC;*/
   background-color: #CCC;
-  /*background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(rgba(52, 160, 244, 1)), to(rgba(18, 104, 166, 1)));*/
-  background-image: -webkit-gradient(linear, 0% 0%,100% 0%, from(#FFF), to(#CCC));
+  /****** background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(rgba(52, 160, 244, 1)), to(rgba(18, 104, 166, 1)));*/
+  /* background-image: -webkit-gradient(linear, 0% 0%,100% 0%, from(#FFF), to(#CCC));*/
   background-image: -webkit-gradient(linear,0% 0%,100% 0%, color-stop(0, #EEE), color-stop(0.09, #EEE), color-stop(0.1, #CCC), color-stop(1, #CCC));
-
 }
 /* ! not work
 scrollbar:hover .scrollbar_thumb,
@@ -372,7 +381,7 @@ tab_control:normal .self {
   font-style: normal; font-family: -fm-font-family(メイリオ, shiftjis);
   color: #FFF;
   font-size: 12pt;
-  line-height: 0.8line;
+  line-height: 0.7line;
   text-align: left;
 
   -fm-tab-spacing: 0;
@@ -453,17 +462,35 @@ tab_panel:activefocus .text
 
 
 /** (Control>SELF) .mat */
-tab_control.mat_h25 .self,tab_control.mat_h25_gsF .self,
-tab_control.mat_h30 .self,tab_control.mat_h30_gsF .self,
-tab_control.mat_h35 .self,tab_control.mat_h35_gsF .self
+tab_control.mat_h25 .self,
+tab_control.mat_h30 .self,
+tab_control.mat_h35 .self,
+tab_control.mat_h25_ex2 .self,
+tab_control.mat_h30_ex2 .self,
+tab_control.mat_h35_ex2 .self,
+tab_control.mat_h25_ex4 .self,
+tab_control.mat_h30_ex4 .self,
+tab_control.mat_h35_ex4 .self,
+tab_control.mat_h25_gsF .self,
+tab_control.mat_h30_gsF .self,
+tab_control.mat_h35_gsF .self
 {
   /*background-image: none;background-color: rgba(0,0,0,0);*/
   font-style: normal;
   text-align: left;
 }
-tab_control.mat_h25_right .self,tab_control.mat_h25_gsF_right .self,
-tab_control.mat_h30_right .self,tab_control.mat_h30_gsF_right .self,
-tab_control.mat_h35_right .self,tab_control.mat_h35_gsF_right .self
+tab_control.mat_h25_right .self,
+tab_control.mat_h30_right .self,
+tab_control.mat_h35_right .self,
+tab_control.mat_h25_ex2_right .self,
+tab_control.mat_h30_ex2_right .self,
+tab_control.mat_h35_ex2_right .self,
+tab_control.mat_h25_ex4_right .self,
+tab_control.mat_h30_ex4_right .self,
+tab_control.mat_h35_ex4_right .self,
+tab_control.mat_h25_gsF_right .self,
+tab_control.mat_h30_gsF_right .self,
+tab_control.mat_h35_gsF_right .self
 {
   font-style: normal;
   text-align: right;
@@ -476,7 +503,26 @@ tab_control.mat_h30_right:normal .self,
 tab_control.mat_h35_right:normal .self,
 button_bar_segment.mat_h25 .self,
 button_bar_segment.mat_h30 .self,
-button_bar_segment.mat_h35 .self
+button_bar_segment.mat_h35 .self,
+{color: #666;}
+tab_control.mat_h25_ex2:normal .self,
+tab_control.mat_h30_ex2:normal .self,
+tab_control.mat_h35_ex2:normal .self,
+tab_control.mat_h25_ex4:normal .self,
+tab_control.mat_h30_ex4:normal .self,
+tab_control.mat_h35_ex4:normal .self,
+tab_control.mat_h25_ex2_right:normal .self,
+tab_control.mat_h30_ex2_right:normal .self,
+tab_control.mat_h35_ex2_right:normal .self,
+tab_control.mat_h25_ex4_right:normal .self,
+tab_control.mat_h30_ex4_right:normal .self,
+tab_control.mat_h35_ex4_right:normal .self,
+button_bar_segment.mat_h25_ex2 .self,
+button_bar_segment.mat_h30_ex2 .self,
+button_bar_segment.mat_h35_ex2 .self,
+button_bar_segment.mat_h25_ex4 .self,
+button_bar_segment.mat_h30_ex4 .self,
+button_bar_segment.mat_h35_ex4 .self
 {color: #666;}
 tab_control.mat_h25_gsF:normal .self,
 tab_control.mat_h30_gsF:normal .self,
@@ -489,15 +535,36 @@ button_bar_segment.mat_h30_gsF .self,
 button_bar_segment.mat_h35_gsF .self
 {color: #FFF;}
 
-tab_control.mat_h25 .self, tab_control.mat_h25_gsF .self,
-tab_control.mat_h25_right .self, tab_control.mat_h25_gsF_right .self,
-button_bar_segment.mat_h25 .self, button_bar_segment.mat_h25_gsF .self
+tab_control.mat_h25 .self,
+tab_control.mat_h25_right .self,
+button_bar_segment.mat_h25 .self,
+tab_control.mat_h25_ex2 .self,
+tab_control.mat_h25_ex2_right .self,
+button_bar_segment.mat_h25_ex2 .self,
+tab_control.mat_h25_ex4 .self,
+tab_control.mat_h25_ex4_right .self,
+button_bar_segment.mat_h25_ex4 .self,
+tab_control.mat_h25_gsF .self,
+tab_control.mat_h25_gsF_right .self,
+button_bar_segment.mat_h25_gsF .self
 {font-size: 12pt;}
-tab_control.mat_h30 .self, tab_control.mat_h30_gsF .self,
-button_bar_segment.mat_h30 .self, button_bar_segment.mat_h30_gsF .self
+tab_control.mat_h30 .self, 
+button_bar_segment.mat_h30 .self,
+tab_control.mat_h30_ex2 .self,
+button_bar_segment.mat_h30_ex2 .self,
+tab_control.mat_h30_ex4 .self,
+button_bar_segment.mat_h30_ex4 .self,
+tab_control.mat_h30_gsF .self,
+button_bar_segment.mat_h30_gsF .self
 {font-size: 14pt;}
-tab_control.mat_h35 .self, tab_control.mat_h35_gsF .self,
-button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
+tab_control.mat_h35 .self,
+button_bar_segment.mat_h35 .self,
+tab_control.mat_h35_ex2 .self,
+button_bar_segment.mat_h35_ex2 .self,
+tab_control.mat_h35_ex4 .self,
+button_bar_segment.mat_h35_ex4 .self,
+tab_control.mat_h35_gsF .self,
+button_bar_segment.mat_h35_gsF .self
 {font-size: 16pt;}
 
 tab_control.mat_h25:hover .self,
@@ -508,7 +575,25 @@ tab_control.mat_h30_right:hover .self,
 tab_control.mat_h35_right:hover .self,
 button_bar_segment.mat_h25:hover .self,
 button_bar_segment.mat_h30:hover .self,
-button_bar_segment.mat_h35:hover .self
+button_bar_segment.mat_h35:hover .self,
+tab_control.mat_h25_ex2:hover .self,
+tab_control.mat_h30_ex2:hover .self,
+tab_control.mat_h35_ex2:hover .self,
+tab_control.mat_h25_ex2_right:hover .self,
+tab_control.mat_h30_ex2_right:hover .self,
+tab_control.mat_h35_ex2_right:hover .self,
+button_bar_segment.mat_h25_ex2:hover .self,
+button_bar_segment.mat_h30_ex2:hover .self,
+button_bar_segment.mat_h35_ex2:hover .self,
+tab_control.mat_h25_ex4:hover .self,
+tab_control.mat_h30_ex4:hover .self,
+tab_control.mat_h35_ex4:hover .self,
+tab_control.mat_h25_ex4_right:hover .self,
+tab_control.mat_h30_ex4_right:hover .self,
+tab_control.mat_h35_ex4_right:hover .self,
+button_bar_segment.mat_h25_ex4:hover .self,
+button_bar_segment.mat_h30_ex4:hover .self,
+button_bar_segment.mat_h35_ex4:hover .self
 {color: #333;}
 tab_control.mat_h25_gsF:hover .self,
 tab_control.mat_h30_gsF:hover .self,
@@ -529,7 +614,25 @@ tab_control.mat_h30_right:active .self,
 tab_control.mat_h35_right:active .self,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
-button_bar_segment.mat_h35:active .self
+button_bar_segment.mat_h35:active .self,
+tab_control.mat_h25_ex2:active .self,
+tab_control.mat_h30_ex2:active .self,
+tab_control.mat_h35_ex2:active .self,
+tab_control.mat_h25_ex2_right:active .self,
+tab_control.mat_h30_ex2_right:active .self,
+tab_control.mat_h35_ex2_right:active .self,
+button_bar_segment.mat_h25_ex2:active .self,
+button_bar_segment.mat_h30_ex2:active .self,
+button_bar_segment.mat_h35_ex2:active .self,
+tab_control.mat_h25_ex4:active .self,
+tab_control.mat_h30_ex4:active .self,
+tab_control.mat_h35_ex4:active .self,
+tab_control.mat_h25_ex4_right:active .self,
+tab_control.mat_h30_ex4_right:active .self,
+tab_control.mat_h35_ex4_right:active .self,
+button_bar_segment.mat_h25_ex4:active .self,
+button_bar_segment.mat_h30_ex4:active .self,
+button_bar_segment.mat_h35_ex4:active .self
 {
   color: #333;/* theme_colors */
 }
@@ -547,18 +650,57 @@ button_bar_segment.mat_h35_gsF:active .self
 }
 
 /** (Panel>SELF) .mat */
-tab_panel.mat_h25 .self, tab_panel.mat_h25_gsF .self,
-tab_panel.mat_h30 .self, tab_panel.mat_h30_gsF .self,
-tab_panel.mat_h35 .self, tab_panel.mat_h35_gsF .self,
-tab_panel.mat_h25:active .self,tab_panel.mat_h25_gsF:active .self,
-tab_panel.mat_h30:active .self,tab_panel.mat_h30_gsF:active .self,
-tab_panel.mat_h35:active .self,tab_panel.mat_h35_gsF:active .self,
-tab_panel.mat_h25_right .self, tab_panel.mat_h25_gsF_right .self,
-tab_panel.mat_h30_right .self, tab_panel.mat_h30_gsF_right .self,
-tab_panel.mat_h35_right .self, tab_panel.mat_h35_gsF_right .self,
-tab_panel.mat_h25_right:active .self,tab_panel.mat_h25_gsF_right:active .self,
-tab_panel.mat_h30_right:active .self,tab_panel.mat_h30_gsF_right:active .self,
-tab_panel.mat_h35_right:active .self,tab_panel.mat_h35_gsF_right:active .self
+tab_panel.mat_h25 .self,
+tab_panel.mat_h30 .self,
+tab_panel.mat_h35 .self,
+tab_panel.mat_h25_ex2 .self,
+tab_panel.mat_h30_ex2 .self,
+tab_panel.mat_h35_ex2 .self,
+tab_panel.mat_h25_ex4 .self,
+tab_panel.mat_h30_ex4 .self,
+tab_panel.mat_h35_ex4 .self,
+tab_panel.mat_h25_gsF .self,
+tab_panel.mat_h30_gsF .self,
+tab_panel.mat_h35_gsF .self,
+
+tab_panel.mat_h25:active .self,
+tab_panel.mat_h30:active .self,
+tab_panel.mat_h35:active .self,
+tab_panel.mat_h25_ex2:active .self,
+tab_panel.mat_h30_ex2:active .self,
+tab_panel.mat_h35_ex2:active .self,
+tab_panel.mat_h25_ex4:active .self,
+tab_panel.mat_h30_ex4:active .self,
+tab_panel.mat_h35_ex4:active .self,
+tab_panel.mat_h25_gsF:active .self,
+tab_panel.mat_h30_gsF:active .self,
+tab_panel.mat_h35_gsF:active .self,
+
+tab_panel.mat_h25_right .self,
+tab_panel.mat_h30_right .self,
+tab_panel.mat_h35_right .self,
+tab_panel.mat_h25_ex2_right .self,
+tab_panel.mat_h30_ex2_right .self,
+tab_panel.mat_h35_ex2_right .self,
+tab_panel.mat_h25_ex4_right .self,
+tab_panel.mat_h30_ex4_right .self,
+tab_panel.mat_h35_ex4_right .self,
+tab_panel.mat_h25_gsF_right .self,
+tab_panel.mat_h30_gsF_right .self,
+tab_panel.mat_h35_gsF_right .self,
+
+tab_panel.mat_h25_right:active .self,
+tab_panel.mat_h30_right:active .self,
+tab_panel.mat_h35_right:active .self,
+tab_panel.mat_h25_ex2_right:active .self,
+tab_panel.mat_h30_ex2_right:active .self,
+tab_panel.mat_h35_ex2_right:active .self,
+tab_panel.mat_h25_ex4_right:active .self,
+tab_panel.mat_h30_ex4_right:active .self,
+tab_panel.mat_h35_ex4_right:active .self,
+tab_panel.mat_h25_gsF_right:active .self,
+tab_panel.mat_h30_gsF_right:active .self,
+tab_panel.mat_h35_gsF_right:active .self
 {
   background-image: none; background-color: rgba(0,0,0,0);
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
@@ -571,29 +713,87 @@ tab_panel.tab_mat_gsF:active .self {color: #FFF;}
 tab_panel.tab_mat_gsF:activefocus .self {box-shadow: none;}
 */
 
-tab_panel.mat_h25 .inner_border, tab_panel.mat_h25_gsF .inner_border,
-tab_panel.mat_h30 .inner_border, tab_panel.mat_h30_gsF .inner_border,
-tab_panel.mat_h35 .inner_border, tab_panel.mat_h35_gsF .inner_border,
-tab_panel.mat_h25_right .inner_border, tab_panel.mat_h25_gsF_right .inner_border,
-tab_panel.mat_h30_right .inner_border, tab_panel.mat_h30_gsF_right .inner_border,
-tab_panel.mat_h35_right .inner_border, tab_panel.mat_h35_gsF_right .inner_border
+tab_panel.mat_h25 .inner_border,
+tab_panel.mat_h30 .inner_border,
+tab_panel.mat_h35 .inner_border,
+tab_panel.mat_h25_ex2 .inner_border,
+tab_panel.mat_h30_ex2 .inner_border,
+tab_panel.mat_h35_ex2 .inner_border,
+tab_panel.mat_h25_ex4 .inner_border,
+tab_panel.mat_h30_ex4 .inner_border,
+tab_panel.mat_h35_ex4 .inner_border,
+tab_panel.mat_h25_gsF .inner_border,
+tab_panel.mat_h30_gsF .inner_border,
+tab_panel.mat_h35_gsF .inner_border,
+
+tab_panel.mat_h25_right .inner_border,
+tab_panel.mat_h30_right .inner_border,
+tab_panel.mat_h35_right .inner_border,
+tab_panel.mat_h25_ex2_right .inner_border,
+tab_panel.mat_h30_ex2_right .inner_border,
+tab_panel.mat_h35_ex2_right .inner_border,
+tab_panel.mat_h25_ex4_right .inner_border,
+tab_panel.mat_h30_ex4_right .inner_border,
+tab_panel.mat_h35_ex4_right .inner_border,
+tab_panel.mat_h25_gsF_right .inner_border,
+tab_panel.mat_h30_gsF_right .inner_border,
+tab_panel.mat_h35_gsF_right .inner_border
 {
   border-radius: 0pt;
 }
 
 /** (Panel>TAB) .mat */
-tab_panel.mat_h25 .tab,tab_panel.mat_h25_gsF .tab,
-tab_panel.mat_h30 .tab,tab_panel.mat_h30_gsF .tab,
-tab_panel.mat_h35 .tab,tab_panel.mat_h35_gsF .tab,
-tab_panel.mat_h25:active .tab,tab_panel.mat_h25_gsF:active .tab,
-tab_panel.mat_h30:active .tab,tab_panel.mat_h30_gsF:active .tab,
-tab_panel.mat_h35:active .tab,tab_panel.mat_h35_gsF:active .tab,
-tab_panel.mat_h25_right .tab,tab_panel.mat_h25_gsF_right .tab,
-tab_panel.mat_h30_right .tab,tab_panel.mat_h30_gsF_right .tab,
-tab_panel.mat_h35_right .tab,tab_panel.mat_h35_gsF_right .tab,
-tab_panel.mat_h25_right:active .tab,tab_panel.mat_h25_gsF_right:active .tab,
-tab_panel.mat_h30_right:active .tab,tab_panel.mat_h30_gsF_right:active .tab,
-tab_panel.mat_h35_right:active .tab,tab_panel.mat_h35_gsF_right:active .tab
+tab_panel.mat_h25 .tab,
+tab_panel.mat_h30 .tab,
+tab_panel.mat_h35 .tab,
+tab_panel.mat_h25_ex2 .tab,
+tab_panel.mat_h30_ex2 .tab,
+tab_panel.mat_h35_ex2 .tab,
+tab_panel.mat_h25_ex4 .tab,
+tab_panel.mat_h30_ex4 .tab,
+tab_panel.mat_h35_ex4 .tab,
+tab_panel.mat_h25_gsF .tab,
+tab_panel.mat_h30_gsF .tab,
+tab_panel.mat_h35_gsF .tab,
+
+tab_panel.mat_h25:active .tab,
+tab_panel.mat_h30:active .tab,
+tab_panel.mat_h35:active .tab,
+tab_panel.mat_h25_ex2:active .tab,
+tab_panel.mat_h30_ex2:active .tab,
+tab_panel.mat_h35_ex2:active .tab,
+tab_panel.mat_h25_ex4:active .tab,
+tab_panel.mat_h30_ex4:active .tab,
+tab_panel.mat_h35_ex4:active .tab,
+tab_panel.mat_h25_gsF:active .tab,
+tab_panel.mat_h30_gsF:active .tab,
+tab_panel.mat_h35_gsF:active .tab,
+
+tab_panel.mat_h25_right .tab,
+tab_panel.mat_h30_right .tab,
+tab_panel.mat_h35_right .tab,
+tab_panel.mat_h25_ex2_right .tab,
+tab_panel.mat_h30_ex2_right .tab,
+tab_panel.mat_h35_ex2_right .tab,
+tab_panel.mat_h25_ex4_right .tab,
+tab_panel.mat_h30_ex4_right .tab,
+tab_panel.mat_h35_ex4_right .tab,
+tab_panel.mat_h25_gsF_right .tab,
+tab_panel.mat_h30_gsF_right .tab,
+tab_panel.mat_h35_gsF_right .tab,
+
+tab_panel.mat_h25_right:active .tab,
+tab_panel.mat_h30_right:active .tab,
+tab_panel.mat_h35_right:active .tab,
+tab_panel.mat_h25_ex2_right:active .tab,
+tab_panel.mat_h30_ex2_right:active .tab,
+tab_panel.mat_h35_ex2_right:active .tab,
+tab_panel.mat_h25_ex4_right:active .tab,
+tab_panel.mat_h30_ex4_right:active .tab,
+tab_panel.mat_h35_ex4_right:active .tab,
+tab_panel.mat_h25_gsF_right:active .tab,
+tab_panel.mat_h30_gsF_right:active .tab,
+tab_panel.mat_h35_gsF_right:active .tab
 {
   background-image: none; background-color: rgba(0,0,0,0);
   border-bottom-style: solid;
@@ -601,15 +801,44 @@ tab_panel.mat_h35_right:active .tab,tab_panel.mat_h35_gsF_right:active .tab
   border-bottom-color: rgba(255,255,255,0);/* 0.1 */
 }
 
-tab_panel.mat_h25:hover .tab, tab_panel.mat_h25_gsF:hover .tab,
-tab_panel.mat_h30:hover .tab, tab_panel.mat_h30_gsF:hover .tab,
-tab_panel.mat_h35:hover .tab, tab_panel.mat_h35_gsF:hover .tab,
-tab_panel.mat_h25_right:hover .tab, tab_panel.mat_h25_gsF_right:hover .tab,
-tab_panel.mat_h30_right:hover .tab, tab_panel.mat_h30_gsF_right:hover .tab,
-tab_panel.mat_h35_right:hover .tab, tab_panel.mat_h35_gsF_right:hover .tab,
-button_bar_segment.mat_h25:hover .self, button_bar_segment.mat_h25_gsF:hover .self,
-button_bar_segment.mat_h30:hover .self, button_bar_segment.mat_h30_gsF:hover .self,
-button_bar_segment.mat_h35:hover .self, button_bar_segment.mat_h35_gsF:hover .self
+tab_panel.mat_h25:hover .tab,
+tab_panel.mat_h30:hover .tab,
+tab_panel.mat_h35:hover .tab,
+tab_panel.mat_h25_ex2:hover .tab,
+tab_panel.mat_h30_ex2:hover .tab,
+tab_panel.mat_h35_ex2:hover .tab,
+tab_panel.mat_h25_ex4:hover .tab,
+tab_panel.mat_h30_ex4:hover .tab,
+tab_panel.mat_h35_ex4:hover .tab,
+tab_panel.mat_h25_gsF:hover .tab,
+tab_panel.mat_h30_gsF:hover .tab,
+tab_panel.mat_h35_gsF:hover .tab,
+
+tab_panel.mat_h25_right:hover .tab,
+tab_panel.mat_h30_right:hover .tab,
+tab_panel.mat_h35_right:hover .tab,
+tab_panel.mat_h25_ex2_right:hover .tab,
+tab_panel.mat_h30_ex2_right:hover .tab,
+tab_panel.mat_h35_ex2_right:hover .tab,
+tab_panel.mat_h25_ex4_right:hover .tab,
+tab_panel.mat_h30_ex4_right:hover .tab,
+tab_panel.mat_h35_ex4_right:hover .tab,
+tab_panel.mat_h25_gsF_right:hover .tab,
+tab_panel.mat_h30_gsF_right:hover .tab,
+tab_panel.mat_h35_gsF_right:hover .tab,
+
+button_bar_segment.mat_h25:hover .self,
+button_bar_segment.mat_h30:hover .self,
+button_bar_segment.mat_h35:hover .self,
+button_bar_segment.mat_h25_ex2:hover .self,
+button_bar_segment.mat_h30_ex2:hover .self,
+button_bar_segment.mat_h35_ex2:hover .self,
+button_bar_segment.mat_h25_ex4:hover .self,
+button_bar_segment.mat_h30_ex4:hover .self,
+button_bar_segment.mat_h35_ex4:hover .self,
+button_bar_segment.mat_h25_gsF:hover .self,
+button_bar_segment.mat_h30_gsF:hover .self,
+button_bar_segment.mat_h35_gsF:hover .self
 {
   background-image: none; background-color: rgba(77,77,77,0.1);
   border-color: rgba(77,77,77,0.1);
@@ -623,7 +852,27 @@ tab_panel.mat_h30_right:active .tab,
 tab_panel.mat_h35_right:active .tab,
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
-button_bar_segment.mat_h35:active .self
+button_bar_segment.mat_h35:active .self,
+
+tab_panel.mat_h25_ex2:active .tab,
+tab_panel.mat_h30_ex2:active .tab,
+tab_panel.mat_h35_ex2:active .tab,
+tab_panel.mat_h25_ex2_right:active .tab,
+tab_panel.mat_h30_ex2_right:active .tab,
+tab_panel.mat_h35_ex2_right:active .tab,
+button_bar_segment.mat_h25_ex2:active .self,
+button_bar_segment.mat_h30_ex2:active .self,
+button_bar_segment.mat_h35_ex2:active .self,
+
+tab_panel.mat_h25_ex4:active .tab,
+tab_panel.mat_h30_ex4:active .tab,
+tab_panel.mat_h35_ex4:active .tab,
+tab_panel.mat_h25_ex4_right:active .tab,
+tab_panel.mat_h30_ex4_right:active .tab,
+tab_panel.mat_h35_ex4_right:active .tab,
+button_bar_segment.mat_h25_ex4:active .self,
+button_bar_segment.mat_h30_ex4:active .self,
+button_bar_segment.mat_h35_ex4:active .self
 {
   border-bottom-color: #AAA;/* theme_colors */
 }
@@ -644,14 +893,32 @@ button_bar_segment.mat_h35_gsF:active .self
 tab_panel.tab_mat:focus .tab {box-shadow: none;}
 */
 
-tab_panel.mat_h25 .tab_inner_border, tab_panel.mat_h25_gsF .tab_inner_border,
-tab_panel.mat_h25_right .tab_inner_border, tab_panel.mat_h25_gsF_right .tab_inner_border
+tab_panel.mat_h25 .tab_inner_border,
+tab_panel.mat_h25_right .tab_inner_border,
+tab_panel.mat_h25_ex2 .tab_inner_border,
+tab_panel.mat_h25_ex2_right .tab_inner_border,
+tab_panel.mat_h25_ex4 .tab_inner_border,
+tab_panel.mat_h25_ex4_right .tab_inner_border,
+tab_panel.mat_h25_gsF .tab_inner_border,
+tab_panel.mat_h25_gsF_right .tab_inner_border
 {padding: 2pt 3pt 0pt 3pt;}
-tab_panel.mat_h30 .tab_inner_border, tab_panel.mat_h30_gsF .tab_inner_border,
-tab_panel.mat_h30_right .tab_inner_border, tab_panel.mat_h30_gsF_right .tab_inner_border
+tab_panel.mat_h30 .tab_inner_border,
+tab_panel.mat_h30_right .tab_inner_border,
+tab_panel.mat_h30_ex2 .tab_inner_border,
+tab_panel.mat_h30_ex2_right .tab_inner_border,
+tab_panel.mat_h30_ex4 .tab_inner_border,
+tab_panel.mat_h30_ex4_right .tab_inner_border,
+tab_panel.mat_h30_gsF .tab_inner_border,
+tab_panel.mat_h30_gsF_right .tab_inner_border
 {padding: 3pt 3pt 0pt 3pt;}
-tab_panel.mat_h35 .tab_inner_border, tab_panel.mat_h35_gsF .tab_inner_border,
-tab_panel.mat_h35_right .tab_inner_border, tab_panel.mat_h35_gsF_right .tab_inner_border
+tab_panel.mat_h35 .tab_inner_border,
+tab_panel.mat_h35_right .tab_inner_border,
+tab_panel.mat_h35_ex2 .tab_inner_border,
+tab_panel.mat_h35_ex2_right .tab_inner_border,
+tab_panel.mat_h35_ex4 .tab_inner_border,
+tab_panel.mat_h35_ex4_right .tab_inner_border,
+tab_panel.mat_h35_gsF .tab_inner_border,
+tab_panel.mat_h35_gsF_right .tab_inner_border
 {padding: 4pt 3pt 0pt 3pt;}
 
 
@@ -759,14 +1026,21 @@ tab_panel.tab_ear:active .text {color: #FFF;}
 */
 
 /** (Panel>PANEL) .ear */
-tab_panel.ear_h25 .panel,tab_panel.ear_h25_lite .panel,
-tab_panel.ear_h30 .panel,tab_panel.ear_h30_lite .panel,
-tab_panel.ear_h35 .panel,tab_panel.ear_h35_lite .panel
+tab_panel.ear_h25 .panel,
+tab_panel.ear_h30 .panel,
+tab_panel.ear_h35 .panel
 {
   background-image: none; background-color: #F6F6F6;
   border-style: solid;
   border-width: 6pt 1pt 1pt 1pt;
-  /*border-color: #A9D;*/
+}
+tab_panel.ear_h25_lite .panel,
+tab_panel.ear_h30_lite .panel,
+tab_panel.ear_h35_lite .panel
+{
+  background-image: none; background-color: #F6F6F6;
+  border-style: solid;
+  border-width: 6pt 0pt 0pt 0pt;
 }
 
 
@@ -940,9 +1214,18 @@ dot_control.min_h35:normal .contents
 
 /**  ---------------------------------*/
 /** (btn) .mat_hNN */
-button_bar_segment.mat_h25 .self, button_bar_segment.mat_h25_gsF .self,
-button_bar_segment.mat_h30 .self, button_bar_segment.mat_h30_gsF .self,
-button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
+button_bar_segment.mat_h25 .self,
+button_bar_segment.mat_h30 .self,
+button_bar_segment.mat_h35 .self,
+button_bar_segment.mat_h25_ex2 .self,
+button_bar_segment.mat_h30_ex2 .self,
+button_bar_segment.mat_h35_ex2 .self,
+button_bar_segment.mat_h25_ex4 .self,
+button_bar_segment.mat_h30_ex4 .self,
+button_bar_segment.mat_h35_ex4 .self,
+button_bar_segment.mat_h25_gsF .self,
+button_bar_segment.mat_h30_gsF .self,
+button_bar_segment.mat_h35_gsF .self
 {
   border-style: none; border-width: 0pt; border-radius: 0pt; border-color: rgba(0,0,0,0);
   border-bottom-style: solid;
@@ -952,7 +1235,13 @@ button_bar_segment.mat_h35 .self, button_bar_segment.mat_h35_gsF .self
 }
 button_bar_segment.mat_h25:active .self,
 button_bar_segment.mat_h30:active .self,
-button_bar_segment.mat_h35:active .self
+button_bar_segment.mat_h35:active .self,
+button_bar_segment.mat_h25_ex2:active .self,
+button_bar_segment.mat_h30_ex2:active .self,
+button_bar_segment.mat_h35_ex2:active .self,
+button_bar_segment.mat_h25_ex4:active .self,
+button_bar_segment.mat_h30_ex4:active .self,
+button_bar_segment.mat_h35_ex4:active .self
 {border-color: #333;}
 button_bar_segment.mat_h25_gsF:active .self,
 button_bar_segment.mat_h30_gsF:active .self,
@@ -963,9 +1252,18 @@ button_bar_segment.mat_h30_gsF:active .icon,
 button_bar_segment.mat_h35_gsF:active .icon
 {-fm-icon-color: #FFF;}
 
-button_bar_segment.mat_h25:pressed .self, button_bar_segment.mat_h25_gsF:pressed .self,
-button_bar_segment.mat_h30:pressed .self, button_bar_segment.mat_h30_gsF:pressed .self,
-button_bar_segment.mat_h35:pressed .self, button_bar_segment.mat_h35_gsF:pressed .self
+button_bar_segment.mat_h25:pressed .self,
+button_bar_segment.mat_h30:pressed .self,
+button_bar_segment.mat_h35:pressed .self,
+button_bar_segment.mat_h25_ex2:pressed .self,
+button_bar_segment.mat_h30_ex2:pressed .self,
+button_bar_segment.mat_h35_ex2:pressed .self,
+button_bar_segment.mat_h25_ex4:pressed .self,
+button_bar_segment.mat_h30_ex4:pressed .self,
+button_bar_segment.mat_h35_ex4:pressed .self,
+button_bar_segment.mat_h25_gsF:pressed .self,
+button_bar_segment.mat_h30_gsF:pressed .self,
+button_bar_segment.mat_h35_gsF:pressed .self
 {
   border-color: rgba(0,0,0,0.12);
   background-image: none; background-color: rgba(0,0,0,0.12);
@@ -973,22 +1271,57 @@ button_bar_segment.mat_h35:pressed .self, button_bar_segment.mat_h35_gsF:pressed
 
 
 
-button_bar_segment.mat_h25 .inner_border, button_bar_segment.mat_h25_gsF .inner_border,
-button_bar_segment.mat_h30 .inner_border, button_bar_segment.mat_h30_gsF .inner_border,
-button_bar_segment.mat_h35 .inner_border, button_bar_segment.mat_h35_gsF .inner_border,
-button_bar_segment.mat_h25:hover .inner_border, button_bar_segment.mat_h25_gsF:hover .inner_border,
-button_bar_segment.mat_h30:hover .inner_border, button_bar_segment.mat_h30_gsF:hover .inner_border,
-button_bar_segment.mat_h35:hover .inner_border, button_bar_segment.mat_h35_gsF:hover .inner_border,
-button_bar_segment.mat_h25:pressed .inner_border, button_bar_segment.mat_h25_gsF:pressed .inner_border,
-button_bar_segment.mat_h30:pressed .inner_border, button_bar_segment.mat_h30_gsF:pressed .inner_border,
-button_bar_segment.mat_h35:pressed .inner_border, button_bar_segment.mat_h35_gsF:pressed .inner_border
+button_bar_segment.mat_h25 .inner_border,
+button_bar_segment.mat_h30 .inner_border,
+button_bar_segment.mat_h35 .inner_border,
+button_bar_segment.mat_h25_ex2 .inner_border,
+button_bar_segment.mat_h30_ex2 .inner_border,
+button_bar_segment.mat_h35_ex2 .inner_border,
+button_bar_segment.mat_h25_ex4 .inner_border,
+button_bar_segment.mat_h30_ex4 .inner_border,
+button_bar_segment.mat_h35_ex4 .inner_border,
+button_bar_segment.mat_h25_gsF .inner_border,
+button_bar_segment.mat_h30_gsF .inner_border,
+button_bar_segment.mat_h35_gsF .inner_border,
+
+button_bar_segment.mat_h25:hover .inner_border,
+button_bar_segment.mat_h30:hover .inner_border,
+button_bar_segment.mat_h35:hover .inner_border,
+button_bar_segment.mat_h25_ex2:hover .inner_border,
+button_bar_segment.mat_h30_ex2:hover .inner_border,
+button_bar_segment.mat_h35_ex2:hover .inner_border,
+button_bar_segment.mat_h25_ex4:hover .inner_border,
+button_bar_segment.mat_h30_ex4:hover .inner_border,
+button_bar_segment.mat_h35_ex4:hover .inner_border,
+button_bar_segment.mat_h25_gsF:hover .inner_border,
+button_bar_segment.mat_h30_gsF:hover .inner_border,
+button_bar_segment.mat_h35_gsF:hover .inner_border,
+
+button_bar_segment.mat_h25:pressed .inner_border,
+button_bar_segment.mat_h30:pressed .inner_border,
+button_bar_segment.mat_h35:pressed .inner_border,
+button_bar_segment.mat_h25_ex2:pressed .inner_border,
+button_bar_segment.mat_h30_ex2:pressed .inner_border,
+button_bar_segment.mat_h35_ex2:pressed .inner_border,
+button_bar_segment.mat_h25_ex4:pressed .inner_border,
+button_bar_segment.mat_h30_ex4:pressed .inner_border,
+button_bar_segment.mat_h35_ex4:pressed .inner_border,
+button_bar_segment.mat_h25_gsF:pressed .inner_border,
+button_bar_segment.mat_h30_gsF:pressed .inner_border,
+button_bar_segment.mat_h35_gsF:pressed .inner_border
 {
   box-shadow: none;
 }
 
 button_bar_segment.mat_h25:pressed .icon,
 button_bar_segment.mat_h30:pressed .icon,
-button_bar_segment.mat_h35:pressed .icon
+button_bar_segment.mat_h35:pressed .icon,
+button_bar_segment.mat_h25_ex2:pressed .icon,
+button_bar_segment.mat_h30_ex2:pressed .icon,
+button_bar_segment.mat_h35_ex2:pressed .icon,
+button_bar_segment.mat_h25_ex4:pressed .icon,
+button_bar_segment.mat_h30_ex4:pressed .icon,
+button_bar_segment.mat_h35_ex4:pressed .icon
 {
   -fm-icon-color: #333;
 }

@@ -13,8 +13,8 @@ oval .self
   background-color: #F6F6F6;
 }
 /** REGION(ROUNDED) --------------------------*/
-rounded .self {border-radius: 12pt;}
-rounded .inner_border {border-radius: 11pt;}
+rounded .self {border-radius: 3pt;}
+rounded .inner_border {border-radius: 2pt;}
 
 
 
@@ -28,7 +28,7 @@ rectangle.backCap .self {
 
 
 
-/** fill_grad */
+/** .fill_grad */
 rectangle.fill_grad_norm .self,
 rectangle.fill_grad_warm .self,
 rectangle.fill_grad_cool .self,
@@ -79,7 +79,12 @@ rectangle.fill_shadow_depth3_left  .self {background-image: -webkit-gradient(lin
 rectangle.fill_a06 .self,
 rectangle.fill_a18 .self,
 rectangle.fill_a30 .self,
-rectangle.fill_a42 .self
+rectangle.fill_a42 .self,
+
+rectangle.fill_a06F .self,
+rectangle.fill_a18F .self,
+rectangle.fill_a30F .self,
+rectangle.fill_a42F .self
 {
   border-style: none;border-width: 0;
 }
@@ -87,6 +92,11 @@ rectangle.fill_a06 .self {background-color: rgba(77,77,77,0.06);}
 rectangle.fill_a18 .self {background-color: rgba(77,77,77,0.18);}
 rectangle.fill_a30 .self {background-color: rgba(77,77,77,0.3);}
 rectangle.fill_a42 .self {background-color: rgba(77,77,77,0.42);}
+
+rectangle.fill_a06F .self {background-color: rgba(255,255,255,0.06);}
+rectangle.fill_a18F .self {background-color: rgba(255,255,255,0.18);}
+rectangle.fill_a30F .self {background-color: rgba(255,255,255,0.3);}
+rectangle.fill_a42F .self {background-color: rgba(255,255,255,0.42);}
 
 
 
@@ -119,80 +129,104 @@ rectangle.fill_gsF .self, oval.fill_gsF .self
 }
 
 button.fill_gs3 .self,
-button.fill_gs3_right .self,
+button.fill_gs3_rad0110 .self, button.fill_gs3_rad0010 .self, button.fill_gs3_rad0000 .self,
+button.fill_gs3_hrz .self,
+button.fill_gs3_rad0110_hrz .self, button.fill_gs3_rad0010_hrz .self, button.fill_gs3_rad0000_hrz .self,
 button.circle_gs3 .self,
 button_bar_segment.fill_gs3 .self,
-button_bar_segment.fill_gs3_right .self,
+button_bar_segment.fill_gs3_rad0110 .self, button_bar_segment.fill_gs3_rad0010 .self, button_bar_segment.fill_gs3_rad0000 .self,
+button_bar_segment.fill_gs3_hrz .self,
+button_bar_segment.fill_gs3_rad0110_hrz .self, button_bar_segment.fill_gs3_rad0010_hrz .self, button_bar_segment.fill_gs3_rad0000_hrz .self,
 button_bar_segment.circle_gs3 .self,
 popover.fill_gs3 .self,
 rectangle.fill_gs3 .self,
 oval.fill_gs3 .self
 {background-color: #333;}
 button.fill_gs6 .self,
-button.fill_gs6_right .self,
+button.fill_gs6_rad0110 .self, button.fill_gs6_rad0010 .self, button.fill_gs6_rad0000 .self,
+button.fill_gs6_hrz .self,
+button.fill_gs6_rad0110_hrz .self, button.fill_gs6_rad0010_hrz .self, button.fill_gs6_rad0000_hrz .self,
 button.circle_gs6 .self,
 button_bar_segment.fill_gs6 .self,
-button_bar_segment.fill_gs6_right .self,
+button_bar_segment.fill_gs6_rad0110 .self, button_bar_segment.fill_gs6_rad0010 .self, button_bar_segment.fill_gs6_rad0000 .self,
+button_bar_segment.fill_gs6_hrz .self,
+button_bar_segment.fill_gs6_rad0110_hrz .self, button_bar_segment.fill_gs6_rad0010_hrz .self, button_bar_segment.fill_gs6_rad0000_hrz .self,
 button_bar_segment.circle_gs6 .self,
 popover.fill_gs6 .self,
 rectangle.fill_gs6 .self,
 oval.fill_gs6 .self
 {background-color: #666;}
 button.fill_gs9 .self,
-button.fill_gs9_right .self,
+button.fill_gs9_rad0110 .self,
+button.fill_gs9_hrz .self,
+button.fill_gs9_rad0110_hrz .self,
 button.circle_gs9 .self,
 button_bar_segment.fill_gs9 .self,
-button_bar_segment.fill_gs9_right .self,
+button_bar_segment.fill_gs9_rad0110 .self,
+button_bar_segment.fill_gs9_hrz .self,
+button_bar_segment.fill_gs9_rad0110_hrz .self,
 button_bar_segment.circle_gs9 .self,
 popover.fill_gs9 .self,
 rectangle.fill_gs9 .self,
 oval.fill_gs9 .self
 {background-color: #999;}
 button.fill_gsA .self,
-button.fill_gsA_right .self,
+button.fill_gsA_rad0110 .self,
+button.fill_gsA_hrz .self,
+button.fill_gsA_rad0110_hrz .self,
 button.circle_gsA .self,
 button_bar_segment.fill_gsA .self,
-button_bar_segment.fill_gsA_right .self,
+button_bar_segment.fill_gsA_rad0110 .self,
+button_bar_segment.fill_gsA_hrz .self,
+button_bar_segment.fill_gsA_rad0110_hrz .self,
 button_bar_segment.circle_gsA .self,
 popover.fill_gsA .self,
 rectangle.fill_gsA .self,
 oval.fill_gsA .self
 {background-color: #AAA;}
 button.fill_gsB .self,
-button.fill_gsB_right .self,
+button.fill_gsB_hrz .self,
 button.circle_gsB .self,
 button_bar_segment.fill_gsB .self,
-button_bar_segment.fill_gsB_right .self,
+button_bar_segment.fill_gsB_hrz .self,
 button_bar_segment.circle_gsB .self,
 popover.fill_gsB .self,
 rectangle.fill_gsB .self,
 oval.fill_gsB .self
 {background-color: #BBB;}
 button.fill_gsC .self,
-button.fill_gsC_right .self,
+button.fill_gsC_rad0110 .self,
+button.fill_gsC_hrz .self,
+button.fill_gsC_rad0110_hrz .self,
 button.circle_gsC .self,
 button_bar_segment.fill_gsC .self,
-button_bar_segment.fill_gsC_right .self,
+button_bar_segment.fill_gsC_rad0110 .self,
+button_bar_segment.fill_gsC_hrz .self,
+button_bar_segment.fill_gsC_rad0110_hrz .self,
 button_bar_segment.circle_gsC .self,
 popover.fill_gsC .self,
 rectangle.fill_gsC .self,
 oval.fill_gsC .self
 {background-color: #CCC;}
 button.fill_gsD .self,
-button.fill_gsD_right .self,
+button.fill_gsD_rad0110 .self,
+button.fill_gsD_hrz .self,
+button.fill_gsD_rad0110_hrz .self,
 button.circle_gsD .self,
 button_bar_segment.fill_gsD .self,
-button_bar_segment.fill_gsD_right .self,
+button_bar_segment.fill_gsD_rad0110 .self,
+button_bar_segment.fill_gsD_hrz .self,
+button_bar_segment.fill_gsD_rad0110_hrz .self,
 button_bar_segment.circle_gsD .self,
 popover.fill_gsD .self,
 rectangle.fill_gsD .self,
 oval.fill_gsD .self
 {background-color: #DDD;}
 button.fill_gsE .self,
-button.fill_gsE_right .self,
+button.fill_gsE_hrz .self,
 button.circle_gsE .self,
 button_bar_segment.fill_gsE .self,
-button_bar_segment.fill_gsE_right .self,
+button_bar_segment.fill_gsE_hrz .self,
 button_bar_segment.circle_gsE .self,
 popover.fill_gsE .self,
 rectangle.fill_gsE .self,
@@ -205,10 +239,14 @@ rectangle.fill_gsFC .self,
 oval.fill_gsFC .self
 {background-color: #FCFCFC;}
 button.fill_gsF .self,
-button.fill_gsF_right .self,
+button.fill_gsF_rad0110 .self,
+button.fill_gsF_hrz .self,
+button.fill_gsF_rad0110_hrz .self,
 button.circle_gsF .self,
 button_bar_segment.fill_gsF .self,
-button_bar_segment.fill_gsF_right .self,
+button_bar_segment.fill_gsF_rad0110 .self,
+button_bar_segment.fill_gsF_hrz .self,
+button_bar_segment.fill_gsF_rad0110_hrz .self,
 button_bar_segment.circle_gsF .self,
 popover.fill_gsF .self,
 rectangle.fill_gsF .self,
@@ -240,18 +278,31 @@ line.stroke_gsF .self, rectangle.stroke_gsF .self
   border-style: solid; border-width: 2pt;
   background-image: none;background-color: rgba(0,0,0,0);
 }
-line.stroke_gs3 .self, rectangle.stroke_gs3 .self{border-color: #333;}
-line.stroke_gs6 .self, rectangle.stroke_gs6 .self{border-color: #666;}
-line.stroke_gs9 .self, rectangle.stroke_gs9 .self{border-color: #999;}
-line.stroke_gsA .self, rectangle.stroke_gsA .self{border-color: #AAA;}
-line.stroke_gsB .self, rectangle.stroke_gsB .self{border-color: #BBB;}
-line.stroke_gsC .self, rectangle.stroke_gsC .self{border-color: #CCC;}
-line.stroke_gsD .self, rectangle.stroke_gsD .self{border-color: #DDD;}
-line.stroke_gsE .self, rectangle.stroke_gsE .self{border-color: #EEE;}
-line.stroke_gsF .self, rectangle.stroke_gsF .self{border-color: #FFF;}
-
+line.stroke_gs3 .self, rectangle.stroke_gs3 .self,
+rectangle.bracket_gs3 .self,
 rectangle.stroke0001_rad_gs3 .self, rounded.stroke0001_rad_gs3 .self
 {border-color: #333;}
+line.stroke_gs6 .self, rectangle.stroke_gs6 .self,
+rectangle.bracket_gs6 .self,
+rectangle.stroke0001_rad_gs6 .self, rounded.stroke0001_rad_gs6 .self
+{border-color: #666;}
+line.stroke_gs9 .self, rectangle.stroke_gs9 .self,
+rectangle.bracket_gs9 .self
+{border-color: #999;}
+line.stroke_gsA .self, rectangle.stroke_gsA .self,
+rectangle.bracket_gsA .self
+{border-color: #AAA;}
+line.stroke_gsB .self, rectangle.stroke_gsB .self
+{border-color: #BBB;}
+line.stroke_gsC .self, rectangle.stroke_gsC .self,
+rectangle.bracket_gsC .self
+{border-color: #CCC;}
+line.stroke_gsD .self, rectangle.stroke_gsD .self
+{border-color: #DDD;}
+line.stroke_gsE .self, rectangle.stroke_gsE .self
+{border-color: #EEE;}
+line.stroke_gsF .self, rectangle.stroke_gsF .self,
+rectangle.bracket_gsF .self,
 rectangle.stroke0001_rad_gsF .self, rounded.stroke0001_rad_gsF .self
 {border-color: #FFF;}
 
@@ -263,7 +314,11 @@ line.dash_gs6 .self, rectangle.dash_gs6 .self,
 line.dash_gs9 .self, rectangle.dash_gs9 .self,
 line.dash_gsA .self, rectangle.dash_gsA .self,
 line.dash_gsC .self, rectangle.dash_gsC .self,
-line.dash_gsF .self, rectangle.dash_gsF .self
+line.dash_gsF .self, rectangle.dash_gsF .self,
+line.dash_ex2 .self, rectangle.dash_ex2 .self,
+line.dash_ex4 .self, rectangle.dash_ex4 .self,
+line.dash_ex6 .self, rectangle.dash_ex6 .self,
+line.dash_ex8 .self, rectangle.dash_ex8 .self
 {
   border-style: dashed; border-width: 1pt;
   background-image: none;background-color: rgba(0,0,0,0);
@@ -273,7 +328,11 @@ line.dash_gs6_l2 .self, rectangle.dash_gs6_l2 .self,
 line.dash_gs9_l2 .self, rectangle.dash_gs9_l2 .self,
 line.dash_gsA_l2 .self, rectangle.dash_gsA_l2 .self,
 line.dash_gsC_l2 .self, rectangle.dash_gsC_l2 .self,
-line.dash_gsF_l2 .self, rectangle.dash_gsF_l2 .self
+line.dash_gsF_l2 .self, rectangle.dash_gsF_l2 .self,
+line.dash_ex2_l2 .self, rectangle.dash_ex2_l2 .self,
+line.dash_ex4_l2 .self, rectangle.dash_ex4_l2 .self,
+line.dash_ex6_l2 .self, rectangle.dash_ex6_l2 .self,
+line.dash_ex8_l2 .self, rectangle.dash_ex8_l2 .self
 {
   border-style: dashed; border-width: 2pt;
   background-image: none;background-color: rgba(0,0,0,0);
@@ -300,19 +359,30 @@ line.dash_gsF_l2 .self, rectangle.dash_gsF_l2 .self
 
 
 /** (rect) .bracket ---------------------------------*/
-rectangle.bracket_ex4 .self {
-  border-style: none; border-width: 2pt; border-radius: 12pt; border-color: #333;
+rectangle.bracket_gs3 .self,
+rectangle.bracket_gs6 .self,
+rectangle.bracket_gs9 .self,
+rectangle.bracket_gsA .self,
+rectangle.bracket_gsC .self,
+rectangle.bracket_gsF .self,
+rectangle.bracket_ex2 .self,
+rectangle.bracket_ex4 .self,
+rectangle.bracket_ex6 .self,
+rectangle.bracket_ex8 .self
+{
+  border-style: none; border-width: 2pt; border-radius: 12pt; /*border-color: #666;*/
   border-right-style: solid;
   border-left-style: solid;
   background-image: none; background-color: rgba(0,0,0,0);
 }
 
 /** (rect) .stroke0001_rad ---------------------------------*/
+rectangle.stroke0001_rad_gs3 .self, rounded.stroke0001_rad_gs3 .self,
+rectangle.stroke0001_rad_gs6 .self, rounded.stroke0001_rad_gs6 .self,
+rectangle.stroke0001_rad_gsF .self, rounded.stroke0001_rad_gsF .self,
 rectangle.stroke0001_rad_ex2 .self, rounded.stroke0001_rad_ex2 .self,
 rectangle.stroke0001_rad_ex4 .self, rounded.stroke0001_rad_ex4 .self,
-rectangle.stroke0001_rad_ex8 .self, rounded.stroke0001_rad_ex8 .self,
-rectangle.stroke0001_rad_gs3 .self, rounded.stroke0001_rad_gs3 .self,
-rectangle.stroke0001_rad_gsF .self, rounded.stroke0001_rad_gsF .self
+rectangle.stroke0001_rad_ex8 .self, rounded.stroke0001_rad_ex8 .self
 {
   border-style: solid;
   border-width: 0 0 0 2pt;

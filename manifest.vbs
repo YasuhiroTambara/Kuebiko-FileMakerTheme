@@ -8,7 +8,7 @@ Array(_
   "02Orange",_
   "03Khaki",_
   "03Amber",_
-  "04Yellow",_
+  "04Banana",_
   "05Moss",_
   "05Lime",_
   "06Olive",_
