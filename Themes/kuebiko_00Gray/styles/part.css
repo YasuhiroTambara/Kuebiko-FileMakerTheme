@@ -17,17 +17,17 @@ body     .self,
 body_alt .self
 {
   border-style: none; border-width: 1pt; border-color: #DADADA;
-  border-bottom-style: solid;
+  /*border-bottom-style: solid;*/
   background-image: none;
   
   -fm-use-body-current-row-style: true;
+  -fm-use-body-alternate-row-style: true;/* ??? not work */
 }
 body .self {
   background-color: #FCFCFC;
 }
 body_alt .self {
   background-color: #F6F6F6;
-  -fm-use-body-alternate-row-style: true;/* ??? not work */
   /*-fm-table-background-color: rgba(180,206,0,1);*/
 }
 body:checked .self {
@@ -125,6 +125,30 @@ body.fill_ex6 .self,
 body.fill_ex7 .self,
 body.fill_ex8 .self,
 body.fill_ex9 .self
+
+/* ??? not work 
+body_alt.fill_gs3 .self,
+body_alt.fill_gs6 .self,
+body_alt.fill_gs9 .self,
+body_alt.fill_gsA .self,
+body_alt.fill_gsB .self,
+body_alt.fill_gsC .self,
+body_alt.fill_gsD .self,
+body_alt.fill_gsE .self,
+body_alt.fill_gsF6 .self,
+body_alt.fill_gsFC .self,
+body_alt.fill_gsF .self,
+
+body_alt.fill_ex1 .self,
+body_alt.fill_ex2 .self,
+body_alt.fill_ex3 .self,
+body_alt.fill_ex4 .self,
+body_alt.fill_ex5 .self,
+body_alt.fill_ex6 .self,
+body_alt.fill_ex7 .self,
+body_alt.fill_ex8 .self,
+body_alt.fill_ex9 .self
+*/
 {
   border-style: none;
 }
@@ -176,29 +200,81 @@ body.list_gsF_stroke1000 .self
 
 
 
+/** BORDERD -----------*/
+body.list_gs3 .self,
+body.list_gs6 .self,
+body.list_gs9 .self,
+body.list_gsA .self,
+body.list_gsB .self,
+body.list_gsC .self,
+body.list_gsD .self,
+body.list_gsE .self,
+body.list_gsF6 .self,
+body.list_gsFC .self,
+body.list_gsF .self,
+
+body.list_ex1 .self,
+body.list_ex2 .self,
+body.list_ex3 .self,
+body.list_ex4 .self,
+body.list_ex5 .self,
+body.list_ex6 .self,
+body.list_ex7 .self,
+body.list_ex8 .self,
+body.list_ex9 .self
+
+/* ??? not work 
+body_alt.list_gs3 .self,
+body_alt.list_gs6 .self,
+body_alt.list_gs9 .self,
+body_alt.list_gsA .self,
+body_alt.list_gsB .self,
+body_alt.list_gsC .self,
+body_alt.list_gsD .self,
+body_alt.list_gsE .self,
+body_alt.list_gsF6 .self,
+body_alt.list_gsFC .self,
+body_alt.list_gsF .self,
+
+body_alt.list_ex1 .self,
+body_alt.list_ex2 .self,
+body_alt.list_ex3 .self,
+body_alt.list_ex4 .self,
+body_alt.list_ex5 .self,
+body_alt.list_ex6 .self,
+body_alt.list_ex7 .self,
+body_alt.list_ex8 .self,
+body_alt.list_ex9 .self
+*/
+{
+  border-bottom-style: solid;
+}
+
+
+
 /*
 body.list_gs3 .self,
 body.list_gs6 .self
 {
-  border-bottom-style: solid; border-color: #000;
+  border-color: #000;
 }
 
 body.list_gs9 .self,
 body.list_gsA .self
 {
-  border-bottom-style: solid; border-color: #777;
+  border-color: #777;
 }
 
 body.list_gsB .self,
 body.list_gsC .self
 {
-  border-bottom-style: solid; border-color: #999;
+  border-color: #999;
 }
 
 body.list_gsD .self,
 body.list_gsE .self
 {
-  border-bottom-style: solid; border-color: #AAA;
+  border-color: #AAA;
 }
 */
 body.list_gs3 .self,
@@ -206,14 +282,14 @@ body.list_gs6 .self,
 body.list_gs9 .self,
 body.list_gsA .self
 {
-  border-bottom-style: solid; border-color: rgba(0,0,0,0.3);
+  border-color: rgba(0,0,0,0.3);
 }
 body.list_gsB .self,
 body.list_gsC .self,
 body.list_gsD .self,
 body.list_gsE .self
 {
-  border-bottom-style: solid; border-color: rgba(0,0,0,0.12);
+  border-color: rgba(0,0,0,0.12);
 }
 
 body.list_gsF6 .self,
@@ -230,7 +306,7 @@ body.list_ex7 .self,
 body.list_ex8 .self,
 body.list_ex9 .self
 {
-  border-bottom-style: solid; border-color: #DADADA;
+  border-color: #DADADA;
 }
 
 

@@ -310,8 +310,8 @@ button_bar_segment.fill_ex6_hrz .icon,
 button_bar_segment.fill_ex7_hrz .icon,
 button_bar_segment.fill_ex8_hrz .icon,
 button_bar_segment.fill_ex9_hrz .icon,
-button_bar_segment.fill_gs3_rad0110_hrz .icon, button_bar_segment.fill_gs3_rad0010_hrz .icon, button_bar_segment.fill_gs3_rad0000_hrz .icon,
-button_bar_segment.fill_gs6_rad0110_hrz .icon, button_bar_segment.fill_gs6_rad0010_hrz .icon, button_bar_segment.fill_gs6_rad0000_hrz .icon,
+button_bar_segment.fill_gs3_rad0110_hrz .icon,
+button_bar_segment.fill_gs6_rad0110_hrz .icon,
 button_bar_segment.fill_gs9_rad0110_hrz .icon,
 button_bar_segment.fill_gsA_rad0110_hrz .icon,
 button_bar_segment.fill_gsC_rad0110_hrz .icon,
@@ -534,12 +534,22 @@ text_box.cap:pressed .inner_border
 button.btn_check .self,
 button.btn_radio .self
 {
-  *background-color: #FBFBFB;
+  /*background-color: #FBFBFB;*/
 }
-button.btn_check .self {border-radius: 2pt;}
-button.btn_radio .self {border-radius: 50%;}
-button.btn_check .inner_border {border-radius: 2pt;}
-button.btn_radio .inner_border {border-radius: 50%;}
+button.btn_check .self,
+button.btn_check .inner_border,
+
+button.btn_check_gsF .self,
+button.btn_check_gsF .inner_border
+{border-radius: 2pt;}
+
+button.btn_radio .self,
+button.btn_radio .inner_border,
+
+button.btn_radio_gsF .self,
+button.btn_radio_gsF .inner_border,
+{border-radius: 50%;}
+
 
 button.btn_check:normal .self,
 button.btn_radio:normal .self,
@@ -550,6 +560,28 @@ button.btn_radio:pressed .self
 {
   border-style: none; border-width: 0pt; border-color: #555;
   background-image: none; background-color: #666;
+  box-shadow: none;
+  
+  text-align: center;
+  font-size: 1pt;
+}
+button.btn_check_gsF:normal .self,
+button.btn_check_gsF:hover .self,
+button.btn_check_gsF:pressed .self
+{
+  border-style: solid; border-width: 2pt; border-color: #FFF;
+  background-image: none; background-color: #FFF;
+  box-shadow: none;
+  
+  text-align: center;
+  font-size: 1pt;
+}
+button.btn_radio_gsF:normal .self,
+button.btn_radio_gsF:hover .self,
+button.btn_radio_gsF:pressed .self
+{
+  border-style: solid; border-width: 3pt; border-color: #FFF;
+  background-image: none; background-color: #FFF;
   box-shadow: none;
   
   text-align: center;
@@ -570,7 +602,9 @@ button.btn_radio:pressed .self
 
 
 button.btn_check:normal .inner_border,
-button.btn_radio:normal .inner_border
+button.btn_radio:normal .inner_border,
+button.btn_check_gsF:normal .inner_border,
+button.btn_radio_gsF:normal .inner_border
 {
   margin: 0pt;
   padding: 0pt;
@@ -579,13 +613,17 @@ button.btn_radio:normal .inner_border
 }
 
 button.btn_check:hover .inner_border,
-button.btn_radio:hover .inner_border
+button.btn_radio:hover .inner_border,
+button.btn_check_gsF:hover .inner_border,
+button.btn_radio_gsF:hover .inner_border
 {
   background-image: none; background-color: rgba(82%,82%,82%,0.3);
   box-shadow: none;
 }
 button.btn_check:pressed .inner_border,
-button.btn_radio:pressed .inner_border
+button.btn_radio:pressed .inner_border,
+button.btn_check_gsF:pressed .inner_border,
+button.btn_radio_gsF:pressed .inner_border
 {
   background-image: none; background-color: rgba(64%,64%,64%,0.7);
   box-shadow: none;
@@ -681,8 +719,8 @@ button_bar.fill_ex6 .self,
 button_bar.fill_ex7 .self,
 button_bar.fill_ex8 .self,
 button_bar.fill_ex9 .self,
-button_bar.fill_gs3_rad0110 .self, button_bar.fill_gs3_rad0010 .self, button_bar.fill_gs3_rad0000 .self,
-button_bar.fill_gs6_rad0110 .self, button_bar.fill_gs6_rad0010 .self, button_bar.fill_gs6_rad0000 .self,
+button_bar.fill_gs3_rad0110 .self,
+button_bar.fill_gs6_rad0110 .self,
 button_bar.fill_gs9_rad0110 .self,
 button_bar.fill_gsA_rad0110 .self,
 button_bar.fill_gsC_rad0110 .self,
@@ -751,8 +789,8 @@ button_bar.fill_ex6_hrz .self,
 button_bar.fill_ex7_hrz .self,
 button_bar.fill_ex8_hrz .self,
 button_bar.fill_ex9_hrz .self,
-button_bar.fill_gs3_rad0110_hrz .self, button_bar.fill_gs3_rad0010_hrz .self, button_bar.fill_gs3_rad0000_hrz .self,
-button_bar.fill_gs6_rad0110_hrz .self, button_bar.fill_gs6_rad0010_hrz .self, button_bar.fill_gs6_rad0000_hrz .self,
+button_bar.fill_gs3_rad0110_hrz .self,
+button_bar.fill_gs6_rad0110_hrz .self,
 button_bar.fill_gs9_rad0110_hrz .self,
 button_bar.fill_gsA_rad0110_hrz .self,
 button_bar.fill_gsC_rad0110_hrz .self,
@@ -924,8 +962,8 @@ button_bar.fill_ex6 .button_bar_divider,
 button_bar.fill_ex7 .button_bar_divider,
 button_bar.fill_ex8 .button_bar_divider,
 button_bar.fill_ex9 .button_bar_divider,
-button_bar.fill_gs3_rad0110 .button_bar_divider, button_bar.fill_gs3_rad0010 .button_bar_divider, button_bar.fill_gs3_rad0000 .button_bar_divider,
-button_bar.fill_gs6_rad0110 .button_bar_divider, button_bar.fill_gs6_rad0010 .button_bar_divider, button_bar.fill_gs6_rad0000 .button_bar_divider,
+button_bar.fill_gs3_rad0110 .button_bar_divider,
+button_bar.fill_gs6_rad0110 .button_bar_divider,
 button_bar.fill_gs9_rad0110 .button_bar_divider,
 button_bar.fill_gsA_rad0110 .button_bar_divider,
 button_bar.fill_gsC_rad0110 .button_bar_divider,
@@ -995,8 +1033,8 @@ button_bar.fill_ex6_hrz .button_bar_divider,
 button_bar.fill_ex7_hrz .button_bar_divider,
 button_bar.fill_ex8_hrz .button_bar_divider,
 button_bar.fill_ex9_hrz .button_bar_divider,
-button_bar.fill_gs3_rad0110_hrz .button_bar_divider, button_bar.fill_gs3_rad0010_hrz .button_bar_divider, button_bar.fill_gs3_rad0000_hrz .button_bar_divider,
-button_bar.fill_gs6_rad0110_hrz .button_bar_divider, button_bar.fill_gs6_rad0010_hrz .button_bar_divider, button_bar.fill_gs6_rad0000_hrz .button_bar_divider,
+button_bar.fill_gs3_rad0110_hrz .button_bar_divider,
+button_bar.fill_gs6_rad0110_hrz .button_bar_divider,
 button_bar.fill_gs9_rad0110_hrz .button_bar_divider,
 button_bar.fill_gsA_rad0110_hrz .button_bar_divider,
 button_bar.fill_gsC_rad0110_hrz .button_bar_divider,
@@ -1268,8 +1306,8 @@ button_bar_segment.fill_ex6 .self,
 button_bar_segment.fill_ex7 .self,
 button_bar_segment.fill_ex8 .self,
 button_bar_segment.fill_ex9 .self,
-button_bar_segment.fill_gs3_rad0110 .self, button_bar_segment.fill_gs3_rad0010 .self, button_bar_segment.fill_gs3_rad0000 .self,
-button_bar_segment.fill_gs6_rad0110 .self, button_bar_segment.fill_gs6_rad0010 .self, button_bar_segment.fill_gs6_rad0000 .self,
+button_bar_segment.fill_gs3_rad0110 .self,
+button_bar_segment.fill_gs6_rad0110 .self,
 button_bar_segment.fill_gs9_rad0110 .self,
 button_bar_segment.fill_gsA_rad0110 .self,
 button_bar_segment.fill_gsC_rad0110 .self,
@@ -1339,8 +1377,8 @@ button_bar_segment.fill_ex6_hrz .self,
 button_bar_segment.fill_ex7_hrz .self,
 button_bar_segment.fill_ex8_hrz .self,
 button_bar_segment.fill_ex9_hrz .self,
-button_bar_segment.fill_gs3_rad0110_hrz .self, button_bar_segment.fill_gs3_rad0010_hrz .self, button_bar_segment.fill_gs3_rad0000_hrz .self,
-button_bar_segment.fill_gs6_rad0110_hrz .self, button_bar_segment.fill_gs6_rad0010_hrz .self, button_bar_segment.fill_gs6_rad0000_hrz .self,
+button_bar_segment.fill_gs3_rad0110_hrz .self,
+button_bar_segment.fill_gs6_rad0110_hrz .self,
 button_bar_segment.fill_gs9_rad0110_hrz .self,
 button_bar_segment.fill_gsA_rad0110_hrz .self,
 button_bar_segment.fill_gsC_rad0110_hrz .self,
@@ -1527,8 +1565,8 @@ button_bar_segment.fill_ex6 .self,
 button_bar_segment.fill_ex7 .self,
 button_bar_segment.fill_ex8 .self,
 button_bar_segment.fill_ex9 .self,
-button_bar_segment.fill_gs3_rad0110 .self, button_bar_segment.fill_gs3_rad0010 .self, button_bar_segment.fill_gs3_rad0000 .self,
-button_bar_segment.fill_gs6_rad0110 .self, button_bar_segment.fill_gs6_rad0010 .self, button_bar_segment.fill_gs6_rad0000 .self,
+button_bar_segment.fill_gs3_rad0110 .self,
+button_bar_segment.fill_gs6_rad0110 .self,
 button_bar_segment.fill_gs9_rad0110 .self,
 button_bar_segment.fill_gsA_rad0110 .self,
 button_bar_segment.fill_gsC_rad0110 .self,
@@ -1597,8 +1635,8 @@ button_bar_segment.fill_ex6_hrz .self,
 button_bar_segment.fill_ex7_hrz .self,
 button_bar_segment.fill_ex8_hrz .self,
 button_bar_segment.fill_ex9_hrz .self,
-button_bar_segment.fill_gs3_rad0110_hrz .self, button_bar_segment.fill_gs3_rad0010_hrz .self, button_bar_segment.fill_gs3_rad0000_hrz .self,
-button_bar_segment.fill_gs6_rad0110_hrz .self, button_bar_segment.fill_gs6_rad0010_hrz .self, button_bar_segment.fill_gs6_rad0000_hrz .self,
+button_bar_segment.fill_gs3_rad0110_hrz .self,
+button_bar_segment.fill_gs6_rad0110_hrz .self,
 button_bar_segment.fill_gs9_rad0110_hrz .self,
 button_bar_segment.fill_gsA_rad0110_hrz .self,
 button_bar_segment.fill_gsC_rad0110_hrz .self,
@@ -1954,8 +1992,8 @@ button_bar_segment.circle_ac4_23Peony .self,
 button_bar_segment.circle_ac4_23Coral .self,
 button_bar_segment.circle_ac4_24Tomato .self,
 
-button_bar_segment.fill_gs3_rad0110 .self, button_bar_segment.fill_gs3_rad0010 .self, button_bar_segment.fill_gs3_rad0000 .self,
-button_bar_segment.fill_gs6_rad0110 .self, button_bar_segment.fill_gs6_rad0010 .self, button_bar_segment.fill_gs6_rad0000 .self,
+button_bar_segment.fill_gs3_rad0110 .self,
+button_bar_segment.fill_gs6_rad0110 .self,
 button_bar_segment.fill_gs9_rad0110 .self,
 button_bar_segment.fill_gsA_rad0110 .self,
 button_bar_segment.fill_gsC_rad0110 .self,
@@ -2001,8 +2039,8 @@ button_bar_segment.fill_ac4_23Peony .self,
 button_bar_segment.fill_ac4_23Coral .self,
 button_bar_segment.fill_ac4_24Tomato .self,
 
-button_bar_segment.fill_gs3_rad0110_hrz .self, button_bar_segment.fill_gs3_rad0010_hrz .self, button_bar_segment.fill_gs3_rad0000_hrz .self,
-button_bar_segment.fill_gs6_rad0110_hrz .self, button_bar_segment.fill_gs6_rad0010_hrz .self, button_bar_segment.fill_gs6_rad0000_hrz .self,
+button_bar_segment.fill_gs3_rad0110_hrz .self,
+button_bar_segment.fill_gs6_rad0110_hrz .self,
 button_bar_segment.fill_gs9_rad0110_hrz .self,
 button_bar_segment.fill_gsA_rad0110_hrz .self,
 button_bar_segment.fill_gsC_rad0110_hrz .self,
@@ -2357,8 +2395,8 @@ button_bar_segment.fill_ex6:hover .self,
 button_bar_segment.fill_ex7:hover .self,
 button_bar_segment.fill_ex8:hover .self,
 button_bar_segment.fill_ex9:hover .self,
-button_bar_segment.fill_gs3_rad0110:hover .self, button_bar_segment.fill_gs3_rad0010:hover .self, button_bar_segment.fill_gs3_rad0000:hover .self,
-button_bar_segment.fill_gs6_rad0110:hover .self, button_bar_segment.fill_gs6_rad0010:hover .self, button_bar_segment.fill_gs6_rad0000:hover .self,
+button_bar_segment.fill_gs3_rad0110:hover .self,
+button_bar_segment.fill_gs6_rad0110:hover .self,
 button_bar_segment.fill_gs9_rad0110:hover .self,
 button_bar_segment.fill_gsA_rad0110:hover .self,
 button_bar_segment.fill_gsC_rad0110:hover .self,
@@ -2392,8 +2430,8 @@ button_bar_segment.fill_ex6_hrz:hover .self,
 button_bar_segment.fill_ex7_hrz:hover .self,
 button_bar_segment.fill_ex8_hrz:hover .self,
 button_bar_segment.fill_ex9_hrz:hover .self,
-button_bar_segment.fill_gs3_rad0110_hrz:hover .self, button_bar_segment.fill_gs3_rad0010_hrz:hover .self, button_bar_segment.fill_gs3_rad0000_hrz:hover .self,
-button_bar_segment.fill_gs6_rad0110_hrz:hover .self, button_bar_segment.fill_gs6_rad0010_hrz:hover .self, button_bar_segment.fill_gs6_rad0000_hrz:hover .self,
+button_bar_segment.fill_gs3_rad0110_hrz:hover .self,
+button_bar_segment.fill_gs6_rad0110_hrz:hover .self,
 button_bar_segment.fill_gs9_rad0110_hrz:hover .self,
 button_bar_segment.fill_gsA_rad0110_hrz:hover .self,
 button_bar_segment.fill_gsC_rad0110_hrz:hover .self,
@@ -2753,8 +2791,8 @@ button_bar_segment.fill_ex6:pressed .self,
 button_bar_segment.fill_ex7:pressed .self,
 button_bar_segment.fill_ex8:pressed .self,
 button_bar_segment.fill_ex9:pressed .self,
-button_bar_segment.fill_gs3_rad0110:pressed .self, button_bar_segment.fill_gs3_rad0010:pressed .self, button_bar_segment.fill_gs3_rad0000:pressed .self,
-button_bar_segment.fill_gs6_rad0110:pressed .self, button_bar_segment.fill_gs6_rad0010:pressed .self, button_bar_segment.fill_gs6_rad0000:pressed .self,
+button_bar_segment.fill_gs3_rad0110:pressed .self,
+button_bar_segment.fill_gs6_rad0110:pressed .self,
 button_bar_segment.fill_gs9_rad0110:pressed .self,
 button_bar_segment.fill_gsA_rad0110:pressed .self,
 button_bar_segment.fill_gsC_rad0110:pressed .self,
@@ -2788,8 +2826,8 @@ button_bar_segment.fill_ex6_hrz:pressed .self,
 button_bar_segment.fill_ex7_hrz:pressed .self,
 button_bar_segment.fill_ex8_hrz:pressed .self,
 button_bar_segment.fill_ex9_hrz:pressed .self,
-button_bar_segment.fill_gs3_rad0110_hrz:pressed .self, button_bar_segment.fill_gs3_rad0010_hrz:pressed .self, button_bar_segment.fill_gs3_rad0000_hrz:pressed .self,
-button_bar_segment.fill_gs6_rad0110_hrz:pressed .self, button_bar_segment.fill_gs6_rad0010_hrz:pressed .self, button_bar_segment.fill_gs6_rad0000_hrz:pressed .self,
+button_bar_segment.fill_gs3_rad0110_hrz:pressed .self,
+button_bar_segment.fill_gs6_rad0110_hrz:pressed .self,
 button_bar_segment.fill_gs9_rad0110_hrz:pressed .self,
 button_bar_segment.fill_gsA_rad0110_hrz:pressed .self,
 button_bar_segment.fill_gsC_rad0110_hrz:pressed .self,
@@ -3374,8 +3412,8 @@ button_bar_segment.fill_ex6 .inner_border,
 button_bar_segment.fill_ex7 .inner_border,
 button_bar_segment.fill_ex8 .inner_border,
 button_bar_segment.fill_ex9 .inner_border,
-button_bar_segment.fill_gs3_rad0110 .inner_border, button_bar_segment.fill_gs3_rad0010 .inner_border, button_bar_segment.fill_gs3_rad0000 .inner_border,
-button_bar_segment.fill_gs6_rad0110 .inner_border, button_bar_segment.fill_gs6_rad0010 .inner_border, button_bar_segment.fill_gs6_rad0000 .inner_border,
+button_bar_segment.fill_gs3_rad0110 .inner_border,
+button_bar_segment.fill_gs6_rad0110 .inner_border,
 button_bar_segment.fill_gs9_rad0110 .inner_border,
 button_bar_segment.fill_gsA_rad0110 .inner_border,
 button_bar_segment.fill_gsC_rad0110 .inner_border,
@@ -3409,8 +3447,8 @@ button_bar_segment.fill_ex6_hrz .inner_border,
 button_bar_segment.fill_ex7_hrz .inner_border,
 button_bar_segment.fill_ex8_hrz .inner_border,
 button_bar_segment.fill_ex9_hrz .inner_border,
-button_bar_segment.fill_gs3_rad0110_hrz .inner_border, button_bar_segment.fill_gs3_rad0010_hrz .inner_border, button_bar_segment.fill_gs3_rad0000_hrz .inner_border,
-button_bar_segment.fill_gs6_rad0110_hrz .inner_border, button_bar_segment.fill_gs6_rad0010_hrz .inner_border, button_bar_segment.fill_gs6_rad0000_hrz .inner_border,
+button_bar_segment.fill_gs3_rad0110_hrz .inner_border,
+button_bar_segment.fill_gs6_rad0110_hrz .inner_border,
 button_bar_segment.fill_gs9_rad0110_hrz .inner_border,
 button_bar_segment.fill_gsA_rad0110_hrz .inner_border,
 button_bar_segment.fill_gsC_rad0110_hrz .inner_border,
@@ -3444,8 +3482,8 @@ button_bar_segment.fill_ex6:hover .inner_border,
 button_bar_segment.fill_ex7:hover .inner_border,
 button_bar_segment.fill_ex8:hover .inner_border,
 button_bar_segment.fill_ex9:hover .inner_border,
-button_bar_segment.fill_gs3_rad0110:hover .inner_border, button_bar_segment.fill_gs3_rad0010:hover .inner_border, button_bar_segment.fill_gs3_rad0000:hover .inner_border,
-button_bar_segment.fill_gs6_rad0110:hover .inner_border, button_bar_segment.fill_gs6_rad0010:hover .inner_border, button_bar_segment.fill_gs6_rad0000:hover .inner_border,
+button_bar_segment.fill_gs3_rad0110:hover .inner_border,
+button_bar_segment.fill_gs6_rad0110:hover .inner_border,
 button_bar_segment.fill_gs9_rad0110:hover .inner_border,
 button_bar_segment.fill_gsA_rad0110:hover .inner_border,
 button_bar_segment.fill_gsC_rad0110:hover .inner_border,
@@ -3479,8 +3517,8 @@ button_bar_segment.fill_ex6_hrz:hover .inner_border,
 button_bar_segment.fill_ex7_hrz:hover .inner_border,
 button_bar_segment.fill_ex8_hrz:hover .inner_border,
 button_bar_segment.fill_ex9_hrz:hover .inner_border,
-button_bar_segment.fill_gs3_rad0110_hrz:hover .inner_border, button_bar_segment.fill_gs3_rad0010_hrz:hover .inner_border, button_bar_segment.fill_gs3_rad0000_hrz:hover .inner_border,
-button_bar_segment.fill_gs6_rad0110_hrz:hover .inner_border, button_bar_segment.fill_gs6_rad0010_hrz:hover .inner_border, button_bar_segment.fill_gs6_rad0000_hrz:hover .inner_border,
+button_bar_segment.fill_gs3_rad0110_hrz:hover .inner_border,
+button_bar_segment.fill_gs6_rad0110_hrz:hover .inner_border,
 button_bar_segment.fill_gs9_rad0110_hrz:hover .inner_border,
 button_bar_segment.fill_gsA_rad0110_hrz:hover .inner_border,
 button_bar_segment.fill_gsC_rad0110_hrz:hover .inner_border,
@@ -3836,8 +3874,8 @@ button_bar_segment.fill_ex3 .icon,
 button_bar_segment.fill_ex4 .icon,
 button_bar_segment.fill_ex5 .icon,
 button_bar_segment.fill_ex6 .icon,
-button_bar_segment.fill_gs3_rad0110 .icon, button_bar_segment.fill_gs3_rad0010 .icon, button_bar_segment.fill_gs3_rad0000 .icon,
-button_bar_segment.fill_gs6_rad0110 .icon, button_bar_segment.fill_gs6_rad0010 .icon, button_bar_segment.fill_gs6_rad0000 .icon,
+button_bar_segment.fill_gs3_rad0110 .icon,
+button_bar_segment.fill_gs6_rad0110 .icon,
 button_bar_segment.fill_gs9_rad0110 .icon,
 button_bar_segment.fill_gsA_rad0110 .icon,
 button_bar_segment.fill_gsC_rad0110 .icon,
@@ -3860,8 +3898,8 @@ button_bar_segment.fill_ex3_hrz .icon,
 button_bar_segment.fill_ex4_hrz .icon,
 button_bar_segment.fill_ex5_hrz .icon,
 button_bar_segment.fill_ex6_hrz .icon,
-button_bar_segment.fill_gs3_rad0110_hrz .icon, button_bar_segment.fill_gs3_rad0010_hrz .icon, button_bar_segment.fill_gs3_rad0000_hrz .icon,
-button_bar_segment.fill_gs6_rad0110_hrz .icon, button_bar_segment.fill_gs6_rad0010_hrz .icon, button_bar_segment.fill_gs6_rad0000_hrz .icon,
+button_bar_segment.fill_gs3_rad0110_hrz .icon,
+button_bar_segment.fill_gs6_rad0110_hrz .icon,
 button_bar_segment.fill_gs9_rad0110_hrz .icon,
 button_bar_segment.fill_gsA_rad0110_hrz .icon,
 button_bar_segment.fill_gsC_rad0110_hrz .icon,
@@ -4416,14 +4454,10 @@ button.fill_ex4_rad0000_hrz .self,
 button.fill_ex6_rad0000_hrz .self,
 
 
-button_bar_segment.fill_gs3_rad0000 .self,
-button_bar_segment.fill_gs6_rad0000 .self,
 button_bar_segment.fill_ex2_rad0000 .self,
 button_bar_segment.fill_ex4_rad0000 .self,
 button_bar_segment.fill_ex6_rad0000 .self,
 
-button_bar_segment.fill_gs3_rad0000_hrz .self,
-button_bar_segment.fill_gs6_rad0000_hrz .self,
 button_bar_segment.fill_ex2_rad0000_hrz .self,
 button_bar_segment.fill_ex4_rad0000_hrz .self,
 button_bar_segment.fill_ex6_rad0000_hrz .self
@@ -4458,14 +4492,10 @@ button.fill_ex4_rad0010_hrz .self,
 button.fill_ex6_rad0010_hrz .self,
 
 
-button_bar_segment.fill_gs3_rad0010 .self,
-button_bar_segment.fill_gs6_rad0010 .self,
 button_bar_segment.fill_ex2_rad0010 .self,
 button_bar_segment.fill_ex4_rad0010 .self,
 button_bar_segment.fill_ex6_rad0010 .self,
 
-button_bar_segment.fill_gs3_rad0010_hrz .self,
-button_bar_segment.fill_gs6_rad0010_hrz .self,
 button_bar_segment.fill_ex2_rad0010_hrz .self,
 button_bar_segment.fill_ex4_rad0010_hrz .self,
 button_bar_segment.fill_ex6_rad0010_hrz .self
@@ -5194,34 +5224,55 @@ button.mro_gsF_hrz:pressed .icon, button_bar_segment.mro_gsF_hrz:pressed .icon
 
 
 /** (btn) .selectknob */
-button_bar.selectknob .self {
+button_bar.selectknob .self,
+button_bar.selectknob_gsF .self
+{
   border-style: none; border-width: 0pt; border-radius: 0pt;  border-color: rgba(0,0,0,0);
 }
-button_bar.selectknob .button_bar_divider {
+button_bar.selectknob .button_bar_divider,
+button_bar.selectknob_gsF .button_bar_divider,
+{
   border-style: none; border-width: 0pt; border-color: rgba(0,0,0,0);
 }
 
-button_bar_segment.selectknob .self {
+button_bar_segment.selectknob .self,
+button_bar_segment.selectknob_gsF .self
+{
   border-style: solid; border-width: 1pt; border-radius: 3pt; border-color: rgba(0,0,0,0);
   background-image: none; background-color: rgba(0,0,0,0);
   text-align: left;
-  color: #333;
   box-shadow: none;
 }
+button_bar_segment.selectknob .self,
+button_bar_segment.selectknob:hover .self,
+button_bar_segment.selectknob:pressed .self
+{color: #333;}
+button_bar_segment.selectknob_gsF .self,
+button_bar_segment.selectknob_gsF:hover .self,
+button_bar_segment.selectknob_gsF:pressed .self
+{color: #FFF;}
+
 button_bar_segment.selectknob .inner_border,
 button_bar_segment.selectknob:hover .inner_border,
-button_bar_segment.selectknob:focus .inner_border
+button_bar_segment.selectknob:focus .inner_border,
 /*button_bar_segment.selectknob:pressed .inner_border*/
+button_bar_segment.selectknob_gsF .inner_border,
+button_bar_segment.selectknob_gsF:hover .inner_border,
+button_bar_segment.selectknob_gsF:focus .inner_border
 {
   padding-left: 25pt;/* [memo]left space for select icon */
   box-shadow: none;
 }
 
-button_bar_segment.selectknob:hover .self {
+button_bar_segment.selectknob:hover .self,
+button_bar_segment.selectknob_gsF:hover .self,
+{
   background-image: none; background-color: rgba(124,124,124,0.18);
   box-shadow: none;
 }
-button_bar_segment.selectknob:pressed .self {
+button_bar_segment.selectknob:pressed .self,
+button_bar_segment.selectknob_gsF:pressed .self,
+{
   background-image: none; background-color: rgba(124,124,124,0.3);
   box-shadow: none;
 }
@@ -5255,7 +5306,7 @@ button_bar.ear1_ex4_hrz .self
 button_bar_segment.ear1_ex4:normal .self,
 button_bar_segment.ear1_ex4_hrz:normal .self
 {
-  background-image: none; background-color: #999;
+  background-image: none; background-color: #777;
 }
 
 button_bar_segment.ear:active .self,
@@ -5268,7 +5319,7 @@ button_bar_segment.ear_ex2_hrz:active .self,
 button_bar_segment.ear_ex4_hrz:active .self,
 button_bar_segment.ear1_ex4_hrz:active .self
 {
-  background-color: #777;/* theme_colors */
+  background-color: #CCC;/* theme_colors */
   color: #FFF;
 }
 
@@ -5308,7 +5359,7 @@ button_bar_segment.ear_ex4_hrz:pressed .self,
 button_bar_segment.ear1_ex4:normal .inner_border,
 button_bar_segment.ear1_ex4_hrz:normal .inner_border
 {
-  box-shadow: inset 0pt 0pt 3pt 0pt rgba(0,0,0,0.36);
+  box-shadow: inset 0pt 0pt 5pt 0pt rgba(0,0,0,0.36);
 }
 button_bar_segment.ear1_ex4:active .inner_border,
 button_bar_segment.ear1_ex4_hrz:active .inner_border

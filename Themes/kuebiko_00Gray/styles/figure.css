@@ -52,8 +52,8 @@ rectangle.fill_shadow_depth3_left .self
   border-style: none; border-width: 0;
 }
 rectangle.fill_grad_norm .self {background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#F0F0F0), to(#E6E6E6));}/*#E9E9E9 #E0E0E0*/
-rectangle.fill_grad_warm .self {background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#EEEEEC), to(#E3E3DC));}
-rectangle.fill_grad_cool .self {background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#E6ECEF), to(#D8DFE0));}
+rectangle.fill_grad_warm .self {background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#EEEEEC), to(#E3E3DF));}
+rectangle.fill_grad_cool .self {background-image: -webkit-gradient(linear, 25% 0%, 25% 100%, from(#E6ECEF), to(#DDE2E3));}
 
 
 

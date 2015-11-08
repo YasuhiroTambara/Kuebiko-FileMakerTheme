@@ -283,14 +283,28 @@ edit_box.edt_p14h29:hover .inner_border,
 edit_box.edt_p16h24:hover .inner_border,
 edit_box.edt_p16h26:hover .inner_border,
 edit_box.edt_p16h29:hover .inner_border,
+/*
 edit_box.edt_p12h25_stroke0111:hover .inner_border,
 edit_box.edt_p12h30_stroke0111:hover .inner_border,
+*/
 
 calendar:hover  .inner_border,
 drop_down:hover .inner_border,
 pop_up:hover    .inner_border
 {
   box-shadow: inset 0.2pt 0.2pt 2pt 0pt rgba(85,85,85,0.36);
+  box-shadow: inset 0.2pt 0.2pt 2.5pt 0pt rgba(85,85,85,0.32);
+}
+ edit_box.edt_p12h25_stroke0111:hover .inner_border,
+ calendar.edt_p12h25_stroke0111:hover .inner_border,
+drop_down.edt_p12h25_stroke0111:hover .inner_border,
+   pop_up.edt_p12h25_stroke0111:hover .inner_border,
+ edit_box.edt_p12h30_stroke0111:hover .inner_border,
+ calendar.edt_p12h30_stroke0111:hover .inner_border,
+drop_down.edt_p12h30_stroke0111:hover .inner_border,
+   pop_up.edt_p12h30_stroke0111:hover .inner_border
+{
+  box-shadow: inset 0.2pt 0.2pt 3pt 0pt rgba(85,85,85,0.24);
 }
 
 /*
@@ -602,7 +616,7 @@ drop_down.edt_p16h29 .text,
 /*field:normal .icon,*/
 calendar:normal .icon,
 drop_down:normal .icon
- {
+{
   box-sizing: border-box;
   position: absolute;
   top: 0pt;
@@ -737,6 +751,12 @@ radio_set:normal .icon {
   -fm-icon: radio;
 }
 
+checkbox_set:hover .icon,
+radio_set:hover .icon
+{
+  box-shadow: 0pt 0pt 2pt 1pt rgba(24,24,24,0.2);
+}
+
 checkbox_set:checked .icon {
   border-color: #777;
   background-image: none; background-color: #777;/**/
@@ -747,11 +767,52 @@ radio_set:checked .icon {
   background-image: none; background-color: #FFF;
   -fm-icon-color: #777;/**/
 }
-
 checkbox_set:focus .icon,
 radio_set:focus .icon
 {
   box-shadow: 0pt 0pt 2pt 1pt #72A8FB;
+}
+
+
+
+checkbox_set.def_gsF:normal .self,
+radio_set.def_gsF:normal .self,
+checkbox_set.def_gsF:hover .self,
+radio_set.def_gsF:hover .self,
+checkbox_set.def_gsF:pressed .self,
+radio_set.def_gsF:pressed .self,
+checkbox_set.def_gsF:focus .self,
+radio_set.def_gsF:focus .self
+{
+  color: #FFF;
+}
+
+checkbox_set.def_gsF:normal .icon,
+radio_set.def_gsF:normal .icon
+{
+  border-color: #FFF;
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;/*1pt 1pt 2pt 0pt #D6D6D6;*/
+}
+checkbox_set.def_gsF:hover .icon,
+radio_set.def_gsF:hover .icon
+{
+  box-shadow: 0pt 0pt 4pt 1pt rgba(24,24,24,0.4);
+}
+checkbox_set.def_gsF:checked .icon {
+  border-color: #FFF;
+  background-color: #FFF;
+  -fm-icon-color: #39E;/**/
+}
+radio_set.def_gsF:checked .icon {
+  border-color: #FFF;
+  background-color: rgba(0,0,0,0);
+  -fm-icon-color: #FFF;
+}
+checkbox_set.def_gsF:focus .icon,
+radio_set.def_gsF:focus .icon
+{
+  box-shadow: 0pt 0pt 2pt 1pt rgba(24,24,24,0.7);
 }
 
 

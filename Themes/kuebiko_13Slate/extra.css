@@ -259,36 +259,12 @@ button_bar_segment.circle_acc .self,
 popover.fill_acc .self {
   background-color: #e95450;
 }
-text_box.left_ex2_p09 .self,
-text_box.right_ex2_p09 .self,
-text_box.center_ex2_p09 .self,
-text_box.left_ex2_p10 .self,
-text_box.right_ex2_p10 .self,
-text_box.center_ex2_p10 .self,
-text_box.left_ex2_p11 .self,
-text_box.right_ex2_p11 .self,
-text_box.center_ex2_p11 .self,
-text_box.left_ex2_p12 .self,
-text_box.right_ex2_p12 .self,
-text_box.center_ex2_p12 .self,
-text_box.left_ex2_p13 .self,
-text_box.right_ex2_p13 .self,
-text_box.center_ex2_p13 .self,
-text_box.left_ex2_p14 .self,
-text_box.right_ex2_p14 .self,
-text_box.center_ex2_p14 .self,
-text_box.left_ex2_p15 .self,
-text_box.right_ex2_p15 .self,
-text_box.center_ex2_p15 .self,
-text_box.left_ex2_p16 .self,
-text_box.right_ex2_p16 .self,
-text_box.center_ex2_p16 .self,
-text_box.left_ex2_p17 .self,
-text_box.right_ex2_p17 .self,
-text_box.center_ex2_p17 .self,
-text_box.left_ex2_p18 .self,
-text_box.right_ex2_p18 .self,
-text_box.center_ex2_p18 .self,
+text_box.left_ex2 .self,
+text_box.right_ex2 .self,
+text_box.center_ex2 .self,
+text_box.left_upp_ex2 .self,
+text_box.right_upp_ex2 .self,
+text_box.center_upp_ex2 .self,
 button.min_ex2 .self,
 button.min_ex2_hrz .self,
 button.mro_ex2 .self,
@@ -309,12 +285,20 @@ button_bar_segment.mro_ex2:normal .icon,
 button_bar_segment.mro_ex2_hrz:normal .icon {
   -fm-icon-color: #557079;
 }
-text_box.left_ex4_p09 .self,
-text_box.right_ex4_p09 .self,
-text_box.center_ex4_p09 .self,
-text_box.left_ex4_p10 .self,
-text_box.right_ex4_p10 .self,
-text_box.center_ex4_p10 .self,
+text_box.left_ex3 .self,
+text_box.right_ex3 .self,
+text_box.center_ex3 .self,
+text_box.left_upp_ex3 .self,
+text_box.right_upp_ex3 .self,
+text_box.center_upp_ex3 .self {
+  color: #69858f;
+}
+text_box.left_ex4 .self,
+text_box.right_ex4 .self,
+text_box.center_ex4 .self,
+text_box.left_upp_ex4 .self,
+text_box.right_upp_ex4 .self,
+text_box.center_upp_ex4 .self,
 text_box.left_ex4_p11 .self,
 text_box.right_ex4_p11 .self,
 text_box.center_ex4_p11 .self,
@@ -359,36 +343,12 @@ button_bar_segment.mro_ex4:normal .icon,
 button_bar_segment.mro_ex4_hrz:normal .icon {
   -fm-icon-color: #7e9aa5;
 }
-text_box.left_ex8_p09 .self,
-text_box.right_ex8_p09 .self,
-text_box.center_ex8_p09 .self,
-text_box.left_ex8_p10 .self,
-text_box.right_ex8_p10 .self,
-text_box.center_ex8_p10 .self,
-text_box.left_ex8_p11 .self,
-text_box.right_ex8_p11 .self,
-text_box.center_ex8_p11 .self,
-text_box.left_ex8_p12 .self,
-text_box.right_ex8_p12 .self,
-text_box.center_ex8_p12 .self,
-text_box.left_ex8_p13 .self,
-text_box.right_ex8_p13 .self,
-text_box.center_ex8_p13 .self,
-text_box.left_ex8_p14 .self,
-text_box.right_ex8_p14 .self,
-text_box.center_ex8_p14 .self,
-text_box.left_ex8_p15 .self,
-text_box.right_ex8_p15 .self,
-text_box.center_ex8_p15 .self,
-text_box.left_ex8_p16 .self,
-text_box.right_ex8_p16 .self,
-text_box.center_ex8_p16 .self,
-text_box.left_ex8_p17 .self,
-text_box.right_ex8_p17 .self,
-text_box.center_ex8_p17 .self,
-text_box.left_ex8_p18 .self,
-text_box.right_ex8_p18 .self,
-text_box.center_ex8_p18 .self,
+text_box.left_ex8 .self,
+text_box.right_ex8 .self,
+text_box.center_ex8 .self,
+text_box.left_upp_ex8 .self,
+text_box.right_upp_ex8 .self,
+text_box.center_upp_ex8 .self,
 button.min_ex8 .self,
 button.min_ex8_hrz .self,
 button.mro_ex8 .self,
@@ -409,54 +369,98 @@ button_bar_segment.mro_ex8:normal .icon,
 button_bar_segment.mro_ex8_hrz:normal .icon {
   -fm-icon-color: #d6dfe2;
 }
-text_box.left_fill7_p12 .self,
-text_box.right_fill7_p12 .self,
-text_box.center_fill7_p12 .self,
-text_box.left_upp_fill7_p12 .self,
-text_box.right_upp_fill7_p12 .self,
-text_box.center_upp_fill7_p12 .self {
+text_box.left_ex9 .self,
+text_box.right_ex9 .self,
+text_box.center_ex9 .self,
+text_box.left_upp_ex9 .self,
+text_box.right_upp_ex9 .self,
+text_box.center_upp_ex9 .self {
+  color: #e1e9ec;
+}
+text_box.left_fill7 .self,
+text_box.right_fill7 .self,
+text_box.center_fill7 .self,
+text_box.left_upp_fill7 .self,
+text_box.right_upp_fill7 .self,
+text_box.center_upp_fill7 .self,
+text_box.right_fill7_rad1000 .self,
+text_box.right_upp_fill7_rad1000 .self,
+text_box.right_fill7_rad0001 .self,
+text_box.right_upp_fill7_rad0001 .self,
+text_box.right_fill7_rad1001 .self,
+text_box.right_upp_fill7_rad1001 .self {
   background-color: #c0d2d8;
   color: #557079;
 }
-text_box.left_fill6_p12 .self,
-text_box.right_fill6_p12 .self,
-text_box.center_fill6_p12 .self,
-text_box.left_upp_fill6_p12 .self,
-text_box.right_upp_fill6_p12 .self,
-text_box.center_upp_fill6_p12 .self {
+text_box.left_fill6 .self,
+text_box.right_fill6 .self,
+text_box.center_fill6 .self,
+text_box.left_upp_fill6 .self,
+text_box.right_upp_fill6 .self,
+text_box.center_upp_fill6 .self,
+text_box.right_fill6_rad1000 .self,
+text_box.right_upp_fill6_rad1000 .self,
+text_box.right_fill6_rad0001 .self,
+text_box.right_upp_fill6_rad0001 .self,
+text_box.right_fill6_rad1001 .self,
+text_box.right_upp_fill6_rad1001 .self {
   background-color: #b1c5cb;
   color: #557079;
 }
-text_box.left_fill5_p12 .self,
-text_box.right_fill5_p12 .self,
-text_box.center_fill5_p12 .self,
-text_box.left_upp_fill5_p12 .self,
-text_box.right_upp_fill5_p12 .self,
-text_box.center_upp_fill5_p12 .self {
+text_box.left_fill5 .self,
+text_box.right_fill5 .self,
+text_box.center_fill5 .self,
+text_box.left_upp_fill5 .self,
+text_box.right_upp_fill5 .self,
+text_box.center_upp_fill5 .self,
+text_box.right_fill5_rad1000 .self,
+text_box.right_upp_fill5_rad1000 .self,
+text_box.right_fill5_rad0001 .self,
+text_box.right_upp_fill5_rad0001 .self,
+text_box.right_fill5_rad1001 .self,
+text_box.right_upp_fill5_rad1001 .self {
   background-color: #97afb6;
 }
-text_box.left_fill4_p12 .self,
-text_box.right_fill4_p12 .self,
-text_box.center_fill4_p12 .self,
-text_box.left_upp_fill4_p12 .self,
-text_box.right_upp_fill4_p12 .self,
-text_box.center_upp_fill4_p12 .self {
+text_box.left_fill4 .self,
+text_box.right_fill4 .self,
+text_box.center_fill4 .self,
+text_box.left_upp_fill4 .self,
+text_box.right_upp_fill4 .self,
+text_box.center_upp_fill4 .self,
+text_box.right_fill4_rad1000 .self,
+text_box.right_upp_fill4_rad1000 .self,
+text_box.right_fill4_rad0001 .self,
+text_box.right_upp_fill4_rad0001 .self,
+text_box.right_fill4_rad1001 .self,
+text_box.right_upp_fill4_rad1001 .self {
   background-color: #7e9aa5;
 }
-text_box.left_fill3_p12 .self,
-text_box.right_fill3_p12 .self,
-text_box.center_fill3_p12 .self,
-text_box.left_upp_fill3_p12 .self,
-text_box.right_upp_fill3_p12 .self,
-text_box.center_upp_fill3_p12 .self {
+text_box.left_fill3 .self,
+text_box.right_fill3 .self,
+text_box.center_fill3 .self,
+text_box.left_upp_fill3 .self,
+text_box.right_upp_fill3 .self,
+text_box.center_upp_fill3 .self,
+text_box.right_fill3_rad1000 .self,
+text_box.right_upp_fill3_rad1000 .self,
+text_box.right_fill3_rad0001 .self,
+text_box.right_upp_fill3_rad0001 .self,
+text_box.right_fill3_rad1001 .self,
+text_box.right_upp_fill3_rad1001 .self {
   background-color: #69858f;
 }
-text_box.left_fill2_p12 .self,
-text_box.right_fill2_p12 .self,
-text_box.center_fill2_p12 .self,
-text_box.left_upp_fill2_p12 .self,
-text_box.right_upp_fill2_p12 .self,
-text_box.center_upp_fill2_p12 .self {
+text_box.left_fill2 .self,
+text_box.right_fill2 .self,
+text_box.center_fill2 .self,
+text_box.left_upp_fill2 .self,
+text_box.right_upp_fill2 .self,
+text_box.center_upp_fill2 .self,
+text_box.right_fill2_rad1000 .self,
+text_box.right_upp_fill2_rad1000 .self,
+text_box.right_fill2_rad0001 .self,
+text_box.right_upp_fill2_rad0001 .self,
+text_box.right_fill2_rad1001 .self,
+text_box.right_upp_fill2_rad1001 .self {
   background-color: #557079;
 }
 button_bar_segment.ear:active .self,
@@ -518,7 +522,7 @@ text_box.cap:pressed .self {
 }
 button.cap:pressed .inner_border,
 text_box.cap:pressed .inner_border {
-  box-shadow: inset 0pt 0pt 3pt 1pt #557079;
+  box-shadow: inset 0pt 0pt 5pt 0pt #557079;
 }
 button.cap1:normal .self {
   border-color: #c0d2d8;
@@ -533,7 +537,7 @@ button.cap1:pressed .self {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#557079), to(#69858f));
 }
 button.cap1:pressed .inner_border {
-  box-shadow: inset 0pt 0pt 3pt 1pt #557079;
+  box-shadow: inset 0pt 0pt 5pt 0pt #557079;
 }
 button.cap2:normal .self {
   border-color: #b1c5cb;
@@ -548,7 +552,7 @@ button.cap2:pressed .self {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#445c66), to(#557079));
 }
 button.cap2:pressed .inner_border {
-  box-shadow: inset 0pt 0pt 3pt 1pt #445c66;
+  box-shadow: inset 0pt 0pt 5pt 0pt #445c66;
 }
 /** CHECK, RADIO ------------------------*/
 button.btn_check:normal .self,
@@ -566,6 +570,9 @@ checkbox_set:checked .icon {
 radio_set:checked .icon {
   -fm-icon-color: #7e9aa5;
   border-color: #7e9aa5;
+}
+checkbox_set.def_gsF:checked .icon {
+  -fm-icon-color: #69858f;
 }
 /** PORTAL ------------------------*/
 portal:normal .row_active {
