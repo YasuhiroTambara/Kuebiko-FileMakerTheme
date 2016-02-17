@@ -67,6 +67,18 @@
       
       <namedstyles>
         <!--part-->
+        <lhed_gs3>lhed_gs3</lhed_gs3>
+        <lhed_gs6>lhed_gs6</lhed_gs6>
+        <lhed_gs9>lhed_gs9</lhed_gs9>
+        <lhed_gsA>lhed_gsA</lhed_gsA>
+        <lhed_gsB>lhed_gsB</lhed_gsB>
+        <lhed_gsC>lhed_gsC</lhed_gsC>
+        <lhed_gsD>lhed_gsD</lhed_gsD>
+        <lhed_gsE>lhed_gsE</lhed_gsE>
+        <lhed_gsF6>lhed_gsF6</lhed_gsF6>
+        <lhed_gsFC>lhed_gsFC</lhed_gsFC>
+        <lhed_gsF>lhed_gsF</lhed_gsF>
+        
         <list_gs3>list_gs3</list_gs3>
         <list_gs6>list_gs6</list_gs6>
         <list_gs9>list_gs9</list_gs9>
@@ -197,7 +209,7 @@
         <fill_ac4_02Orange>fill_ac4_02Orange</fill_ac4_02Orange>
         <fill_ac4_03Khaki>fill_ac4_03Khaki</fill_ac4_03Khaki>
         <fill_ac4_03Amber>fill_ac4_03Amber</fill_ac4_03Amber>
-        <fill_ac4_04Yellow>fill_ac4_04Yellow</fill_ac4_04Yellow>
+        <fill_ac4_04Banana>fill_ac4_04Banana</fill_ac4_04Banana>
         <fill_ac4_05Moss>fill_ac4_05Moss</fill_ac4_05Moss>
         <fill_ac4_05Lime>fill_ac4_05Lime</fill_ac4_05Lime>
         <fill_ac4_06Olive>fill_ac4_06Olive</fill_ac4_06Olive>
@@ -308,7 +320,7 @@
         <fill_ac4_02Orange_hrz>fill_ac4_02Orange_hrz</fill_ac4_02Orange_hrz>
         <fill_ac4_03Khaki_hrz>fill_ac4_03Khaki_hrz</fill_ac4_03Khaki_hrz>
         <fill_ac4_03Amber_hrz>fill_ac4_03Amber_hrz</fill_ac4_03Amber_hrz>
-        <fill_ac4_04Yellow_hrz>fill_ac4_04Yellow_hrz</fill_ac4_04Yellow_hrz>
+        <fill_ac4_04Banana_hrz>fill_ac4_04Banana_hrz</fill_ac4_04Banana_hrz>
         <fill_ac4_05Moss_hrz>fill_ac4_05Moss_hrz</fill_ac4_05Moss_hrz>
         <fill_ac4_05Lime_hrz>fill_ac4_05Lime_hrz</fill_ac4_05Lime_hrz>
         <fill_ac4_06Olive_hrz>fill_ac4_06Olive_hrz</fill_ac4_06Olive_hrz>
@@ -669,7 +681,7 @@
         <circle_ac4_02Orange>circle_ac4_02Orange</circle_ac4_02Orange>
         <circle_ac4_03Khaki>circle_ac4_03Khaki</circle_ac4_03Khaki>
         <circle_ac4_03Amber>circle_ac4_03Amber</circle_ac4_03Amber>
-        <circle_ac4_04Yellow>circle_ac4_04Yellow</circle_ac4_04Yellow>
+        <circle_ac4_04Banana>circle_ac4_04Banana</circle_ac4_04Banana>
         <circle_ac4_05Moss>circle_ac4_05Moss</circle_ac4_05Moss>
         <circle_ac4_05Lime>circle_ac4_05Lime</circle_ac4_05Lime>
         <circle_ac4_06Olive>circle_ac4_06Olive</circle_ac4_06Olive>
@@ -721,7 +733,9 @@
         <fill_grad_norm>fill_grad_norm</fill_grad_norm>
         <fill_grad_warm>fill_grad_warm</fill_grad_warm>
         
-        <backCap>backCap</backCap>
+        <backGradGs>backGradGs</backGradGs>
+        <backGradEx1>backGradEx1</backGradEx1>
+        <backGradEx2>backGradEx2</backGradEx2>
         <backCheck>backCheck</backCheck>
         <backRadio>backRadio</backRadio>
         
